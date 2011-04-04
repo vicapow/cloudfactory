@@ -6,6 +6,7 @@
 #include "BluePrintDetect.h"
 #include "Metaballs.h"
 #include "Levels.h"
+#include "CloudModel.h"
 #include <vector>
 
 struct m_cloud{
@@ -52,7 +53,9 @@ protected:
 	int PX_M2;
 	
 	int current_cloud_a, current_cloud_b, current_cloud_c; // cloud being edited
+	int current_model_a, current_model_b, current_model_c; // current cloud model
 	std::vector<struct m_cloud> blobs; // vector of clouds
+	std::vector<CloudModel> clouds;
 };
 
 WM5_REGISTER_INITIALIZE(CloudFactory);

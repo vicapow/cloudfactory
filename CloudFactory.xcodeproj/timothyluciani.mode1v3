@@ -306,8 +306,6 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -325,25 +323,25 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F0DF6EB7134A43780079C264</string>
+										<string>F0DF6EEF134A4A4E0079C264</string>
 										<key>history</key>
 										<array>
 											<string>F0F4DEF51342C23600666F47</string>
 											<string>F0F4DF311342D7C800666F47</string>
 											<string>F0F4DF321342D7C800666F47</string>
 											<string>F0F4DF361342D7C800666F47</string>
-											<string>F0F4DF5B1342DA9000666F47</string>
-											<string>F0F4DF5C1342DA9000666F47</string>
 											<string>F0F4DF5E1342DA9000666F47</string>
 											<string>F0708FD11343C19900AA43BE</string>
 											<string>F0F74C5B1343CD73001A6BFF</string>
 											<string>F0F74C5C1343CD73001A6BFF</string>
 											<string>F02E7706134A2E1500A21B94</string>
-											<string>F02E7707134A2E1500A21B94</string>
 											<string>F0DF6E4F134A3FD70079C264</string>
 											<string>F0DF6E5A134A3FF80079C264</string>
 											<string>F0DF6E77134A40870079C264</string>
-											<string>F0DF6E79134A40870079C264</string>
+											<string>F0DF6EC4134A462D0079C264</string>
+											<string>F0DF6EC5134A462D0079C264</string>
+											<string>F0DF6ED1134A470E0079C264</string>
+											<string>F0DF6ED2134A470E0079C264</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -365,6 +363,8 @@
 							<string>445pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -543,9 +543,9 @@
 	<array>
 		<string>F0DF6E56134A3FD70079C264</string>
 		<string>F0DF6E57134A3FD70079C264</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
 		<string>F0F4DEE51342C1FA00666F47</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/timothyluciani/Dropbox/GIT/cloudfactory/CloudFactory.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -930,7 +930,7 @@
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>Identifier</key>
