@@ -111,7 +111,7 @@ void CloudFactory::OnIdle ()
 		
 		int size = 64;
 		
-		if(blobs[current_cloud_a].clouds.size() < 500){
+		if(blobs[current_cloud_a].clouds.size() < 400){
 		
 			blobs[current_cloud_a].clouds.push_back(new Metaballs3D(incrementer_a[0] + location_a[0], incrementer_a[1] + location_a[1], 0, size, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_a].clouds[blobs[current_cloud_a].clouds.size()-1]);
@@ -138,8 +138,20 @@ void CloudFactory::OnIdle ()
 			mScene->AttachChild(blobs[current_cloud_a].clouds[blobs[current_cloud_a].clouds.size()-1]);
 		
 			
+			float speed = 6;
+			if(blobs[current_cloud_a].clouds.size() <= 50)
+				speed = 6;
+			else if(blobs[current_cloud_a].clouds.size() <= 100)
+				speed = 5;
+			else if(blobs[current_cloud_a].clouds.size() <= 200)
+				speed = 4;
+			else 
+				speed = 3;
+				
+			
 			for(unsigned int ii = 0; ii < blobs[current_cloud_a].clouds.size(); ii ++){
 				blobs[current_cloud_a].clouds[ii]->AddToMatrix(The_Matrix);
+				blobs[current_cloud_a].clouds[ii]->SetSpeed(speed);
 			}
 		
 		}
@@ -151,35 +163,47 @@ void CloudFactory::OnIdle ()
 			incrementer_b[0] += 1.01;
 			incrementer_b[1] += 1.01;
 			
-			if(blobs[current_cloud_b].clouds.size() < 500){
+			if(blobs[current_cloud_b].clouds.size() < 400){
 			
-			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], incrementer_b[1] + location_b[1], 0, 64, 4, "STRAIGHT"));
+			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], incrementer_b[1] + location_b[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_b].clouds[blobs[current_cloud_b].clouds.size()-1]);
 			
-			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], -incrementer_b[1] + location_b[1], 0, 64, 4, "STRAIGHT"));
+			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], -incrementer_b[1] + location_b[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_b].clouds[blobs[current_cloud_b].clouds.size()-1]);
 		
-			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], -incrementer_b[1] + location_b[1], 0, 64, 4, "STRAIGHT"));
+			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], -incrementer_b[1] + location_b[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_b].clouds[blobs[current_cloud_b].clouds.size()-1]);
 			
-			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], incrementer_b[0] + location_b[1], 0, 64, 4, "STRAIGHT"));
+			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], incrementer_b[0] + location_b[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_b].clouds[blobs[current_cloud_b].clouds.size()-1]);
 			
-			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(location_b[0], incrementer_b[1] + location_b[1], 0, 64, 4, "STRAIGHT"));
+			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(location_b[0], incrementer_b[1] + location_b[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_b].clouds[blobs[current_cloud_b].clouds.size()-1]);
 			
-			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], location_b[1], 0, 64, 4, "STRAIGHT"));
+			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], location_b[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_b].clouds[blobs[current_cloud_b].clouds.size()-1]);
 			
-			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], location_b[1], 0, 64, 4, "STRAIGHT"));
+			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], location_b[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_b].clouds[blobs[current_cloud_b].clouds.size()-1]);
 			
-			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(location_b[0], -incrementer_b[1] + location_b[1], 0, 64, 4, "STRAIGHT"));
+			blobs[current_cloud_b].clouds.push_back(new Metaballs3D(location_b[0], -incrementer_b[1] + location_b[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_b].clouds[blobs[current_cloud_b].clouds.size()-1]);
 	
+				float speed = 6;
+				if(blobs[current_cloud_b].clouds.size() <= 50)
+					speed = 6;
+				else if(blobs[current_cloud_b].clouds.size() <= 100)
+					speed = 5;
+				else if(blobs[current_cloud_b].clouds.size() <= 200)
+					speed = 4;
+				else 
+					speed = 3;
+				
 		
-			for(unsigned int ii = 0; ii < blobs[current_cloud_b].clouds.size(); ii ++)
-				blobs[current_cloud_b].clouds[ii]->AddToMatrix(The_Matrix);
+				for(unsigned int ii = 0; ii < blobs[current_cloud_b].clouds.size(); ii ++){
+					blobs[current_cloud_b].clouds[ii]->AddToMatrix(The_Matrix);
+					blobs[current_cloud_b].clouds[ii]->SetSpeed(speed);
+				}
 	} // end if
 
 	} // end state grow B
@@ -188,7 +212,7 @@ void CloudFactory::OnIdle ()
 		incrementer_c[0] += 1.01;
 		incrementer_c[1] += 1.01;
 		
-		if(blobs[current_cloud_c].clouds.size() < 500){
+		if(blobs[current_cloud_c].clouds.size() < 400){
 		
 			blobs[current_cloud_c].clouds.push_back(new Metaballs3D(incrementer_c[0] + location_c[0], incrementer_c[1] + location_c[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_c].clouds[blobs[current_cloud_c].clouds.size()-1]);
@@ -214,8 +238,20 @@ void CloudFactory::OnIdle ()
 			blobs[current_cloud_c].clouds.push_back(new Metaballs3D(location_c[0], -incrementer_c[1] + location_c[1], 0, 64, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_c].clouds[blobs[current_cloud_c].clouds.size()-1]);
 			
-			for(unsigned int ii = 0; ii < blobs[current_cloud_c].clouds.size(); ii ++)
+			float speed = 6;
+			if(blobs[current_cloud_c].clouds.size() <= 50)
+				speed = 6;
+			else if(blobs[current_cloud_c].clouds.size() <= 100)
+				speed = 5;
+			else if(blobs[current_cloud_c].clouds.size() <= 200)
+				speed = 4;
+			else 
+				speed = 3;
+			
+			for(unsigned int ii = 0; ii < blobs[current_cloud_c].clouds.size(); ii ++){
 				blobs[current_cloud_c].clouds[ii]->AddToMatrix(The_Matrix);
+				blobs[current_cloud_c].clouds[ii]->SetSpeed(speed);
+			}
 		} // end if
 		
 	} // end state grow C

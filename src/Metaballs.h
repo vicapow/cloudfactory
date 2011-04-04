@@ -146,9 +146,9 @@ class Metaballs3D : public Node
 		posX += amount;
 	}
 	
-	void SetSpeed(float decrease){
+	void SetSpeed(float speed){
 		
-		Speed -= decrease;
+		Speed = speed;
 	}
 	
 	inline int Get_Px() { return (int)posX; };
