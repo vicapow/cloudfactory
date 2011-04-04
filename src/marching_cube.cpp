@@ -479,11 +479,18 @@ void Generate(Potential_Field *field ,std::vector<Wm5::Float3> *pos,
 		norm[1] = norm[1] / l;
 		norm[2] = norm[2] / l;
 		
+		pos->push_back(Wm5::Float3(triangles[i].p[0].x ,triangles[i].p[0].y , triangles[i].p[0].z));
 		pos->push_back(Wm5::Float3(triangles[i].p[2].x , triangles[i].p[2].y, triangles[i].p[2].z));
 		pos->push_back(Wm5::Float3(triangles[i].p[1].x ,triangles[i].p[1].y , triangles[i].p[1].z));
-		pos->push_back(Wm5::Float3(triangles[i].p[0].x ,triangles[i].p[0].y , triangles[i].p[0].z));
 		
-		norms->push_back(Wm5::Float3(norm[0], norm[1], norm[2]));
+
+		norms->push_back(Wm5::Float3(-1.0, 0.0, -1.0));
+		norms->push_back(Wm5::Float3(-1.0, 0.0, -1.0));
+		norms->push_back(Wm5::Float3(-1.0, 0.0, -1.0));
+
+//		norms->push_back(Wm5::Float3(norm[0], norm[1], norm[2]));
+//		norms->push_back(Wm5::Float3(norm[0], norm[1], norm[2]));
+//		norms->push_back(Wm5::Float3(norm[0], norm[1], norm[2]));
 		
 		*num_verts += 3;
 		
@@ -582,29 +589,24 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 				Wm5::Float3 *poss = (Wm5::Float3 *)malloc(sizeof(Wm5::Float3)*pos.size());
 				Wm5::Float3 *norms = (Wm5::Float3 *)malloc(sizeof(Wm5::Float3)*norm.size());
 				
-				for(unsigned int ii = 0; ii < pos.size(); ii++){
-					
-					poss[ii][0] = pos[ii][0] * 0.0005;
-					poss[ii][1] = pos[ii][1] * 0.0005;
-					poss[ii][2] = pos[ii][2] * 0.0005;
-
-				}
-				
 				for(unsigned int i = 0; i<pos.size(); i++)
 				{
+					
+					poss[i][0] = pos[i][0] * 0.0005;
+					poss[i][1] = pos[i][1] * 0.0005;
+					poss[i][2] = pos[i][2] * 0.0005;
+					
 					vba.Position<Wm5::Float3>(i) = poss[i];					
 					indx[i] = i;
 				}
 				
 				for(unsigned int i = 0; i < norm.size(); i++){
 					
-					norms[i][0] = norm[i][0] * -0.0005;
-					norms[i][1] = norm[i][1] * -0.0005;
-					norms[i][2] = norm[i][2] * -0.0005;
+					norms[i][0] = norm[i][0] * 0.0005;
+					norms[i][1] = norm[i][1] * 0.0005;
+					norms[i][2] = norm[i][2] * 0.0005;
 					
-					vba.Normal<Wm5::Float3>(i)[0] = norms[i][0];
-					vba.Normal<Wm5::Float3>(i)[1] = norms[i][1];
-					vba.Normal<Wm5::Float3>(i)[2] = norms[i][2];
+					vba.Normal<Wm5::Float3>(i) = norms[i];
 
 				}
 				
@@ -613,18 +615,19 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 				
 				Float4 black(0.0f, 0.0f, 0.0f, 1.0f);
 				Float4 white(1.0f, 1.0f, 1.0f, 1.0f);
-
+				Float4 red(1.0, 0.0, 0.0, 1.0);
+				
 				Material* redMaterial = new0 Material();
-				redMaterial->Emissive = black;
+				redMaterial->Emissive = white;
 				redMaterial->Ambient = Float4(0.25f, 0.25f, 0.25f, 1.0f);
 				redMaterial->Diffuse = Float4(1.0f, 0.0f, 0.0f, 1.0f);
-				redMaterial->Specular = black;
+				redMaterial->Specular = white;
 				
 				// A light for the effects.
 				Light* light = new0 Light(Light::LT_DIRECTIONAL);
-				light->Ambient = white;
+				light->Ambient = red;
 				light->Diffuse = white;
-				light->Specular = black;
+				light->Specular = white;
 				light->SetDirection(AVector::UNIT_Z);
 				
 				VisualEffectInstancePtr mIntersectEffect;
@@ -676,29 +679,25 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 				
 				int *indx = (int *)malloc(sizeof(int)*pos.size());
 				
-				for(unsigned int ii = 0; ii < pos.size(); ii++){
-					
-					poss[ii][0] = pos[ii][0] * 0.0005;
-					poss[ii][1] = pos[ii][1] * 0.0005;
-					poss[ii][2] = pos[ii][2] * 0.0005;
-					
-				}
 				
 				for(unsigned int i = 0; i<pos.size(); i++)
 				{
+					
+					poss[i][0] = pos[i][0] * 0.0005;
+					poss[i][1] = pos[i][1] * 0.0005;
+					poss[i][2] = pos[i][2] * 0.0005;
+					
 					vba.Position<Wm5::Float3>(i) = poss[i];					
 					indx[i] = i;
 				}
 				
 				for(unsigned int i = 0; i < norm.size(); i++){
 					
-					norms[i][0] = norm[i][0] * -0.0005;
-					norms[i][1] = norm[i][1] * -0.0005;
-					norms[i][2] = norm[i][2] * -0.0005;
+					norms[i][0] = norm[i][0] * 0.0005;
+					norms[i][1] = norm[i][1] * 0.0005;
+					norms[i][2] = norm[i][2] * 0.0005;
 					
-					vba.Normal<Wm5::Float3>(i)[0] = norms[i][0];
-					vba.Normal<Wm5::Float3>(i)[1] = norms[i][1];
-					vba.Normal<Wm5::Float3>(i)[2] = norms[i][2];
+					vba.Normal<Wm5::Float3>(i) = norms[i];
 					
 				}					
 				
@@ -707,18 +706,19 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 				
 				Float4 black(0.0f, 0.0f, 0.0f, 1.0f);
 				Float4 white(1.0f, 1.0f, 1.0f, 1.0f);
-				
+				Float4 red(1.0, 0.0, 0.0, 1.0);
+
 				Material* redMaterial = new0 Material();
-				redMaterial->Emissive = black;
+				redMaterial->Emissive = red;
 				redMaterial->Ambient = Float4(0.25f, 0.25f, 0.25f, 1.0f);
 				redMaterial->Diffuse = Float4(1.0f, 0.0f, 0.0f, 1.0f);
-				redMaterial->Specular = black;
+				redMaterial->Specular = white;
 				
 				// A light for the effects.
 				Light* light = new0 Light(Light::LT_DIRECTIONAL);
 				light->Ambient = white;
 				light->Diffuse = white;
-				light->Specular = black;
+				light->Specular = white;
 				light->SetDirection(AVector::UNIT_Z);
 				
 				VisualEffectInstancePtr mIntersectEffect;

@@ -11,10 +11,9 @@
 #include "marching_cube.h"
 #include "Time_Counter.h"
 
-#define MATRIX_SIZE 1700
+#define MATRIX_SIZE 1500
 #define STEP 16
 #define STEP_B 4
-#define SPEED 4
 
 extern double *texture_map;
 
@@ -52,21 +51,22 @@ class Potential_Matrix : public Potential_Field
 	double *matrix;
 };
 
-class Metaballs3D : public CloudModel, public Node
+class Metaballs3D : public Node
 {
 	public :
 	
 	Metaballs3D(){}
-	Metaballs3D(float px , float py , float pz, int rayon)
+	Metaballs3D(float px , float py , float pz, int rayon, float speed, std::string dir)
 	{
 		posX = px;
 		posY = py;
 		posZ = pz;
 		
-		Rayon=rayon;
-		Vx=20;
-		Vy=20;
-		Vz=20;
+		Speed = speed;
+		
+		direction = dir;
+		
+		Rayon = rayon;
 	}
 	
 	void AddToMatrix( Potential_Matrix * world )
@@ -128,7 +128,27 @@ class Metaballs3D : public CloudModel, public Node
 	
 	void Move(float time)
 	{
-		posY += (6 * time);		
+		if(direction == "STRAIGHT")
+			posY += (Speed * time);	
+		
+		else if(direction == "RIGHT"){
+			posX += (Speed * time/3);
+			posY += (Speed * time);	
+		}
+		else if(direction == "LEFT"){
+			posX += (-Speed * time/3);
+			posY += (Speed * time);	
+		}
+	}
+	
+	void Grow(float amount){
+		
+		posX += amount;
+	}
+	
+	void SetSpeed(float decrease){
+		
+		Speed -= decrease;
 	}
 	
 	inline int Get_Px() { return (int)posX; };
@@ -138,5 +158,7 @@ class Metaballs3D : public CloudModel, public Node
 	private :
 	
 	int Rayon;
-	int Vx,Vy,Vz;
+	float Speed;
+	float posX, posY, posZ;
+	std::string direction;
 };

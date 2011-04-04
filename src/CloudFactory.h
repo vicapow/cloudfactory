@@ -8,6 +8,13 @@
 #include "Levels.h"
 #include <vector>
 
+struct m_cloud{
+	
+	m_cloud(){};
+	
+	std::vector<Metaballs3D*> clouds;
+};
+
 class CloudFactory : public WindowApplication3
 {
     WM5_DECLARE_INITIALIZE;
@@ -45,8 +52,7 @@ protected:
 	int PX_M2;
 	
 	int current_cloud_a, current_cloud_b, current_cloud_c; // cloud being edited
-	std::vector<Metaballs3D*> clouds; // vector of clouds
-
+	std::vector<struct m_cloud> blobs; // vector of clouds
 };
 
 WM5_REGISTER_INITIALIZE(CloudFactory);

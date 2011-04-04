@@ -73,9 +73,23 @@ void Levels::parse_levels(std::string filename){
 				char *axis = peek = strtok (NULL, " ,");
 				
 				HMatrix rot;
+				rot.MakeIdentity();
+				
 				if(*axis == 'X'){
 					
-					rot = HMatrix(AVector::UNIT_X, Mathf::DEG_TO_RAD * atof(peek = strtok (NULL, " \n")) );
+					rot = rot * HMatrix(AVector::UNIT_X, Mathf::DEG_TO_RAD * atof(peek = strtok (NULL, " \n")) );
+					
+				} // end if
+				if(*axis == 'Y'){
+					
+					rot = rot * HMatrix(AVector::UNIT_Y, Mathf::DEG_TO_RAD * atof(peek = strtok (NULL, " \n")) );
+					
+				} // end if
+				if(*axis == 'Z'){
+					
+					printf("rot Z\n");
+					
+					rot = HMatrix(AVector::UNIT_Z, Mathf::DEG_TO_RAD * atof(peek = strtok (NULL, " \n")) );
 					
 				} // end if
 				
@@ -147,7 +161,9 @@ NodePtr Levels::load_level(NodePtr mScene, int index){
 	TriMesh *bkgd = CreateSquare(L->get_name()); /* background square */
 	TriMesh *blue = CreateBlueprint(L->get_blue());
 	
-	bkgd->LocalTransform.SetTranslate(APoint(0.5f, 0.26f, -0.72f));
+	bkgd->LocalTransform.SetTranslate(APoint(0.4f, 0.26f, -0.72f));
+	bkgd->LocalTransform.SetScale(APoint(0.75, 0.75, 0.75));
+	
 	mScene->AttachChild(bkgd);
 	mScene->AttachChild(blue);
 

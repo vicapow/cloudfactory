@@ -27,43 +27,34 @@
 		3CC4FE6410FD1F6600C42DBB /* libWm5Imagics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */; };
 		3CC4FE6510FD1F6600C42DBB /* libWm5Mathematics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */; };
 		3CC4FE6610FD1F6600C42DBB /* libWm5Physics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */; };
-		F0101468131A07A900AE6645 /* CloudFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */; };
-		F0101469131A07A900AE6645 /* CloudFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */; };
-		F04DCA91132EB99B00C662D0 /* Levels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCA90132EB99B00C662D0 /* Levels.cpp */; };
-		F04DCA92132EB99B00C662D0 /* Levels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCA90132EB99B00C662D0 /* Levels.cpp */; };
-		F04DCAAE132EBDE500C662D0 /* MtlLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */; };
-		F04DCAAF132EBDE500C662D0 /* MtlLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */; };
-		F04DCAB0132EBDE500C662D0 /* MtlLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */; };
-		F04DCAB1132EBDE500C662D0 /* ObjLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */; };
-		F04DCAB2132EBDE500C662D0 /* ObjLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */; };
-		F04DCAB3132EBDE500C662D0 /* ObjLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAD132EBDE500C662D0 /* ObjLoaderCodes.cpp */; };
-		F04DCAB4132EBDE500C662D0 /* MtlLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */; };
-		F04DCAB5132EBDE500C662D0 /* MtlLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */; };
-		F04DCAB6132EBDE500C662D0 /* MtlLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */; };
-		F04DCAB7132EBDE500C662D0 /* ObjLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */; };
-		F04DCAB8132EBDE500C662D0 /* ObjLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */; };
-		F04DCAB9132EBDE500C662D0 /* ObjLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAD132EBDE500C662D0 /* ObjLoaderCodes.cpp */; };
-		F051F5DE1334390400857E37 /* marching_cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DA1334390400857E37 /* marching_cube.cpp */; };
-		F051F5DF1334390400857E37 /* Time_Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DC1334390400857E37 /* Time_Counter.cpp */; };
-		F051F5E01334390400857E37 /* marching_cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DA1334390400857E37 /* marching_cube.cpp */; };
-		F051F5E11334390400857E37 /* Time_Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DC1334390400857E37 /* Time_Counter.cpp */; };
-		F06F7725133A5BB900844C3E /* Metaballs.h in Sources */ = {isa = PBXBuildFile; fileRef = F09830901335496500014674 /* Metaballs.h */; };
-		F06F7726133A5BB900844C3E /* marching_cube.h in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DB1334390400857E37 /* marching_cube.h */; };
-		F06F7727133A5BB900844C3E /* Time_Counter.h in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DD1334390400857E37 /* Time_Counter.h */; };
-		F06F7728133A5BC100844C3E /* MtlLoader.h in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA7132EBDE500C662D0 /* MtlLoader.h */; };
-		F06F772A133A5BC100844C3E /* ObjLoader.h in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAB132EBDE500C662D0 /* ObjLoader.h */; };
-		F06F772C133A5BDC00844C3E /* CloudFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = F0101467131A07A900AE6645 /* CloudFactory.h */; };
-		F06F772D133A5BDC00844C3E /* BluePrintDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = F0C418C5132E8A6400686108 /* BluePrintDetect.h */; };
-		F06F772E133A5BDC00844C3E /* CloudModel.h in Sources */ = {isa = PBXBuildFile; fileRef = F0C418CD132E8B0200686108 /* CloudModel.h */; };
-		F06F772F133A5BDC00844C3E /* Background.h in Sources */ = {isa = PBXBuildFile; fileRef = F0FD300A131A124E004762CA /* Background.h */; };
-		F06F7730133A5BDC00844C3E /* Cannons.h in Sources */ = {isa = PBXBuildFile; fileRef = F0FD30E0131A1BA5004762CA /* Cannons.h */; };
-		F06F7731133A5BDC00844C3E /* Levels.h in Sources */ = {isa = PBXBuildFile; fileRef = F04DCA8F132EB99B00C662D0 /* Levels.h */; };
-		F0C418C6132E8A6400686108 /* BluePrintDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */; };
-		F0C418C7132E8A6400686108 /* BluePrintDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */; };
-		F0FD300C131A124E004762CA /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0FD300B131A124E004762CA /* Background.cpp */; };
-		F0FD300D131A124E004762CA /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0FD300B131A124E004762CA /* Background.cpp */; };
-		F0FD30E2131A1BA5004762CA /* Cannons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0FD30E1131A1BA5004762CA /* Cannons.cpp */; };
-		F0FD30E3131A1BA5004762CA /* Cannons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0FD30E1131A1BA5004762CA /* Cannons.cpp */; };
+		F0ED317C1342BCB9004AF5D6 /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED317A1342BCB9004AF5D6 /* Background.cpp */; };
+		F0ED317D1342BCB9004AF5D6 /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED317A1342BCB9004AF5D6 /* Background.cpp */; };
+		F0ED31801342BCCD004AF5D6 /* BluePrintDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED317E1342BCCD004AF5D6 /* BluePrintDetect.cpp */; };
+		F0ED31811342BCCD004AF5D6 /* BluePrintDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED317E1342BCCD004AF5D6 /* BluePrintDetect.cpp */; };
+		F0ED31911342BCD7004AF5D6 /* Cannons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31821342BCD7004AF5D6 /* Cannons.cpp */; };
+		F0ED31921342BCD7004AF5D6 /* Cannons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31821342BCD7004AF5D6 /* Cannons.cpp */; };
+		F0ED31951342BCD7004AF5D6 /* CloudFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */; };
+		F0ED31961342BCD7004AF5D6 /* CloudFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */; };
+		F0ED31971342BCD7004AF5D6 /* Levels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31891342BCD7004AF5D6 /* Levels.cpp */; };
+		F0ED31981342BCD7004AF5D6 /* Levels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31891342BCD7004AF5D6 /* Levels.cpp */; };
+		F0ED31991342BCD7004AF5D6 /* Levels.txt in Resources */ = {isa = PBXBuildFile; fileRef = F0ED318B1342BCD7004AF5D6 /* Levels.txt */; };
+		F0ED319A1342BCD7004AF5D6 /* Levels.txt in Resources */ = {isa = PBXBuildFile; fileRef = F0ED318B1342BCD7004AF5D6 /* Levels.txt */; };
+		F0ED319B1342BCD7004AF5D6 /* marching_cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED318C1342BCD7004AF5D6 /* marching_cube.cpp */; };
+		F0ED319C1342BCD7004AF5D6 /* marching_cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED318C1342BCD7004AF5D6 /* marching_cube.cpp */; };
+		F0ED319D1342BCD7004AF5D6 /* Time_Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED318F1342BCD7004AF5D6 /* Time_Counter.cpp */; };
+		F0ED319E1342BCD7004AF5D6 /* Time_Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED318F1342BCD7004AF5D6 /* Time_Counter.cpp */; };
+		F0ED31BC1342BCE3004AF5D6 /* MtlLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31A81342BCE3004AF5D6 /* MtlLoader.cpp */; };
+		F0ED31BD1342BCE3004AF5D6 /* MtlLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31A81342BCE3004AF5D6 /* MtlLoader.cpp */; };
+		F0ED31BE1342BCE3004AF5D6 /* MtlLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F0ED31AA1342BCE3004AF5D6 /* MtlLoader.inl */; };
+		F0ED31BF1342BCE3004AF5D6 /* MtlLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F0ED31AA1342BCE3004AF5D6 /* MtlLoader.inl */; };
+		F0ED31C01342BCE3004AF5D6 /* MtlLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31AB1342BCE3004AF5D6 /* MtlLoaderCodes.cpp */; };
+		F0ED31C11342BCE3004AF5D6 /* MtlLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31AB1342BCE3004AF5D6 /* MtlLoaderCodes.cpp */; };
+		F0ED31C21342BCE3004AF5D6 /* ObjLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31AC1342BCE3004AF5D6 /* ObjLoader.cpp */; };
+		F0ED31C31342BCE3004AF5D6 /* ObjLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31AC1342BCE3004AF5D6 /* ObjLoader.cpp */; };
+		F0ED31C41342BCE3004AF5D6 /* ObjLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F0ED31AE1342BCE3004AF5D6 /* ObjLoader.inl */; };
+		F0ED31C51342BCE3004AF5D6 /* ObjLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F0ED31AE1342BCE3004AF5D6 /* ObjLoader.inl */; };
+		F0ED31C61342BCE3004AF5D6 /* ObjLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31AF1342BCE3004AF5D6 /* ObjLoaderCodes.cpp */; };
+		F0ED31C71342BCE3004AF5D6 /* ObjLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED31AF1342BCE3004AF5D6 /* ObjLoaderCodes.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -85,30 +76,31 @@
 		3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Physics.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Release/libWm5Physics.a; sourceTree = SOURCE_ROOT; };
 		748AA4CC07F4624400486586 /* CloudFactorydAgl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactorydAgl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748AA4DA07F4631800486586 /* CloudFactoryAgl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactoryAgl.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0101466131A07A900AE6645 /* CloudFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CloudFactory.cpp; sourceTree = "<group>"; };
-		F0101467131A07A900AE6645 /* CloudFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudFactory.h; sourceTree = "<group>"; };
-		F04DCA8F132EB99B00C662D0 /* Levels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Levels.h; sourceTree = "<group>"; };
-		F04DCA90132EB99B00C662D0 /* Levels.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Levels.cpp; sourceTree = "<group>"; };
-		F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtlLoader.cpp; sourceTree = "<group>"; };
-		F04DCAA7132EBDE500C662D0 /* MtlLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtlLoader.h; sourceTree = "<group>"; };
-		F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MtlLoader.inl; sourceTree = "<group>"; };
-		F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtlLoaderCodes.cpp; sourceTree = "<group>"; };
-		F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjLoader.cpp; sourceTree = "<group>"; };
-		F04DCAAB132EBDE500C662D0 /* ObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoader.h; sourceTree = "<group>"; };
-		F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjLoader.inl; sourceTree = "<group>"; };
-		F04DCAAD132EBDE500C662D0 /* ObjLoaderCodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjLoaderCodes.cpp; sourceTree = "<group>"; };
-		F051F5DA1334390400857E37 /* marching_cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = marching_cube.cpp; path = src/marching_cube.cpp; sourceTree = "<group>"; };
-		F051F5DB1334390400857E37 /* marching_cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = marching_cube.h; path = src/marching_cube.h; sourceTree = "<group>"; };
-		F051F5DC1334390400857E37 /* Time_Counter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Time_Counter.cpp; path = src/Time_Counter.cpp; sourceTree = "<group>"; };
-		F051F5DD1334390400857E37 /* Time_Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Time_Counter.h; path = src/Time_Counter.h; sourceTree = "<group>"; };
-		F09830901335496500014674 /* Metaballs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Metaballs.h; path = src/Metaballs.h; sourceTree = "<group>"; };
-		F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BluePrintDetect.cpp; sourceTree = "<group>"; };
-		F0C418C5132E8A6400686108 /* BluePrintDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluePrintDetect.h; sourceTree = "<group>"; };
-		F0C418CD132E8B0200686108 /* CloudModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudModel.h; sourceTree = "<group>"; };
-		F0FD300A131A124E004762CA /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Background.h; sourceTree = "<group>"; };
-		F0FD300B131A124E004762CA /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Background.cpp; sourceTree = "<group>"; };
-		F0FD30E0131A1BA5004762CA /* Cannons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cannons.h; sourceTree = "<group>"; };
-		F0FD30E1131A1BA5004762CA /* Cannons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cannons.cpp; sourceTree = "<group>"; };
+		F0ED317A1342BCB9004AF5D6 /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Background.cpp; path = src/Background.cpp; sourceTree = "<group>"; };
+		F0ED317B1342BCB9004AF5D6 /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Background.h; path = src/Background.h; sourceTree = "<group>"; };
+		F0ED317E1342BCCD004AF5D6 /* BluePrintDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BluePrintDetect.cpp; path = src/BluePrintDetect.cpp; sourceTree = "<group>"; };
+		F0ED317F1342BCCD004AF5D6 /* BluePrintDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluePrintDetect.h; path = src/BluePrintDetect.h; sourceTree = "<group>"; };
+		F0ED31821342BCD7004AF5D6 /* Cannons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Cannons.cpp; path = src/Cannons.cpp; sourceTree = "<group>"; };
+		F0ED31831342BCD7004AF5D6 /* Cannons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Cannons.h; path = src/Cannons.h; sourceTree = "<group>"; };
+		F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CloudFactory.cpp; path = src/CloudFactory.cpp; sourceTree = "<group>"; };
+		F0ED31871342BCD7004AF5D6 /* CloudFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudFactory.h; path = src/CloudFactory.h; sourceTree = "<group>"; };
+		F0ED31881342BCD7004AF5D6 /* CloudModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CloudModel.h; path = src/CloudModel.h; sourceTree = "<group>"; };
+		F0ED31891342BCD7004AF5D6 /* Levels.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Levels.cpp; path = src/Levels.cpp; sourceTree = "<group>"; };
+		F0ED318A1342BCD7004AF5D6 /* Levels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Levels.h; path = src/Levels.h; sourceTree = "<group>"; };
+		F0ED318B1342BCD7004AF5D6 /* Levels.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = Levels.txt; path = src/Levels.txt; sourceTree = "<group>"; };
+		F0ED318C1342BCD7004AF5D6 /* marching_cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = marching_cube.cpp; path = src/marching_cube.cpp; sourceTree = "<group>"; };
+		F0ED318D1342BCD7004AF5D6 /* marching_cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = marching_cube.h; path = src/marching_cube.h; sourceTree = "<group>"; };
+		F0ED318E1342BCD7004AF5D6 /* Metaballs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Metaballs.h; path = src/Metaballs.h; sourceTree = "<group>"; };
+		F0ED318F1342BCD7004AF5D6 /* Time_Counter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Time_Counter.cpp; path = src/Time_Counter.cpp; sourceTree = "<group>"; };
+		F0ED31901342BCD7004AF5D6 /* Time_Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Time_Counter.h; path = src/Time_Counter.h; sourceTree = "<group>"; };
+		F0ED31A81342BCE3004AF5D6 /* MtlLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtlLoader.cpp; sourceTree = "<group>"; };
+		F0ED31A91342BCE3004AF5D6 /* MtlLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtlLoader.h; sourceTree = "<group>"; };
+		F0ED31AA1342BCE3004AF5D6 /* MtlLoader.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MtlLoader.inl; sourceTree = "<group>"; };
+		F0ED31AB1342BCE3004AF5D6 /* MtlLoaderCodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtlLoaderCodes.cpp; sourceTree = "<group>"; };
+		F0ED31AC1342BCE3004AF5D6 /* ObjLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjLoader.cpp; sourceTree = "<group>"; };
+		F0ED31AD1342BCE3004AF5D6 /* ObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoader.h; sourceTree = "<group>"; };
+		F0ED31AE1342BCE3004AF5D6 /* ObjLoader.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjLoader.inl; sourceTree = "<group>"; };
+		F0ED31AF1342BCE3004AF5D6 /* ObjLoaderCodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjLoaderCodes.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,9 +170,8 @@
 		748AA4BE07F4621A00486586 = {
 			isa = PBXGroup;
 			children = (
-				F051F5D5133438DC00857E37 /* metaball_data */,
-				F04DCAA5132EBDE500C662D0 /* OBJ */,
-				F0C624C0131A05870052FDEF /* src */,
+				F0ED319F1342BCE3004AF5D6 /* OBJ */,
+				748AA50C07F465A200486586 /* Sources */,
 				748AA4F707F4641600486586 /* Libraries */,
 				748AA4E207F463F300486586 /* Frameworks */,
 				748AA4CD07F4624400486586 /* Products */,
@@ -216,49 +207,43 @@
 			name = Libraries;
 			sourceTree = SOURCE_ROOT;
 		};
-		F04DCAA5132EBDE500C662D0 /* OBJ */ = {
+		748AA50C07F465A200486586 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */,
-				F04DCAA7132EBDE500C662D0 /* MtlLoader.h */,
-				F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */,
-				F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */,
-				F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */,
-				F04DCAAB132EBDE500C662D0 /* ObjLoader.h */,
-				F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */,
-				F04DCAAD132EBDE500C662D0 /* ObjLoaderCodes.cpp */,
+				F0ED31821342BCD7004AF5D6 /* Cannons.cpp */,
+				F0ED31831342BCD7004AF5D6 /* Cannons.h */,
+				F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */,
+				F0ED31871342BCD7004AF5D6 /* CloudFactory.h */,
+				F0ED31881342BCD7004AF5D6 /* CloudModel.h */,
+				F0ED31891342BCD7004AF5D6 /* Levels.cpp */,
+				F0ED318A1342BCD7004AF5D6 /* Levels.h */,
+				F0ED318B1342BCD7004AF5D6 /* Levels.txt */,
+				F0ED318C1342BCD7004AF5D6 /* marching_cube.cpp */,
+				F0ED318D1342BCD7004AF5D6 /* marching_cube.h */,
+				F0ED318E1342BCD7004AF5D6 /* Metaballs.h */,
+				F0ED318F1342BCD7004AF5D6 /* Time_Counter.cpp */,
+				F0ED31901342BCD7004AF5D6 /* Time_Counter.h */,
+				F0ED317E1342BCCD004AF5D6 /* BluePrintDetect.cpp */,
+				F0ED317F1342BCCD004AF5D6 /* BluePrintDetect.h */,
+				F0ED317A1342BCB9004AF5D6 /* Background.cpp */,
+				F0ED317B1342BCB9004AF5D6 /* Background.h */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		F0ED319F1342BCE3004AF5D6 /* OBJ */ = {
+			isa = PBXGroup;
+			children = (
+				F0ED31A81342BCE3004AF5D6 /* MtlLoader.cpp */,
+				F0ED31A91342BCE3004AF5D6 /* MtlLoader.h */,
+				F0ED31AA1342BCE3004AF5D6 /* MtlLoader.inl */,
+				F0ED31AB1342BCE3004AF5D6 /* MtlLoaderCodes.cpp */,
+				F0ED31AC1342BCE3004AF5D6 /* ObjLoader.cpp */,
+				F0ED31AD1342BCE3004AF5D6 /* ObjLoader.h */,
+				F0ED31AE1342BCE3004AF5D6 /* ObjLoader.inl */,
+				F0ED31AF1342BCE3004AF5D6 /* ObjLoaderCodes.cpp */,
 			);
 			path = OBJ;
-			sourceTree = "<group>";
-		};
-		F051F5D5133438DC00857E37 /* metaball_data */ = {
-			isa = PBXGroup;
-			children = (
-				F09830901335496500014674 /* Metaballs.h */,
-				F051F5DA1334390400857E37 /* marching_cube.cpp */,
-				F051F5DB1334390400857E37 /* marching_cube.h */,
-				F051F5DC1334390400857E37 /* Time_Counter.cpp */,
-				F051F5DD1334390400857E37 /* Time_Counter.h */,
-			);
-			name = metaball_data;
-			sourceTree = "<group>";
-		};
-		F0C624C0131A05870052FDEF /* src */ = {
-			isa = PBXGroup;
-			children = (
-				F0101466131A07A900AE6645 /* CloudFactory.cpp */,
-				F0101467131A07A900AE6645 /* CloudFactory.h */,
-				F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */,
-				F0C418C5132E8A6400686108 /* BluePrintDetect.h */,
-				F0C418CD132E8B0200686108 /* CloudModel.h */,
-				F0FD300A131A124E004762CA /* Background.h */,
-				F0FD300B131A124E004762CA /* Background.cpp */,
-				F0FD30E0131A1BA5004762CA /* Cannons.h */,
-				F0FD30E1131A1BA5004762CA /* Cannons.cpp */,
-				F04DCA8F132EB99B00C662D0 /* Levels.h */,
-				F04DCA90132EB99B00C662D0 /* Levels.cpp */,
-			);
-			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,10 +292,7 @@
 			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				English,
-				Japanese,
-				French,
-				German,
+				en,
 			);
 			mainGroup = 748AA4BE07F4621A00486586;
 			productRefGroup = 748AA4CD07F4624400486586 /* Products */;
@@ -328,8 +310,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04DCAAF132EBDE500C662D0 /* MtlLoader.inl in Resources */,
-				F04DCAB2132EBDE500C662D0 /* ObjLoader.inl in Resources */,
+				F0ED31991342BCD7004AF5D6 /* Levels.txt in Resources */,
+				F0ED31BE1342BCE3004AF5D6 /* MtlLoader.inl in Resources */,
+				F0ED31C41342BCE3004AF5D6 /* ObjLoader.inl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +320,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F04DCAB5132EBDE500C662D0 /* MtlLoader.inl in Resources */,
-				F04DCAB8132EBDE500C662D0 /* ObjLoader.inl in Resources */,
+				F0ED319A1342BCD7004AF5D6 /* Levels.txt in Resources */,
+				F0ED31BF1342BCE3004AF5D6 /* MtlLoader.inl in Resources */,
+				F0ED31C51342BCE3004AF5D6 /* ObjLoader.inl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,17 +333,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0101468131A07A900AE6645 /* CloudFactory.cpp in Sources */,
-				F0FD300C131A124E004762CA /* Background.cpp in Sources */,
-				F0FD30E2131A1BA5004762CA /* Cannons.cpp in Sources */,
-				F0C418C6132E8A6400686108 /* BluePrintDetect.cpp in Sources */,
-				F04DCA91132EB99B00C662D0 /* Levels.cpp in Sources */,
-				F04DCAAE132EBDE500C662D0 /* MtlLoader.cpp in Sources */,
-				F04DCAB0132EBDE500C662D0 /* MtlLoaderCodes.cpp in Sources */,
-				F04DCAB1132EBDE500C662D0 /* ObjLoader.cpp in Sources */,
-				F04DCAB3132EBDE500C662D0 /* ObjLoaderCodes.cpp in Sources */,
-				F051F5DE1334390400857E37 /* marching_cube.cpp in Sources */,
-				F051F5DF1334390400857E37 /* Time_Counter.cpp in Sources */,
+				F0ED317C1342BCB9004AF5D6 /* Background.cpp in Sources */,
+				F0ED31801342BCCD004AF5D6 /* BluePrintDetect.cpp in Sources */,
+				F0ED31911342BCD7004AF5D6 /* Cannons.cpp in Sources */,
+				F0ED31951342BCD7004AF5D6 /* CloudFactory.cpp in Sources */,
+				F0ED31971342BCD7004AF5D6 /* Levels.cpp in Sources */,
+				F0ED319B1342BCD7004AF5D6 /* marching_cube.cpp in Sources */,
+				F0ED319D1342BCD7004AF5D6 /* Time_Counter.cpp in Sources */,
+				F0ED31BC1342BCE3004AF5D6 /* MtlLoader.cpp in Sources */,
+				F0ED31C01342BCE3004AF5D6 /* MtlLoaderCodes.cpp in Sources */,
+				F0ED31C21342BCE3004AF5D6 /* ObjLoader.cpp in Sources */,
+				F0ED31C61342BCE3004AF5D6 /* ObjLoaderCodes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,28 +351,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0101469131A07A900AE6645 /* CloudFactory.cpp in Sources */,
-				F06F772C133A5BDC00844C3E /* CloudFactory.h in Sources */,
-				F0C418C7132E8A6400686108 /* BluePrintDetect.cpp in Sources */,
-				F06F772D133A5BDC00844C3E /* BluePrintDetect.h in Sources */,
-				F06F772E133A5BDC00844C3E /* CloudModel.h in Sources */,
-				F06F772F133A5BDC00844C3E /* Background.h in Sources */,
-				F0FD300D131A124E004762CA /* Background.cpp in Sources */,
-				F06F7730133A5BDC00844C3E /* Cannons.h in Sources */,
-				F0FD30E3131A1BA5004762CA /* Cannons.cpp in Sources */,
-				F06F7731133A5BDC00844C3E /* Levels.h in Sources */,
-				F04DCA92132EB99B00C662D0 /* Levels.cpp in Sources */,
-				F04DCAB4132EBDE500C662D0 /* MtlLoader.cpp in Sources */,
-				F06F7728133A5BC100844C3E /* MtlLoader.h in Sources */,
-				F04DCAB6132EBDE500C662D0 /* MtlLoaderCodes.cpp in Sources */,
-				F04DCAB7132EBDE500C662D0 /* ObjLoader.cpp in Sources */,
-				F06F772A133A5BC100844C3E /* ObjLoader.h in Sources */,
-				F04DCAB9132EBDE500C662D0 /* ObjLoaderCodes.cpp in Sources */,
-				F06F7725133A5BB900844C3E /* Metaballs.h in Sources */,
-				F051F5E01334390400857E37 /* marching_cube.cpp in Sources */,
-				F06F7726133A5BB900844C3E /* marching_cube.h in Sources */,
-				F051F5E11334390400857E37 /* Time_Counter.cpp in Sources */,
-				F06F7727133A5BB900844C3E /* Time_Counter.h in Sources */,
+				F0ED317D1342BCB9004AF5D6 /* Background.cpp in Sources */,
+				F0ED31811342BCCD004AF5D6 /* BluePrintDetect.cpp in Sources */,
+				F0ED31921342BCD7004AF5D6 /* Cannons.cpp in Sources */,
+				F0ED31961342BCD7004AF5D6 /* CloudFactory.cpp in Sources */,
+				F0ED31981342BCD7004AF5D6 /* Levels.cpp in Sources */,
+				F0ED319C1342BCD7004AF5D6 /* marching_cube.cpp in Sources */,
+				F0ED319E1342BCD7004AF5D6 /* Time_Counter.cpp in Sources */,
+				F0ED31BD1342BCE3004AF5D6 /* MtlLoader.cpp in Sources */,
+				F0ED31C11342BCE3004AF5D6 /* MtlLoaderCodes.cpp in Sources */,
+				F0ED31C31342BCE3004AF5D6 /* ObjLoader.cpp in Sources */,
+				F0ED31C71342BCE3004AF5D6 /* ObjLoaderCodes.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -89,7 +89,7 @@ TriMesh *CreateBlueprint(std::string blueprint){
 																  Shader::SC_REPEAT));
     
     mesh->LocalTransform.SetScale(APoint(0.1f, 0.1f, 0.1f));
-	mesh->LocalTransform.SetTranslate(APoint(0.99f, 0.73f, 0.0f));
+	mesh->LocalTransform.SetTranslate(APoint(1.6f, 0.73f, 0.0f));
 	return mesh;
 
 }

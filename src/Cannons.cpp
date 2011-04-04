@@ -134,6 +134,7 @@ TriMesh* Cannons::CreateCannon(APoint trans, HMatrix rot, APoint scale){
 	
 	mesh->LocalTransform.SetTranslate(trans);
 	mesh->LocalTransform.SetScale(scale);
+	mesh->LocalTransform.SetRotate(rot);
 	
 	m_trans.SetTranslate(trans);
 	m_trans.SetScale(scale);

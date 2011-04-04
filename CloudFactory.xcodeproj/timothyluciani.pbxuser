@@ -2,52 +2,20 @@
 {
 	748AA4C207F4621A00486586 /* Project object */ = {
 		activeBuildConfigurationName = Default;
-		activeExecutable = F07F8CD4131362FD00680288 /* Agl Release Static */;
-		activeTarget = 748AA4D907F4631800486586 /* Agl Release Static */;
-		addToTargets = (
-			748AA4CB07F4624400486586 /* Agl Debug Static */,
-		);
-		breakpoints = (
-			F0D783521336C0200097E062 /* CloudFactory.cpp:87 */,
-			F0D783781336C2520097E062 /* CloudFactory.cpp:136 */,
-			F0D7837A1336C2560097E062 /* CloudFactory.cpp:136 */,
-		);
-		codeSenseManager = F07F8CF51313630F00680288 /* Code sense */;
+		activeExecutable = F0F4DED21342C1DD00666F47 /* Agl Debug Static */;
+		activeTarget = 748AA4CB07F4624400486586 /* Agl Debug Static */;
+		codeSenseManager = F0F4DEF21342C1FA00666F47 /* Code sense */;
 		executables = (
-			F07F8CD3131362FD00680288 /* Agl Debug Static */,
-			F07F8CD4131362FD00680288 /* Agl Release Static */,
+			F0F4DED21342C1DD00666F47 /* Agl Debug Static */,
+			F0F4DED31342C1DD00666F47 /* Agl Release Static */,
 		);
 		perUserDictionary = {
-			"PBXConfiguration.PBXBreakpointsDataSource.v1:1CA1AED706398EBD00589147" = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
-				PBXFileTableDataSourceColumnSortingKey = PBXBreakpointsDataSource_BreakpointID;
-				PBXFileTableDataSourceColumnWidthsKey = (
-					20,
-					20,
-					198,
-					20,
-					99,
-					99,
-					29,
-					20,
-				);
-				PBXFileTableDataSourceColumnsKey = (
-					PBXBreakpointsDataSource_ActionID,
-					PBXBreakpointsDataSource_TypeID,
-					PBXBreakpointsDataSource_BreakpointID,
-					PBXBreakpointsDataSource_UseID,
-					PBXBreakpointsDataSource_LocationID,
-					PBXBreakpointsDataSource_ConditionID,
-					PBXBreakpointsDataSource_IgnoreCountID,
-					PBXBreakpointsDataSource_ContinueID,
-				);
-			};
 			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = 1;
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					752,
+					829,
 					20,
 					48,
 					43,
@@ -64,508 +32,203 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
-				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
-				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
-				PBXFileTableDataSourceColumnWidthsKey = (
-					20,
-					712,
-					60,
-					20,
-					48,
-					43,
-					43,
-				);
-				PBXFileTableDataSourceColumnsKey = (
-					PBXFileDataSource_FiletypeID,
-					PBXFileDataSource_Filename_ColumnID,
-					PBXTargetDataSource_PrimaryAttribute,
-					PBXFileDataSource_Built_ColumnID,
-					PBXFileDataSource_ObjectSize_ColumnID,
-					PBXFileDataSource_Errors_ColumnID,
-					PBXFileDataSource_Warnings_ColumnID,
-				);
-			};
-			PBXPerProjectTemplateStateSaveDate = 322609821;
-			PBXWorkspaceStateSaveDate = 322609821;
+			PBXPerProjectTemplateStateSaveDate = 323626106;
+			PBXWorkspaceStateSaveDate = 323626106;
 		};
 		perUserProjectItems = {
-			F00D8246133988CC00A82CBD = F00D8246133988CC00A82CBD /* PBXTextBookmark */;
-			F00D835A1339943D00A82CBD = F00D835A1339943D00A82CBD /* PBXTextBookmark */;
-			F00D84021339A73100A82CBD = F00D84021339A73100A82CBD /* PBXTextBookmark */;
-			F00D84811339B4B800A82CBD = F00D84811339B4B800A82CBD /* PBXTextBookmark */;
-			F00D84831339B4B800A82CBD = F00D84831339B4B800A82CBD /* PBXTextBookmark */;
-			F00D84AD1339B5B900A82CBD = F00D84AD1339B5B900A82CBD /* PBXTextBookmark */;
-			F00D84BC1339B68000A82CBD = F00D84BC1339B68000A82CBD /* PBXTextBookmark */;
-			F025A7CC132E9C86005065C4 = F025A7CC132E9C86005065C4 /* PBXTextBookmark */;
-			F04DCC45132EF62F00C662D0 = F04DCC45132EF62F00C662D0 /* PBXTextBookmark */;
-			F04DCC5C132EF70300C662D0 = F04DCC5C132EF70300C662D0 /* PBXTextBookmark */;
-			F051F6A7133530A900857E37 = F051F6A7133530A900857E37 /* PBXTextBookmark */;
-			F051F6AD133530A900857E37 = F051F6AD133530A900857E37 /* PBXTextBookmark */;
-			F06F7711133A5B3000844C3E = F06F7711133A5B3000844C3E /* PBXTextBookmark */;
-			F06F7712133A5B3000844C3E = F06F7712133A5B3000844C3E /* PBXTextBookmark */;
-			F06F7738133A5BE800844C3E = F06F7738133A5BE800844C3E /* PBXTextBookmark */;
-			F06F773A133A5BE800844C3E = F06F773A133A5BE800844C3E /* PBXTextBookmark */;
-			F06F773B133A5BE800844C3E = F06F773B133A5BE800844C3E /* PBXTextBookmark */;
-			F06F773C133A5BE800844C3E = F06F773C133A5BE800844C3E /* PBXTextBookmark */;
-			F06F773D133A5BE800844C3E = F06F773D133A5BE800844C3E /* PBXTextBookmark */;
-			F06F774F133A5D7A00844C3E = F06F774F133A5D7A00844C3E /* PBXTextBookmark */;
-			F06F7765133A617800844C3E = F06F7765133A617800844C3E /* PBXTextBookmark */;
-			F072EB5A132FE99E0083EE5F = F072EB5A132FE99E0083EE5F /* PBXTextBookmark */;
-			F07961D0131C69FD003E4CC3 = F07961D0131C69FD003E4CC3 /* PBXTextBookmark */;
-			F0913FC4133904F700C4B377 = F0913FC4133904F700C4B377 /* PBXTextBookmark */;
-			F0913FEC1339068000C4B377 = F0913FEC1339068000C4B377 /* PBXTextBookmark */;
-			F098309D13354A4F00014674 = F098309D13354A4F00014674 /* PBXTextBookmark */;
-			F09FBC23133A69150099114B = F09FBC23133A69150099114B /* PBXTextBookmark */;
-			F09FBC56133A70AA0099114B = F09FBC56133A70AA0099114B /* PBXTextBookmark */;
-			F09FBC5B133A71090099114B = F09FBC5B133A71090099114B /* PBXTextBookmark */;
-			F0A0EDFC132F1FC300D42A49 = F0A0EDFC132F1FC300D42A49 /* PBXTextBookmark */;
-			F0A0EDFE132F1FC300D42A49 = F0A0EDFE132F1FC300D42A49 /* PBXTextBookmark */;
-			F0AD155D1335C60C0081B0F5 = F0AD155D1335C60C0081B0F5 /* PBXTextBookmark */;
-			F0AD15641335C60C0081B0F5 = F0AD15641335C60C0081B0F5 /* PBXTextBookmark */;
-			F0AD15661335C60C0081B0F5 = F0AD15661335C60C0081B0F5 /* PBXTextBookmark */;
-			F0D7821B1336B3340097E062 = F0D7821B1336B3340097E062 /* PBXTextBookmark */;
-			F0D782431336B56B0097E062 = F0D782431336B56B0097E062 /* PBXTextBookmark */;
-			F0D7827D1336B8F70097E062 = F0D7827D1336B8F70097E062 /* PBXTextBookmark */;
-			F0D782C61336BAE10097E062 = F0D782C61336BAE10097E062 /* PBXTextBookmark */;
-			F0D782C81336BAE10097E062 = F0D782C81336BAE10097E062 /* PBXTextBookmark */;
-			F0E0664713395D4000965C75 = F0E0664713395D4000965C75 /* PBXTextBookmark */;
-			F0E066831339611F00965C75 = F0E066831339611F00965C75 /* PBXTextBookmark */;
-			F0E066851339611F00965C75 = F0E066851339611F00965C75 /* PBXTextBookmark */;
-			F0EA37F3133AA199003CEF2E = F0EA37F3133AA199003CEF2E /* PBXTextBookmark */;
-			F0EA37F4133AA199003CEF2E = F0EA37F4133AA199003CEF2E /* PBXTextBookmark */;
-			F0EA37F5133AA199003CEF2E = F0EA37F5133AA199003CEF2E /* PBXTextBookmark */;
-			F0EA37F6133AA199003CEF2E = F0EA37F6133AA199003CEF2E /* PBXTextBookmark */;
-			F0EA37F7133AA199003CEF2E = F0EA37F7133AA199003CEF2E /* PBXTextBookmark */;
-			F0F4595C133AA2B20016DA28 /* PBXTextBookmark */ = F0F4595C133AA2B20016DA28 /* PBXTextBookmark */;
-			F0F45966133AA3930016DA28 /* PBXTextBookmark */ = F0F45966133AA3930016DA28 /* PBXTextBookmark */;
-			F0F45967133AA3930016DA28 /* PBXTextBookmark */ = F0F45967133AA3930016DA28 /* PBXTextBookmark */;
-			F0F45968133AA3930016DA28 /* PBXTextBookmark */ = F0F45968133AA3930016DA28 /* PBXTextBookmark */;
-			F0F45969133AA3930016DA28 /* PBXTextBookmark */ = F0F45969133AA3930016DA28 /* PBXTextBookmark */;
-			F0F4596A133AA3930016DA28 /* PBXTextBookmark */ = F0F4596A133AA3930016DA28 /* PBXTextBookmark */;
-			F0F4596B133AA3930016DA28 /* PBXTextBookmark */ = F0F4596B133AA3930016DA28 /* PBXTextBookmark */;
-			F0F45978133AA3A20016DA28 /* PBXTextBookmark */ = F0F45978133AA3A20016DA28 /* PBXTextBookmark */;
-			F0F4597C133AA3CE0016DA28 /* PBXTextBookmark */ = F0F4597C133AA3CE0016DA28 /* PBXTextBookmark */;
-			F0F4597D133AA3CE0016DA28 /* PBXTextBookmark */ = F0F4597D133AA3CE0016DA28 /* PBXTextBookmark */;
-			F0F4597E133AA3CE0016DA28 /* PBXTextBookmark */ = F0F4597E133AA3CE0016DA28 /* PBXTextBookmark */;
-			F0F45982133AA3DB0016DA28 /* PBXTextBookmark */ = F0F45982133AA3DB0016DA28 /* PBXTextBookmark */;
-			F0F45986133AA4100016DA28 /* PBXTextBookmark */ = F0F45986133AA4100016DA28 /* PBXTextBookmark */;
-			F0FC59421331590F00C05775 = F0FC59421331590F00C05775 /* PBXTextBookmark */;
-			F0FD31AA131A2C1F004762CA = F0FD31AA131A2C1F004762CA /* PBXTextBookmark */;
-			F0FD31B3131A2C1F004762CA = F0FD31B3131A2C1F004762CA /* PBXTextBookmark */;
-			F0FD31F2131A2E0E004762CA = F0FD31F2131A2E0E004762CA /* PBXTextBookmark */;
+			F02E7705134A2E1500A21B94 /* PBXTextBookmark */ = F02E7705134A2E1500A21B94 /* PBXTextBookmark */;
+			F02E7706134A2E1500A21B94 /* PBXTextBookmark */ = F02E7706134A2E1500A21B94 /* PBXTextBookmark */;
+			F02E7707134A2E1500A21B94 /* PBXTextBookmark */ = F02E7707134A2E1500A21B94 /* PBXTextBookmark */;
+			F02E7708134A2E1500A21B94 /* PBXTextBookmark */ = F02E7708134A2E1500A21B94 /* PBXTextBookmark */;
+			F02E7709134A2E1500A21B94 /* PBXTextBookmark */ = F02E7709134A2E1500A21B94 /* PBXTextBookmark */;
+			F0708FD11343C19900AA43BE /* PBXTextBookmark */ = F0708FD11343C19900AA43BE /* PBXTextBookmark */;
+			F0F4DEF51342C23600666F47 /* PBXTextBookmark */ = F0F4DEF51342C23600666F47 /* PBXTextBookmark */;
+			F0F4DF311342D7C800666F47 /* PBXTextBookmark */ = F0F4DF311342D7C800666F47 /* PBXTextBookmark */;
+			F0F4DF321342D7C800666F47 /* PBXTextBookmark */ = F0F4DF321342D7C800666F47 /* PBXTextBookmark */;
+			F0F4DF361342D7C800666F47 /* PBXTextBookmark */ = F0F4DF361342D7C800666F47 /* PBXTextBookmark */;
+			F0F4DF5A1342DA9000666F47 /* PBXTextBookmark */ = F0F4DF5A1342DA9000666F47 /* PBXTextBookmark */;
+			F0F4DF5B1342DA9000666F47 /* PBXTextBookmark */ = F0F4DF5B1342DA9000666F47 /* PBXTextBookmark */;
+			F0F4DF5C1342DA9000666F47 /* PBXTextBookmark */ = F0F4DF5C1342DA9000666F47 /* PBXTextBookmark */;
+			F0F4DF5E1342DA9000666F47 /* PBXTextBookmark */ = F0F4DF5E1342DA9000666F47 /* PBXTextBookmark */;
+			F0F74C5B1343CD73001A6BFF /* PBXTextBookmark */ = F0F74C5B1343CD73001A6BFF /* PBXTextBookmark */;
+			F0F74C5C1343CD73001A6BFF /* PBXTextBookmark */ = F0F74C5C1343CD73001A6BFF /* PBXTextBookmark */;
 		};
-		sourceControlManager = F07F8CF41313630F00680288 /* Source Control */;
+		sourceControlManager = F0F4DEF11342C1FA00666F47 /* Source Control */;
 		userBuildSettings = {
 		};
 	};
 	748AA4CB07F4624400486586 /* Agl Debug Static */ = {
 		activeExec = 0;
 		executables = (
-			F07F8CD3131362FD00680288 /* Agl Debug Static */,
+			F0F4DED21342C1DD00666F47 /* Agl Debug Static */,
 		);
 	};
 	748AA4D907F4631800486586 /* Agl Release Static */ = {
 		activeExec = 0;
 		executables = (
-			F07F8CD4131362FD00680288 /* Agl Release Static */,
+			F0F4DED31342C1DD00666F47 /* Agl Release Static */,
 		);
 	};
-	F00D8246133988CC00A82CBD /* PBXTextBookmark */ = {
+	F02E7705134A2E1500A21B94 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F0C418CD132E8B0200686108 /* CloudModel.h */;
-		name = "CloudModel.h: 16";
+		fRef = F0ED318E1342BCD7004AF5D6 /* Metaballs.h */;
+		name = "Metaballs.h: 113";
 		rLen = 0;
-		rLoc = 128;
+		rLoc = 2324;
 		rType = 0;
-		vrLen = 176;
+		vrLen = 964;
+		vrLoc = 275;
+	};
+	F02E7706134A2E1500A21B94 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0ED318B1342BCD7004AF5D6 /* Levels.txt */;
+		name = "Levels.txt: 2";
+		rLen = 0;
+		rLoc = 19;
+		rType = 0;
+		vrLen = 344;
 		vrLoc = 0;
 	};
-	F00D835A1339943D00A82CBD /* PBXTextBookmark */ = {
+	F02E7707134A2E1500A21B94 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F051F5DC1334390400857E37 /* Time_Counter.cpp */;
-		name = "Time_Counter.cpp: 57";
+		fRef = F0ED31821342BCD7004AF5D6 /* Cannons.cpp */;
+		name = "Cannons.cpp: 137";
 		rLen = 0;
-		rLoc = 1286;
+		rLoc = 5422;
 		rType = 0;
-		vrLen = 892;
-		vrLoc = 0;
+		vrLen = 1838;
+		vrLoc = 1343;
 	};
-	F00D83791339960400A82CBD /* Wm5Culler.h */ = {
+	F02E7708134A2E1500A21B94 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 386";
+		rLen = 0;
+		rLoc = 13900;
+		rType = 0;
+		vrLen = 921;
+		vrLoc = 13307;
+	};
+	F02E7709134A2E1500A21B94 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 343";
+		rLen = 0;
+		rLoc = 12780;
+		rType = 0;
+		vrLen = 834;
+		vrLoc = 12468;
+	};
+	F0708FD11343C19900AA43BE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0708FD21343C19900AA43BE /* Wm5LightDirPerVerEffect.h */;
+		name = "Wm5LightDirPerVerEffect.h: 20";
+		rLen = 68;
+		rLoc = 474;
+		rType = 0;
+		vrLen = 1118;
+		vrLoc = 365;
+	};
+	F0708FD21343C19900AA43BE /* Wm5LightDirPerVerEffect.h */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Culler.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Culler.h;
+		name = Wm5LightDirPerVerEffect.h;
+		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5LightDirPerVerEffect.h;
 		sourceTree = "<absolute>";
 	};
-	F00D84021339A73100A82CBD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F00D84031339A73100A82CBD /* Wm5Camera.h */;
-		name = "Wm5Camera.h: 87";
-		rLen = 70;
-		rLoc = 3169;
-		rType = 0;
-		vrLen = 1847;
-		vrLoc = 2596;
-	};
-	F00D84031339A73100A82CBD /* Wm5Camera.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Camera.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Camera.h;
-		sourceTree = "<absolute>";
-	};
-	F00D84811339B4B800A82CBD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F00D84821339B4B800A82CBD /* Wm5Camera.cpp */;
-		name = "Wm5Camera.cpp: 85";
-		rLen = 0;
-		rLoc = 2796;
-		rType = 0;
-		vrLen = 1158;
-		vrLoc = 859;
-	};
-	F00D84821339B4B800A82CBD /* Wm5Camera.cpp */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = Wm5Camera.cpp;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/LibGraphics/SceneGraph/Wm5Camera.cpp;
-		sourceTree = "<absolute>";
-	};
-	F00D84831339B4B800A82CBD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F051F5DB1334390400857E37 /* marching_cube.h */;
-		name = "marching_cube.h: 6";
-		rLen = 0;
-		rLoc = 105;
-		rType = 0;
-		vrLen = 820;
-		vrLoc = 90;
-	};
-	F00D84AD1339B5B900A82CBD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD30E1131A1BA5004762CA /* Cannons.cpp */;
-		name = "Cannons.cpp: 113";
-		rLen = 0;
-		rLoc = 4516;
-		rType = 0;
-		vrLen = 1742;
-		vrLoc = 778;
-	};
-	F00D84BC1339B68000A82CBD /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */;
-		name = "BluePrintDetect.cpp: 31";
-		rLen = 0;
-		rLoc = 856;
-		rType = 0;
-		vrLen = 926;
-		vrLoc = 733;
-	};
-	F0101466131A07A900AE6645 /* CloudFactory.cpp */ = {
+	F0ED317B1342BCB9004AF5D6 /* Background.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 4849}}";
-			sepNavSelRange = "{2305, 0}";
-			sepNavVisRange = "{1780, 965}";
-			sepNavWindowFrame = "{{115, -29}, {1023, 778}}";
-		};
-	};
-	F0101467131A07A900AE6645 /* CloudFactory.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 715}}";
-			sepNavSelRange = "{774, 0}";
-			sepNavVisRange = "{0, 777}";
-		};
-	};
-	F025A7CC132E9C86005065C4 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F025A7CD132E9C86005065C4 /* Wm5Picker.h */;
-		name = "Wm5Picker.h: 37";
-		rLen = 57;
-		rLoc = 1213;
-		rType = 0;
-		vrLen = 1550;
-		vrLoc = 411;
-	};
-	F025A7CD132E9C86005065C4 /* Wm5Picker.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Picker.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Picker.h;
-		sourceTree = "<absolute>";
-	};
-	F04DCA8F132EB99B00C662D0 /* Levels.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 871}}";
-			sepNavSelRange = "{539, 0}";
-			sepNavVisRange = "{371, 1085}";
-		};
-	};
-	F04DCA90132EB99B00C662D0 /* Levels.cpp */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 2106}}";
-			sepNavSelRange = "{3454, 0}";
-			sepNavVisRange = "{0, 710}";
-		};
-	};
-	F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 11505}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 464}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1020}";
+			sepNavVisRange = "{0, 374}";
 		};
 	};
-	F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */ = {
+	F0ED31821342BCD7004AF5D6 /* Cannons.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 487}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1062, 1898}}";
+			sepNavSelRange = "{5422, 0}";
+			sepNavVisRange = "{1343, 1838}";
+		};
+	};
+	F0ED31831342BCD7004AF5D6 /* Cannons.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 439}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 692}";
+			sepNavVisRange = "{0, 457}";
 		};
 	};
-	F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */ = {
+	F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 487}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 6968}}";
+			sepNavSelRange = "{12780, 0}";
+			sepNavVisRange = "{12468, 834}";
+		};
+	};
+	F0ED31871342BCD7004AF5D6 /* CloudFactory.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 793}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1142}";
+			sepNavVisRange = "{0, 684}";
 		};
 	};
-	F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */ = {
+	F0ED31881342BCD7004AF5D6 /* CloudModel.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 6487}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 439}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{1440, 1066}";
-			sepNavWindowFrame = "{{1280, -480}, {1023, 1280}}";
+			sepNavVisRange = "{0, 182}";
 		};
 	};
-	F04DCAAB132EBDE500C662D0 /* ObjLoader.h */ = {
+	F0ED31891342BCD7004AF5D6 /* Levels.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 2522}}";
-			sepNavSelRange = "{1208, 0}";
-			sepNavVisRange = "{945, 394}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 2301}}";
+			sepNavSelRange = "{2103, 0}";
+			sepNavVisRange = "{1488, 867}";
 		};
 	};
-	F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */ = {
+	F0ED318A1342BCD7004AF5D6 /* Levels.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 520}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 910}}";
+			sepNavSelRange = "{317, 0}";
+			sepNavVisRange = "{0, 663}";
+		};
+	};
+	F0ED318B1342BCD7004AF5D6 /* Levels.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 420}}";
+			sepNavSelRange = "{19, 0}";
+			sepNavVisRange = "{0, 344}";
+		};
+	};
+	F0ED318C1342BCD7004AF5D6 /* marching_cube.cpp */ = {
+		uiCtxt = {
+			sepNavFolds = "{\n    c =     (\n                {\n            r = \"{24277, 20}\";\n            s = 0;\n        }\n    );\n    r = \"{0, 30588}\";\n    s = 0;\n}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 10205}}";
+			sepNavSelRange = "{30130, 0}";
+			sepNavVisRange = "{29689, 880}";
+		};
+	};
+	F0ED318D1342BCD7004AF5D6 /* marching_cube.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 520}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 1333}";
+			sepNavVisRange = "{0, 691}";
 		};
 	};
-	F04DCB68132EE4F200C662D0 /* Wm5Spatial.cpp */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = Wm5Spatial.cpp;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/LibGraphics/SceneGraph/Wm5Spatial.cpp;
-		sourceTree = "<absolute>";
-	};
-	F04DCC45132EF62F00C662D0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCB68132EE4F200C662D0 /* Wm5Spatial.cpp */;
-		name = "Wm5Spatial.cpp: 36";
-		rLen = 0;
-		rLoc = 1076;
-		rType = 0;
-		vrLen = 1131;
-		vrLoc = 5242;
-	};
-	F04DCC5C132EF70300C662D0 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCC5D132EF70300C662D0 /* Wm5SmartPointer.inl */;
-		name = "Wm5SmartPointer.inl: 104";
-		rLen = 0;
-		rLoc = 2536;
-		rType = 0;
-		vrLen = 772;
-		vrLoc = 2118;
-	};
-	F04DCC5D132EF70300C662D0 /* Wm5SmartPointer.inl */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text;
-		name = Wm5SmartPointer.inl;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5SmartPointer.inl;
-		sourceTree = "<absolute>";
-	};
-	F051F5DA1334390400857E37 /* marching_cube.cpp */ = {
+	F0ED318E1342BCD7004AF5D6 /* Metaballs.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 10361}}";
-			sepNavSelRange = "{26466, 0}";
-			sepNavVisRange = "{26174, 1157}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 2145}}";
+			sepNavSelRange = "{2324, 0}";
+			sepNavVisRange = "{275, 964}";
 		};
 	};
-	F051F5DB1334390400857E37 /* marching_cube.h */ = {
+	F0ED31A81342BCE3004AF5D6 /* MtlLoader.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 533}}";
-			sepNavSelRange = "{105, 0}";
-			sepNavVisRange = "{90, 820}";
-			sepNavWindowFrame = "{{1280, -480}, {1023, 1280}}";
-		};
-	};
-	F051F5DC1334390400857E37 /* Time_Counter.cpp */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 1001}}";
-			sepNavSelRange = "{1286, 0}";
-			sepNavVisRange = "{0, 892}";
-		};
-	};
-	F051F5DD1334390400857E37 /* Time_Counter.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 547}}";
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 11479}}";
 			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 585}";
+			sepNavVisRange = "{0, 958}";
 		};
 	};
-	F051F6A7133530A900857E37 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD3285131A31AE004762CA /* Wm5StandardMesh.h */;
-		name = "Wm5StandardMesh.h: 52";
-		rLen = 7;
-		rLoc = 2105;
-		rType = 0;
-		vrLen = 2418;
-		vrLoc = 1158;
-	};
-	F051F6A9133530A900857E37 /* Wm5TriMesh.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5TriMesh.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5TriMesh.h;
-		sourceTree = "<absolute>";
-	};
-	F051F6AD133530A900857E37 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F051F6AE133530A900857E37 /* Wm5IndexBuffer.h */;
-		name = "Wm5IndexBuffer.h: 18";
-		rLen = 53;
-		rLoc = 393;
-		rType = 0;
-		vrLen = 1331;
-		vrLoc = 0;
-	};
-	F051F6AE133530A900857E37 /* Wm5IndexBuffer.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5IndexBuffer.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5IndexBuffer.h;
-		sourceTree = "<absolute>";
-	};
-	F06F7711133A5B3000844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F00D83791339960400A82CBD /* Wm5Culler.h */;
-		name = "Wm5Culler.h: 18";
-		rLen = 0;
-		rLoc = 432;
-		rType = 0;
-		vrLen = 1824;
-		vrLoc = 468;
-	};
-	F06F7712133A5B3000844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F06F7713133A5B3000844C3E /* Wm5GlobalEffect.h */;
-		name = "Wm5GlobalEffect.h: 34";
-		rLen = 79;
-		rLoc = 847;
-		rType = 0;
-		vrLen = 875;
-		vrLoc = 157;
-	};
-	F06F7713133A5B3000844C3E /* Wm5GlobalEffect.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5GlobalEffect.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5GlobalEffect.h;
-		sourceTree = "<absolute>";
-	};
-	F06F7738133A5BE800844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD300B131A124E004762CA /* Background.cpp */;
-		name = "Background.cpp: 16";
-		rLen = 0;
-		rLoc = 295;
-		rType = 0;
-		vrLen = 1242;
-		vrLoc = 0;
-	};
-	F06F773A133A5BE800844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */;
-		name = "MtlLoader.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1020;
-		vrLoc = 0;
-	};
-	F06F773B133A5BE800844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCAAB132EBDE500C662D0 /* ObjLoader.h */;
-		name = "ObjLoader.h: 64";
-		rLen = 0;
-		rLoc = 1208;
-		rType = 0;
-		vrLen = 394;
-		vrLoc = 945;
-	};
-	F06F773C133A5BE800844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */;
-		name = "ObjLoader.inl: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1333;
-		vrLoc = 0;
-	};
-	F06F773D133A5BE800844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */;
-		name = "MtlLoader.inl: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 692;
-		vrLoc = 0;
-	};
-	F06F774F133A5D7A00844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */;
-		name = "MtlLoaderCodes.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1142;
-		vrLoc = 0;
-	};
-	F06F7765133A617800844C3E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD31AE131A2C1F004762CA /* Wm5Node.h */;
-		name = "Wm5Node.h: 104";
-		rLen = 33;
-		rLoc = 4185;
-		rType = 0;
-		vrLen = 1559;
-		vrLoc = 2659;
-	};
-	F072EB5A132FE99E0083EE5F /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0C418C5132E8A6400686108 /* BluePrintDetect.h */;
-		name = "BluePrintDetect.h: 20";
-		rLen = 0;
-		rLoc = 344;
-		rType = 0;
-		vrLen = 656;
-		vrLoc = 0;
-	};
-	F07961D0131C69FD003E4CC3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD31A3131A2B67004762CA /* Wm5Transform.h */;
-		name = "Wm5Transform.h: 19";
-		rLen = 35;
-		rLoc = 412;
-		rType = 0;
-		vrLen = 1448;
-		vrLoc = 0;
-	};
-	F07F8CD3131362FD00680288 /* Agl Debug Static */ = {
+	F0F4DED21342C1DD00666F47 /* Agl Debug Static */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -597,7 +260,7 @@
 		variableFormatDictionary = {
 		};
 	};
-	F07F8CD4131362FD00680288 /* Agl Release Static */ = {
+	F0F4DED31342C1DD00666F47 /* Agl Release Static */ = {
 		isa = PBXExecutable;
 		activeArgIndices = (
 		);
@@ -613,7 +276,6 @@
 		dataTipSortType = 0;
 		debuggerPlugin = GDBDebugging;
 		disassemblyDisplayState = 0;
-		dylibVariantSuffix = "";
 		enableDebugStr = 1;
 		environmentEntries = (
 		);
@@ -621,13 +283,11 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = "Agl Release Static";
-		savedGlobals = {
-		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
 	};
-	F07F8CF41313630F00680288 /* Source Control */ = {
+	F0F4DEF11342C1FA00666F47 /* Source Control */ = {
 		isa = PBXSourceControlManager;
 		fallbackIsa = XCSourceControlManager;
 		isSCMEnabled = 0;
@@ -637,662 +297,115 @@
 			};
 		};
 	};
-	F07F8CF51313630F00680288 /* Code sense */ = {
+	F0F4DEF21342C1FA00666F47 /* Code sense */ = {
 		isa = PBXCodeSenseManager;
 		indexTemplatePath = "";
 	};
-	F0913FC4133904F700C4B377 /* PBXTextBookmark */ = {
+	F0F4DEF51342C23600666F47 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F0FD30E0131A1BA5004762CA /* Cannons.h */;
-		name = "Cannons.h: 24";
+		fRef = F0ED317B1342BCB9004AF5D6 /* Background.h */;
+		name = "Background.h: 1";
 		rLen = 0;
-		rLoc = 388;
-		rType = 0;
-		vrLen = 457;
-		vrLoc = 0;
-	};
-	F0913FEC1339068000C4B377 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD300A131A124E004762CA /* Background.h */;
-		name = "Background.h: 2";
-		rLen = 0;
-		rLoc = 17;
+		rLoc = 0;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 0;
 	};
-	F09830901335496500014674 /* Metaballs.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 1963}}";
-			sepNavSelRange = "{2916, 0}";
-			sepNavVisRange = "{2208, 942}";
-		};
-	};
-	F098309D13354A4F00014674 /* PBXTextBookmark */ = {
+	F0F4DF311342D7C800666F47 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F051F5DD1334390400857E37 /* Time_Counter.h */;
-		name = "Time_Counter.h: 1";
+		fRef = F0ED318A1342BCD7004AF5D6 /* Levels.h */;
+		name = "Levels.h: 16";
 		rLen = 0;
-		rLoc = 0;
+		rLoc = 317;
 		rType = 0;
-		vrLen = 585;
+		vrLen = 663;
 		vrLoc = 0;
 	};
-	F09FBC23133A69150099114B /* PBXTextBookmark */ = {
+	F0F4DF321342D7C800666F47 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F04DCA90132EB99B00C662D0 /* Levels.cpp */;
-		name = "Levels.cpp: 150";
-		rLen = 0;
-		rLoc = 3454;
+		fRef = F0F4DF331342D7C800666F47 /* Wm5HMatrix.h */;
+		name = "Wm5HMatrix.h: 19";
+		rLen = 36;
+		rLoc = 413;
 		rType = 0;
-		vrLen = 710;
-		vrLoc = 0;
+		vrLen = 1565;
+		vrLoc = 3401;
 	};
-	F09FBC56133A70AA0099114B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F09FBC57133A70AA0099114B /* Wm5Time.h */;
-		name = "Wm5Time.h: 17";
-		rLen = 49;
-		rLoc = 351;
-		rType = 0;
-		vrLen = 458;
-		vrLoc = 0;
-	};
-	F09FBC57133A70AA0099114B /* Wm5Time.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Time.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Time.h;
-		sourceTree = "<absolute>";
-	};
-	F09FBC5B133A71090099114B /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F09FBC5C133A71090099114B /* Wm5WindowApplication.h */;
-		name = "Wm5WindowApplication.h: 150";
-		rLen = 26;
-		rLoc = 5260;
-		rType = 0;
-		vrLen = 1188;
-		vrLoc = 4651;
-	};
-	F09FBC5C133A71090099114B /* Wm5WindowApplication.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5WindowApplication.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5WindowApplication.h;
-		sourceTree = "<absolute>";
-	};
-	F0A0EDFC132F1FC300D42A49 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0A0EDFD132F1FC300D42A49 /* Wm5Environment.h */;
-		name = "Wm5Environment.h: 36";
-		rLen = 0;
-		rLoc = 1145;
-		rType = 0;
-		vrLen = 1632;
-		vrLoc = 389;
-	};
-	F0A0EDFD132F1FC300D42A49 /* Wm5Environment.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Environment.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Environment.h;
-		sourceTree = "<absolute>";
-	};
-	F0A0EDFE132F1FC300D42A49 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0A0EDFF132F1FC300D42A49 /* Wm5Texture2D.h */;
-		name = "Wm5Texture2D.h: 53";
-		rLen = 0;
-		rLoc = 1491;
-		rType = 0;
-		vrLen = 907;
-		vrLoc = 708;
-	};
-	F0A0EDFF132F1FC300D42A49 /* Wm5Texture2D.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Texture2D.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Texture2D.h;
-		sourceTree = "<absolute>";
-	};
-	F0AD155D1335C60C0081B0F5 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */;
-		name = "ObjLoader.cpp: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1066;
-		vrLoc = 1440;
-	};
-	F0AD15641335C60C0081B0F5 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD3186131A28D8004762CA /* Wm5Spatial.h */;
-		name = "Wm5Spatial.h: 69";
-		rLen = 0;
-		rLoc = 2118;
-		rType = 0;
-		vrLen = 1312;
-		vrLoc = 0;
-	};
-	F0AD15661335C60C0081B0F5 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F051F6A9133530A900857E37 /* Wm5TriMesh.h */;
-		name = "Wm5TriMesh.h: 39";
-		rLen = 0;
-		rLoc = 973;
-		rType = 0;
-		vrLen = 1029;
-		vrLoc = 0;
-	};
-	F0AD172D1336A9E60081B0F5 /* Wm5IndexBuffer.cpp */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = Wm5IndexBuffer.cpp;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/LibGraphics/Resources/Wm5IndexBuffer.cpp;
-		sourceTree = "<absolute>";
-	};
-	F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 845}}";
-			sepNavSelRange = "{856, 0}";
-			sepNavVisRange = "{733, 926}";
-		};
-	};
-	F0C418C5132E8A6400686108 /* BluePrintDetect.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 466}}";
-			sepNavSelRange = "{344, 0}";
-			sepNavVisRange = "{0, 656}";
-		};
-	};
-	F0C418CD132E8B0200686108 /* CloudModel.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 472}}";
-			sepNavSelRange = "{128, 0}";
-			sepNavVisRange = "{0, 182}";
-		};
-	};
-	F0D7821B1336B3340097E062 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F04DCA8F132EB99B00C662D0 /* Levels.h */;
-		name = "Levels.h: 27";
-		rLen = 0;
-		rLoc = 539;
-		rType = 0;
-		vrLen = 1085;
-		vrLoc = 371;
-	};
-	F0D782431336B56B0097E062 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0AD172D1336A9E60081B0F5 /* Wm5IndexBuffer.cpp */;
-		name = "Wm5IndexBuffer.cpp: 23";
-		rLen = 0;
-		rLoc = 746;
-		rType = 0;
-		vrLen = 1360;
-		vrLoc = 0;
-	};
-	F0D7827D1336B8F70097E062 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0D7827E1336B8F70097E062 /* Wm5VertexBufferAccessor.inl */;
-		name = "Wm5VertexBufferAccessor.inl: 110";
-		rLen = 58;
-		rLoc = 3809;
-		rType = 0;
-		vrLen = 1609;
-		vrLoc = 3045;
-	};
-	F0D7827E1336B8F70097E062 /* Wm5VertexBufferAccessor.inl */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text;
-		name = Wm5VertexBufferAccessor.inl;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5VertexBufferAccessor.inl;
-		sourceTree = "<absolute>";
-	};
-	F0D782C61336BAE10097E062 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0D782C71336BAE10097E062 /* Wm5Float3.h */;
-		name = "Wm5Float3.h: 18";
-		rLen = 5;
-		rLoc = 428;
-		rType = 0;
-		vrLen = 738;
-		vrLoc = 0;
-	};
-	F0D782C71336BAE10097E062 /* Wm5Float3.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Float3.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Float3.h;
-		sourceTree = "<absolute>";
-	};
-	F0D782C81336BAE10097E062 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0D782C91336BAE10097E062 /* Wm5Tuple.h */;
-		name = "Wm5Tuple.h: 24";
-		rLen = 13;
-		rLoc = 593;
-		rType = 0;
-		vrLen = 1359;
-		vrLoc = 264;
-	};
-	F0D782C91336BAE10097E062 /* Wm5Tuple.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Tuple.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Tuple.h;
-		sourceTree = "<absolute>";
-	};
-	F0D783521336C0200097E062 /* CloudFactory.cpp:87 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		functionName = "CloudFactory::OnIdle ()";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 87;
-		location = CloudFactorydAgl;
-		modificationTime = 322355810.856754;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	F0D783781336C2520097E062 /* CloudFactory.cpp:136 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		functionName = "CloudFactory::OnIdle ()";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 136;
-		location = CloudFactorydAgl;
-		modificationTime = 322355810.876852;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	F0D7837A1336C2560097E062 /* CloudFactory.cpp:136 */ = {
-		isa = PBXFileBreakpoint;
-		actions = (
-		);
-		breakpointStyle = 0;
-		continueAfterActions = 0;
-		countType = 0;
-		delayBeforeContinue = 0;
-		fileReference = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		functionName = "CloudFactory::OnIdle ()";
-		hitCount = 0;
-		ignoreCount = 0;
-		lineNumber = 136;
-		location = CloudFactorydAgl;
-		modificationTime = 322355810.911979;
-		originalNumberOfMultipleMatches = 1;
-		state = 1;
-	};
-	F0E0664713395D4000965C75 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD305A131A1574004762CA /* Wm5VisualEffectInstance.inl */;
-		name = "Wm5VisualEffectInstance.inl: 22";
-		rLen = 0;
-		rLoc = 755;
-		rType = 0;
-		vrLen = 906;
-		vrLoc = 0;
-	};
-	F0E066831339611F00965C75 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0E066841339611F00965C75 /* Wm5OpenGLVertexBuffer.cpp */;
-		name = "Wm5OpenGLVertexBuffer.cpp: 26";
-		rLen = 0;
-		rLoc = 821;
-		rType = 0;
-		vrLen = 1233;
-		vrLoc = 0;
-	};
-	F0E066841339611F00965C75 /* Wm5OpenGLVertexBuffer.cpp */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = Wm5OpenGLVertexBuffer.cpp;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/LibGraphics/Renderers/OpenGLRenderer/Wm5OpenGLVertexBuffer.cpp;
-		sourceTree = "<absolute>";
-	};
-	F0E066851339611F00965C75 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0E066861339611F00965C75 /* Wm5Renderer.cpp */;
-		name = "Wm5Renderer.cpp: 278";
-		rLen = 0;
-		rLoc = 8897;
-		rType = 0;
-		vrLen = 1460;
-		vrLoc = 42310;
-	};
-	F0E066861339611F00965C75 /* Wm5Renderer.cpp */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.cpp.cpp;
-		name = Wm5Renderer.cpp;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/LibGraphics/Renderers/Wm5Renderer.cpp;
-		sourceTree = "<absolute>";
-	};
-	F0EA37F3133AA199003CEF2E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F051F5DA1334390400857E37 /* marching_cube.cpp */;
-		name = "marching_cube.cpp: 602";
-		rLen = 0;
-		rLoc = 26466;
-		rType = 0;
-		vrLen = 1157;
-		vrLoc = 26174;
-	};
-	F0EA37F4133AA199003CEF2E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101467131A07A900AE6645 /* CloudFactory.h */;
-		name = "CloudFactory.h: 36";
-		rLen = 0;
-		rLoc = 774;
-		rType = 0;
-		vrLen = 777;
-		vrLoc = 0;
-	};
-	F0EA37F5133AA199003CEF2E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F09830901335496500014674 /* Metaballs.h */;
-		name = "Metaballs.h: 131";
-		rLen = 0;
-		rLoc = 2916;
-		rType = 0;
-		vrLen = 576;
-		vrLoc = 1339;
-	};
-	F0EA37F6133AA199003CEF2E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		name = "CloudFactory.cpp: 265";
-		rLen = 0;
-		rLoc = 6599;
-		rType = 0;
-		vrLen = 930;
-		vrLoc = 0;
-	};
-	F0EA37F7133AA199003CEF2E /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		name = "CloudFactory.cpp: 84";
-		rLen = 0;
-		rLoc = 2191;
-		rType = 0;
-		vrLen = 989;
-		vrLoc = 1915;
-	};
-	F0F4595C133AA2B20016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		name = "CloudFactory.cpp: 84";
-		rLen = 0;
-		rLoc = 2191;
-		rType = 0;
-		vrLen = 930;
-		vrLoc = 0;
-	};
-	F0F45966133AA3930016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FD300A131A124E004762CA /* Background.h */;
-		name = "Background.h: 2";
-		rLen = 0;
-		rLoc = 17;
-		rType = 0;
-		vrLen = 374;
-		vrLoc = 0;
-	};
-	F0F45967133AA3930016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0C418CD132E8B0200686108 /* CloudModel.h */;
-		name = "CloudModel.h: 16";
-		rLen = 0;
-		rLoc = 128;
-		rType = 0;
-		vrLen = 182;
-		vrLoc = 0;
-	};
-	F0F45968133AA3930016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F09830901335496500014674 /* Metaballs.h */;
-		name = "Metaballs.h: 131";
-		rLen = 0;
-		rLoc = 2924;
-		rType = 0;
-		vrLen = 941;
-		vrLoc = 2212;
-	};
-	F0F45969133AA3930016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101467131A07A900AE6645 /* CloudFactory.h */;
-		name = "CloudFactory.h: 36";
-		rLen = 0;
-		rLoc = 774;
-		rType = 0;
-		vrLen = 777;
-		vrLoc = 0;
-	};
-	F0F4596A133AA3930016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		name = "CloudFactory.cpp: 84";
-		rLen = 0;
-		rLoc = 2191;
-		rType = 0;
-		vrLen = 1052;
-		vrLoc = 680;
-	};
-	F0F4596B133AA3930016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		name = "CloudFactory.cpp: 89";
-		rLen = 0;
-		rLoc = 2354;
-		rType = 0;
-		vrLen = 922;
-		vrLoc = 1780;
-	};
-	F0F45978133AA3A20016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		name = "CloudFactory.cpp: 87";
-		rLen = 0;
-		rLoc = 2305;
-		rType = 0;
-		vrLen = 921;
-		vrLoc = 1780;
-	};
-	F0F4597C133AA3CE0016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */;
-		name = "CloudFactory.cpp: 87";
-		rLen = 0;
-		rLoc = 2305;
-		rType = 0;
-		vrLen = 965;
-		vrLoc = 1780;
-	};
-	F0F4597D133AA3CE0016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F09830901335496500014674 /* Metaballs.h */;
-		name = "Metaballs.h: 131";
-		rLen = 0;
-		rLoc = 2924;
-		rType = 0;
-		vrLen = 945;
-		vrLoc = 2208;
-	};
-	F0F4597E133AA3CE0016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F09830901335496500014674 /* Metaballs.h */;
-		name = "Metaballs.h: 131";
-		rLen = 0;
-		rLoc = 2916;
-		rType = 0;
-		vrLen = 942;
-		vrLoc = 2208;
-	};
-	F0F45982133AA3DB0016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F09830901335496500014674 /* Metaballs.h */;
-		name = "Metaballs.h: 131";
-		rLen = 0;
-		rLoc = 2916;
-		rType = 0;
-		vrLen = 942;
-		vrLoc = 2208;
-	};
-	F0F45986133AA4100016DA28 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F09830901335496500014674 /* Metaballs.h */;
-		name = "Metaballs.h: 131";
-		rLen = 0;
-		rLoc = 2916;
-		rType = 0;
-		vrLen = 942;
-		vrLoc = 2208;
-	};
-	F0FC59421331590F00C05775 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0FC59431331590F00C05775 /* Wm5HMatrix.h */;
-		name = "Wm5HMatrix.h: 159";
-		rLen = 0;
-		rLoc = 6361;
-		rType = 0;
-		vrLen = 850;
-		vrLoc = 0;
-	};
-	F0FC59431331590F00C05775 /* Wm5HMatrix.h */ = {
+	F0F4DF331342D7C800666F47 /* Wm5HMatrix.h */ = {
 		isa = PBXFileReference;
 		lastKnownFileType = sourcecode.c.h;
 		name = Wm5HMatrix.h;
 		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5HMatrix.h;
 		sourceTree = "<absolute>";
 	};
-	F0FD300A131A124E004762CA /* Background.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 472}}";
-			sepNavSelRange = "{17, 0}";
-			sepNavVisRange = "{0, 374}";
-		};
-	};
-	F0FD300B131A124E004762CA /* Background.cpp */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {930, 1261}}";
-			sepNavSelRange = "{295, 0}";
-			sepNavVisRange = "{0, 1242}";
-		};
-	};
-	F0FD305A131A1574004762CA /* Wm5VisualEffectInstance.inl */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = text;
-		name = Wm5VisualEffectInstance.inl;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/LibGraphics/Shaders/Wm5VisualEffectInstance.inl;
-		sourceTree = "<absolute>";
-	};
-	F0FD30E0131A1BA5004762CA /* Cannons.h */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1007, 351}}";
-			sepNavSelRange = "{388, 0}";
-			sepNavVisRange = "{0, 457}";
-		};
-	};
-	F0FD30E1131A1BA5004762CA /* Cannons.cpp */ = {
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1062, 1833}}";
-			sepNavSelRange = "{4516, 0}";
-			sepNavVisRange = "{778, 1742}";
-			sepNavWindowFrame = "{{1280, -480}, {796, 1280}}";
-		};
-	};
-	F0FD3186131A28D8004762CA /* Wm5Spatial.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Spatial.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Spatial.h;
-		sourceTree = "<absolute>";
-	};
-	F0FD3188131A28D8004762CA /* Wm5ControlledObject.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5ControlledObject.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5ControlledObject.h;
-		sourceTree = "<absolute>";
-	};
-	F0FD31A3131A2B67004762CA /* Wm5Transform.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Transform.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Transform.h;
-		sourceTree = "<absolute>";
-	};
-	F0FD31AA131A2C1F004762CA /* PBXTextBookmark */ = {
+	F0F4DF361342D7C800666F47 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F0FD3188131A28D8004762CA /* Wm5ControlledObject.h */;
-		name = "Wm5ControlledObject.h: 18";
-		rLen = 6;
-		rLoc = 457;
+		fRef = F0ED31891342BCD7004AF5D6 /* Levels.cpp */;
+		name = "Levels.cpp: 92";
+		rLen = 0;
+		rLoc = 2103;
 		rType = 0;
-		vrLen = 1002;
+		vrLen = 867;
+		vrLoc = 1488;
+	};
+	F0F4DF5A1342DA9000666F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0ED31831342BCD7004AF5D6 /* Cannons.h */;
+		name = "Cannons.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 457;
 		vrLoc = 0;
 	};
-	F0FD31AC131A2C1F004762CA /* Wm5Object.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Object.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Object.h;
-		sourceTree = "<absolute>";
-	};
-	F0FD31AE131A2C1F004762CA /* Wm5Node.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5Node.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5Node.h;
-		sourceTree = "<absolute>";
-	};
-	F0FD31B3131A2C1F004762CA /* PBXTextBookmark */ = {
+	F0F4DF5B1342DA9000666F47 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F0FD31B4131A2C1F004762CA /* Wm5TransformController.h */;
-		name = "Wm5TransformController.h: 19";
-		rLen = 65;
-		rLoc = 440;
+		fRef = F0ED31881342BCD7004AF5D6 /* CloudModel.h */;
+		name = "CloudModel.h: 1";
+		rLen = 0;
+		rLoc = 0;
 		rType = 0;
-		vrLen = 999;
-		vrLoc = 262;
+		vrLen = 182;
+		vrLoc = 0;
 	};
-	F0FD31B4131A2C1F004762CA /* Wm5TransformController.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5TransformController.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5TransformController.h;
-		sourceTree = "<absolute>";
-	};
-	F0FD31F2131A2E0E004762CA /* PBXTextBookmark */ = {
+	F0F4DF5C1342DA9000666F47 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = F0FD31AC131A2C1F004762CA /* Wm5Object.h */;
-		name = "Wm5Object.h: 39";
-		rLen = 42;
-		rLoc = 1050;
+		fRef = F0ED31871342BCD7004AF5D6 /* CloudFactory.h */;
+		name = "CloudFactory.h: 1";
+		rLen = 0;
+		rLoc = 0;
 		rType = 0;
-		vrLen = 1269;
-		vrLoc = 483;
+		vrLen = 684;
+		vrLoc = 0;
 	};
-	F0FD3285131A31AE004762CA /* Wm5StandardMesh.h */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = sourcecode.c.h;
-		name = Wm5StandardMesh.h;
-		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5StandardMesh.h;
-		sourceTree = "<absolute>";
+	F0F4DF5E1342DA9000666F47 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0ED31A81342BCE3004AF5D6 /* MtlLoader.cpp */;
+		name = "MtlLoader.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 958;
+		vrLoc = 0;
+	};
+	F0F74C5B1343CD73001A6BFF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0ED318C1342BCD7004AF5D6 /* marching_cube.cpp */;
+		name = "marching_cube.cpp: 719";
+		rLen = 0;
+		rLoc = 30149;
+		rType = 0;
+		vrLen = 880;
+		vrLoc = 29708;
+	};
+	F0F74C5C1343CD73001A6BFF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0ED318D1342BCD7004AF5D6 /* marching_cube.h */;
+		name = "marching_cube.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 691;
+		vrLoc = 0;
 	};
 }

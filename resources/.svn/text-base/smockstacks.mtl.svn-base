@@ -1,0 +1,24 @@
+# Blender3D MTL File: smockstacks.blend
+# Material Count: 2
+newmtl brick-top
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd texture-brick.jpg
+
+
+newmtl main-brick
+Ns 96.078431
+Ka 0.000000 0.000000 0.000000
+Kd 1.000000 1.000000 1.000000
+Ks 0.500000 0.500000 0.500000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd texture-brick.jpg
+
+
