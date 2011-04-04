@@ -1,0 +1,486 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 44;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3C6FBB33083E5FB60068AA05 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB32083E5FB60068AA05 /* AGL.framework */; };
+		3C6FBB34083E5FB60068AA05 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB32083E5FB60068AA05 /* AGL.framework */; };
+		3C6FBB46083E5FCE0068AA05 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB45083E5FCE0068AA05 /* Carbon.framework */; };
+		3C6FBB47083E5FCE0068AA05 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB45083E5FCE0068AA05 /* Carbon.framework */; };
+		3C6FBB4D083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */; };
+		3C6FBB4E083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */; };
+		3C6FBC6C083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3C6FBC6D083E6E1B0068AA05 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */; };
+		3CC4FE4910FD1F4900C42DBB /* libWm5Cored.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */; };
+		3CC4FE4A10FD1F4900C42DBB /* libWm5Physicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */; };
+		3CC4FE4B10FD1F4900C42DBB /* libWm5AglGraphicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4510FD1F4900C42DBB /* libWm5AglGraphicsd.a */; };
+		3CC4FE4C10FD1F4900C42DBB /* libWm5Mathematicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */; };
+		3CC4FE4D10FD1F4900C42DBB /* libWm5Imagicsd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */; };
+		3CC4FE4E10FD1F4900C42DBB /* libWm5AglApplicationd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE4810FD1F4900C42DBB /* libWm5AglApplicationd.a */; };
+		3CC4FE6110FD1F6600C42DBB /* libWm5AglApplication.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5510FD1F6600C42DBB /* libWm5AglApplication.a */; };
+		3CC4FE6210FD1F6600C42DBB /* libWm5AglGraphics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5610FD1F6600C42DBB /* libWm5AglGraphics.a */; };
+		3CC4FE6310FD1F6600C42DBB /* libWm5Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */; };
+		3CC4FE6410FD1F6600C42DBB /* libWm5Imagics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */; };
+		3CC4FE6510FD1F6600C42DBB /* libWm5Mathematics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */; };
+		3CC4FE6610FD1F6600C42DBB /* libWm5Physics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */; };
+		F0101468131A07A900AE6645 /* CloudFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */; };
+		F0101469131A07A900AE6645 /* CloudFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0101466131A07A900AE6645 /* CloudFactory.cpp */; };
+		F04DCA91132EB99B00C662D0 /* Levels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCA90132EB99B00C662D0 /* Levels.cpp */; };
+		F04DCA92132EB99B00C662D0 /* Levels.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCA90132EB99B00C662D0 /* Levels.cpp */; };
+		F04DCAAE132EBDE500C662D0 /* MtlLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */; };
+		F04DCAAF132EBDE500C662D0 /* MtlLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */; };
+		F04DCAB0132EBDE500C662D0 /* MtlLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */; };
+		F04DCAB1132EBDE500C662D0 /* ObjLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */; };
+		F04DCAB2132EBDE500C662D0 /* ObjLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */; };
+		F04DCAB3132EBDE500C662D0 /* ObjLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAD132EBDE500C662D0 /* ObjLoaderCodes.cpp */; };
+		F04DCAB4132EBDE500C662D0 /* MtlLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */; };
+		F04DCAB5132EBDE500C662D0 /* MtlLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */; };
+		F04DCAB6132EBDE500C662D0 /* MtlLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */; };
+		F04DCAB7132EBDE500C662D0 /* ObjLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */; };
+		F04DCAB8132EBDE500C662D0 /* ObjLoader.inl in Resources */ = {isa = PBXBuildFile; fileRef = F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */; };
+		F04DCAB9132EBDE500C662D0 /* ObjLoaderCodes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAD132EBDE500C662D0 /* ObjLoaderCodes.cpp */; };
+		F051F5DE1334390400857E37 /* marching_cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DA1334390400857E37 /* marching_cube.cpp */; };
+		F051F5DF1334390400857E37 /* Time_Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DC1334390400857E37 /* Time_Counter.cpp */; };
+		F051F5E01334390400857E37 /* marching_cube.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DA1334390400857E37 /* marching_cube.cpp */; };
+		F051F5E11334390400857E37 /* Time_Counter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DC1334390400857E37 /* Time_Counter.cpp */; };
+		F06F7725133A5BB900844C3E /* Metaballs.h in Sources */ = {isa = PBXBuildFile; fileRef = F09830901335496500014674 /* Metaballs.h */; };
+		F06F7726133A5BB900844C3E /* marching_cube.h in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DB1334390400857E37 /* marching_cube.h */; };
+		F06F7727133A5BB900844C3E /* Time_Counter.h in Sources */ = {isa = PBXBuildFile; fileRef = F051F5DD1334390400857E37 /* Time_Counter.h */; };
+		F06F7728133A5BC100844C3E /* MtlLoader.h in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAA7132EBDE500C662D0 /* MtlLoader.h */; };
+		F06F772A133A5BC100844C3E /* ObjLoader.h in Sources */ = {isa = PBXBuildFile; fileRef = F04DCAAB132EBDE500C662D0 /* ObjLoader.h */; };
+		F06F772C133A5BDC00844C3E /* CloudFactory.h in Sources */ = {isa = PBXBuildFile; fileRef = F0101467131A07A900AE6645 /* CloudFactory.h */; };
+		F06F772D133A5BDC00844C3E /* BluePrintDetect.h in Sources */ = {isa = PBXBuildFile; fileRef = F0C418C5132E8A6400686108 /* BluePrintDetect.h */; };
+		F06F772E133A5BDC00844C3E /* CloudModel.h in Sources */ = {isa = PBXBuildFile; fileRef = F0C418CD132E8B0200686108 /* CloudModel.h */; };
+		F06F772F133A5BDC00844C3E /* Background.h in Sources */ = {isa = PBXBuildFile; fileRef = F0FD300A131A124E004762CA /* Background.h */; };
+		F06F7730133A5BDC00844C3E /* Cannons.h in Sources */ = {isa = PBXBuildFile; fileRef = F0FD30E0131A1BA5004762CA /* Cannons.h */; };
+		F06F7731133A5BDC00844C3E /* Levels.h in Sources */ = {isa = PBXBuildFile; fileRef = F04DCA8F132EB99B00C662D0 /* Levels.h */; };
+		F0C418C6132E8A6400686108 /* BluePrintDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */; };
+		F0C418C7132E8A6400686108 /* BluePrintDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */; };
+		F0FD300C131A124E004762CA /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0FD300B131A124E004762CA /* Background.cpp */; };
+		F0FD300D131A124E004762CA /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0FD300B131A124E004762CA /* Background.cpp */; };
+		F0FD30E2131A1BA5004762CA /* Cannons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0FD30E1131A1BA5004762CA /* Cannons.cpp */; };
+		F0FD30E3131A1BA5004762CA /* Cannons.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0FD30E1131A1BA5004762CA /* Cannons.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C6FBB32083E5FB60068AA05 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		3C6FBB45083E5FCE0068AA05 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = /System/Library/Frameworks/Carbon.framework; sourceTree = "<absolute>"; };
+		3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DrawSprocket.framework; path = /System/Library/Frameworks/DrawSprocket.framework; sourceTree = "<absolute>"; };
+		3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Cored.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Debug/libWm5Cored.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Physicsd.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Debug/libWm5Physicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4510FD1F4900C42DBB /* libWm5AglGraphicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5AglGraphicsd.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Debug/libWm5AglGraphicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Mathematicsd.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Debug/libWm5Mathematicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Imagicsd.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Debug/libWm5Imagicsd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE4810FD1F4900C42DBB /* libWm5AglApplicationd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5AglApplicationd.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Debug/libWm5AglApplicationd.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5510FD1F6600C42DBB /* libWm5AglApplication.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5AglApplication.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Release/libWm5AglApplication.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5610FD1F6600C42DBB /* libWm5AglGraphics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5AglGraphics.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Release/libWm5AglGraphics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Core.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Release/libWm5Core.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Imagics.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Release/libWm5Imagics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Mathematics.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Release/libWm5Mathematics.a; sourceTree = SOURCE_ROOT; };
+		3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Physics.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Release/libWm5Physics.a; sourceTree = SOURCE_ROOT; };
+		748AA4CC07F4624400486586 /* CloudFactorydAgl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactorydAgl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		748AA4DA07F4631800486586 /* CloudFactoryAgl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactoryAgl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0101466131A07A900AE6645 /* CloudFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CloudFactory.cpp; sourceTree = "<group>"; };
+		F0101467131A07A900AE6645 /* CloudFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudFactory.h; sourceTree = "<group>"; };
+		F04DCA8F132EB99B00C662D0 /* Levels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Levels.h; sourceTree = "<group>"; };
+		F04DCA90132EB99B00C662D0 /* Levels.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Levels.cpp; sourceTree = "<group>"; };
+		F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtlLoader.cpp; sourceTree = "<group>"; };
+		F04DCAA7132EBDE500C662D0 /* MtlLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtlLoader.h; sourceTree = "<group>"; };
+		F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MtlLoader.inl; sourceTree = "<group>"; };
+		F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtlLoaderCodes.cpp; sourceTree = "<group>"; };
+		F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjLoader.cpp; sourceTree = "<group>"; };
+		F04DCAAB132EBDE500C662D0 /* ObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoader.h; sourceTree = "<group>"; };
+		F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjLoader.inl; sourceTree = "<group>"; };
+		F04DCAAD132EBDE500C662D0 /* ObjLoaderCodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjLoaderCodes.cpp; sourceTree = "<group>"; };
+		F051F5DA1334390400857E37 /* marching_cube.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = marching_cube.cpp; path = src/marching_cube.cpp; sourceTree = "<group>"; };
+		F051F5DB1334390400857E37 /* marching_cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = marching_cube.h; path = src/marching_cube.h; sourceTree = "<group>"; };
+		F051F5DC1334390400857E37 /* Time_Counter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Time_Counter.cpp; path = src/Time_Counter.cpp; sourceTree = "<group>"; };
+		F051F5DD1334390400857E37 /* Time_Counter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Time_Counter.h; path = src/Time_Counter.h; sourceTree = "<group>"; };
+		F09830901335496500014674 /* Metaballs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Metaballs.h; path = src/Metaballs.h; sourceTree = "<group>"; };
+		F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BluePrintDetect.cpp; sourceTree = "<group>"; };
+		F0C418C5132E8A6400686108 /* BluePrintDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BluePrintDetect.h; sourceTree = "<group>"; };
+		F0C418CD132E8B0200686108 /* CloudModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CloudModel.h; sourceTree = "<group>"; };
+		F0FD300A131A124E004762CA /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Background.h; sourceTree = "<group>"; };
+		F0FD300B131A124E004762CA /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Background.cpp; sourceTree = "<group>"; };
+		F0FD30E0131A1BA5004762CA /* Cannons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cannons.h; sourceTree = "<group>"; };
+		F0FD30E1131A1BA5004762CA /* Cannons.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cannons.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		748AA4CA07F4624400486586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBB33083E5FB60068AA05 /* AGL.framework in Frameworks */,
+				3C6FBB46083E5FCE0068AA05 /* Carbon.framework in Frameworks */,
+				3C6FBB4D083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */,
+				3C6FBC6C083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CC4FE4910FD1F4900C42DBB /* libWm5Cored.a in Frameworks */,
+				3CC4FE4A10FD1F4900C42DBB /* libWm5Physicsd.a in Frameworks */,
+				3CC4FE4B10FD1F4900C42DBB /* libWm5AglGraphicsd.a in Frameworks */,
+				3CC4FE4C10FD1F4900C42DBB /* libWm5Mathematicsd.a in Frameworks */,
+				3CC4FE4D10FD1F4900C42DBB /* libWm5Imagicsd.a in Frameworks */,
+				3CC4FE4E10FD1F4900C42DBB /* libWm5AglApplicationd.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D807F4631800486586 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C6FBB34083E5FB60068AA05 /* AGL.framework in Frameworks */,
+				3C6FBB47083E5FCE0068AA05 /* Carbon.framework in Frameworks */,
+				3C6FBB4E083E5FE20068AA05 /* DrawSprocket.framework in Frameworks */,
+				3C6FBC6D083E6E1B0068AA05 /* OpenGL.framework in Frameworks */,
+				3CC4FE6110FD1F6600C42DBB /* libWm5AglApplication.a in Frameworks */,
+				3CC4FE6210FD1F6600C42DBB /* libWm5AglGraphics.a in Frameworks */,
+				3CC4FE6310FD1F6600C42DBB /* libWm5Core.a in Frameworks */,
+				3CC4FE6410FD1F6600C42DBB /* libWm5Imagics.a in Frameworks */,
+				3CC4FE6510FD1F6600C42DBB /* libWm5Mathematics.a in Frameworks */,
+				3CC4FE6610FD1F6600C42DBB /* libWm5Physics.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7432C2B407F8766A00ABC141 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				3CC4FE4310FD1F4900C42DBB /* libWm5Cored.a */,
+				3CC4FE4410FD1F4900C42DBB /* libWm5Physicsd.a */,
+				3CC4FE4510FD1F4900C42DBB /* libWm5AglGraphicsd.a */,
+				3CC4FE4610FD1F4900C42DBB /* libWm5Mathematicsd.a */,
+				3CC4FE4710FD1F4900C42DBB /* libWm5Imagicsd.a */,
+				3CC4FE4810FD1F4900C42DBB /* libWm5AglApplicationd.a */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		7432C2B707F8767000ABC141 /* Release */ = {
+			isa = PBXGroup;
+			children = (
+				3CC4FE5510FD1F6600C42DBB /* libWm5AglApplication.a */,
+				3CC4FE5610FD1F6600C42DBB /* libWm5AglGraphics.a */,
+				3CC4FE5710FD1F6600C42DBB /* libWm5Core.a */,
+				3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */,
+				3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */,
+				3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */,
+			);
+			name = Release;
+			sourceTree = "<group>";
+		};
+		748AA4BE07F4621A00486586 = {
+			isa = PBXGroup;
+			children = (
+				F051F5D5133438DC00857E37 /* metaball_data */,
+				F04DCAA5132EBDE500C662D0 /* OBJ */,
+				F0C624C0131A05870052FDEF /* src */,
+				748AA4F707F4641600486586 /* Libraries */,
+				748AA4E207F463F300486586 /* Frameworks */,
+				748AA4CD07F4624400486586 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		748AA4CD07F4624400486586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				748AA4CC07F4624400486586 /* CloudFactorydAgl.app */,
+				748AA4DA07F4631800486586 /* CloudFactoryAgl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		748AA4E207F463F300486586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C6FBC6B083E6E1B0068AA05 /* OpenGL.framework */,
+				3C6FBB4C083E5FE20068AA05 /* DrawSprocket.framework */,
+				3C6FBB45083E5FCE0068AA05 /* Carbon.framework */,
+				3C6FBB32083E5FB60068AA05 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		748AA4F707F4641600486586 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				7432C2B407F8766A00ABC141 /* Debug */,
+				7432C2B707F8767000ABC141 /* Release */,
+			);
+			name = Libraries;
+			sourceTree = SOURCE_ROOT;
+		};
+		F04DCAA5132EBDE500C662D0 /* OBJ */ = {
+			isa = PBXGroup;
+			children = (
+				F04DCAA6132EBDE500C662D0 /* MtlLoader.cpp */,
+				F04DCAA7132EBDE500C662D0 /* MtlLoader.h */,
+				F04DCAA8132EBDE500C662D0 /* MtlLoader.inl */,
+				F04DCAA9132EBDE500C662D0 /* MtlLoaderCodes.cpp */,
+				F04DCAAA132EBDE500C662D0 /* ObjLoader.cpp */,
+				F04DCAAB132EBDE500C662D0 /* ObjLoader.h */,
+				F04DCAAC132EBDE500C662D0 /* ObjLoader.inl */,
+				F04DCAAD132EBDE500C662D0 /* ObjLoaderCodes.cpp */,
+			);
+			path = OBJ;
+			sourceTree = "<group>";
+		};
+		F051F5D5133438DC00857E37 /* metaball_data */ = {
+			isa = PBXGroup;
+			children = (
+				F09830901335496500014674 /* Metaballs.h */,
+				F051F5DA1334390400857E37 /* marching_cube.cpp */,
+				F051F5DB1334390400857E37 /* marching_cube.h */,
+				F051F5DC1334390400857E37 /* Time_Counter.cpp */,
+				F051F5DD1334390400857E37 /* Time_Counter.h */,
+			);
+			name = metaball_data;
+			sourceTree = "<group>";
+		};
+		F0C624C0131A05870052FDEF /* src */ = {
+			isa = PBXGroup;
+			children = (
+				F0101466131A07A900AE6645 /* CloudFactory.cpp */,
+				F0101467131A07A900AE6645 /* CloudFactory.h */,
+				F0C418C4132E8A6400686108 /* BluePrintDetect.cpp */,
+				F0C418C5132E8A6400686108 /* BluePrintDetect.h */,
+				F0C418CD132E8B0200686108 /* CloudModel.h */,
+				F0FD300A131A124E004762CA /* Background.h */,
+				F0FD300B131A124E004762CA /* Background.cpp */,
+				F0FD30E0131A1BA5004762CA /* Cannons.h */,
+				F0FD30E1131A1BA5004762CA /* Cannons.cpp */,
+				F04DCA8F132EB99B00C662D0 /* Levels.h */,
+				F04DCA90132EB99B00C662D0 /* Levels.cpp */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		748AA4CB07F4624400486586 /* Agl Debug Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B939708674C10001A085C /* Build configuration list for PBXNativeTarget "Agl Debug Static" */;
+			buildPhases = (
+				748AA4C807F4624400486586 /* Resources */,
+				748AA4C907F4624400486586 /* Sources */,
+				748AA4CA07F4624400486586 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agl Debug Static";
+			productName = CloudFactoryStaDeb;
+			productReference = 748AA4CC07F4624400486586 /* CloudFactorydAgl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		748AA4D907F4631800486586 /* Agl Release Static */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C4B939A08674C10001A085C /* Build configuration list for PBXNativeTarget "Agl Release Static" */;
+			buildPhases = (
+				748AA4D607F4631800486586 /* Resources */,
+				748AA4D707F4631800486586 /* Sources */,
+				748AA4D807F4631800486586 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Agl Release Static";
+			productName = CloudFactoryStaRel;
+			productReference = 748AA4DA07F4631800486586 /* CloudFactoryAgl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		748AA4C207F4621A00486586 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 3C4B93AC08674C10001A085C /* Build configuration list for PBXProject "CloudFactory" */;
+			compatibilityVersion = "Xcode 3.0";
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 748AA4BE07F4621A00486586;
+			productRefGroup = 748AA4CD07F4624400486586 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				748AA4CB07F4624400486586 /* Agl Debug Static */,
+				748AA4D907F4631800486586 /* Agl Release Static */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		748AA4C807F4624400486586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04DCAAF132EBDE500C662D0 /* MtlLoader.inl in Resources */,
+				F04DCAB2132EBDE500C662D0 /* ObjLoader.inl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D607F4631800486586 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F04DCAB5132EBDE500C662D0 /* MtlLoader.inl in Resources */,
+				F04DCAB8132EBDE500C662D0 /* ObjLoader.inl in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		748AA4C907F4624400486586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0101468131A07A900AE6645 /* CloudFactory.cpp in Sources */,
+				F0FD300C131A124E004762CA /* Background.cpp in Sources */,
+				F0FD30E2131A1BA5004762CA /* Cannons.cpp in Sources */,
+				F0C418C6132E8A6400686108 /* BluePrintDetect.cpp in Sources */,
+				F04DCA91132EB99B00C662D0 /* Levels.cpp in Sources */,
+				F04DCAAE132EBDE500C662D0 /* MtlLoader.cpp in Sources */,
+				F04DCAB0132EBDE500C662D0 /* MtlLoaderCodes.cpp in Sources */,
+				F04DCAB1132EBDE500C662D0 /* ObjLoader.cpp in Sources */,
+				F04DCAB3132EBDE500C662D0 /* ObjLoaderCodes.cpp in Sources */,
+				F051F5DE1334390400857E37 /* marching_cube.cpp in Sources */,
+				F051F5DF1334390400857E37 /* Time_Counter.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		748AA4D707F4631800486586 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0101469131A07A900AE6645 /* CloudFactory.cpp in Sources */,
+				F06F772C133A5BDC00844C3E /* CloudFactory.h in Sources */,
+				F0C418C7132E8A6400686108 /* BluePrintDetect.cpp in Sources */,
+				F06F772D133A5BDC00844C3E /* BluePrintDetect.h in Sources */,
+				F06F772E133A5BDC00844C3E /* CloudModel.h in Sources */,
+				F06F772F133A5BDC00844C3E /* Background.h in Sources */,
+				F0FD300D131A124E004762CA /* Background.cpp in Sources */,
+				F06F7730133A5BDC00844C3E /* Cannons.h in Sources */,
+				F0FD30E3131A1BA5004762CA /* Cannons.cpp in Sources */,
+				F06F7731133A5BDC00844C3E /* Levels.h in Sources */,
+				F04DCA92132EB99B00C662D0 /* Levels.cpp in Sources */,
+				F04DCAB4132EBDE500C662D0 /* MtlLoader.cpp in Sources */,
+				F06F7728133A5BC100844C3E /* MtlLoader.h in Sources */,
+				F04DCAB6132EBDE500C662D0 /* MtlLoaderCodes.cpp in Sources */,
+				F04DCAB7132EBDE500C662D0 /* ObjLoader.cpp in Sources */,
+				F06F772A133A5BC100844C3E /* ObjLoader.h in Sources */,
+				F04DCAB9132EBDE500C662D0 /* ObjLoaderCodes.cpp in Sources */,
+				F06F7725133A5BB900844C3E /* Metaballs.h in Sources */,
+				F051F5E01334390400857E37 /* marching_cube.cpp in Sources */,
+				F06F7726133A5BB900844C3E /* marching_cube.h in Sources */,
+				F051F5E11334390400857E37 /* Time_Counter.cpp in Sources */,
+				F06F7727133A5BB900844C3E /* Time_Counter.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3C4B939908674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					_DEBUG,
+					WM5_USE_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "${WM5_PATH}/SDK/Include";
+				LIBRARY_SEARCH_PATHS = "${WM5_PATH}/SDK/Library/Debug";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = CloudFactorydAgl;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C4B939C08674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = YES;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					NDEBUG,
+					WM5_USE_OPENGL,
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = "${WM5_PATH}/SDK/Include";
+				LIBRARY_SEARCH_PATHS = "${WM5_PATH}/SDK/Library/Release";
+				PRESERVE_DEAD_CODE_INITS_AND_TERMS = YES;
+				PRODUCT_NAME = CloudFactoryAgl;
+				WARNING_CFLAGS = (
+					"-Wmost",
+					"-Wno-four-char-constants",
+					"-Wno-unknown-pragmas",
+				);
+			};
+			name = Default;
+		};
+		3C4B93AE08674C10001A085C /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+			};
+			name = Default;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3C4B939708674C10001A085C /* Build configuration list for PBXNativeTarget "Agl Debug Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B939908674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C4B939A08674C10001A085C /* Build configuration list for PBXNativeTarget "Agl Release Static" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B939C08674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+		3C4B93AC08674C10001A085C /* Build configuration list for PBXProject "CloudFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C4B93AE08674C10001A085C /* Default */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Default;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 748AA4C207F4621A00486586 /* Project object */;
+}

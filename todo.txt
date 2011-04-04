@@ -1,0 +1,5 @@
+
+
+TODO:
++ the number of factory smoke stacks can be changed
++ show blueprint objective in upper right hand corner
