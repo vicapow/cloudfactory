@@ -340,8 +340,8 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 				
 				current_cloud_a = blobs.size() - 1; // get current index for growth
 				
-				location_a = Wm5::Float3(675.0, 0.0, 0.0);
-				blobs[current_cloud_a].clouds.push_back(new Metaballs3D(675, 0, 0, 64, 6, "STRAIGHT")); // create new cloud
+				location_a = Wm5::Float3(670.0, 0.0, 0.0);
+				blobs[current_cloud_a].clouds.push_back(new Metaballs3D(670, 0, 0, 64, 6, "STRAIGHT")); // create new cloud
 				
 				mScene->AttachChild(blobs[current_cloud_a].clouds[blobs[current_cloud_a].clouds.size()-1] );
 				
