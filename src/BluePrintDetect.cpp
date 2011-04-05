@@ -8,7 +8,9 @@ BluePrintDetect::BluePrintDetect(){
 }
 
 
-float BluePrintDetect::CalculateError( list<CloudModel*> blueprints, list<CloudModel*> clouds ){
+float BluePrintDetect::CalculateError( vector<CloudModel*> blueprints, vector<CloudModel*> clouds ){
+	
+	if(blueprints.size() > clouds.size()) return 0;//you can never have a matching pattern with too few clouds
 	
 	Point comBlueprints;
 	BluePrintDetect::ComputeCenterOfMass(blueprints,comBlueprints);
@@ -21,33 +23,32 @@ float BluePrintDetect::CalculateError( list<CloudModel*> blueprints, list<CloudM
 	
 	float score = 0;
 	
-	if(clouds.size()>=blueprints.size()){
-		list<CloudModel*>::iterator it;
-		for(it=blueprints.begin();it!=blueprints.end();it++){
-			CloudModel* cloud = *it;
-			CloudModel* closest = BluePrintDetect::GetClosestNeighbor(cloud,clouds,diff);
-			clouds.remove(closest);
-			score += BluePrintDetect::CloudsDeviation(cloud,closest,diff);
+	for(int i = 0; i < blueprints.size();i++){
+		CloudModel* cloud = blueprints[i];
+		assert(clouds.size()>0);
+		CloudModel* closest = BluePrintDetect::GetClosestNeighbor(cloud,clouds,diff);
+		for(int j = 0; j < clouds.size();j++){
+			if(clouds[j] == closest){
+				clouds.erase(clouds.begin() + j , clouds.begin() + j + 1 );
+				break;
+			}
 		}
-		return score / blueprints.size();//?
-	}else{
-		//there are more blueprints than clouds, so it's impossible to be correct at all
-		return 0;
+		score += BluePrintDetect::CloudsDeviation(cloud,closest,diff);
 	}
+	return score / blueprints.size();
 }
 
-void BluePrintDetect::ComputeCenterOfMass( list<CloudModel*> clouds , Point& weightedPosR ){
+void BluePrintDetect::ComputeCenterOfMass( vector<CloudModel*> clouds , Point& weightedPosR ){
 	float totalMass = 0; //its not really "mass" per se, but it represents the weighting factor used in computing the weighted center (aka, the center-of-mass)
 	PointInit(0,0,0,weightedPosR);
-	list<CloudModel*>::iterator it;//itorator
-	for(it=clouds.begin();it!=clouds.end();it++){
-		CloudModel* cloud = *it;
-		PointAdd(	cloud->posX * cloud->radius,
-					cloud->posY * cloud->radius,
-					cloud->posZ * cloud->radius,
+	for(int i = 0; i < clouds.size();i++){
+		CloudModel* cloud = clouds[i];
+		PointAdd(	cloud->posX * cloud->getRadius(),
+					cloud->posY * cloud->getRadius(),
+					cloud->posZ * cloud->getRadius(),
 					weightedPosR );
-		assert(cloud->radius!=0);
-		totalMass += cloud->radius;
+		assert(cloud->getRadius()!=0);
+		totalMass += cloud->getRadius();
 	}
 	PointDivide(totalMass,weightedPosR);
 }
@@ -58,7 +59,7 @@ float BluePrintDetect::CloudsDeviation(CloudModel* cloud,CloudModel* closest , c
 	assert(closest!=NULL);
 	
 	//one is good, zero is bad
-	float sizeDiff = fabs( cloud->radius - closest->radius );
+	float sizeDiff = fabs( cloud->getRadius() - closest->getRadius() );
 	sizeDiff = sizeDiff / SizeTolerance;
 	if(sizeDiff>1) sizeDiff = 1;
 	sizeDiff = 1 - sizeDiff;
@@ -71,15 +72,14 @@ float BluePrintDetect::CloudsDeviation(CloudModel* cloud,CloudModel* closest , c
 	return (sizeDiff + posDiff)/2;//noramlize
 }
 
-CloudModel* BluePrintDetect::GetClosestNeighbor(CloudModel* cloud, list<CloudModel*> clouds, const Point& offset ){
-	
+CloudModel* BluePrintDetect::GetClosestNeighbor(CloudModel* cloud, vector<CloudModel*> clouds, const Point& offset ){
+	assert(clouds.size()>0);
 	CloudModel* closest = NULL;
 	float min_d = FLT_MAX;
-	list<CloudModel*>::iterator it;
-	for(it=clouds.begin();it!=clouds.end();it++){
-		float d = GetDistance(*it,cloud,offset);
+	for(int i = 0; i < clouds.size();i++){
+		float d = GetDistance(clouds[i],cloud,offset);
 		if(d < min_d ){
-			closest = *it;
+			closest = clouds[i];
 			min_d = d;
 		}
 	}

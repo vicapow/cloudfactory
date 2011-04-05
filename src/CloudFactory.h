@@ -8,6 +8,9 @@
 #include "Levels.h"
 #include "CloudModel.h"
 #include <vector>
+#include <list>
+
+using namespace std;
 
 class m_cloud {
 	
@@ -67,6 +70,7 @@ protected:
 	int current_cloud_a, current_cloud_b, current_cloud_c; // cloud being edited
 	int current_model_a, current_model_b, current_model_c; // current cloud model
 	std::vector<struct m_cloud*> blobs; // vector of clouds
+	vector<CloudModel*> user_guess;
 };
 
 WM5_REGISTER_INITIALIZE(CloudFactory);

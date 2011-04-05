@@ -197,7 +197,88 @@
 	<key>Notifications</key>
 	<array/>
 	<key>OpenEditors</key>
-	<array/>
+	<array>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>DBDF385A134AE0AB00603387</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>BluePrintDetect.cpp</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>DBDF385B134AE0AB00603387</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>BluePrintDetect.cpp</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>DBDF387E134AE37600603387</string>
+						<key>history</key>
+						<array>
+							<string>DBDF3856134AE0A000603387</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1436, 781}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>0 56 1436 822 0 0 1440 878 </string>
+			</dict>
+		</dict>
+		<dict>
+			<key>Content</key>
+			<dict>
+				<key>PBXProjectModuleGUID</key>
+				<string>DBDF377D134AD16900603387</string>
+				<key>PBXProjectModuleLabel</key>
+				<string>Metaballs.h</string>
+				<key>PBXSplitModuleInNavigatorKey</key>
+				<dict>
+					<key>Split0</key>
+					<dict>
+						<key>PBXProjectModuleGUID</key>
+						<string>DBDF377E134AD16900603387</string>
+						<key>PBXProjectModuleLabel</key>
+						<string>Metaballs.h</string>
+						<key>_historyCapacity</key>
+						<integer>0</integer>
+						<key>bookmark</key>
+						<string>DBDF387F134AE37600603387</string>
+						<key>history</key>
+						<array>
+							<string>DBDF3773134AD0FD00603387</string>
+						</array>
+					</dict>
+					<key>SplitCount</key>
+					<string>1</string>
+				</dict>
+				<key>StatusBarVisibility</key>
+				<true/>
+			</dict>
+			<key>Geometry</key>
+			<dict>
+				<key>Frame</key>
+				<string>{{0, 20}, {1436, 781}}</string>
+				<key>PBXModuleWindowStatusBarHidden2</key>
+				<false/>
+				<key>RubberWindowFrame</key>
+				<string>0 56 1436 822 0 0 1440 878 </string>
+			</dict>
+		</dict>
+	</array>
 	<key>PerspectiveWidths</key>
 	<array>
 		<integer>-1</integer>
@@ -270,7 +351,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>5</integer>
+									<integer>17</integer>
 									<integer>2</integer>
 									<integer>0</integer>
 								</array>
@@ -313,7 +394,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CloudFactory.h</string>
+								<string>BluePrintDetect.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -321,11 +402,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>CloudFactory.h</string>
+										<string>BluePrintDetect.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>DBDF3746134AB0C400603387</string>
+										<string>DBDF387D134AE37600603387</string>
 										<key>history</key>
 										<array>
 											<string>DBF48AC2134A328200C2FD44</string>
@@ -334,16 +415,20 @@
 											<string>DBF48ADB134A329600C2FD44</string>
 											<string>DBF48B12134A410600C2FD44</string>
 											<string>DBDF35DF134A8DCC00603387</string>
-											<string>DBDF36A8134A9C0100603387</string>
 											<string>DBDF36B1134A9C3B00603387</string>
 											<string>DBDF3700134AA7F800603387</string>
-											<string>DBDF370C134AA94A00603387</string>
-											<string>DBDF373A134AAF6900603387</string>
-											<string>DBDF373B134AAF6900603387</string>
-											<string>DBDF3742134AB0C400603387</string>
 											<string>DBDF3743134AB0C400603387</string>
-											<string>DBDF3744134AB0C400603387</string>
-											<string>DBDF3745134AB0C400603387</string>
+											<string>DBDF374C134ACB6300603387</string>
+											<string>DBDF375A134ACD3D00603387</string>
+											<string>DBDF37D9134AD6AB00603387</string>
+											<string>DBDF37FE134AD98C00603387</string>
+											<string>DBDF380A134ADA7A00603387</string>
+											<string>DBDF3811134ADBD100603387</string>
+											<string>DBDF3812134ADBD100603387</string>
+											<string>DBDF3842134ADF3700603387</string>
+											<string>DBDF3857134AE0AB00603387</string>
+											<string>DBDF387B134AE37600603387</string>
+											<string>DBDF387C134AE37600603387</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -541,11 +626,14 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>DBDF3880134AE37600603387</string>
 		<string>1C530D57069F1CE1000CFCEE</string>
 		<string>DBDF35A8134A876B00603387</string>
 		<string>DBDF35A9134A876B00603387</string>
 		<string>1CD10A99069EF8BA00B06720</string>
+		<string>DBDF377D134AD16900603387</string>
 		<string>DBF48ABB134A2B7400C2FD44</string>
+		<string>DBDF385A134AE0AB00603387</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/victorpowell/Documents/vc/git/cloudfactory/CloudFactory.xcodeproj</string>
 	</array>
@@ -566,14 +654,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CloudFactory.cpp</string>
+								<string>BluePrintDetect.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -582,7 +668,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {859, 216}}</string>
 								<key>RubberWindowFrame</key>
-								<string>134 380 859 498 0 0 1440 878 </string>
+								<string>506 380 859 498 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXNavigatorGroup</string>
@@ -590,6 +676,8 @@
 							<string>216pt</string>
 						</dict>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
@@ -606,7 +694,7 @@
 								<key>Frame</key>
 								<string>{{0, 221}, {859, 236}}</string>
 								<key>RubberWindowFrame</key>
-								<string>134 380 859 498 0 0 1440 878 </string>
+								<string>506 380 859 498 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXBuildResultsModule</string>
@@ -638,7 +726,7 @@
 			<key>WindowContentMinSize</key>
 			<string>486 300</string>
 			<key>WindowString</key>
-			<string>134 380 859 498 0 0 1440 878 </string>
+			<string>506 380 859 498 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>DBF48ABB134A2B7400C2FD44</string>
 			<key>WindowToolIsVisible</key>
@@ -890,7 +978,7 @@
 								<key>Frame</key>
 								<string>{{0, 0}, {464, 305}}</string>
 								<key>RubberWindowFrame</key>
-								<string>991 532 464 346 0 0 1440 878 </string>
+								<string>959 526 464 346 0 0 1440 878 </string>
 							</dict>
 							<key>Module</key>
 							<string>PBXDebugCLIModule</string>
@@ -919,7 +1007,7 @@
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.consoleV3</string>
 			<key>WindowString</key>
-			<string>991 532 464 346 0 0 1440 878 </string>
+			<string>959 526 464 346 0 0 1440 878 </string>
 			<key>WindowToolGUID</key>
 			<string>1C78EAAD065D492600B07095</string>
 			<key>WindowToolIsVisible</key>

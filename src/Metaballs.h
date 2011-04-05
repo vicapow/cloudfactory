@@ -64,12 +64,8 @@ class Metaballs3D : public Node, public CloudModel
 	public :
 	
 	Metaballs3D(){}
-	Metaballs3D(float px , float py , float pz, int rayon, float speed, std::string dir)
+	Metaballs3D(float px , float py , float pz, int rayon, float speed, std::string dir): CloudModel(px,py,pz,rayon)
 	{
-		posX = px;
-		posY = py;
-		posZ = pz;
-		
 		Speed = speed;
 		
 		direction = dir;
