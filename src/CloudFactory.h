@@ -9,11 +9,26 @@
 #include "CloudModel.h"
 #include <vector>
 
-struct m_cloud{
+class m_cloud {
 	
-	m_cloud(){};
+public:
+	//constructor
+	m_cloud(){
+		cout << "m clouds created!" << endl;
+		
+		//there should only be oe metaball for each cloud but for now, this value isn't being used.
+		metaball = new Metaballs3D(670, 0, 0, 128, 6, "STRAIGHT");
+	};
 	
 	std::vector<Metaballs3D*> clouds;
+	Metaballs3D* metaball;
+	
+	//desctuctor
+	~m_cloud(){
+		cout << "m clouds destroied" << endl;
+		delete metaball;
+	}
+	
 };
 
 class CloudFactory : public WindowApplication3
@@ -46,16 +61,12 @@ protected:
     Float4 mTextColor;
 	Picker mPicker;
 	Levels *level;
-	
-	bool ROTATE;
+
 	double  SEUIL;
-		
-	int PX_M2;
 	
 	int current_cloud_a, current_cloud_b, current_cloud_c; // cloud being edited
 	int current_model_a, current_model_b, current_model_c; // current cloud model
-	std::vector<struct m_cloud> blobs; // vector of clouds
-	std::vector<CloudModel> clouds;
+	std::vector<struct m_cloud*> blobs; // vector of clouds
 };
 
 WM5_REGISTER_INITIALIZE(CloudFactory);

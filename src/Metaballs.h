@@ -34,24 +34,32 @@ class Potential_Matrix : public Potential_Field
 			std::cout << "error : not enough memory !!! \n" ;
 		this->Reset();
 	};
+	
+	
+	/* get the potential for a grid cell */
 	inline double Get_Potential( Point3D p)
 	{		
 		return matrix[(p.x>>STEP_B) + (p.y>>STEP_B)*((Size>>STEP_B)+1) + (p.z>>STEP_B)*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)];
 	};
+	
+	
+	/* add potiential to a particular grid cell */
 	inline void Set_Potential_world( int x ,int y, int z , double p)
 	{		
-		matrix[(x>>STEP_B) + (y>>STEP_B)*((Size>>STEP_B)+1) + (z>>STEP_B)*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)]+=p;
+		matrix[ (x>>STEP_B) + (y>>STEP_B)*((Size>>STEP_B)+1) + (z>>STEP_B)*((Size>>STEP_B)+1)*((Size>>STEP_B)+1) ] += p;
 	};
+	
+	
 	inline void Set_Potential_matrix( int x ,int y, int z , double p)
 	{	
-		matrix[x + y*((Size>>STEP_B)+1) + z*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)]+=p;
+		matrix[x + y*((Size>>STEP_B)+1) + z*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)] += p;
 	};
 
 	private :
 	double *matrix;
 };
 
-class Metaballs3D : public Node
+class Metaballs3D : public Node, public CloudModel
 {
 	public :
 	
@@ -159,6 +167,5 @@ class Metaballs3D : public Node
 	
 	int Rayon;
 	float Speed;
-	float posX, posY, posZ;
 	std::string direction;
 };

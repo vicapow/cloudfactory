@@ -316,23 +316,24 @@ int triTable[256][16] =
 {0, 3, 8, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1},
 {-1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1}};
 
-
+/* get the particular cube configuration that corisponds to the grid points. 
+ this should work indipendently of the size of the potential field */
 int Get_Index( Potential_Field * field , GRIDCELL *grid,double isolevel )
 {
 	int cubeindex=0;
-   if (field->Get_Potential(grid->p[0]) < isolevel) cubeindex |= 1;
-   if (field->Get_Potential(grid->p[1]) < isolevel) cubeindex |= 2;
-   if (field->Get_Potential(grid->p[2]) < isolevel) cubeindex |= 4;
-   if (field->Get_Potential(grid->p[3]) < isolevel) cubeindex |= 8;
-   if (field->Get_Potential(grid->p[4]) < isolevel) cubeindex |= 16;
-   if (field->Get_Potential(grid->p[5]) < isolevel) cubeindex |= 32;
-   if (field->Get_Potential(grid->p[6]) < isolevel) cubeindex |= 64;
-   if (field->Get_Potential(grid->p[7]) < isolevel) cubeindex |= 128;
+   if (field->Get_Potential(grid->p[0]) < isolevel) cubeindex |= 1;         //1
+   if (field->Get_Potential(grid->p[1]) < isolevel) cubeindex |= 2;        //10
+   if (field->Get_Potential(grid->p[2]) < isolevel) cubeindex |= 4;       //100
+   if (field->Get_Potential(grid->p[3]) < isolevel) cubeindex |= 8;      //1000
+   if (field->Get_Potential(grid->p[4]) < isolevel) cubeindex |= 16;    //10000
+   if (field->Get_Potential(grid->p[5]) < isolevel) cubeindex |= 32;   //100000
+   if (field->Get_Potential(grid->p[6]) < isolevel) cubeindex |= 64;  //1000000
+   if (field->Get_Potential(grid->p[7]) < isolevel) cubeindex |= 128;//10000000
 
    return cubeindex;
 
 }
-
+/* produce the marching cube triangles for the provided grid cell */
 int Polygonise(Potential_Field * field , GRIDCELL *grid,double isolevel,TRIANGLE *triangles , int step)
 {
    int cubeindex,i,ntriang;
@@ -462,6 +463,7 @@ void Generate(Potential_Field *field ,std::vector<Wm5::Float3> *pos,
 	if (edgeTable[cubeindex] == 0) { return; }
 
 	n = Polygonise(field , &grid, isolevel,triangles,step);
+	//where n is the number of triangles created during polygonisation 
 
 	float norm[3];
 	float l;
@@ -519,6 +521,9 @@ void Marching_Cube_End( )
 	delete visited;
 }
 
+/**
+  * @param field the Potential_Field to query
+  */
 TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel , int step , int x, int y, int z)
 {
 	Time_Counter counter;
@@ -541,7 +546,7 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 	int cubeindex=0;
 	GRIDCELL grid;
 	
-	bool way;
+	bool way = true;//is it out of the grid?
 	if( x < 0 )
 	{
 		x=0;  
@@ -572,9 +577,9 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 		grid.p[6] = Point3D( i+step ,y+step ,z+step);
 		grid.p[7] = Point3D( i      ,y+step ,z+step);
 
-		cubeindex= Get_Index(field,&grid,isolevel);
+		cubeindex= Get_Index(field,&grid,isolevel); //return the particular marching cube for this current grid location
    		
-		if (edgeTable[cubeindex] != 0)  
+		if (edgeTable[cubeindex] != 0) //if the current cube isn't at the edge of the field
 		{
 			Generate(field , &pos, &norm, &tex, isolevel, step , i , y , z, num_verts);
 			counter.stop();
@@ -644,97 +649,100 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 		}
 	
 	}
-	for(int i=x;i<field->Get_Size();i-=step)
-	{
-		if( i < 0 || (i+step) > field->Get_Size() )
-			break;
-		if( visited[ind+i/step] )
-		{
-			return NULL;
-		}
-
-		grid.p[0] = Point3D( i      ,y ,z);
-		grid.p[1] = Point3D( i+step ,y ,z);
-		grid.p[2] = Point3D( i+step ,y ,z+step);
-		grid.p[3] = Point3D( i      ,y ,z+step);
-		grid.p[4] = Point3D( i      ,y+step ,z);
-		grid.p[5] = Point3D( i+step ,y+step ,z);
-		grid.p[6] = Point3D( i+step ,y+step ,z+step);
-		grid.p[7] = Point3D( i      ,y+step ,z+step);
-
-		cubeindex= Get_Index(field,&grid,isolevel);
-   		if (edgeTable[cubeindex] != 0)  
-		{
-			Generate(field , &pos, &norm, &tex, isolevel, step , i , y , z, num_verts);
-			counter.stop();
-
-			if(*num_verts > 0){
-			
-				IndexBuffer *ibuffer = new0 IndexBuffer(*num_verts, sizeof(int));
-				VertexBuffer *vbuffer = new0 VertexBuffer(*num_verts, vstride);
-				VertexBufferAccessor vba(vformat, vbuffer);
-				
-				Wm5::Float3 *poss = (Wm5::Float3 *)malloc(sizeof(Wm5::Float3)*pos.size());
-				Wm5::Float3 *norms = (Wm5::Float3 *)malloc(sizeof(Wm5::Float3)*norm.size());
-				
-				int *indx = (int *)malloc(sizeof(int)*pos.size());
-				
-				
-				for(unsigned int i = 0; i<pos.size(); i++)
-				{
-					
-					poss[i][0] = pos[i][0] * 0.0005;
-					poss[i][1] = pos[i][1] * 0.0005;
-					poss[i][2] = pos[i][2] * 0.0005;
-					
-					vba.Position<Wm5::Float3>(i) = poss[i];					
-					indx[i] = i;
-				}
-				
-				for(unsigned int i = 0; i < norm.size(); i++){
-					
-					norms[i][0] = norm[i][0] * 0.0005;
-					norms[i][1] = norm[i][1] * 0.0005;
-					norms[i][2] = norm[i][2] * 0.0005;
-					
-					vba.Normal<Wm5::Float3>(i) = norms[i];
-					
-				}					
-				
-				memcpy(ibuffer->GetData(), &indx[0], pos.size()*sizeof(int));
-				TriMesh* mesh = new0 TriMesh(vformat, vbuffer, ibuffer);
-				
-				Float4 black(0.0f, 0.0f, 0.0f, 1.0f);
-				Float4 white(1.0f, 1.0f, 1.0f, 1.0f);
-				Float4 red(1.0, 0.0, 0.0, 1.0);
-
-				Material* redMaterial = new0 Material();
-				redMaterial->Emissive = red;
-				redMaterial->Ambient = Float4(0.25f, 0.25f, 0.25f, 1.0f);
-				redMaterial->Diffuse = Float4(1.0f, 0.0f, 0.0f, 1.0f);
-				redMaterial->Specular = white;
-				
-				// A light for the effects.
-				Light* light = new0 Light(Light::LT_DIRECTIONAL);
-				light->Ambient = white;
-				light->Diffuse = white;
-				light->Specular = white;
-				light->SetDirection(AVector::UNIT_Z);
-				
-				VisualEffectInstancePtr mIntersectEffect;
-				
-				LightDirPerVerEffect* effect = new0 LightDirPerVerEffect();
-				mIntersectEffect = effect->CreateInstance(light, redMaterial);
-				
-				mesh->SetEffectInstance(mIntersectEffect);
-				
-				delete(indx);
-
-				return mesh;
-			}
-			
-		}
-	}
+	
+	// this does nothing. idk why its here so I commented it out.
+	
+//	for(int i=x;i<field->Get_Size();i-=step)
+//	{
+//		if( i < 0 || (i+step) > field->Get_Size() )
+//			break;
+//		if( visited[ind+i/step] )
+//		{
+//			return NULL;
+//		}
+//
+//		grid.p[0] = Point3D( i      ,y ,z);
+//		grid.p[1] = Point3D( i+step ,y ,z);
+//		grid.p[2] = Point3D( i+step ,y ,z+step);
+//		grid.p[3] = Point3D( i      ,y ,z+step);
+//		grid.p[4] = Point3D( i      ,y+step ,z);
+//		grid.p[5] = Point3D( i+step ,y+step ,z);
+//		grid.p[6] = Point3D( i+step ,y+step ,z+step);
+//		grid.p[7] = Point3D( i      ,y+step ,z+step);
+//
+//		cubeindex= Get_Index(field,&grid,isolevel);
+//   		if (edgeTable[cubeindex] != 0)  
+//		{
+//			Generate(field , &pos, &norm, &tex, isolevel, step , i , y , z, num_verts);
+//			counter.stop();
+//
+//			if(*num_verts > 0){
+//			
+//				IndexBuffer *ibuffer = new0 IndexBuffer(*num_verts, sizeof(int));
+//				VertexBuffer *vbuffer = new0 VertexBuffer(*num_verts, vstride);
+//				VertexBufferAccessor vba(vformat, vbuffer);
+//				
+//				Wm5::Float3 *poss = (Wm5::Float3 *)malloc(sizeof(Wm5::Float3)*pos.size());
+//				Wm5::Float3 *norms = (Wm5::Float3 *)malloc(sizeof(Wm5::Float3)*norm.size());
+//				
+//				int *indx = (int *)malloc(sizeof(int)*pos.size());
+//				
+//				
+//				for(unsigned int i = 0; i<pos.size(); i++)
+//				{
+//					
+//					poss[i][0] = pos[i][0] * 0.0005;
+//					poss[i][1] = pos[i][1] * 0.0005;
+//					poss[i][2] = pos[i][2] * 0.0005;
+//					
+//					vba.Position<Wm5::Float3>(i) = poss[i];					
+//					indx[i] = i;
+//				}
+//				
+//				for(unsigned int i = 0; i < norm.size(); i++){
+//					
+//					norms[i][0] = norm[i][0] * 0.0005;
+//					norms[i][1] = norm[i][1] * 0.0005;
+//					norms[i][2] = norm[i][2] * 0.0005;
+//					
+//					vba.Normal<Wm5::Float3>(i) = norms[i];
+//					
+//				}					
+//				
+//				memcpy(ibuffer->GetData(), &indx[0], pos.size()*sizeof(int));
+//				TriMesh* mesh = new0 TriMesh(vformat, vbuffer, ibuffer);
+//				
+//				Float4 black(0.0f, 0.0f, 0.0f, 1.0f);
+//				Float4 white(1.0f, 1.0f, 1.0f, 1.0f);
+//				Float4 red(1.0, 0.0, 0.0, 1.0);
+//
+//				Material* redMaterial = new0 Material();
+//				redMaterial->Emissive = red;
+//				redMaterial->Ambient = Float4(0.25f, 0.25f, 0.25f, 1.0f);
+//				redMaterial->Diffuse = Float4(1.0f, 0.0f, 0.0f, 1.0f);
+//				redMaterial->Specular = white;
+//				
+//				// A light for the effects.
+//				Light* light = new0 Light(Light::LT_DIRECTIONAL);
+//				light->Ambient = white;
+//				light->Diffuse = white;
+//				light->Specular = white;
+//				light->SetDirection(AVector::UNIT_Z);
+//				
+//				VisualEffectInstancePtr mIntersectEffect;
+//				
+//				LightDirPerVerEffect* effect = new0 LightDirPerVerEffect();
+//				mIntersectEffect = effect->CreateInstance(light, redMaterial);
+//				
+//				mesh->SetEffectInstance(mIntersectEffect);
+//				
+//				delete(indx);
+//
+//				return mesh;
+//			}
+//			
+//		}
+//	}
 	
 	return NULL;
 }
