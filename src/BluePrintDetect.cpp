@@ -23,37 +23,49 @@ float BluePrintDetect::CalculateError( vector<CloudModel*> blueprints, vector<Cl
 	
 	float score = 0;
 	
-	for(int i = 0; i < blueprints.size();i++){
+	for(unsigned int i = 0; i < blueprints.size();i++){
 		CloudModel* cloud = blueprints[i];
 		assert(clouds.size()>0);
 		CloudModel* closest = BluePrintDetect::GetClosestNeighbor(cloud,clouds,diff);
-		for(int j = 0; j < clouds.size();j++){
+		for(unsigned int j = 0; j < clouds.size();j++){
 			if(clouds[j] == closest){
-				clouds.erase(clouds.begin() + j , clouds.begin() + j + 1 );
+				clouds.erase(clouds.begin() + j);
 				break;
 			}
 		}
+
 		score += BluePrintDetect::CloudsDeviation(cloud,closest,diff);
 	}
 	return score / blueprints.size();
 }
 
 void BluePrintDetect::ComputeCenterOfMass( vector<CloudModel*> clouds , Point& weightedPosR ){
+	
 	float totalMass = 0; //its not really "mass" per se, but it represents the weighting factor used in computing the weighted center (aka, the center-of-mass)
 	PointInit(0,0,0,weightedPosR);
-	for(int i = 0; i < clouds.size();i++){
-		CloudModel* cloud = clouds[i];
-		PointAdd(	cloud->posX * cloud->getRadius(),
-					cloud->posY * cloud->getRadius(),
-					cloud->posZ * cloud->getRadius(),
-					weightedPosR );
-		assert(cloud->getRadius()!=0);
-		totalMass += cloud->getRadius();
+	
+	for(unsigned int i = 0; i < clouds.size();i++){
+		
+		if(clouds[i]->getRadius() > 0){
+			
+			CloudModel* cloud = clouds[i];
+			PointAdd(	cloud->posX * cloud->getRadius(),
+						cloud->posY * cloud->getRadius(),
+						cloud->posZ * cloud->getRadius(),
+						weightedPosR );
+			
+			assert(cloud->getRadius()!=0);	
+			
+			totalMass += cloud->getRadius();
+		}
 	}
 	PointDivide(totalMass,weightedPosR);
 }
 
 float BluePrintDetect::CloudsDeviation(CloudModel* cloud,CloudModel* closest , const Point& offset ){
+	
+	if(cloud == NULL || closest == NULL)
+		return 0.0f;
 	
 	assert(cloud!=NULL);
 	assert(closest!=NULL);
@@ -112,6 +124,7 @@ void BluePrintDetect::PointSubtract( const Point& pointA , const Point& pointB ,
 	pointR.z = pointA.z - pointB.z;
 }
 void BluePrintDetect::PointDivide(float denominator, Point& pointR ){
+	
 	pointR.x /= denominator;
 	pointR.y /= denominator;
 	pointR.z /= denominator;
