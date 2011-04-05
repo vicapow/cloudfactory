@@ -109,7 +109,6 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 
 	float frame_step_time = frame_time/33.33;
 
-	
 	if(STATE_GROW_A){
 //		
 		cout << "DEBUG: grow a" << endl;
@@ -117,8 +116,6 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 		
 		incrementer_a[0] += 1.01;
 		incrementer_a[1] += 1.01;
-		
-
 		
 		if(blobs[current_cloud_a]->clouds.size() < 400){
 		
@@ -146,7 +143,6 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(location_a[0], -incrementer_a[1] + location_a[1], 0, size, 6, "STRAIGHT"));
 			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
 		
-			
 			float speed = 6;
 			
 			if(blobs[current_cloud_a]->clouds.size() <= 50){
@@ -288,7 +284,7 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 		The_Matrix->Reset();
 		counter.restart();
 		
-		for(int j = 0; j < blobs.size(); j++){
+		for(unsigned int j = 0; j < blobs.size(); j++){
 		
 			
 //			if( j != current_cloud_a ){
@@ -297,7 +293,7 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 //			blobs[j]->metaball->AddToMatrix(The_Matrix);
 
 			
-			for(int i=0; i < blobs[j]->clouds.size(); i++)
+			for(int i=0; i < (int)blobs[j]->clouds.size(); i++)
 			{		
 				if(j != current_cloud_c && j != current_cloud_b && j != current_cloud_a){
 					blobs[j]->clouds[i]->Move(frame_step_time);
@@ -314,15 +310,22 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 			
 			//remove blobs if needed
 			if(blobs[j]->clouds.size() == 0){
-				for(int k = 0; k < user_guess.size();k++){
+				for(unsigned int k = 0; k < user_guess.size();k++){
 					if(user_guess[k] == (CloudModel*)blobs[j]){
-						user_guess.erase(user_guess.begin()+k, user_guess.begin()+k+1);
+						user_guess.erase(user_guess.begin()+k);
+						
 						break;
 					}
 				}
-				blobs.erase(blobs.begin()+j,blobs.begin()+j+1);
-				j--;//since we're removing the item at index j, we'll need to reasses the new value at that index
+				blobs.erase(blobs.begin()+j);
+				
+				if(blobs.size() > 0)
+					j--;//since we're removing the item at index j, we'll need to reasses the new value at that index
 			}
+		}
+		
+		if (blobs.empty()) {
+			user_guess.clear();
 		}
 		
 		counter.stop();
@@ -359,14 +362,14 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 	
 	if(user_guess.size() >= example_blueprint.size()){
 		
-
 		float error = 0;
 		
 		//a hack to fix the issue were a cloud will have a very small radius
-		for(int i = 0; i < user_guess.size(); i++){
+		for(unsigned int i = 0; i < user_guess.size(); i++){
 			if(user_guess[i]->getRadius() <0.1)
 				user_guess.erase(user_guess.begin()+i,user_guess.begin()+i+1);
 		}
+		
 		if( error = BluePrintDetect::CalculateError(example_blueprint,user_guess) > 0.9 ){
 			cout << " MATCH!! error: " << error;
 		}
@@ -572,55 +575,55 @@ bool CloudFactory::OnMouseClick (int button, int state, int x,
 							 int y, unsigned int)
 {
 	
-    if (state != MOUSE_DOWN && state != MOUSE_LEFT_BUTTON)
-    {
-		STATE_GROW_A = false; // stop growing
-		current_cloud_a = -1; // end current cloud
-		
-        return false;
-    }
-	
-	if (state == MOUSE_DOWN) {
-		
-		STATE_GROW_A = true;
-
-		// Do a picking operation.
-		APoint pos;
-		AVector dir;
-		if (mRenderer->GetPickRay(x, GetHeight() - 1 - y, pos, dir))
-		{
-			mPicker.Execute(mScene, pos, dir, 0.0f, Mathf::MAX_REAL);
-			
-			if (mPicker.Records.size() > 0)
-			{
-				// Display the selected object's name.
-				const PickRecord& record = mPicker.GetClosestNonnegative();
-				const Spatial* object = record.Intersected;
-							
-				if(object->GetName() == "Cannon"){ // if stack clicked
-									
-					printf("cannon!\n");
-					Transform loc = object->LocalTransform;
-					APoint t = loc.GetTranslate();
-					
-					loc.SetTranslate(t+APoint(0.0f, 0.45f, 0.0f));			
-					loc.SetScale(APoint(1.0f, 1.0f, 1.0f));
-					
-//					clouds.push_back(new Metaballs3D(350, 0, 0, 128, 4)); // create new cloud
-//					current_cloud_a = clouds.size()-1; // get current index for growth
-				
-//					mScene->AttachChild(clouds[clouds.size()-1]);
-	//				mScene->Update();
-					mCuller.ComputeVisibleSet(mScene);
-
-				} // end if
-				else if(object->GetName() == "metaball"){
-						printf("found metaball\n");
-				}
-			} // end if
-		} // end if pick  
-					
-	} // case mouse down
+    //if (state != MOUSE_DOWN && state != MOUSE_LEFT_BUTTON)
+//    {
+//		STATE_GROW_A = false; // stop growing
+//		current_cloud_a = -1; // end current cloud
+//		
+//        return false;
+//    }
+//	
+//	if (state == MOUSE_DOWN) {
+//		
+//		STATE_GROW_A = true;
+//
+//		// Do a picking operation.
+//		APoint pos;
+//		AVector dir;
+//		if (mRenderer->GetPickRay(x, GetHeight() - 1 - y, pos, dir))
+//		{
+//			mPicker.Execute(mScene, pos, dir, 0.0f, Mathf::MAX_REAL);
+//			
+//			if (mPicker.Records.size() > 0)
+//			{
+//				// Display the selected object's name.
+//				const PickRecord& record = mPicker.GetClosestNonnegative();
+//				const Spatial* object = record.Intersected;
+//							
+//				if(object->GetName() == "Cannon"){ // if stack clicked
+//									
+//					printf("cannon!\n");
+//					Transform loc = object->LocalTransform;
+//					APoint t = loc.GetTranslate();
+//					
+//					loc.SetTranslate(t+APoint(0.0f, 0.45f, 0.0f));			
+//					loc.SetScale(APoint(1.0f, 1.0f, 1.0f));
+//					
+////					clouds.push_back(new Metaballs3D(350, 0, 0, 128, 4)); // create new cloud
+////					current_cloud_a = clouds.size()-1; // get current index for growth
+//				
+////					mScene->AttachChild(clouds[clouds.size()-1]);
+//	//				mScene->Update();
+//					mCuller.ComputeVisibleSet(mScene);
+//
+//				} // end if
+//				else if(object->GetName() == "metaball"){
+//						printf("found metaball\n");
+//				}
+//			} // end if
+//		} // end if pick  
+//					
+//	} // case mouse down
 
 return true;
 } 
