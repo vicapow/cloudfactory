@@ -21,10 +21,14 @@ public:
 		
 		//there should only be oe metaball for each cloud but for now, this value isn't being used.
 		metaball = new Metaballs3D(670, 0, 0, 128, 6, "STRAIGHT");
+	
+		match = false;
 	};
 	
 	std::vector<Metaballs3D*> clouds;
 	Metaballs3D* metaball;
+	
+	bool match;
 	
 	//desctuctor
 	~m_cloud(){

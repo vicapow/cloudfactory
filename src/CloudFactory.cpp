@@ -372,6 +372,9 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 		
 		if( error = BluePrintDetect::CalculateError(example_blueprint,user_guess) > 0.9 ){
 			cout << " MATCH!! error: " << error;
+			The_Matrix->match = true;
+		}else{
+			The_Matrix->match = false;
 		}
 	}
 

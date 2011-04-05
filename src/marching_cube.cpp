@@ -621,9 +621,14 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 				Float4 black(0.0f, 0.0f, 0.0f, 1.0f);
 				Float4 white(1.0f, 1.0f, 1.0f, 1.0f);
 				Float4 red(1.0, 0.0, 0.0, 1.0);
+				Float4 orange(1.0, 0.55, 0.0f, 1.0f); 
 				
 				Material* redMaterial = new0 Material();
-				redMaterial->Emissive = white;
+				
+				if(field->match)
+					redMaterial->Emissive = red;
+				else
+					redMaterial->Emissive = orange;
 				redMaterial->Ambient = Float4(0.25f, 0.25f, 0.25f, 1.0f);
 				redMaterial->Diffuse = Float4(1.0f, 0.0f, 0.0f, 1.0f);
 				redMaterial->Specular = white;
@@ -649,100 +654,6 @@ TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field, double isolevel
 		}
 	
 	}
-	
-	// this does nothing. idk why its here so I commented it out.
-	
-//	for(int i=x;i<field->Get_Size();i-=step)
-//	{
-//		if( i < 0 || (i+step) > field->Get_Size() )
-//			break;
-//		if( visited[ind+i/step] )
-//		{
-//			return NULL;
-//		}
-//
-//		grid.p[0] = Point3D( i      ,y ,z);
-//		grid.p[1] = Point3D( i+step ,y ,z);
-//		grid.p[2] = Point3D( i+step ,y ,z+step);
-//		grid.p[3] = Point3D( i      ,y ,z+step);
-//		grid.p[4] = Point3D( i      ,y+step ,z);
-//		grid.p[5] = Point3D( i+step ,y+step ,z);
-//		grid.p[6] = Point3D( i+step ,y+step ,z+step);
-//		grid.p[7] = Point3D( i      ,y+step ,z+step);
-//
-//		cubeindex= Get_Index(field,&grid,isolevel);
-//   		if (edgeTable[cubeindex] != 0)  
-//		{
-//			Generate(field , &pos, &norm, &tex, isolevel, step , i , y , z, num_verts);
-//			counter.stop();
-//
-//			if(*num_verts > 0){
-//			
-//				IndexBuffer *ibuffer = new0 IndexBuffer(*num_verts, sizeof(int));
-//				VertexBuffer *vbuffer = new0 VertexBuffer(*num_verts, vstride);
-//				VertexBufferAccessor vba(vformat, vbuffer);
-//				
-//				Wm5::Float3 *poss = (Wm5::Float3 *)malloc(sizeof(Wm5::Float3)*pos.size());
-//				Wm5::Float3 *norms = (Wm5::Float3 *)malloc(sizeof(Wm5::Float3)*norm.size());
-//				
-//				int *indx = (int *)malloc(sizeof(int)*pos.size());
-//				
-//				
-//				for(unsigned int i = 0; i<pos.size(); i++)
-//				{
-//					
-//					poss[i][0] = pos[i][0] * 0.0005;
-//					poss[i][1] = pos[i][1] * 0.0005;
-//					poss[i][2] = pos[i][2] * 0.0005;
-//					
-//					vba.Position<Wm5::Float3>(i) = poss[i];					
-//					indx[i] = i;
-//				}
-//				
-//				for(unsigned int i = 0; i < norm.size(); i++){
-//					
-//					norms[i][0] = norm[i][0] * 0.0005;
-//					norms[i][1] = norm[i][1] * 0.0005;
-//					norms[i][2] = norm[i][2] * 0.0005;
-//					
-//					vba.Normal<Wm5::Float3>(i) = norms[i];
-//					
-//				}					
-//				
-//				memcpy(ibuffer->GetData(), &indx[0], pos.size()*sizeof(int));
-//				TriMesh* mesh = new0 TriMesh(vformat, vbuffer, ibuffer);
-//				
-//				Float4 black(0.0f, 0.0f, 0.0f, 1.0f);
-//				Float4 white(1.0f, 1.0f, 1.0f, 1.0f);
-//				Float4 red(1.0, 0.0, 0.0, 1.0);
-//
-//				Material* redMaterial = new0 Material();
-//				redMaterial->Emissive = red;
-//				redMaterial->Ambient = Float4(0.25f, 0.25f, 0.25f, 1.0f);
-//				redMaterial->Diffuse = Float4(1.0f, 0.0f, 0.0f, 1.0f);
-//				redMaterial->Specular = white;
-//				
-//				// A light for the effects.
-//				Light* light = new0 Light(Light::LT_DIRECTIONAL);
-//				light->Ambient = white;
-//				light->Diffuse = white;
-//				light->Specular = white;
-//				light->SetDirection(AVector::UNIT_Z);
-//				
-//				VisualEffectInstancePtr mIntersectEffect;
-//				
-//				LightDirPerVerEffect* effect = new0 LightDirPerVerEffect();
-//				mIntersectEffect = effect->CreateInstance(light, redMaterial);
-//				
-//				mesh->SetEffectInstance(mIntersectEffect);
-//				
-//				delete(indx);
-//
-//				return mesh;
-//			}
-//			
-//		}
-//	}
 	
 	return NULL;
 }

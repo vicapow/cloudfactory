@@ -20,6 +20,7 @@ extern double *texture_map;
 class Potential_Matrix : public Potential_Field
 {
 	public :
+	
 	void Reset()
 	{		
 		int l = ((Size>>STEP_B)+1)*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)*sizeof(double);		
@@ -33,7 +34,9 @@ class Potential_Matrix : public Potential_Field
 		if( matrix == NULL)
 			std::cout << "error : not enough memory !!! \n" ;
 		this->Reset();
+		match = false;
 	};
+	
 	
 	
 	/* get the potential for a grid cell */
@@ -55,8 +58,9 @@ class Potential_Matrix : public Potential_Field
 		matrix[x + y*((Size>>STEP_B)+1) + z*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)] += p;
 	};
 
-	private :
+	private:
 	double *matrix;
+	
 };
 
 class Metaballs3D : public Node, public CloudModel

@@ -1,7 +1,7 @@
 TAgl Debug Static
 v7
 r0
-t323709451.583592
+t323712621.884241
 cCheck dependencies
 cCpResource build/Default/CloudFactorydAgl.app/Contents/Resources/Levels.txt src/Levels.txt
 cCpResource build/Default/CloudFactorydAgl.app/Contents/Resources/MtlLoader.inl OBJ/MtlLoader.inl
@@ -6356,8 +6356,8 @@ t1302012255
 s628976
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/CloudFactory.o
-t1302016650
-s1024336
+t1302019696
+s1024416
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/CloudFactorydAgl.LinkFileList
 c000000004D9B215C00000000000005E3
@@ -6389,15 +6389,15 @@ t1302012258
 s70388
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/marching_cube.o
-t1302012259
-s532756
+t1302019757
+s533012
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app
-t1302016651
+t1302019758
 s102
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/MacOS/CloudFactorydAgl
-t1302016651
+t1302019758
 s6130048
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/Resources/Levels.txt
@@ -6458,15 +6458,15 @@ s457
 i"Wm5WindowApplication3.h"
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp
-c000000004D9B326F0000000000005112
-t1302016623
-s20754
+c000000004D9B3DEE0000000000005156
+t1302019566
+s20822
 i"CloudFactory.h"
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.h
-c000000004D9B210D000000000000067E
-t1302012173
-s1662
+c000000004D9B3D3A00000000000006A0
+t1302019386
+s1696
 i"BluePrintDetect.h"
 i"Metaballs.h"
 i"Levels.h"
@@ -6503,9 +6503,9 @@ t1301939054
 s344
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Metaballs.h
-c000000004D9B32820000000000000E2F
-t1302016642
-s3631
+c000000004D9B3E640000000000000E45
+t1302019684
+s3653
 i"CloudModel.h"
 i"marching_cube.h"
 i"Time_Counter.h"
@@ -6525,9 +6525,9 @@ t1301939054
 s585
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.cpp
-c000000004D9B210D0000000000007AC2
-t1302012173
-s31426
+c000000004D9B3EAB0000000000006F90
+t1302019755
+s28560
 i<stdio.h>
 i<string.h>
 i<iostream>
@@ -6537,9 +6537,9 @@ i<cmath>
 i"ObjLoader.h"
 
 N/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.h
-c000000004D9A036E000000000000038E
-t1301939054
-s910
+c000000004D9B3E69000000000000039C
+t1302019689
+s924
 i"Wm5WindowApplication3.h"
 
 N/usr/include/assert.h
@@ -6584,7 +6584,7 @@ s7703
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies323709447#323709447#0(0"0(0#1#0"4300882208#0"0#
+lSLF07#2@18"Check dependencies323712621#323712621#0(0"0(0#1#0"4300882208#0"0#
 
 CCompileC "build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/Background.o" /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Background.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 s323705052.381405
@@ -6628,8 +6628,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@70"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Cannons.cpp323705053#323705055#0(0"0(0#0#62"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Cannons.cpp4300882208#1115"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -D_DEBUG -DWM5_USE_OPENGL -gdwarf-2 "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/CloudFactorydAgl.hmap" -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/include -I/Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources/i386" "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources" -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Cannons.cpp -o "/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/Cannons.o"0#
 
 CCompileC "build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/CloudFactory.o" /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-s323709447.924293
-e323709450.423017
+s323712493.608287
+e323712496.710760
 r1
 xCompileC
 xbuild/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/CloudFactory.o
@@ -6642,7 +6642,7 @@ o/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp: In member 
 o/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions
 o/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions
 o/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions
-lSLF07#2@75"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp323709447#323709450#0(550"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp: In member function 'virtual void CloudFactory::OnIdle()':/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions3(22@58"Comparison between signed and unsigned integer expressions323709449#127#141#0(6@67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp323709423#298#0#298#0#58"comparison between signed and unsigned integer expressions0(22@58"Comparison between signed and unsigned integer expressions323709449#268#141#0(6@67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp323709423#298#0#298#0#58"comparison between signed and unsigned integer expressions0(22@58"Comparison between signed and unsigned integer expressions323709449#409#141#0(6@67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp323709423#298#0#298#0#58"comparison between signed and unsigned integer expressions0(0#0#67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp4300882208#1125"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -D_DEBUG -DWM5_USE_OPENGL -gdwarf-2 "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/CloudFactorydAgl.hmap" -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/include -I/Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources/i386" "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources" -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp -o "/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/CloudFactory.o"0#
+lSLF07#2@75"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp323712493#323712496#0(550"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp: In member function 'virtual void CloudFactory::OnIdle()':/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp:298: warning: comparison between signed and unsigned integer expressions3(22@58"Comparison between signed and unsigned integer expressions323712495#127#141#0(6@67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp323712366#298#0#298#0#58"comparison between signed and unsigned integer expressions0(22@58"Comparison between signed and unsigned integer expressions323712495#268#141#0(6@67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp323712366#298#0#298#0#58"comparison between signed and unsigned integer expressions0(22@58"Comparison between signed and unsigned integer expressions323712495#409#141#0(6@67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp323712366#298#0#298#0#58"comparison between signed and unsigned integer expressions0(0#0#67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp4300882208#1125"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -D_DEBUG -DWM5_USE_OPENGL -gdwarf-2 "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/CloudFactorydAgl.hmap" -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/include -I/Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources/i386" "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources" -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/CloudFactory.cpp -o "/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/CloudFactory.o"0#
 
 CCompileC "build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/Levels.o" /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Levels.cpp normal i386 c++ com.apple.compilers.gcc.4_2
 s323705055.838525
@@ -6723,8 +6723,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@75"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Time_Counter.cpp323705057#323705058#0(0"0(0#0#67"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Time_Counter.cpp4300882208#1125"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -D_DEBUG -DWM5_USE_OPENGL -gdwarf-2 "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/CloudFactorydAgl.hmap" -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/include -I/Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources/i386" "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources" -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/Time_Counter.cpp -o "/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/Time_Counter.o"0#
 
 CCompileC "build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/marching_cube.o" /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.cpp normal i386 c++ com.apple.compilers.gcc.4_2
-s323705057.728839
-e323705059.927904
+s323712555.584091
+e323712557.678784
 r1
 xCompileC
 xbuild/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/marching_cube.o
@@ -6733,7 +6733,7 @@ xnormal
 xi386
 xc++
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.cpp323705057#323705059#0(0"0(0#0#68"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.cpp4300882208#1127"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -D_DEBUG -DWM5_USE_OPENGL -gdwarf-2 "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/CloudFactorydAgl.hmap" -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/include -I/Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources/i386" "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources" -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.cpp -o "/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/marching_cube.o"0#
+lSLF07#2@76"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.cpp323712555#323712557#0(0"0(0#0#68"/Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.cpp4300882208#1127"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fno-rtti -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -D_DEBUG -DWM5_USE_OPENGL -gdwarf-2 "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/CloudFactorydAgl.hmap" -Wmost -Wno-four-char-constants -Wno-unknown-pragmas -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/include -I/Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources/i386" "-I/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/DerivedSources" -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/src/marching_cube.cpp -o "/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/marching_cube.o"0#
 
 CCpResource build/Default/CloudFactorydAgl.app/Contents/Resources/Levels.txt src/Levels.txt
 s323705052.264288
@@ -6763,20 +6763,20 @@ xOBJ/ObjLoader.inl
 lSLF07#2@22"Copy OBJ/ObjLoader.inl323705052#323705052#0(0"0(0#0#64"/Users/timothyluciani/Dropbox/GIT/cloudfactory/OBJ/ObjLoader.inl4300882208#368"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/timothyluciani/Dropbox/GIT/cloudfactory/OBJ/ObjLoader.inl /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/Resources0#
 
 CLd /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/MacOS/CloudFactorydAgl normal i386
-s323709450.423191
-e323709451.579935
+s323712557.678907
+e323712558.801438
 r1
 xLd
 x/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/MacOS/CloudFactorydAgl
 xnormal
 xi386
-lSLF07#2@118"Link /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/MacOS/CloudFactorydAgl323709450#323709451#0(0"0(0#0#0"4300882208#808"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    /Developer/usr/bin/g++-4.2 -arch i386 -L/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -L/Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Debug -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -filelist "/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/CloudFactorydAgl.LinkFileList" -dead_strip -no_dead_strip_inits_and_terms -framework AGL -framework Carbon -framework DrawSprocket -framework OpenGL -lWm5Cored -lWm5Physicsd -lWm5AglGraphicsd -lWm5Mathematicsd -lWm5Imagicsd -lWm5AglApplicationd -prebind -o /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/MacOS/CloudFactorydAgl0#
+lSLF07#2@118"Link /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/MacOS/CloudFactorydAgl323712557#323712558#0(0"0(0#0#0"4300882208#808"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    /Developer/usr/bin/g++-4.2 -arch i386 -L/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -L/Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Debug -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default -filelist "/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/CloudFactory.build/Default/Agl Debug Static.build/Objects-normal/i386/CloudFactorydAgl.LinkFileList" -dead_strip -no_dead_strip_inits_and_terms -framework AGL -framework Carbon -framework DrawSprocket -framework OpenGL -lWm5Cored -lWm5Physicsd -lWm5AglGraphicsd -lWm5Mathematicsd -lWm5Imagicsd -lWm5AglApplicationd -prebind -o /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app/Contents/MacOS/CloudFactorydAgl0#
 
 CTouch /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app
-s323709451.580025
-e323709451.583543
+s323712558.801533
+e323712558.804076
 r1
 xTouch
 x/Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app
-lSLF07#2@87"Touch /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app323709451#323709451#0(0"0(0#0#0"4300882208#158"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    /usr/bin/touch -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app0#
+lSLF07#2@87"Touch /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app323712558#323712558#0(0"0(0#0#0"4300882208#158"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory    /usr/bin/touch -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/build/Default/CloudFactorydAgl.app0#
 
