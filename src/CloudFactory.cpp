@@ -229,6 +229,7 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 		incrementer_c[0] += 1.01;
 		incrementer_c[1] += 1.01;
 		
+		
 		if(blobs[current_cloud_c]->clouds.size() < 400){
 		
 			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(incrementer_c[0] + location_c[0], incrementer_c[1] + location_c[1], 0, size, 6, "STRAIGHT"));
@@ -273,6 +274,12 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 				speed = 3;
 				blobs[current_cloud_c]->clouds[0]->setRadius(300);
 			}	
+			
+			for(unsigned int ii = 0; ii < blobs[current_cloud_c]->clouds.size(); ii ++){
+				blobs[current_cloud_c]->clouds[ii]->AddToMatrix(The_Matrix);
+				blobs[current_cloud_c]->clouds[ii]->SetSpeed(speed);
+			}
+			
 		} // end if
 		
 	} // end state grow C
@@ -449,7 +456,7 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 				current_cloud_a = blobs.size() - 1; // get current index for growth
 				
 				location_a = Wm5::Float3(670.0, 0.0, 0.0);
-				blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(670, 0, 0, 64, 6, "STRAIGHT")); // create new cloud
+				blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(670, 0, 0, size, 6, "STRAIGHT")); // create new cloud
 				
 				
 				mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1] );
@@ -478,7 +485,7 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 				current_cloud_b = blobs.size() - 1; // get current index for growth
 				
 				location_b = Wm5::Float3(825.0, 0.0, 0.0);
-				blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(825, 0, 0, 64, 4, "STRAIGHT")); // create new cloud
+				blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(825, 0, 0, size, 6, "STRAIGHT")); // create new cloud
 				mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1] );
 				
 				//submit the added cloud to the user_guess list of clouds
@@ -503,7 +510,7 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 				current_cloud_c = blobs.size() - 1; // get current index for growth
 				
 				location_c = Wm5::Float3(975.0, 0.0, 0.0);
-				blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(975, 0, 0, 64, 6, "STRAIGHT")); // create new cloud
+				blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(975, 0, 0, size, 6, "STRAIGHT")); // create new cloud
 				mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1] );
 				
 				//submit the added cloud to the user_guess list of clouds
@@ -517,6 +524,26 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 			
 			break;
 		}
+		case 'r': // reset
+		case 'R':
+		{
+			
+			for(unsigned int ii = 0; ii < blobs.size(); ii++){
+			
+				for(unsigned int jj = 0; jj < blobs[ii]->clouds.size(); jj++){
+				
+					mScene->DetachChild(blobs[ii]->clouds[jj]); // remove from scene
+					
+				}
+				
+				blobs[ii]->clouds.clear(); // clear clouds
+			}
+			
+			blobs.clear(); // clear blobs
+			user_guess.clear(); // clear guesses
+			
+			mCuller.ComputeVisibleSet(mScene); // update scene
+		}break;
 			
 		default:
 			break;
