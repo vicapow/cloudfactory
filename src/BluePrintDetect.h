@@ -1,7 +1,7 @@
 #ifndef BLUE_PRINT_DETECT_H
 #define BLUE_PRINT_DETECT_H
 
-#include <list>
+#include <vector>
 #include <math.h>
 #include <iostream>
 #include <assert.h>
@@ -27,10 +27,10 @@ public:
 	static float SizeTolerance;
 	static float PosTolerance;
 	
-	static float CalculateError( list<CloudModel*> blueprint, list<CloudModel*> clouds );
-	static void ComputeCenterOfMass( list<CloudModel*> clouds , Point& weightedPosR );
+	static float CalculateError( vector<CloudModel*> blueprint, vector<CloudModel*> clouds );
+	static void ComputeCenterOfMass( vector<CloudModel*> clouds , Point& weightedPosR );
 	static float CloudsDeviation(CloudModel* cloud,CloudModel* closest, const Point& offset );
-	static CloudModel* GetClosestNeighbor(CloudModel* cloud, list<CloudModel*> clouds , const Point& offset );
+	static CloudModel* GetClosestNeighbor(CloudModel* cloud, vector<CloudModel*> clouds , const Point& offset );
 	static float GetDistance(CloudModel* cloud1, CloudModel* cloud2 , const Point& offset );
 };
 

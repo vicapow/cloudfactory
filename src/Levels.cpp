@@ -124,11 +124,7 @@ void Levels::parse_levels(std::string filename){
 				trans[1] = atof(peek = strtok (NULL, " ,"));
 				trans[2] = atof(peek = strtok (NULL, " ,\n\r"));
 				
-				CloudModel* model = new CloudModel();
-				model->radius = radius;
-				model->posX = trans.X();
-				model->posY = trans.Y();
-				model->posZ = trans.Z();
+				CloudModel* model = new CloudModel(trans.X(),trans.Y(),trans.Z(),radius);
 												
 				L->add_blue(model);
 								

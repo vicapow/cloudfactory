@@ -25,6 +25,7 @@ public:
 class Potential_Field
 {
 public:
+	bool match;
 	Potential_Field(int size) { Size=size;};
 	virtual double Get_Potential( Point3D p) =0;
 	dPoint3D Interpolate(double isolevel, Point3D p1, Point3D p2);

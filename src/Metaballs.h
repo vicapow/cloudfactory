@@ -20,6 +20,7 @@ extern double *texture_map;
 class Potential_Matrix : public Potential_Field
 {
 	public :
+	
 	void Reset()
 	{		
 		int l = ((Size>>STEP_B)+1)*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)*sizeof(double);		
@@ -33,35 +34,42 @@ class Potential_Matrix : public Potential_Field
 		if( matrix == NULL)
 			std::cout << "error : not enough memory !!! \n" ;
 		this->Reset();
+		match = false;
 	};
+	
+	
+	
+	/* get the potential for a grid cell */
 	inline double Get_Potential( Point3D p)
 	{		
 		return matrix[(p.x>>STEP_B) + (p.y>>STEP_B)*((Size>>STEP_B)+1) + (p.z>>STEP_B)*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)];
 	};
+	
+	
+	/* add potiential to a particular grid cell */
 	inline void Set_Potential_world( int x ,int y, int z , double p)
 	{		
-		matrix[(x>>STEP_B) + (y>>STEP_B)*((Size>>STEP_B)+1) + (z>>STEP_B)*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)]+=p;
+		matrix[ (x>>STEP_B) + (y>>STEP_B)*((Size>>STEP_B)+1) + (z>>STEP_B)*((Size>>STEP_B)+1)*((Size>>STEP_B)+1) ] += p;
 	};
+	
+	
 	inline void Set_Potential_matrix( int x ,int y, int z , double p)
 	{	
-		matrix[x + y*((Size>>STEP_B)+1) + z*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)]+=p;
+		matrix[x + y*((Size>>STEP_B)+1) + z*((Size>>STEP_B)+1)*((Size>>STEP_B)+1)] += p;
 	};
 
-	private :
+	private:
 	double *matrix;
+	
 };
 
-class Metaballs3D : public Node
+class Metaballs3D : public Node, public CloudModel
 {
 	public :
 	
 	Metaballs3D(){}
-	Metaballs3D(float px , float py , float pz, int rayon, float speed, std::string dir)
+	Metaballs3D(float px , float py , float pz, int rayon, float speed, std::string dir): CloudModel(px,py,pz,rayon)
 	{
-		posX = px;
-		posY = py;
-		posZ = pz;
-		
 		Speed = speed;
 		
 		direction = dir;
@@ -146,9 +154,9 @@ class Metaballs3D : public Node
 		posX += amount;
 	}
 	
-	void SetSpeed(float decrease){
+	void SetSpeed(float speed){
 		
-		Speed -= decrease;
+		Speed = speed;
 	}
 	
 	inline int Get_Px() { return (int)posX; };
@@ -159,6 +167,5 @@ class Metaballs3D : public Node
 	
 	int Rayon;
 	float Speed;
-	float posX, posY, posZ;
 	std::string direction;
 };
