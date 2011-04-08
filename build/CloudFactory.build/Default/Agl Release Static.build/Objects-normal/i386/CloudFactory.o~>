@@ -1,4 +1,0 @@
-/Users/timothyluciani/Desktop/cloudfactory/src/CloudFactory.cpp: In member function 'virtual void CloudFactory::OnIdle()':
-/Users/timothyluciani/Desktop/cloudfactory/src/CloudFactory.cpp:304: warning: comparison between signed and unsigned integer expressions
-/Users/timothyluciani/Desktop/cloudfactory/src/CloudFactory.cpp:304: warning: comparison between signed and unsigned integer expressions
-/Users/timothyluciani/Desktop/cloudfactory/src/CloudFactory.cpp:304: warning: comparison between signed and unsigned integer expressions
