@@ -11,17 +11,27 @@ using namespace std;
 
 // Global variables
 GLfloat angle = 0.0;
-vector<vertex> vertices;
-int SX = 100;
-int SY = 100;
-int SZ = 25;
+list<vertex> vertices;
+int SX = 200;
+int SY = 200;
+int SZ = 50;
 float *** metaballs = newFloatMatrix(SX,SY,SZ);
 float ball1 = 0;
 float ball2 = 0;
 int t = 0;
 void renderScene(void) {
 	
-	ball1 = floor(sin(t/10) * 50 + 0.5 );
+	initVoxels(metaballs,SX,SY,SZ);
+	drawMetaball(metaballs,SX,SY,SZ,ball1,SY/2,SZ-5,10);
+	drawMetaball(metaballs,SX,SY,SZ,ball2,SY/2,SZ-5,10);
+	
+	drawMetaball(metaballs,SX,SY,SZ,SX/2,ball1,SZ-5,10);
+	drawMetaball(metaballs,SX,SY,SZ,SX/2,ball2,SZ-5,10);
+	
+	clearVertexList();
+	vertices = runMarchingCubes(metaballs,SX,SY,SZ,6,6,6,1);
+	
+	ball1 = sin(t/10.0) * 50 + 50 ;
 	ball2 = SX - ball1;
 	//cout << "ball1: " << ball1 << endl;
 	t++;
@@ -55,29 +65,30 @@ void renderScene(void) {
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    glRotatef(angle, 0.0f, 1.0f, 0.0f);
+    //glRotatef(angle, 0.0f, 1.0f, 0.0f);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
     glPushMatrix();
-    glScalef( 1.0 / SX, 1.0 / SX , 1.0 / SX );
+    glScalef( 2.0 / SX, 2.0 / SX , 2.0 / SX );
     glColor3f(0.0f, 0.6f, 0.0f);
-    glTranslatef(-50.0f, -50.0f, -50.0f);
+    glTranslatef( -SX/2.0 , -SY/2.0, -50.0f);
     //glRotatef(80.0f, 0.0f, 0.0f, 1.0f);
 
     // Draw the triangles
-    vector<vertex>::iterator it;
+    list<vertex>::iterator it;
     glBegin(GL_TRIANGLES);
-        for(it = vertices.begin(); it < vertices.end(); it++) {
+        for(it = vertices.begin(); it != vertices.end(); it++) {
             glNormal3d(it->normal_x, it->normal_y, it->normal_z);
             glVertex3d(it->x, it->y, it->z);
         }
     glEnd();
+	//cout <<" num verts: " << vertices.size() << endl;
     glPopMatrix();
 
 	glFlush();
     glutSwapBuffers();
-    angle += 0.1;
+    angle += 1;
 }
 
 int main(int argc, char **argv) {
@@ -87,10 +98,7 @@ int main(int argc, char **argv) {
 	//             200, 200, 200, 1, 1, 1, 50.0);
 	// delete raw;
 	
-	initVoxels(metaballs,SX,SY,SZ);
-	drawMetaball(metaballs,SX,SY,SZ,ball1,SY/2,SZ-5,10);
-	drawMetaball(metaballs,SX,SY,SZ,ball2,SY/2,SZ-5,10);
-	vertices = runMarchingCubes(metaballs,SX,SY,SZ,6,6,6,1);
+
 
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_DEPTH | GLUT_DOUBLE | GLUT_RGBA);

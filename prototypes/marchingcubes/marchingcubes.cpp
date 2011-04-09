@@ -4,7 +4,8 @@
 **/
 
 #include "marchingcubes.hpp"
-vector<vertex> vertexList;
+//vector<vertex> vertexList;
+list<vertex> vertexList;
 
 uchar *** parseRawFile(char * filename, int sizeX, int sizeY, int sizeZ) {
     uchar *** voxels = new uchar**[sizeX];
@@ -75,10 +76,37 @@ void convertFloatToUCharVoxel(float *** metaballs, uchar *** voxels, int sizeX, 
 }
 
 void drawMetaball(float ***voxels,int sizeX,int sizeY,int sizeZ, int px, int py, int pz, int R ){
-    for(int x = 0; x < sizeX; x++) {
-        for(int y = 0; y < sizeY; y++) {
-			for(int z = 0; z < sizeZ; z++){
-				voxels[x][y][z] += ( R / sqrt( (x-px)*(x-px) + (y-py)*(y-py) + (z-pz)*(z-pz) ) ) ;
+	
+	int maxR = R*4;//cache R*2 because we'll be using it frequently
+	
+	//upper and lower bounds for optimization
+	
+	// -- X 
+		int lx = px - maxR;
+		if(lx<0) lx = 0;
+	
+		int ux = px + maxR;
+		if(ux>sizeX) ux = sizeX;
+	
+	
+	// -- Y 
+		int ly = py - maxR;
+		if(ly<0) ly = 0;
+	
+		int uy = py + maxR;
+		if(uy>sizeY) uy = sizeY;
+	
+	// -- Z 
+		int lz = pz - maxR;
+		if(lz<0) lz = 0;
+	
+		int uz = pz + maxR;
+		if(uz>sizeZ) uz = sizeZ;
+	
+    for(int x = lx; x < ux; x++) {
+        for(int y = ly; y < uy; y++) {
+			for(int z = lz; z < uz; z++){
+				voxels[x][y][z] += ( R / sqrt( (x-px)*(x-px) + (y-py)*(y-py) + (z-pz)*(z-pz)*2 ) ) ;
 			}
         }
     }
@@ -152,7 +180,11 @@ void processCube(cube cube, double isolevel) {
     }
 }
 
-vector<vertex> runMarchingCubes(float ***voxels, int sizeX, int sizeY, int sizeZ, 
+void clearVertexList(){
+	vertexList.erase(vertexList.begin(),vertexList.end());
+}
+
+list<vertex>& runMarchingCubes(float ***voxels, int sizeX, int sizeY, int sizeZ, 
         int stepX, int stepY, int stepZ, double isovalue) {
     // Run the processCube function on every cube in the grid
 	for(int x = stepX; x < sizeX-2*stepX; x += stepX) {
