@@ -59,7 +59,7 @@ public:
 	Levels(std::string levels); // default constructor
 	~Levels(); // deconstructor
 	
-	NodePtr load_level(NodePtr mScene, int index);
+	NodePtr load_level(NodePtr scene, int index);
 	Cannons *getCannon(int level, int cannon);
 	Level *get_level(int index);
 	

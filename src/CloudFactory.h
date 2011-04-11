@@ -13,6 +13,7 @@
 #include "MetaballCanvas.h"
 
 using namespace std;
+using namespace Wm5;
 
 class m_cloud {
 	
@@ -57,7 +58,7 @@ public:
 	
 	MetaballCanvas* canvas;
 protected:
-    void CreateScene (int level);
+    void CreateScene ();
 	TriMesh* CreateTorus();
 	
 	std::vector<TriMesh*> mesh;

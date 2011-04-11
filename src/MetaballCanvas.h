@@ -30,6 +30,7 @@ public:
 	
 	MetaballCanvas();
 	void draw();
+	void init();
 	
 	float *** metaballs;
 	list<vertex> vertices;
@@ -45,10 +46,12 @@ public:
 
 	
 private:
-	TriMesh* regenerate_metaballs_mesh(list<vertex>& vertices);
-	TriMesh* getTriMeshFromVertexList( list<vertex>& vertices );
+	void updateMesh( list<vertex>& vertices );
 	//void updateTriMesh( VertexFormat* format, VertexBuffer* vbuffer, IndexBuffer* ibuffer, list<vertex>& vertices, int max_indices );
 	TriMesh* myMesh;
+	VertexFormat* format;
+	VertexBuffer* vbuffer;
+	IndexBuffer* ibuffer;
 };
 
 #endif /*METABALL_CANVAS*/

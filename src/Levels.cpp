@@ -145,13 +145,13 @@ void Levels::parse_levels(std::string filename){
 } // end parse levels
 
 NodePtr Levels::load_level(NodePtr mScene, int index){
-	
+		
 	mScene = new0 Node();
 	
 	Level *L = levels[index]; 
 			
-	for(int ii = 0; ii < L->num_cannons(); ii++) {
-		mScene->AttachChild(L->get_cannon(ii));
+	for(int i = 0; i < L->num_cannons(); i++) {
+		mScene->AttachChild(L->get_cannon(i));
 	}
 	
 	TriMesh *bkgd = CreateSquare(L->get_name()); /* background square */
@@ -162,9 +162,9 @@ NodePtr Levels::load_level(NodePtr mScene, int index){
 	
 	mScene->AttachChild(bkgd);
 	mScene->AttachChild(blue);
-
 	
 	return mScene;
+
 }
 
 Cannons *Levels::getCannon(int level, int cannon){

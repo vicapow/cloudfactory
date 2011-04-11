@@ -39,6 +39,8 @@ bool CloudFactory::OnInitialize ()
         return false;
     }
 	
+	//Environment::InsertDirectory("../../resources/");
+	
 	canvas = new MetaballCanvas();
 	
 	for(int i = 0; i < BP_LEN; i++){
@@ -63,7 +65,7 @@ bool CloudFactory::OnInitialize ()
 	
 	level = new Levels("../../src/Levels.txt");
 	
-    CreateScene(0);
+    CreateScene();
 	
     // Initial update of objects.
     mScene->Update();
@@ -75,7 +77,6 @@ bool CloudFactory::OnInitialize ()
     InitializeCameraMotion(0.01f, 0.001f);
     InitializeObjectMotion(mScene);
 		
-	Environment::InsertDirectory("../../resources/");
 	current_cloud_a = current_cloud_b = current_cloud_c = -1; // initialize current cloud
 	STATE_GROW_A = STATE_GROW_B = STATE_GROW_C =false; // set growing to false
 	STOP_GROWTH_A = STOP_GROWTH_B = STOP_GROWTH_C = false;
@@ -111,7 +112,7 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 		
 	/* measure time between time time step and last */
 	
-	//canvas->draw();
+	canvas->draw();
 	
 	current_time = GetTimeInMicroseconds()/1000;
 	int frame_time = current_time - previous_time;
@@ -678,15 +679,16 @@ TriMesh* CloudFactory::CreateTorus ()
 }
 
 
-void CloudFactory::CreateScene (int index)
+void CloudFactory::CreateScene ()
 {
 	
 	//cout << "ball1: " << ball1 << endl;
-
+	
+	mScene = level->load_level(mScene, 0);
+	
+	canvas->init();
 	canvas->LocalTransform.SetTranslate(APoint(1,0,0));
 	canvas->draw();
-	
-	mScene = level->load_level(mScene, index);
 	
 	mScene->AttachChild(canvas);
 	
