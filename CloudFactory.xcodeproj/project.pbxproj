@@ -27,6 +27,8 @@
 		3CC4FE6410FD1F6600C42DBB /* libWm5Imagics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5810FD1F6600C42DBB /* libWm5Imagics.a */; };
 		3CC4FE6510FD1F6600C42DBB /* libWm5Mathematics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5910FD1F6600C42DBB /* libWm5Mathematics.a */; };
 		3CC4FE6610FD1F6600C42DBB /* libWm5Physics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */; };
+		DB7A85801353584A005361FB /* MetaballCanvas.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB7A857E1353584A005361FB /* MetaballCanvas.cpp */; };
+		DBFCECEA1350D0010057368B /* marchingcubes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBFCECE81350D0010057368B /* marchingcubes.cpp */; };
 		F0ED317C1342BCB9004AF5D6 /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED317A1342BCB9004AF5D6 /* Background.cpp */; };
 		F0ED317D1342BCB9004AF5D6 /* Background.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED317A1342BCB9004AF5D6 /* Background.cpp */; };
 		F0ED31801342BCCD004AF5D6 /* BluePrintDetect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F0ED317E1342BCCD004AF5D6 /* BluePrintDetect.cpp */; };
@@ -76,6 +78,10 @@
 		3CC4FE5A10FD1F6600C42DBB /* libWm5Physics.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWm5Physics.a; path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Library/Release/libWm5Physics.a; sourceTree = SOURCE_ROOT; };
 		748AA4CC07F4624400486586 /* CloudFactorydAgl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactorydAgl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748AA4DA07F4631800486586 /* CloudFactoryAgl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactoryAgl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB7A857E1353584A005361FB /* MetaballCanvas.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MetaballCanvas.cpp; path = src/MetaballCanvas.cpp; sourceTree = "<group>"; };
+		DB7A857F1353584A005361FB /* MetaballCanvas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MetaballCanvas.h; path = src/MetaballCanvas.h; sourceTree = "<group>"; };
+		DBFCECE81350D0010057368B /* marchingcubes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = marchingcubes.cpp; path = src/marchingcubes.cpp; sourceTree = "<group>"; };
+		DBFCECE91350D0010057368B /* marchingcubes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = marchingcubes.hpp; path = src/marchingcubes.hpp; sourceTree = "<group>"; };
 		F0ED317A1342BCB9004AF5D6 /* Background.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Background.cpp; path = src/Background.cpp; sourceTree = "<group>"; };
 		F0ED317B1342BCB9004AF5D6 /* Background.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Background.h; path = src/Background.h; sourceTree = "<group>"; };
 		F0ED317E1342BCCD004AF5D6 /* BluePrintDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BluePrintDetect.cpp; path = src/BluePrintDetect.cpp; sourceTree = "<group>"; };
@@ -210,6 +216,10 @@
 		748AA50C07F465A200486586 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				DB7A857E1353584A005361FB /* MetaballCanvas.cpp */,
+				DB7A857F1353584A005361FB /* MetaballCanvas.h */,
+				DBFCECE81350D0010057368B /* marchingcubes.cpp */,
+				DBFCECE91350D0010057368B /* marchingcubes.hpp */,
 				F0ED31821342BCD7004AF5D6 /* Cannons.cpp */,
 				F0ED31831342BCD7004AF5D6 /* Cannons.h */,
 				F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */,
@@ -344,6 +354,8 @@
 				F0ED31C01342BCE3004AF5D6 /* MtlLoaderCodes.cpp in Sources */,
 				F0ED31C21342BCE3004AF5D6 /* ObjLoader.cpp in Sources */,
 				F0ED31C61342BCE3004AF5D6 /* ObjLoaderCodes.cpp in Sources */,
+				DBFCECEA1350D0010057368B /* marchingcubes.cpp in Sources */,
+				DB7A85801353584A005361FB /* MetaballCanvas.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
