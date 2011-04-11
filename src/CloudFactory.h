@@ -9,6 +9,8 @@
 #include "CloudModel.h"
 #include <vector>
 #include <list>
+#include "marchingcubes.hpp"
+#include "MetaballCanvas.h"
 
 using namespace std;
 
@@ -20,20 +22,16 @@ public:
 		cout << "m clouds created!" << endl;
 		
 		//there should only be oe metaball for each cloud but for now, this value isn't being used.
-		metaball = new Metaballs3D(670, 0, 0, 128, 6, "STRAIGHT");
-	
 		match = false;
 	};
 	
 	std::vector<Metaballs3D*> clouds;
-	Metaballs3D* metaball;
 	
 	bool match;
 	
 	//desctuctor
 	~m_cloud(){
 		cout << "m clouds destroied" << endl;
-		delete metaball;
 	}
 	
 };
@@ -55,8 +53,12 @@ public:
 							   int y, unsigned int);
 	void Init_Texture();
 	
+	Node* metaballVertices;
+	
+	MetaballCanvas* canvas;
 protected:
     void CreateScene (int level);
+	TriMesh* CreateTorus();
 	
 	std::vector<TriMesh*> mesh;
     NodePtr mScene;

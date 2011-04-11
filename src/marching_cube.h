@@ -3,7 +3,19 @@
 
 #include "Wm5WindowApplication3.h"
 
+#include <stdio.h>
+#include <string.h>
+#include <iostream>
+#include <cmath>
+#include <list>
+
+#include "marching_cube.h"
+#include "Time_Counter.h"
+#include "ObjLoader.h"
+#include "marchingcubes.hpp"
+
 using namespace Wm5;
+using namespace std;
 
 class Point3D
 {
@@ -35,6 +47,7 @@ protected :
 };
 
 TriMesh *Draw_Iso_Surface_Around_Point( Potential_Field * field  , double isolevel , int step , int x,int y,int z);
+TriMesh* Box (VertexFormat* format, float xExtent, float yExtent, float zExtent);
 void Marching_Cube_Begin( Potential_Field * field , int step);
 void Marching_Cube_End( );
 

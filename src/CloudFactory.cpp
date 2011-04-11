@@ -18,6 +18,7 @@ const int BP_LEN = 3;
 const float BP[BP_LEN][4] = { { 670, 500, 0 , 75 } , { 825, 500, 0 , 75 } , { 975,500,0 , 75 } };
 vector<CloudModel*> example_blueprint;
 
+
 int size = 64;
 
 WM5_WINDOW_APPLICATION(CloudFactory);
@@ -37,6 +38,8 @@ bool CloudFactory::OnInitialize ()
     {
         return false;
     }
+	
+	canvas = new MetaballCanvas();
 	
 	for(int i = 0; i < BP_LEN; i++){
 		example_blueprint.push_back(new CloudModel(BP[i]));
@@ -80,9 +83,14 @@ bool CloudFactory::OnInitialize ()
 	CUR_KEY = ' ';
 	SEUIL = 1;
 		
-	incrementer_a = Wm5::Float3(1.0, 1.0, 1.0);;
-	incrementer_b = Wm5::Float3(1.0, 1.0, 1.0);;
-	incrementer_c = Wm5::Float3(1.0, 1.0, 1.0);;
+	incrementer_a = Wm5::Float3(1.0, 1.0, 1.0);
+	incrementer_b = Wm5::Float3(1.0, 1.0, 1.0);
+	incrementer_c = Wm5::Float3(1.0, 1.0, 1.0);
+	
+	
+	
+	
+
 
     return true;
 }
@@ -103,6 +111,8 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 		
 	/* measure time between time time step and last */
 	
+	//canvas->draw();
+	
 	current_time = GetTimeInMicroseconds()/1000;
 	int frame_time = current_time - previous_time;
 	previous_time = current_time;
@@ -110,8 +120,6 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 	float frame_step_time = frame_time/33.33;
 
 	if(STATE_GROW_A){
-//		
-//		//blobs[current_cloud_a]->metaball->radius += 1;
 		
 		incrementer_a[0] += 1.01;
 		incrementer_a[1] += 1.01;
@@ -291,19 +299,10 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 		counter.restart();
 		
 		for(unsigned int j = 0; j < blobs.size(); j++){
-		
-			
-//			if( j != current_cloud_a ){
-//				blobs[j]->metaball->Move(frame_step_time);
-//			}
-//			blobs[j]->metaball->AddToMatrix(The_Matrix);
-
-			
 			for(int i=0; i < (int)blobs[j]->clouds.size(); i++)
 			{		
 				if(j != current_cloud_c && j != current_cloud_b && j != current_cloud_a){
 					blobs[j]->clouds[i]->Move(frame_step_time);
-//					blobs[j]->metaball->Move(frame_step_time);
 				}
 				
 				blobs[j]->clouds[i]->AddToMatrix(The_Matrix);
@@ -353,12 +352,6 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 																		 (blobs[j]->clouds[ii]->Get_Pz()/STEP)*STEP) );		
 				blobs[j]->clouds[ii]->Update();
 			}
-			
-//			blobs[j]->metaball->SetChild(0, Draw_Iso_Surface_Around_Point( The_Matrix , SEUIL , STEP ,
-//																			(blobs[j]->metaball->Get_Px()/STEP)*STEP,
-//																			(blobs[j]->metaball->Get_Py()/STEP)*STEP,
-//																			(blobs[j]->metaball->Get_Pz()/STEP)*STEP) );		
-//			blobs[j]->metaball->Update();
 			
 		}
 	
@@ -455,17 +448,14 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 		{
 			if(CUR_KEY != 'a'){
 				
+				//add a cloud from factory A
 				blobs.push_back(new m_cloud());
-				
-				current_cloud_a = blobs.size() - 1; // get current index for growth
+				current_cloud_a = blobs.size() - 1;
 				
 				location_a = Wm5::Float3(670.0, 0.0, 0.0);
 				blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(670, 0, 0, size, 6, "STRAIGHT")); // create new cloud
 				
-				
 				mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1] );
-				
-				//mScene->AttachChild( blobs[current_cloud_a]->metaball );
 				
 				//submit the added cloud to the user_guess list of clouds
 				if(blobs[current_cloud_a]->clouds.size()==1)
@@ -662,8 +652,42 @@ bool CloudFactory::OnMouseClick (int button, int state, int x,
 return true;
 } 
 
+//----------------------------------------------------------------------------
+TriMesh* CloudFactory::CreateTorus ()
+{
+    VertexFormat* vformat = VertexFormat::Create(2,VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 0);
+	
+	//a TriMesh stores the data of a triangle mesh
+    //TriMesh* mesh = StandardMesh(vformat).Torus(32, 32, 0.25f, 0.2f);
+	TriMesh *mesh = StandardMesh(vformat).Sphere(32,32,0.1);
+	mesh->SetName("Torus");//useful for picking
+    VertexBufferAccessor vba(mesh);//if you want to access individual verticies of a mesh
+//    for (int i = 0; i < vba.GetNumVertices(); ++i)
+//    {
+//        Float2& tcoord0 = vba.TCoord<Float2>(0, i);
+//        tcoord0[0] *= 4.0f;
+//        tcoord0[1] *= 4.0f;
+//    }
+	
+    std::string baseName = Environment::GetPathR("Bricks.wmtf");
+    Texture2D* baseTexture = Texture2D::LoadWMTF(baseName);
+    baseTexture->GenerateMipmaps();
+	mesh->SetEffectInstance(Texture2DEffect::CreateUniqueInstance(baseTexture, Shader::SF_LINEAR_LINEAR, Shader::SC_REPEAT,Shader::SC_REPEAT));
+	
+    return mesh;
+}
+
+
 void CloudFactory::CreateScene (int index)
 {
+	
+	//cout << "ball1: " << ball1 << endl;
+
+	canvas->LocalTransform.SetTranslate(APoint(1,0,0));
+	canvas->draw();
+	
 	mScene = level->load_level(mScene, index);
+	
+	mScene->AttachChild(canvas);
 	
 }
