@@ -1,0 +1,149 @@
+// !$*UTF8*$!
+{
+	0AC30B5107EC47D83280529A /* mygldrawer.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 1911}}";
+			sepNavSelRange = "{104, 0}";
+			sepNavVisRange = "{0, 646}";
+		};
+	};
+	1162C541CAF1C90EC8DE8DF2 /* mygldrawer.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 425}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 25}";
+		};
+	};
+	2A165002224AA4EE4F32A692 /* CloudFactory */ = {
+		activeExec = 0;
+		executables = (
+			F0B5F66A13579B6B00B12947 /* CloudFactory */,
+		);
+	};
+	7EC3C68A81EFFF79B6CA22AC /* main.cpp */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1007, 425}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 369}";
+		};
+	};
+	91B15E841AA80083484172DE /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = F0B5F66A13579B6B00B12947 /* CloudFactory */;
+		activeTarget = 2A165002224AA4EE4F32A692 /* CloudFactory */;
+		codeSenseManager = F0B5F67B13579B8000B12947 /* Code sense */;
+		executables = (
+			F0B5F66A13579B6B00B12947 /* CloudFactory */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					829,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 324508523;
+			PBXWorkspaceStateSaveDate = 324508523;
+		};
+		perUserProjectItems = {
+			F0B5F67213579B8000B12947 /* PBXTextBookmark */ = F0B5F67213579B8000B12947 /* PBXTextBookmark */;
+			F0B5F67313579B8000B12947 /* PBXTextBookmark */ = F0B5F67313579B8000B12947 /* PBXTextBookmark */;
+			F0B5F67413579B8000B12947 /* PBXBookmark */ = F0B5F67413579B8000B12947 /* PBXBookmark */;
+			F0B5F67513579B8000B12947 /* PBXTextBookmark */ = F0B5F67513579B8000B12947 /* PBXTextBookmark */;
+		};
+		sourceControlManager = F0B5F67A13579B8000B12947 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	F0B5F66A13579B6B00B12947 /* CloudFactory */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = CloudFactory;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	F0B5F67213579B8000B12947 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0AC30B5107EC47D83280529A /* mygldrawer.h */;
+		name = "mygldrawer.h: 6";
+		rLen = 0;
+		rLoc = 104;
+		rType = 0;
+		vrLen = 646;
+		vrLoc = 0;
+	};
+	F0B5F67313579B8000B12947 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1162C541CAF1C90EC8DE8DF2 /* mygldrawer.cpp */;
+		name = "mygldrawer.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 25;
+		vrLoc = 0;
+	};
+	F0B5F67413579B8000B12947 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 7EC3C68A81EFFF79B6CA22AC /* main.cpp */;
+	};
+	F0B5F67513579B8000B12947 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 7EC3C68A81EFFF79B6CA22AC /* main.cpp */;
+		name = "main.cpp: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 369;
+		vrLoc = 0;
+	};
+	F0B5F67A13579B8000B12947 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	F0B5F67B13579B8000B12947 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}

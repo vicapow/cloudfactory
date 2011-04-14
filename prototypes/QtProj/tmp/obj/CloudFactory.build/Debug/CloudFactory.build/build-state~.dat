@@ -1,0 +1,3890 @@
+TCloudFactory
+v7
+r0
+t324493063.683048
+cCheck dependencies
+cProcessInfoPlistFile /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/Info.plist Info.plist
+cPhaseScriptExecution "Qt Qmake" /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-D7BA7D76DAB5DD13389D6332.sh
+cPhaseScriptExecution "Qt Preprocessors" /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-A0A52A2ADF7A1E2A99738674.sh
+cCompileC tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/main.o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/mygldrawer.o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/marchingcubes.o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_mygldrawer.o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/moc_mygldrawer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+cLd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/MacOS/CloudFactory normal i386
+cTouch /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app
+cPBXCp build/CloudFactory.app build/Debug/CloudFactory.app
+
+N/Library/Frameworks/Qt3Support.framework/Headers/q3cstring.h
+c000000004C8A594A0000000000002795
+t1284135242
+s10133
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/Qt3Support.framework/Headers/q3valuelist.h
+c000000004C8A594B0000000000002081
+t1284135243
+s8321
+i<QtCore/qalgorithms.h>
+i<QtCore/qdatastream.h>
+i<QtCore/qlinkedlist.h>
+i<QtCore/qlist.h>
+i<iterator>
+i<list>
+
+N/Library/Frameworks/QtCore.framework/Headers/QDate
+c000000004C8A59470000000000000017
+t1284135239
+s23
+i"qdatetime.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/QList
+c000000004C8A59470000000000000013
+t1284135239
+s19
+i"qlist.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/QObject
+c000000004C8A59470000000000000015
+t1284135239
+s21
+i"qobject.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/QPoint
+c000000004C8A59470000000000000014
+t1284135239
+s20
+i"qpoint.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/QPointF
+c000000004C8A59470000000000000014
+t1284135239
+s20
+i"qpoint.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/QtCore
+c000000004C8A59470000000000000E1B
+t1284135239
+s3611
+i"qabstractanimation.h"
+i"qanimationgroup.h"
+i"qparallelanimationgroup.h"
+i"qpauseanimation.h"
+i"qpropertyanimation.h"
+i"qsequentialanimationgroup.h"
+i"qvariantanimation.h"
+i"qabstracteventdispatcher.h"
+i"qabstractitemmodel.h"
+i"qbasictimer.h"
+i"qcoreapplication.h"
+i"qcoreevent.h"
+i"qeventloop.h"
+i"qmath.h"
+i"qmetaobject.h"
+i"qmetatype.h"
+i"qmimedata.h"
+i"qobject.h"
+i"qobjectcleanuphandler.h"
+i"qobjectdefs.h"
+i"qpointer.h"
+i"qsharedmemory.h"
+i"qsignalmapper.h"
+i"qsocketnotifier.h"
+i"qsystemsemaphore.h"
+i"qtimer.h"
+i"qtranslator.h"
+i"qvariant.h"
+i"qendian.h"
+i"qfeatures.h"
+i"qglobal.h"
+i"qlibraryinfo.h"
+i"qnamespace.h"
+i"qnumeric.h"
+i"qatomic.h"
+i"qbasicatomic.h"
+i"qmutex.h"
+i"qreadwritelock.h"
+i"qsemaphore.h"
+i"qthread.h"
+i"qthreadstorage.h"
+i"qwaitcondition.h"
+i"qfactoryinterface.h"
+i"qlibrary.h"
+i"qplugin.h"
+i"qpluginloader.h"
+i"quuid.h"
+i"qalgorithms.h"
+i"qbitarray.h"
+i"qbytearray.h"
+i"qbytearraymatcher.h"
+i"qcache.h"
+i"qchar.h"
+i"qcontainerfwd.h"
+i"qcontiguouscache.h"
+i"qcryptographichash.h"
+i"qdatetime.h"
+i"qeasingcurve.h"
+i"qelapsedtimer.h"
+i"qhash.h"
+i"qiterator.h"
+i"qline.h"
+i"qlinkedlist.h"
+i"qlist.h"
+i"qlocale.h"
+i"qmap.h"
+i"qmargins.h"
+i"qpair.h"
+i"qpoint.h"
+i"qqueue.h"
+i"qrect.h"
+i"qregexp.h"
+i"qscopedpointer.h"
+i"qset.h"
+i"qshareddata.h"
+i"qsharedpointer.h"
+i"qsize.h"
+i"qstack.h"
+i"qstring.h"
+i"qstringbuilder.h"
+i"qstringlist.h"
+i"qstringmatcher.h"
+i"qtextboundaryfinder.h"
+i"qtimeline.h"
+i"qvarlengtharray.h"
+i"qvector.h"
+i"qxmlstream.h"
+i"qabstractstate.h"
+i"qabstracttransition.h"
+i"qeventtransition.h"
+i"qfinalstate.h"
+i"qhistorystate.h"
+i"qsignaltransition.h"
+i"qstate.h"
+i"qstatemachine.h"
+i"qtextcodec.h"
+i"qtextcodecplugin.h"
+i"qabstractfileengine.h"
+i"qbuffer.h"
+i"qdatastream.h"
+i"qdebug.h"
+i"qdir.h"
+i"qdiriterator.h"
+i"qfile.h"
+i"qfileinfo.h"
+i"qfilesystemwatcher.h"
+i"qfsfileengine.h"
+i"qiodevice.h"
+i"qprocess.h"
+i"qresource.h"
+i"qsettings.h"
+i"qtemporaryfile.h"
+i"qtextstream.h"
+i"qurl.h"
+i"qfuture.h"
+i"qfutureinterface.h"
+i"qfuturesynchronizer.h"
+i"qfuturewatcher.h"
+i"qrunnable.h"
+i"qtconcurrentcompilertest.h"
+i"qtconcurrentexception.h"
+i"qtconcurrentfilter.h"
+i"qtconcurrentfilterkernel.h"
+i"qtconcurrentfunctionwrappers.h"
+i"qtconcurrentiteratekernel.h"
+i"qtconcurrentmap.h"
+i"qtconcurrentmapkernel.h"
+i"qtconcurrentmedian.h"
+i"qtconcurrentreducekernel.h"
+i"qtconcurrentresultstore.h"
+i"qtconcurrentrun.h"
+i"qtconcurrentrunbase.h"
+i"qtconcurrentstoredfunctioncall.h"
+i"qtconcurrentthreadengine.h"
+i"qthreadpool.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/qabstractanimation.h
+c000000004C8A59470000000000001120
+t1284135239
+s4384
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qabstracteventdispatcher.h
+c000000004C8A59470000000000000E7A
+t1284135239
+s3706
+i<QtCore/qobject.h>
+i<QtCore/qeventloop.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qabstractfileengine.h
+c000000004C8A59470000000000001EA4
+t1284135239
+s7844
+i<QtCore/qdir.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qabstractitemmodel.h
+c000000004C8A59470000000000004075
+t1284135239
+s16501
+i<QtCore/qvariant.h>
+i<QtCore/qobject.h>
+i<QtCore/qhash.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qabstractstate.h
+c000000004C8A59470000000000000B4A
+t1284135239
+s2890
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qabstracttransition.h
+c000000004C8A59470000000000000E70
+t1284135239
+s3696
+i<QtCore/qobject.h>
+i<QtCore/qlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qalgorithms.h
+c000000004C8A59470000000000004026
+t1284135239
+s16422
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qanimationgroup.h
+c000000004C8A59470000000000000BA5
+t1284135239
+s2981
+i<QtCore/qabstractanimation.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic.h
+c000000004C8A59470000000000001AB4
+t1284135239
+s6836
+i<QtCore/qglobal.h>
+i<QtCore/qbasicatomic.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_alpha.h
+c000000004C8A594700000000000065B1
+t1284135239
+s26033
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_arch.h
+c000000004C8A59470000000000000DC1
+t1284135239
+s3521
+i"QtCore/qglobal.h"
+i"QtCore/qatomic_vxworks.h"
+i"QtCore/qatomic_alpha.h"
+i"QtCore/qatomic_arm.h"
+i"QtCore/qatomic_armv6.h"
+i"QtCore/qatomic_avr32.h"
+i"QtCore/qatomic_bfin.h"
+i"QtCore/qatomic_generic.h"
+i"QtCore/qatomic_i386.h"
+i"QtCore/qatomic_ia64.h"
+i"QtCore/qatomic_macosx.h"
+i"QtCore/qatomic_mips.h"
+i"QtCore/qatomic_parisc.h"
+i"QtCore/qatomic_powerpc.h"
+i"QtCore/qatomic_s390.h"
+i"QtCore/qatomic_sparc.h"
+i"QtCore/qatomic_windows.h"
+i"QtCore/qatomic_windowsce.h"
+i"QtCore/qatomic_x86_64.h"
+i"QtCore/qatomic_symbian.h"
+i"QtCore/qatomic_sh.h"
+i"QtCore/qatomic_sh4a.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_arm.h
+c000000004C8A59470000000000002EFE
+t1284135239
+s12030
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_armv6.h
+c000000004C8A59470000000000003ABC
+t1284135239
+s15036
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_avr32.h
+c000000004C8A59470000000000001D39
+t1284135239
+s7481
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_bfin.h
+c000000004C8A59470000000000002747
+t1284135239
+s10055
+i<asm/fixed_code.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_bootstrap.h
+c000000004C8A59470000000000000C1D
+t1284135239
+s3101
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_generic.h
+c000000004C8A594700000000000021FC
+t1284135239
+s8700
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_i386.h
+c000000004C8A59470000000000002AC2
+t1284135239
+s10946
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_ia64.h
+c000000004C8A594700000000000064F4
+t1284135239
+s25844
+i<ia64intrin.h>
+i<ia64/sys/inline.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_macosx.h
+c000000004C8A594700000000000008E8
+t1284135239
+s2280
+i<QtCore/qatomic_x86_64.h>
+i<QtCore/qatomic_i386.h>
+i<QtCore/qatomic_powerpc.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_mips.h
+c000000004C8A59470000000000006E38
+t1284135239
+s28216
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_parisc.h
+c000000004C8A594700000000000020CD
+t1284135239
+s8397
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_powerpc.h
+c000000004C8A5947000000000000597D
+t1284135239
+s22909
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_s390.h
+c000000004C8A59470000000000003772
+t1284135239
+s14194
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_sh.h
+c000000004C8A59470000000000002406
+t1284135239
+s9222
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_sh4a.h
+c000000004C8A5947000000000000460D
+t1284135239
+s17933
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_sparc.h
+c000000004C8A5947000000000000424F
+t1284135239
+s16975
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_symbian.h
+c000000004C8A59470000000000002BE7
+t1284135239
+s11239
+i<QtCore/qglobal.h>
+i<e32std.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_vxworks.h
+c000000004C8A5947000000000000213A
+t1284135239
+s8506
+i<QtCore/qatomic_powerpc.h>
+i<vxWorksCommon.h>
+i<taskLib.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_windows.h
+c000000004C8A59470000000000003FA9
+t1284135239
+s16297
+i"QtCore/qatomic_i386.h"
+i"QtCore/qatomic_x86_64.h"
+i<winbase.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_windowsce.h
+c000000004C8A59470000000000000873
+t1284135239
+s2163
+i<QtCore/qglobal.h>
+i"QtCore/qatomic_windows.h"
+
+N/Library/Frameworks/QtCore.framework/Headers/qatomic_x86_64.h
+c000000004C8A59470000000000002AE7
+t1284135239
+s10983
+
+N/Library/Frameworks/QtCore.framework/Headers/qbasicatomic.h
+c000000004C8A59470000000000001922
+t1284135239
+s6434
+i<QtCore/qglobal.h>
+i<QtCore/qatomic_bootstrap.h>
+i<QtCore/qatomic_arch.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbasictimer.h
+c000000004C8A594700000000000009BC
+t1284135239
+s2492
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbitarray.h
+c000000004C8A59470000000000001857
+t1284135239
+s6231
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbuffer.h
+c000000004C8A59470000000000000D13
+t1284135239
+s3347
+i<QtCore/qiodevice.h>
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbytearray.h
+c000000004C8A59470000000000005C3C
+t1284135239
+s23612
+i<QtCore/qatomic.h>
+i<QtCore/qnamespace.h>
+i<string.h>
+i<stdarg.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qbytearraymatcher.h
+c000000004C8A59470000000000000CD3
+t1284135239
+s3283
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qcache.h
+c000000004C8A594700000000000017D2
+t1284135239
+s6098
+i<QtCore/qhash.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qchar.h
+c000000004C8A59470000000000003308
+t1284135239
+s13064
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qconfig.h
+c000000004C8A594700000000000014A5
+t1284135239
+s5285
+
+N/Library/Frameworks/QtCore.framework/Headers/qcontainerfwd.h
+c000000004C8A59470000000000000A6A
+t1284135239
+s2666
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qcontiguouscache.h
+c000000004C8A5947000000000000351B
+t1284135239
+s13595
+i<QtCore/qatomic.h>
+i<limits.h>
+i<new>
+
+N/Library/Frameworks/QtCore.framework/Headers/qcoreapplication.h
+c000000004C8A59470000000000002790
+t1284135239
+s10128
+i<QtCore/qobject.h>
+i<QtCore/qcoreevent.h>
+i<QtCore/qeventloop.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qcoreevent.h
+c000000004C8A59470000000000003F82
+t1284135239
+s16258
+i<QtCore/qnamespace.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qobjectdefs.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qcryptographichash.h
+c000000004C8A59470000000000000A5A
+t1284135239
+s2650
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qdatastream.h
+c000000004C8A59470000000000002CA9
+t1284135239
+s11433
+i<QtCore/qscopedpointer.h>
+i<QtCore/qiodevice.h>
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qdatetime.h
+c000000004C8A59470000000000002D6F
+t1284135239
+s11631
+i<QtCore/qstring.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qsharedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qdebug.h
+c000000004C8A594700000000000029DB
+t1284135239
+s10715
+i<QtCore/qalgorithms.h>
+i<QtCore/qhash.h>
+i<QtCore/qlist.h>
+i<QtCore/qmap.h>
+i<QtCore/qpair.h>
+i<QtCore/qtextstream.h>
+i<QtCore/qstring.h>
+i<QtCore/qvector.h>
+i<QtCore/qset.h>
+i<QtCore/qcontiguouscache.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qdir.h
+c000000004C8A59470000000000002618
+t1284135239
+s9752
+i<QtCore/qstring.h>
+i<QtCore/qfileinfo.h>
+i<QtCore/qstringlist.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qdiriterator.h
+c000000004C8A59470000000000000C9A
+t1284135239
+s3226
+i<QtCore/qdir.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qeasingcurve.h
+c000000004C8A594700000000000010B4
+t1284135239
+s4276
+i<QtCore/qglobal.h>
+i<QtCore/qobjectdefs.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qelapsedtimer.h
+c000000004C8A59470000000000000BAF
+t1284135239
+s2991
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qendian.h
+c000000004C8A59470000000000002FC3
+t1284135239
+s12227
+i<QtCore/qglobal.h>
+i<features.h>
+i<byteswap.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qeventloop.h
+c000000004C8A59470000000000000C6D
+t1284135239
+s3181
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qeventtransition.h
+c000000004C8A59470000000000000C88
+t1284135239
+s3208
+i<QtCore/qabstracttransition.h>
+i<QtCore/qcoreevent.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfactoryinterface.h
+c000000004C8A5947000000000000094D
+t1284135239
+s2381
+i<QtCore/qobject.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfeatures.h
+c000000004C8A59470000000000005467
+t1284135239
+s21607
+
+N/Library/Frameworks/QtCore.framework/Headers/qfile.h
+c000000004C8A594700000000000018D4
+t1284135239
+s6356
+i<QtCore/qiodevice.h>
+i<QtCore/qstring.h>
+i<stdio.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfileinfo.h
+c000000004C8A594700000000000017AF
+t1284135239
+s6063
+i<QtCore/qfile.h>
+i<QtCore/qlist.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfilesystemwatcher.h
+c000000004C8A59470000000000000BEC
+t1284135239
+s3052
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfinalstate.h
+c000000004C8A594700000000000009DC
+t1284135239
+s2524
+i<QtCore/qabstractstate.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfsfileengine.h
+c000000004C8A5947000000000000109A
+t1284135239
+s4250
+i<QtCore/qabstractfileengine.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfuture.h
+c000000004C8A59470000000000002373
+t1284135239
+s9075
+i<QtCore/qglobal.h>
+i<QtCore/qfutureinterface.h>
+i<QtCore/qstring.h>
+i<QtCore/qtconcurrentcompilertest.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfutureinterface.h
+c000000004C8A594700000000000025E4
+t1284135239
+s9700
+i<QtCore/qglobal.h>
+i<QtCore/qrunnable.h>
+i<QtCore/qmutex.h>
+i<QtCore/qtconcurrentexception.h>
+i<QtCore/qtconcurrentresultstore.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfuturesynchronizer.h
+c000000004C8A59470000000000000D76
+t1284135239
+s3446
+i<QtCore/qfuture.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qfuturewatcher.h
+c000000004C8A59470000000000001887
+t1284135239
+s6279
+i<QtCore/qfuture.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qglobal.h
+c000000004C8A59470000000000014F7B
+t1284135239
+s85883
+i<stddef.h>
+i<QtCore/qconfig.h>
+i<AvailabilityMacros.h>
+i<e32def.h>
+i<QtCore/qfeatures.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qhash.h
+c000000004C8A5947000000000000784A
+t1284135239
+s30794
+i<QtCore/qatomic.h>
+i<QtCore/qchar.h>
+i<QtCore/qiterator.h>
+i<QtCore/qlist.h>
+i<QtCore/qpair.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qhistorystate.h
+c000000004C8A59470000000000000BD9
+t1284135239
+s3033
+i<QtCore/qabstractstate.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qiodevice.h
+c000000004C8A594700000000000020AE
+t1284135239
+s8366
+i<QtCore/qobject.h>
+i<QtCore/qobjectdefs.h>
+i<QtCore/qscopedpointer.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qiterator.h
+c000000004C8A594700000000000022FA
+t1284135239
+s8954
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qlibrary.h
+c000000004C8A59470000000000000FF2
+t1284135239
+s4082
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qlibraryinfo.h
+c000000004C8A59470000000000000B2B
+t1284135239
+s2859
+i<QtCore/qstring.h>
+i<QtCore/QDate>
+
+N/Library/Frameworks/QtCore.framework/Headers/qline.h
+c000000004C8A594700000000000026B4
+t1284135239
+s9908
+i<QtCore/qpoint.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qlinkedlist.h
+c000000004C8A59470000000000003C92
+t1284135239
+s15506
+i<QtCore/qiterator.h>
+i<QtCore/qatomic.h>
+i<iterator>
+i<list>
+
+N/Library/Frameworks/QtCore.framework/Headers/qlist.h
+c000000004C8A594700000000000072A5
+t1284135239
+s29349
+i<QtCore/qiterator.h>
+i<QtCore/qatomic.h>
+i<QtCore/qalgorithms.h>
+i<iterator>
+i<list>
+i<new>
+i<limits.h>
+i<string.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qlocale.h
+c000000004C8A594700000000000050D3
+t1284135239
+s20691
+i<QtCore/qstring.h>
+i<QtCore/qobjectdefs.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmap.h
+c000000004C8A5947000000000000833D
+t1284135239
+s33597
+i<QtCore/qatomic.h>
+i<QtCore/qiterator.h>
+i<QtCore/qlist.h>
+i<map>
+i<new>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmargins.h
+c000000004C8A594700000000000010AD
+t1284135239
+s4269
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmath.h
+c000000004C8A59470000000000001BF1
+t1284135239
+s7153
+i<math.h>
+i<QtCore/qglobal.h>
+i<e32math.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmetaobject.h
+c000000004C8A59470000000000002293
+t1284135239
+s8851
+i<QtCore/qobjectdefs.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmetatype.h
+c000000004C8A594700000000000034DB
+t1284135239
+s13531
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+i<QtCore/qdatastream.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmimedata.h
+c000000004C8A59470000000000000CE3
+t1284135239
+s3299
+i<QtCore/qvariant.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qmutex.h
+c000000004C8A59470000000000001314
+t1284135239
+s4884
+i<QtCore/qglobal.h>
+i<new>
+
+N/Library/Frameworks/QtCore.framework/Headers/qnamespace.h
+c000000004C8A5947000000000000D79F
+t1284135239
+s55199
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qnumeric.h
+c000000004C8A59470000000000000A14
+t1284135239
+s2580
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qobject.h
+c000000004C8A59470000000000003FC3
+t1284135239
+s16323
+i<QtCore/qobjectdefs.h>
+i<QtCore/qstring.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qlist.h>
+i<QtCore/qcoreevent.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qobjectcleanuphandler.h
+c000000004C8A594700000000000009F3
+t1284135239
+s2547
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qobjectdefs.h
+c000000004C8A59470000000000004478
+t1284135239
+s17528
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpair.h
+c000000004C8A59470000000000000F2C
+t1284135239
+s3884
+i<QtCore/qdatastream.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qparallelanimationgroup.h
+c000000004C8A59470000000000000B99
+t1284135239
+s2969
+i<QtCore/qanimationgroup.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpauseanimation.h
+c000000004C8A59470000000000000AA5
+t1284135239
+s2725
+i<QtCore/qanimationgroup.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qplugin.h
+c000000004C8A59470000000000001308
+t1284135239
+s4872
+i<QtCore/qobject.h>
+i<QtCore/qpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpluginloader.h
+c000000004C8A59470000000000000C47
+t1284135239
+s3143
+i<QtCore/qlibrary.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpoint.h
+c000000004C8A594700000000000024BF
+t1284135239
+s9407
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpointer.h
+c000000004C8A59470000000000001475
+t1284135239
+s5237
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qprocess.h
+c000000004C8A59470000000000001D74
+t1284135239
+s7540
+i<QtCore/qiodevice.h>
+i<QtCore/qstringlist.h>
+i<QtCore/qshareddata.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qpropertyanimation.h
+c000000004C8A59470000000000000C2D
+t1284135239
+s3117
+i<QtCore/qvariantanimation.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qqueue.h
+c000000004C8A59470000000000000997
+t1284135239
+s2455
+i<QtCore/qlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qreadwritelock.h
+c000000004C8A594700000000000018E4
+t1284135239
+s6372
+i<QtCore/qglobal.h>
+i<limits.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qrect.h
+c000000004C8A594700000000000056D2
+t1284135239
+s22226
+i<QtCore/qsize.h>
+i<QtCore/qpoint.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qregexp.h
+c000000004C8A59470000000000001589
+t1284135239
+s5513
+i<QtCore/qstring.h>
+i<new>
+
+N/Library/Frameworks/QtCore.framework/Headers/qresource.h
+c000000004C8A59470000000000000D8C
+t1284135239
+s3468
+i<QtCore/qstring.h>
+i<QtCore/qlocale.h>
+i<QtCore/qstringlist.h>
+i<QtCore/qlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qrunnable.h
+c000000004C8A594700000000000009A1
+t1284135239
+s2465
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qscopedpointer.h
+c000000004C8A5947000000000000155A
+t1284135239
+s5466
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsemaphore.h
+c000000004C8A594700000000000009DF
+t1284135239
+s2527
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsequentialanimationgroup.h
+c000000004C8A59470000000000000D06
+t1284135239
+s3334
+i<QtCore/qanimationgroup.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qset.h
+c000000004C8A594700000000000035BF
+t1284135239
+s13759
+i<QtCore/qhash.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsettings.h
+c000000004C8A594700000000000027F1
+t1284135239
+s10225
+i<QtCore/qobject.h>
+i<QtCore/qvariant.h>
+i<QtCore/qstring.h>
+i<QtCore/qstringlist.h>
+i<ctype.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qshareddata.h
+c000000004C8A59470000000000001DCB
+t1284135239
+s7627
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsharedmemory.h
+c000000004C8A59470000000000000CC5
+t1284135239
+s3269
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsharedpointer.h
+c000000004C8A5947000000000000170F
+t1284135239
+s5903
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+i<QtCore/qshareddata.h>
+i<QtCore/qsharedpointer_impl.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsharedpointer_impl.h
+c000000004C8A594700000000000068FD
+t1284135239
+s26877
+i<new>
+i<QtCore/qatomic.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsignalmapper.h
+c000000004C8A59470000000000000CA9
+t1284135239
+s3241
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsignaltransition.h
+c000000004C8A59470000000000000BB7
+t1284135239
+s2999
+i<QtCore/qabstracttransition.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsize.h
+c000000004C8A5947000000000000286F
+t1284135239
+s10351
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsocketnotifier.h
+c000000004C8A59470000000000000B45
+t1284135239
+s2885
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstack.h
+c000000004C8A59470000000000000AC1
+t1284135239
+s2753
+i<QtCore/qvector.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstate.h
+c000000004C8A59470000000000000ED9
+t1284135239
+s3801
+i<QtCore/qabstractstate.h>
+i<QtCore/qlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstatemachine.h
+c000000004C8A5947000000000000165F
+t1284135239
+s5727
+i<QtCore/qstate.h>
+i<QtCore/qcoreevent.h>
+i<QtCore/qlist.h>
+i<QtCore/qobject.h>
+i<QtCore/qset.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstring.h
+c000000004C8A5947000000000000E808
+t1284135239
+s59400
+i<QtCore/qchar.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qatomic.h>
+i<QtCore/qnamespace.h>
+i<Qt3Support/q3cstring.h>
+i<string>
+i<string>
+i<stdarg.h>
+i<QtCore/qstringbuilder.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstringbuilder.h
+c000000004C8A5947000000000000243D
+t1284135239
+s9277
+i<QtCore/qstring.h>
+i<QtCore/qmap.h>
+i<string.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstringlist.h
+c000000004C8A5947000000000000263B
+t1284135239
+s9787
+i<QtCore/qalgorithms.h>
+i<QtCore/qdatastream.h>
+i<QtCore/qlist.h>
+i<QtCore/qregexp.h>
+i<QtCore/qstring.h>
+i<QtCore/qstringmatcher.h>
+i<Qt3Support/q3valuelist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qstringmatcher.h
+c000000004C8A59470000000000000D10
+t1284135239
+s3344
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qsystemsemaphore.h
+c000000004C8A59470000000000000BCE
+t1284135239
+s3022
+i<QtCore/qstring.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qt_windows.h
+c000000004C8A594700000000000010C5
+t1284135239
+s4293
+i<windows.h>
+i<ceconfig.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentcompilertest.h
+c000000004C8A59470000000000000966
+t1284135239
+s2406
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentexception.h
+c000000004C8A59470000000000000D40
+t1284135239
+s3392
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+i<exception>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentfilter.h
+c000000004C8A5947000000000000735D
+t1284135239
+s29533
+i<QtCore/qglobal.h>
+i<QtCore/qtconcurrentfilterkernel.h>
+i<QtCore/qtconcurrentfunctionwrappers.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentfilterkernel.h
+c000000004C8A59470000000000002D8E
+t1284135239
+s11662
+i<QtCore/qglobal.h>
+i<QtCore/qtconcurrentiteratekernel.h>
+i<QtCore/qtconcurrentmapkernel.h>
+i<QtCore/qtconcurrentreducekernel.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentfunctionwrappers.h
+c000000004C8A59470000000000001233
+t1284135239
+s4659
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentiteratekernel.h
+c000000004C8A5947000000000000283C
+t1284135239
+s10300
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+i<QtCore/qtconcurrentmedian.h>
+i<QtCore/qtconcurrentthreadengine.h>
+i<iterator>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentmap.h
+c000000004C8A59470000000000007EB1
+t1284135239
+s32433
+i<QtCore/qglobal.h>
+i<QtCore/qtconcurrentmapkernel.h>
+i<QtCore/qtconcurrentreducekernel.h>
+i<QtCore/qtconcurrentfunctionwrappers.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentmapkernel.h
+c000000004C8A5947000000000000250D
+t1284135239
+s9485
+i<QtCore/qglobal.h>
+i<QtCore/qtconcurrentiteratekernel.h>
+i<QtCore/qtconcurrentreducekernel.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentmedian.h
+c000000004C8A59470000000000000EB9
+t1284135239
+s3769
+i<QtCore/qglobal.h>
+i<QtCore/qvector.h>
+i<QtCore/qalgorithms.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentreducekernel.h
+c000000004C8A59470000000000001D84
+t1284135239
+s7556
+i<QtCore/qglobal.h>
+i<QtCore/qatomic.h>
+i<QtCore/qlist.h>
+i<QtCore/qmap.h>
+i<QtCore/qmutex.h>
+i<QtCore/qthread.h>
+i<QtCore/qthreadpool.h>
+i<QtCore/qvector.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentresultstore.h
+c000000004C8A59470000000000001D22
+t1284135239
+s7458
+i<QtCore/qglobal.h>
+i<QtCore/qmap.h>
+i<QtCore/qdebug.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentrun.h
+c000000004C8A59470000000000004946
+t1284135239
+s18758
+i<QtCore/qglobal.h>
+i<QtCore/qtconcurrentrunbase.h>
+i<QtCore/qtconcurrentstoredfunctioncall.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentrunbase.h
+c000000004C8A59470000000000000E2D
+t1284135239
+s3629
+i<QtCore/qglobal.h>
+i<QtCore/qfuture.h>
+i<QtCore/qrunnable.h>
+i<QtCore/qthreadpool.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentstoredfunctioncall.h
+c000000004C8A5947000000000000DB4A
+t1284135239
+s56138
+i<QtCore/qglobal.h>
+i<QtCore/qtconcurrentrunbase.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtconcurrentthreadengine.h
+c000000004C8A59470000000000002177
+t1284135239
+s8567
+i<QtCore/qglobal.h>
+i<QtCore/qthreadpool.h>
+i<QtCore/qfuture.h>
+i<QtCore/qdebug.h>
+i<QtCore/qtconcurrentexception.h>
+i<QtCore/qwaitcondition.h>
+i<QtCore/qatomic.h>
+i<QtCore/qsemaphore.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtemporaryfile.h
+c000000004C8A59470000000000000D29
+t1284135239
+s3369
+i<QtCore/qiodevice.h>
+i<QtCore/qfile.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtextboundaryfinder.h
+c000000004C8A59470000000000000D69
+t1284135239
+s3433
+i<QtCore/qchar.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtextcodec.h
+c000000004C8A59470000000000001C21
+t1284135239
+s7201
+i<QtCore/qstring.h>
+i<QtCore/qlist.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtextcodecplugin.h
+c000000004C8A59470000000000000CA1
+t1284135239
+s3233
+i<QtCore/qplugin.h>
+i<QtCore/qfactoryinterface.h>
+i<QtCore/qlist.h>
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtextstream.h
+c000000004C8A594700000000000033B9
+t1284135239
+s13241
+i<QtCore/qiodevice.h>
+i<QtCore/qstring.h>
+i<QtCore/qchar.h>
+i<QtCore/qlocale.h>
+i<QtCore/qscopedpointer.h>
+i<QtCore/qtextcodec.h>
+i<stdio.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qthread.h
+c000000004C8A59470000000000001113
+t1284135239
+s4371
+i<QtCore/qobject.h>
+i<limits.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qthreadpool.h
+c000000004C8A59470000000000000C06
+t1284135239
+s3078
+i<QtCore/qglobal.h>
+i<QtCore/qthread.h>
+i<QtCore/qrunnable.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qthreadstorage.h
+c000000004C8A5947000000000000107D
+t1284135239
+s4221
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtimeline.h
+c000000004C8A59470000000000001125
+t1284135239
+s4389
+i<QtCore/qeasingcurve.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtimer.h
+c000000004C8A59470000000000000DD7
+t1284135239
+s3543
+i<QtCore/qbasictimer.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qtranslator.h
+c000000004C8A59470000000000000D23
+t1284135239
+s3363
+i<QtCore/qobject.h>
+i<QtCore/qbytearray.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qurl.h
+c000000004C8A5947000000000000280E
+t1284135239
+s10254
+i<QtCore/qbytearray.h>
+i<QtCore/qobjectdefs.h>
+i<QtCore/qpair.h>
+i<QtCore/qstring.h>
+i<QtCore/qhash.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/quuid.h
+c000000004C8A59470000000000001462
+t1284135239
+s5218
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qvariant.h
+c000000004C8A594700000000000048A0
+t1284135239
+s18592
+i<QtCore/qatomic.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qlist.h>
+i<QtCore/qmetatype.h>
+i<QtCore/qmap.h>
+i<QtCore/qhash.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qvariantanimation.h
+c000000004C8A594700000000000011CF
+t1284135239
+s4559
+i<QtCore/qeasingcurve.h>
+i<QtCore/qabstractanimation.h>
+i<QtCore/qvector.h>
+i<QtCore/qvariant.h>
+i<QtCore/qpair.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qvarlengtharray.h
+c000000004C8A594700000000000020BE
+t1284135239
+s8382
+i<QtCore/qcontainerfwd.h>
+i<QtCore/qglobal.h>
+i<new>
+
+N/Library/Frameworks/QtCore.framework/Headers/qvector.h
+c000000004C8A5947000000000000664A
+t1284135239
+s26186
+i<QtCore/qiterator.h>
+i<QtCore/qatomic.h>
+i<QtCore/qalgorithms.h>
+i<QtCore/qlist.h>
+i<iterator>
+i<vector>
+i<stdlib.h>
+i<string.h>
+i<QtCore/QPointF>
+i<QtCore/QPoint>
+
+N/Library/Frameworks/QtCore.framework/Headers/qwaitcondition.h
+c000000004C8A59470000000000000B5F
+t1284135239
+s2911
+i<QtCore/qglobal.h>
+i<limits.h>
+
+N/Library/Frameworks/QtCore.framework/Headers/qxmlstream.h
+c000000004C8A594700000000000047F1
+t1284135239
+s18417
+i<QtCore/qiodevice.h>
+i<QtCore/qstring.h>
+i<QtCore/qvector.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtCore.framework/QtCore
+c000000004C8A5A7D00000000005EEB20
+t1284135549
+s6220576
+
+N/Library/Frameworks/QtGui.framework/Headers/QCleanlooksStyle
+c000000004C8A5947000000000000001E
+t1284135239
+s30
+i"qcleanlooksstyle.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QCommonStyle
+c000000004C8A5947000000000000001A
+t1284135239
+s26
+i"qcommonstyle.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QFileDialog
+c000000004C8A59480000000000000019
+t1284135240
+s25
+i"qfiledialog.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QFont
+c000000004C8A59480000000000000013
+t1284135240
+s19
+i"qfont.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QLayout
+c000000004C8A59480000000000000015
+t1284135240
+s21
+i"qlayout.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QMatrix4x4
+c000000004C8A59480000000000000018
+t1284135240
+s24
+i"qmatrix4x4.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QPalette
+c000000004C8A59480000000000000016
+t1284135240
+s22
+i"qpalette.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QPrinter
+c000000004C8A59480000000000000016
+t1284135240
+s22
+i"qprinter.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QTransform
+c000000004C8A59490000000000000018
+t1284135241
+s24
+i"qtransform.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QVector3D
+c000000004C8A59490000000000000017
+t1284135241
+s23
+i"qvector3d.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/QtGui
+c000000004C8A59490000000000001765
+t1284135241
+s5989
+i<QtCore/QtCore>
+i"qabstractpagesetupdialog.h"
+i"qabstractprintdialog.h"
+i"qcolordialog.h"
+i"qdialog.h"
+i"qerrormessage.h"
+i"qfiledialog.h"
+i"qfilesystemmodel.h"
+i"qfontdialog.h"
+i"qinputdialog.h"
+i"qmessagebox.h"
+i"qpagesetupdialog.h"
+i"qprintdialog.h"
+i"qprintpreviewdialog.h"
+i"qprogressdialog.h"
+i"qwizard.h"
+i"qvfbhdr.h"
+i"qwsembedwidget.h"
+i"qgraphicsanchorlayout.h"
+i"qgraphicsgridlayout.h"
+i"qgraphicsitem.h"
+i"qgraphicsitemanimation.h"
+i"qgraphicslayout.h"
+i"qgraphicslayoutitem.h"
+i"qgraphicslinearlayout.h"
+i"qgraphicsproxywidget.h"
+i"qgraphicsscene.h"
+i"qgraphicssceneevent.h"
+i"qgraphicstransform.h"
+i"qgraphicsview.h"
+i"qgraphicswidget.h"
+i"qaction.h"
+i"qactiongroup.h"
+i"qapplication.h"
+i"qboxlayout.h"
+i"qclipboard.h"
+i"qcursor.h"
+i"qdesktopwidget.h"
+i"qdrag.h"
+i"qevent.h"
+i"qformlayout.h"
+i"qgesture.h"
+i"qgesturerecognizer.h"
+i"qgridlayout.h"
+i"qkeysequence.h"
+i"qlayout.h"
+i"qlayoutitem.h"
+i"qmime.h"
+i"qpalette.h"
+i"qsessionmanager.h"
+i"qshortcut.h"
+i"qsizepolicy.h"
+i"qsound.h"
+i"qstackedlayout.h"
+i"qtooltip.h"
+i"qwhatsthis.h"
+i"qwidget.h"
+i"qwidgetaction.h"
+i"qwindowdefs.h"
+i"qgraphicseffect.h"
+i"qs60mainapplication.h"
+i"qs60mainappui.h"
+i"qs60maindocument.h"
+i"qgenericmatrix.h"
+i"qmatrix4x4.h"
+i"qquaternion.h"
+i"qvector2d.h"
+i"qvector3d.h"
+i"qvector4d.h"
+i"qbitmap.h"
+i"qicon.h"
+i"qiconengine.h"
+i"qiconengineplugin.h"
+i"qimage.h"
+i"qimageiohandler.h"
+i"qimagereader.h"
+i"qimagewriter.h"
+i"qmovie.h"
+i"qpicture.h"
+i"qpictureformatplugin.h"
+i"qpixmap.h"
+i"qpixmapcache.h"
+i"qsymbianevent.h"
+i"qabstracttextdocumentlayout.h"
+i"qfont.h"
+i"qfontdatabase.h"
+i"qfontinfo.h"
+i"qfontmetrics.h"
+i"qstatictext.h"
+i"qsyntaxhighlighter.h"
+i"qtextcursor.h"
+i"qtextdocument.h"
+i"qtextdocumentfragment.h"
+i"qtextdocumentwriter.h"
+i"qtextformat.h"
+i"qtextlayout.h"
+i"qtextlist.h"
+i"qtextobject.h"
+i"qtextoption.h"
+i"qtexttable.h"
+i"qabstractitemdelegate.h"
+i"qabstractitemview.h"
+i"qabstractproxymodel.h"
+i"qcolumnview.h"
+i"qdatawidgetmapper.h"
+i"qdirmodel.h"
+i"qfileiconprovider.h"
+i"qheaderview.h"
+i"qitemdelegate.h"
+i"qitemeditorfactory.h"
+i"qitemselectionmodel.h"
+i"qlistview.h"
+i"qlistwidget.h"
+i"qproxymodel.h"
+i"qsortfilterproxymodel.h"
+i"qstandarditemmodel.h"
+i"qstringlistmodel.h"
+i"qstyleditemdelegate.h"
+i"qtableview.h"
+i"qtablewidget.h"
+i"qtreeview.h"
+i"qtreewidget.h"
+i"qtreewidgetitemiterator.h"
+i"qabstractbutton.h"
+i"qabstractscrollarea.h"
+i"qabstractslider.h"
+i"qabstractspinbox.h"
+i"qbuttongroup.h"
+i"qcalendarwidget.h"
+i"qcheckbox.h"
+i"qcombobox.h"
+i"qcommandlinkbutton.h"
+i"qdatetimeedit.h"
+i"qdial.h"
+i"qdialogbuttonbox.h"
+i"qdockwidget.h"
+i"qfocusframe.h"
+i"qfontcombobox.h"
+i"qframe.h"
+i"qgroupbox.h"
+i"qlabel.h"
+i"qlcdnumber.h"
+i"qlineedit.h"
+i"qmainwindow.h"
+i"qmdiarea.h"
+i"qmdisubwindow.h"
+i"qmenu.h"
+i"qmenubar.h"
+i"qmenudata.h"
+i"qplaintextedit.h"
+i"qprintpreviewwidget.h"
+i"qprogressbar.h"
+i"qpushbutton.h"
+i"qradiobutton.h"
+i"qrubberband.h"
+i"qscrollarea.h"
+i"qscrollbar.h"
+i"qsizegrip.h"
+i"qslider.h"
+i"qspinbox.h"
+i"qsplashscreen.h"
+i"qsplitter.h"
+i"qstackedwidget.h"
+i"qstatusbar.h"
+i"qtabbar.h"
+i"qtabwidget.h"
+i"qtextbrowser.h"
+i"qtextedit.h"
+i"qtoolbar.h"
+i"qtoolbox.h"
+i"qtoolbutton.h"
+i"qvalidator.h"
+i"qworkspace.h"
+i"qkeyeventtransition.h"
+i"qmouseeventtransition.h"
+i"qcompleter.h"
+i"qdesktopservices.h"
+i"qsystemtrayicon.h"
+i"qundogroup.h"
+i"qundostack.h"
+i"qundoview.h"
+i"qaccessible.h"
+i"qaccessible2.h"
+i"qaccessiblebridge.h"
+i"qaccessibleobject.h"
+i"qaccessibleplugin.h"
+i"qaccessiblewidget.h"
+i"qcdestyle.h"
+i"qcleanlooksstyle.h"
+i"qcommonstyle.h"
+i"qgtkstyle.h"
+i"qmotifstyle.h"
+i"qplastiquestyle.h"
+i"qproxystyle.h"
+i"qs60style.h"
+i"qstyle.h"
+i"qstylefactory.h"
+i"qstyleoption.h"
+i"qstyleplugin.h"
+i"qwindowscestyle.h"
+i"qwindowsmobilestyle.h"
+i"qwindowsstyle.h"
+i"qwindowsvistastyle.h"
+i"qwindowsxpstyle.h"
+i"qinputcontext.h"
+i"qinputcontextfactory.h"
+i"qinputcontextplugin.h"
+i"qbrush.h"
+i"qcolor.h"
+i"qcolormap.h"
+i"qdrawutil.h"
+i"qmatrix.h"
+i"qpaintdevice.h"
+i"qpaintengine.h"
+i"qpainter.h"
+i"qpainterpath.h"
+i"qpen.h"
+i"qpolygon.h"
+i"qprintengine.h"
+i"qprinter.h"
+i"qprinterinfo.h"
+i"qregion.h"
+i"qrgb.h"
+i"qstylepainter.h"
+i"qtransform.h"
+i"qwmatrix.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractbutton.h
+c000000004C8A59470000000000001736
+t1284135239
+s5942
+i<QtGui/qicon.h>
+i<QtGui/qkeysequence.h>
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractitemdelegate.h
+c000000004C8A594700000000000011C9
+t1284135239
+s4553
+i<QtCore/qobject.h>
+i<QtGui/qstyleoption.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractitemview.h
+c000000004C8A594700000000000034EF
+t1284135239
+s13551
+i<QtGui/qabstractscrollarea.h>
+i<QtCore/qabstractitemmodel.h>
+i<QtGui/qitemselectionmodel.h>
+i<QtGui/qabstractitemdelegate.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractpagesetupdialog.h
+c000000004C8A59470000000000000AD8
+t1284135239
+s2776
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractprintdialog.h
+c000000004C8A59470000000000000F80
+t1284135239
+s3968
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractproxymodel.h
+c000000004C8A59470000000000000E54
+t1284135239
+s3668
+i<QtCore/qabstractitemmodel.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractscrollarea.h
+c000000004C8A594700000000000012F9
+t1284135239
+s4857
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractslider.h
+c000000004C8A59470000000000001758
+t1284135239
+s5976
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstractspinbox.h
+c000000004C8A594700000000000017D0
+t1284135239
+s6096
+i<QtGui/qwidget.h>
+i<QtGui/qvalidator.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qabstracttextdocumentlayout.h
+c000000004C8A594700000000000014C0
+t1284135239
+s5312
+i<QtCore/qobject.h>
+i<QtGui/qtextlayout.h>
+i<QtGui/qtextdocument.h>
+i<QtGui/qtextcursor.h>
+i<QtGui/qpalette.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qaccessible.h
+c000000004C8A5947000000000000391C
+t1284135239
+s14620
+i<QtCore/qglobal.h>
+i<QtCore/qobject.h>
+i<QtCore/qrect.h>
+i<QtCore/qset.h>
+i<QtCore/qvector.h>
+i<QtCore/qvariant.h>
+i<QtGui/qcolor.h>
+i<QtGui/qevent.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qaccessible2.h
+c000000004C8A59470000000000002548
+t1284135239
+s9544
+i<QtGui/qaccessible.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qaccessiblebridge.h
+c000000004C8A59470000000000000C9C
+t1284135239
+s3228
+i<QtCore/qplugin.h>
+i<QtCore/qfactoryinterface.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qaccessibleobject.h
+c000000004C8A594700000000000010AA
+t1284135239
+s4266
+i<QtGui/qaccessible.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qaccessibleplugin.h
+c000000004C8A59470000000000000BFB
+t1284135239
+s3067
+i<QtGui/qaccessible.h>
+i<QtCore/qfactoryinterface.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qaccessiblewidget.h
+c000000004C8A594700000000000012AB
+t1284135239
+s4779
+i<QtGui/qaccessibleobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qaction.h
+c000000004C8A5947000000000000235D
+t1284135239
+s9053
+i<QtGui/qkeysequence.h>
+i<QtCore/qstring.h>
+i<QtGui/qwidget.h>
+i<QtCore/qvariant.h>
+i<QtGui/qicon.h>
+i<QtGui/qactiongroup.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qactiongroup.h
+c000000004C8A59470000000000000E6F
+t1284135239
+s3695
+i<QtGui/qaction.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qapplication.h
+c000000004C8A59470000000000003984
+t1284135239
+s14724
+i<QtCore/qcoreapplication.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qpoint.h>
+i<QtCore/qsize.h>
+i<QtGui/qcursor.h>
+i<QtGui/qdesktopwidget.h>
+i<QtGui/qwidget.h>
+i<QtGui/qpalette.h>
+i<QtGui/qrgb.h>
+i<QtGui/qtransportauth_qws.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qbitmap.h
+c000000004C8A59470000000000000F09
+t1284135239
+s3849
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qboxlayout.h
+c000000004C8A594700000000000015ED
+t1284135239
+s5613
+i<QtGui/qlayout.h>
+i<QtGui/qwidget.h>
+i<limits.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qbrush.h
+c000000004C8A59470000000000002513
+t1284135239
+s9491
+i<QtCore/qpair.h>
+i<QtCore/qpoint.h>
+i<QtCore/qvector.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qcolor.h>
+i<QtGui/qmatrix.h>
+i<QtGui/qtransform.h>
+i<QtGui/qimage.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qbuttongroup.h
+c000000004C8A59470000000000000DBD
+t1284135239
+s3517
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcalendarwidget.h
+c000000004C8A59470000000000001C35
+t1284135239
+s7221
+i<QtGui/qwidget.h>
+i<QtCore/qdatetime.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcdestyle.h
+c000000004C8A59470000000000000B8F
+t1284135239
+s2959
+i<QtGui/qmotifstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcheckbox.h
+c000000004C8A59470000000000000E7B
+t1284135239
+s3707
+i<QtGui/qabstractbutton.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcleanlooksstyle.h
+c000000004C8A59470000000000001352
+t1284135239
+s4946
+i<QtGui/qwindowsstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qclipboard.h
+c000000004C8A59470000000000000F7F
+t1284135239
+s3967
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcolor.h
+c000000004C8A594700000000000022B2
+t1284135239
+s8882
+i<QtGui/qrgb.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcolordialog.h
+c000000004C8A594700000000000013CB
+t1284135239
+s5067
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcolormap.h
+c000000004C8A59470000000000000B28
+t1284135239
+s2856
+i<QtCore/qatomic.h>
+i<QtGui/qrgb.h>
+i<QtCore/qvector.h>
+i<QtGui/qwindowdefs.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcolumnview.h
+c000000004C8A59470000000000001122
+t1284135239
+s4386
+i<QtGui/qabstractitemview.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcombobox.h
+c000000004C8A594700000000000032A7
+t1284135239
+s12967
+i<QtGui/qwidget.h>
+i<QtGui/qabstractitemdelegate.h>
+i<QtCore/qabstractitemmodel.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcommandlinkbutton.h
+c000000004C8A59470000000000000BA5
+t1284135239
+s2981
+i<QtGui/qpushbutton.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcommonstyle.h
+c000000004C8A594700000000000010BA
+t1284135239
+s4282
+i<QtGui/qstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcompleter.h
+c000000004C8A594700000000000015D0
+t1284135239
+s5584
+i<QtCore/qobject.h>
+i<QtCore/qpoint.h>
+i<QtCore/qstring.h>
+i<QtCore/qabstractitemmodel.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qcursor.h
+c000000004C8A5947000000000000142A
+t1284135239
+s5162
+i<QtCore/qpoint.h>
+i<QtGui/qwindowdefs.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdatawidgetmapper.h
+c000000004C8A594700000000000010E2
+t1284135239
+s4322
+i"QtCore/qobject.h"
+
+N/Library/Frameworks/QtGui.framework/Headers/qdatetimeedit.h
+c000000004C8A59470000000000001FBE
+t1284135239
+s8126
+i<QtCore/qdatetime.h>
+i<QtCore/qvariant.h>
+i<QtGui/qabstractspinbox.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdesktopservices.h
+c000000004C8A59470000000000000B60
+t1284135239
+s2912
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdesktopwidget.h
+c000000004C8A59470000000000000E11
+t1284135239
+s3601
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdial.h
+c000000004C8A59470000000000000E96
+t1284135239
+s3734
+i<QtGui/qabstractslider.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdialog.h
+c000000004C8A59470000000000000FE3
+t1284135239
+s4067
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdialogbuttonbox.h
+c000000004C8A5947000000000000158C
+t1284135239
+s5516
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdirmodel.h
+c000000004C8A59480000000000001561
+t1284135240
+s5473
+i<QtCore/qabstractitemmodel.h>
+i<QtCore/qdir.h>
+i<QtGui/qfileiconprovider.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdockwidget.h
+c000000004C8A59480000000000001398
+t1284135240
+s5016
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdrag.h
+c000000004C8A59480000000000000C9E
+t1284135240
+s3230
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qdrawutil.h
+c000000004C8A59480000000000001E53
+t1284135240
+s7763
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+i<QtCore/qmargins.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qerrormessage.h
+c000000004C8A59480000000000000AE7
+t1284135240
+s2791
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qevent.h
+c000000004C8A59480000000000006C65
+t1284135240
+s27749
+i<QtGui/qwindowdefs.h>
+i<QtCore/qobject.h>
+i<QtGui/qregion.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+i<QtGui/qkeysequence.h>
+i<QtCore/qcoreevent.h>
+i<QtGui/qmime.h>
+i<QtGui/qdrag.h>
+i<QtCore/qvariant.h>
+i<QtCore/qmap.h>
+i<QtCore/qset.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfiledialog.h
+c000000004C8A5948000000000000368B
+t1284135240
+s13963
+i<QtCore/qdir.h>
+i<QtCore/qstring.h>
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfileiconprovider.h
+c000000004C8A59480000000000000AE8
+t1284135240
+s2792
+i<QtCore/qfileinfo.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qicon.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfilesystemmodel.h
+c000000004C8A59480000000000001B54
+t1284135240
+s6996
+i<QtCore/qabstractitemmodel.h>
+i<QtCore/qpair.h>
+i<QtCore/qdir.h>
+i<QtGui/qicon.h>
+i<QtCore/qdiriterator.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfocusframe.h
+c000000004C8A59480000000000000A3D
+t1284135240
+s2621
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfont.h
+c000000004C8A59480000000000002781
+t1284135240
+s10113
+i<QtGui/qwindowdefs.h>
+i<QtCore/qstring.h>
+i<QtCore/qsharedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfontcombobox.h
+c000000004C8A59480000000000000E19
+t1284135240
+s3609
+i<QtGui/qcombobox.h>
+i<QtGui/qfontdatabase.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfontdatabase.h
+c000000004C8A59480000000000001618
+t1284135240
+s5656
+i<QtGui/qwindowdefs.h>
+i<QtCore/qstring.h>
+i<QtGui/qfont.h>
+i<QtCore/qstringlist.h>
+i<QtCore/qlist.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfontdialog.h
+c000000004C8A5948000000000000136B
+t1284135240
+s4971
+i<QtGui/qwindowdefs.h>
+i<QtGui/qdialog.h>
+i<QtGui/qfont.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfontinfo.h
+c000000004C8A59480000000000000B24
+t1284135240
+s2852
+i<QtGui/qfont.h>
+i<QtCore/qsharedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qfontmetrics.h
+c000000004C8A59480000000000001A84
+t1284135240
+s6788
+i<QtGui/qfont.h>
+i<QtCore/qsharedpointer.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qformlayout.h
+c000000004C8A59480000000000001690
+t1284135240
+s5776
+i<QtGui/QLayout>
+
+N/Library/Frameworks/QtGui.framework/Headers/qframe.h
+c000000004C8A59480000000000001221
+t1284135240
+s4641
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgenericmatrix.h
+c000000004C8A59480000000000003281
+t1284135240
+s12929
+i<QtCore/qmetatype.h>
+i<QtCore/qdebug.h>
+i<QtCore/qdatastream.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgesture.h
+c000000004C8A59480000000000001FD0
+t1284135240
+s8144
+i<QtCore/qobject.h>
+i<QtCore/qlist.h>
+i<QtCore/qdatetime.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+i<QtCore/qmetatype.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgesturerecognizer.h
+c000000004C8A59480000000000000CD6
+t1284135240
+s3286
+i<QtCore/qglobal.h>
+i<QtCore/qnamespace.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicsanchorlayout.h
+c000000004C8A59480000000000001191
+t1284135240
+s4497
+i<QtGui/qgraphicsitem.h>
+i<QtGui/qgraphicslayout.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicseffect.h
+c000000004C8A59480000000000002160
+t1284135240
+s8544
+i<QtCore/qobject.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+i<QtGui/qcolor.h>
+i<QtGui/qbrush.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicsgridlayout.h
+c000000004C8A594800000000000014A3
+t1284135240
+s5283
+i<QtGui/qgraphicsitem.h>
+i<QtGui/qgraphicslayout.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicsitem.h
+c000000004C8A5948000000000000A221
+t1284135240
+s41505
+i<QtCore/qglobal.h>
+i<QtCore/qobject.h>
+i<QtCore/qvariant.h>
+i<QtCore/qrect.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qpainterpath.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicsitemanimation.h
+c000000004C8A59480000000000000F6D
+t1284135240
+s3949
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicslayout.h
+c000000004C8A59480000000000000CCE
+t1284135240
+s3278
+i<QtGui/qgraphicslayoutitem.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicslayoutitem.h
+c000000004C8A594800000000000016DD
+t1284135240
+s5853
+i<QtCore/qscopedpointer.h>
+i<QtGui/qsizepolicy.h>
+i<QtGui/qevent.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicslinearlayout.h
+c000000004C8A59480000000000000FA5
+t1284135240
+s4005
+i<QtGui/qgraphicsitem.h>
+i<QtGui/qgraphicslayout.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicsproxywidget.h
+c000000004C8A59480000000000001349
+t1284135240
+s4937
+i<QtGui/qgraphicswidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicsscene.h
+c000000004C8A59480000000000003686
+t1284135240
+s13958
+i<QtCore/qobject.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+i<QtGui/qbrush.h>
+i<QtGui/qfont.h>
+i<QtGui/qtransform.h>
+i<QtGui/qmatrix.h>
+i<QtGui/qpen.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicssceneevent.h
+c000000004C8A59480000000000002484
+t1284135240
+s9348
+i<QtCore/qcoreevent.h>
+i<QtCore/qpoint.h>
+i<QtCore/qscopedpointer.h>
+i<QtCore/qrect.h>
+i<QtGui/qpolygon.h>
+i<QtCore/qset.h>
+i<QtCore/qhash.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicstransform.h
+c000000004C8A594800000000000011F7
+t1284135240
+s4599
+i<QtCore/QObject>
+i<QtGui/QVector3D>
+i<QtGui/QTransform>
+i<QtGui/QMatrix4x4>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicsview.h
+c000000004C8A59480000000000003230
+t1284135240
+s12848
+i<QtCore/qmetatype.h>
+i<QtGui/qpainter.h>
+i<QtGui/qscrollarea.h>
+i<QtGui/qgraphicsscene.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgraphicswidget.h
+c000000004C8A59480000000000002619
+t1284135240
+s9753
+i<QtGui/qfont.h>
+i<QtGui/qgraphicslayoutitem.h>
+i<QtGui/qgraphicsitem.h>
+i<QtGui/qpalette.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgridlayout.h
+c000000004C8A59480000000000001C8B
+t1284135240
+s7307
+i<QtGui/qlayout.h>
+i<QtGui/qwidget.h>
+i<limits.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgroupbox.h
+c000000004C8A59480000000000000FC2
+t1284135240
+s4034
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qgtkstyle.h
+c000000004C8A594800000000000013B9
+t1284135240
+s5049
+i<QtGui/QCleanlooksStyle>
+i<QtGui/QPalette>
+i<QtGui/QFont>
+i<QtGui/QFileDialog>
+
+N/Library/Frameworks/QtGui.framework/Headers/qheaderview.h
+c000000004C8A59480000000000002347
+t1284135240
+s9031
+i<QtGui/qabstractitemview.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qicon.h
+c000000004C8A5948000000000000166B
+t1284135240
+s5739
+i<QtCore/qglobal.h>
+i<QtCore/qsize.h>
+i<QtCore/qlist.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qiconengine.h
+c000000004C8A59480000000000000EF3
+t1284135240
+s3827
+i<QtCore/qglobal.h>
+i<QtCore/qlist.h>
+i<QtGui/qicon.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qiconengineplugin.h
+c000000004C8A59480000000000000E44
+t1284135240
+s3652
+i<QtCore/qplugin.h>
+i<QtCore/qfactoryinterface.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qimage.h
+c000000004C8A5948000000000000373E
+t1284135240
+s14142
+i<QtGui/qtransform.h>
+i<QtGui/qpaintdevice.h>
+i<QtGui/qrgb.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qrect.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qimageiohandler.h
+c000000004C8A5948000000000000131D
+t1284135240
+s4893
+i<QtCore/qplugin.h>
+i<QtCore/qfactoryinterface.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qimagereader.h
+c000000004C8A59480000000000001118
+t1284135240
+s4376
+i<QtCore/qbytearray.h>
+i<QtGui/qimage.h>
+i<QtGui/qimageiohandler.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qimagewriter.h
+c000000004C8A59480000000000000DCF
+t1284135240
+s3535
+i<QtCore/qbytearray.h>
+i<QtCore/qlist.h>
+i<QtGui/qimageiohandler.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qinputcontext.h
+c000000004C8A59480000000000001165
+t1284135240
+s4453
+i<QtCore/qobject.h>
+i<QtCore/qglobal.h>
+i<QtGui/qevent.h>
+i<QtCore/qstring.h>
+i<QtCore/qlist.h>
+i<QtGui/qaction.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qinputcontextfactory.h
+c000000004C8A59480000000000000C82
+t1284135240
+s3202
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qinputcontextplugin.h
+c000000004C8A59480000000000000F96
+t1284135240
+s3990
+i<QtCore/qplugin.h>
+i<QtCore/qfactoryinterface.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qinputdialog.h
+c000000004C8A5948000000000000265E
+t1284135240
+s9822
+i<QtGui/qdialog.h>
+i<QtCore/qstring.h>
+i<QtGui/qlineedit.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qitemdelegate.h
+c000000004C8A59480000000000001577
+t1284135240
+s5495
+i<QtGui/qabstractitemdelegate.h>
+i<QtCore/qstring.h>
+i<QtGui/qpixmap.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qitemeditorfactory.h
+c000000004C8A59480000000000000F8E
+t1284135240
+s3982
+i<QtCore/qmetaobject.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qhash.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qitemselectionmodel.h
+c000000004C8A59480000000000002286
+t1284135240
+s8838
+i<QtCore/qset.h>
+i<QtCore/qvector.h>
+i<QtCore/qlist.h>
+i<QtCore/qabstractitemmodel.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qkeyeventtransition.h
+c000000004C8A59480000000000000BAA
+t1284135240
+s2986
+i<QtCore/qeventtransition.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qkeysequence.h
+c000000004C8A59480000000000001A82
+t1284135240
+s6786
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlabel.h
+c000000004C8A594800000000000017D0
+t1284135240
+s6096
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlayout.h
+c000000004C8A59480000000000001E5B
+t1284135240
+s7771
+i<QtCore/qobject.h>
+i<QtGui/qlayoutitem.h>
+i<QtGui/qsizepolicy.h>
+i<QtCore/qrect.h>
+i<QtCore/qmargins.h>
+i<limits.h>
+i<QtGui/qboxlayout.h>
+i<QtGui/qgridlayout.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlayoutitem.h
+c000000004C8A59480000000000001550
+t1284135240
+s5456
+i<QtGui/qsizepolicy.h>
+i<QtCore/qrect.h>
+i<limits.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlcdnumber.h
+c000000004C8A594800000000000011C3
+t1284135240
+s4547
+i<QtGui/qframe.h>
+i<QtCore/qbitarray.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlineedit.h
+c000000004C8A59480000000000002799
+t1284135240
+s10137
+i<QtGui/qframe.h>
+i<QtCore/qstring.h>
+i<QtCore/qmargins.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlistview.h
+c000000004C8A59480000000000001AB0
+t1284135240
+s6832
+i<QtGui/qabstractitemview.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qlistwidget.h
+c000000004C8A59480000000000002FCC
+t1284135240
+s12236
+i<QtGui/qlistview.h>
+i<QtCore/qvariant.h>
+i<QtCore/qvector.h>
+i<QtGui/qitemselectionmodel.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmacdefines_mac.h
+c000000004C8A594800000000000019C8
+t1284135240
+s6600
+i<QtCore/qglobal.h>
+i<Cocoa/Cocoa.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmainwindow.h
+c000000004C8A59480000000000001C5A
+t1284135240
+s7258
+i<QtGui/qwidget.h>
+i<QtGui/qtabwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmatrix.h
+c000000004C8A59480000000000001AF0
+t1284135240
+s6896
+i<QtGui/qpolygon.h>
+i<QtGui/qregion.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qline.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+i<QtGui/qwmatrix.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmatrix4x4.h
+c000000004C8A59480000000000008295
+t1284135240
+s33429
+i<QtGui/qvector3d.h>
+i<QtGui/qvector4d.h>
+i<QtGui/qquaternion.h>
+i<QtGui/qgenericmatrix.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmdiarea.h
+c000000004C8A59480000000000001540
+t1284135240
+s5440
+i<QtGui/qabstractscrollarea.h>
+i<QtGui/qtabwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmdisubwindow.h
+c000000004C8A59480000000000001486
+t1284135240
+s5254
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmenu.h
+c000000004C8A59480000000000003C6A
+t1284135240
+s15466
+i<QtGui/qwidget.h>
+i<QtCore/qstring.h>
+i<QtGui/qicon.h>
+i<QtGui/qaction.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmenubar.h
+c000000004C8A594800000000000036CB
+t1284135240
+s14027
+i<QtGui/qmenu.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmenudata.h
+c000000004C8A594800000000000009B7
+t1284135240
+s2487
+i<QtCore/qglobal.h>
+i<QtGui/qaction.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmessagebox.h
+c000000004C8A594800000000000039C4
+t1284135240
+s14788
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmime.h
+c000000004C8A594800000000000018D9
+t1284135240
+s6361
+i<QtCore/qmimedata.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmotifstyle.h
+c000000004C8A59480000000000001182
+t1284135240
+s4482
+i<QtGui/qcommonstyle.h>
+i<QtCore/qpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmouseeventtransition.h
+c000000004C8A59480000000000000C71
+t1284135240
+s3185
+i<QtCore/qeventtransition.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qmovie.h
+c000000004C8A594800000000000014E2
+t1284135240
+s5346
+i<QtCore/qobject.h>
+i<QtCore/qbytearray.h>
+i<QtCore/qlist.h>
+i<QtCore/qobject.h>
+i<QtGui/qimagereader.h>
+i<QtGui/qimage.h>
+i<QtGui/qpixmap.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpagesetupdialog.h
+c000000004C8A59480000000000000E73
+t1284135240
+s3699
+i<QtGui/qabstractpagesetupdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpaintdevice.h
+c000000004C8A5948000000000000178A
+t1284135240
+s6026
+i<QtGui/qwindowdefs.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpaintengine.h
+c000000004C8A59480000000000002D63
+t1284135240
+s11619
+i<QtCore/qnamespace.h>
+i<QtCore/qobjectdefs.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qpainter.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpainter.h
+c000000004C8A59480000000000008521
+t1284135240
+s34081
+i<QtCore/qnamespace.h>
+i<QtCore/qrect.h>
+i<QtCore/qpoint.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qpixmap.h>
+i<QtGui/qimage.h>
+i<QtGui/qtextoption.h>
+i<QtGui/qdrawutil.h>
+i<QtGui/qpolygon.h>
+i<QtGui/qpen.h>
+i<QtGui/qbrush.h>
+i<QtGui/qmatrix.h>
+i<QtGui/qtransform.h>
+i<QtGui/qfontinfo.h>
+i<QtGui/qfontmetrics.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpainterpath.h
+c000000004C8A5948000000000000373E
+t1284135240
+s14142
+i<QtGui/qmatrix.h>
+i<QtCore/qglobal.h>
+i<QtCore/qrect.h>
+i<QtCore/qline.h>
+i<QtCore/qvector.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpalette.h
+c000000004C8A5948000000000000328F
+t1284135240
+s12943
+i<QtGui/qwindowdefs.h>
+i<QtGui/qcolor.h>
+i<QtGui/qbrush.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpen.h
+c000000004C8A59480000000000001020
+t1284135240
+s4128
+i<QtGui/qcolor.h>
+i<QtGui/qbrush.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpicture.h
+c000000004C8A594800000000000017B9
+t1284135240
+s6073
+i<QtCore/qstringlist.h>
+i<QtCore/qsharedpointer.h>
+i<QtGui/qpaintdevice.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpictureformatplugin.h
+c000000004C8A59480000000000000D45
+t1284135240
+s3397
+i<QtCore/qplugin.h>
+i<QtCore/qfactoryinterface.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpixmap.h
+c000000004C8A59480000000000002F8C
+t1284135240
+s12172
+i<QtGui/qpaintdevice.h>
+i<QtGui/qcolor.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qstring.h>
+i<QtCore/qsharedpointer.h>
+i<QtGui/qimage.h>
+i<QtGui/qtransform.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpixmapcache.h
+c000000004C8A59480000000000000D36
+t1284135240
+s3382
+i<QtGui/qpixmap.h>
+i<QtCore/qpair.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qplaintextedit.h
+c000000004C8A59480000000000002A78
+t1284135240
+s10872
+i<QtGui/qtextedit.h>
+i<QtGui/qabstractscrollarea.h>
+i<QtGui/qtextdocument.h>
+i<QtGui/qtextoption.h>
+i<QtGui/qtextcursor.h>
+i<QtGui/qtextformat.h>
+i<QtGui/qabstracttextdocumentlayout.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qplastiquestyle.h
+c000000004C8A594800000000000012BA
+t1284135240
+s4794
+i<QtGui/qwindowsstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpolygon.h
+c000000004C8A59480000000000001930
+t1284135240
+s6448
+i<QtCore/qvector.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qprintdialog.h
+c000000004C8A594800000000000015B7
+t1284135240
+s5559
+i<QtGui/qabstractprintdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qprintengine.h
+c000000004C8A59480000000000000DFD
+t1284135240
+s3581
+i<QtCore/qvariant.h>
+i<QtGui/qprinter.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qprinter.h
+c000000004C8A5948000000000000261F
+t1284135240
+s9759
+i<QtCore/qstring.h>
+i<QtCore/qscopedpointer.h>
+i<QtGui/qpaintdevice.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qprinterinfo.h
+c000000004C8A59480000000000000B48
+t1284135240
+s2888
+i<QtGui/QPrinter>
+i<QtCore/QList>
+
+N/Library/Frameworks/QtGui.framework/Headers/qprintpreviewdialog.h
+c000000004C8A59480000000000000DCE
+t1284135240
+s3534
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qprintpreviewwidget.h
+c000000004C8A59480000000000000F4C
+t1284135240
+s3916
+i<QtGui/qwidget.h>
+i<QtGui/qprinter.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qprogressbar.h
+c000000004C8A59480000000000001199
+t1284135240
+s4505
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qprogressdialog.h
+c000000004C8A59480000000000001192
+t1284135240
+s4498
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qproxymodel.h
+c000000004C8A594800000000000015E9
+t1284135240
+s5609
+i<QtCore/qabstractitemmodel.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qproxystyle.h
+c000000004C8A5948000000000000139D
+t1284135240
+s5021
+i<QtGui/QCommonStyle>
+
+N/Library/Frameworks/QtGui.framework/Headers/qpushbutton.h
+c000000004C8A59480000000000001065
+t1284135240
+s4197
+i<QtGui/qabstractbutton.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qquaternion.h
+c000000004C8A59480000000000002717
+t1284135240
+s10007
+i<QtGui/qvector3d.h>
+i<QtGui/qvector4d.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qradiobutton.h
+c000000004C8A59480000000000000B6C
+t1284135240
+s2924
+i<QtGui/qabstractbutton.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qregion.h
+c000000004C8A5949000000000000207F
+t1284135241
+s8319
+i<QtCore/qatomic.h>
+i<QtCore/qrect.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qdatastream.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qrgb.h
+c000000004C8A59490000000000000D24
+t1284135241
+s3364
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qrubberband.h
+c000000004C8A59490000000000000D09
+t1284135241
+s3337
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qs60mainapplication.h
+c000000004C8A59490000000000000B3C
+t1284135241
+s2876
+i<QtCore/qglobal.h>
+i<aknapp.h>
+i<eikapp.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qs60mainappui.h
+c000000004C8A59490000000000001392
+t1284135241
+s5010
+i<QtCore/qglobal.h>
+i<aknappui.h>
+i<eikappui.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qs60maindocument.h
+c000000004C8A59490000000000000B03
+t1284135241
+s2819
+i<QtCore/qglobal.h>
+i<akndoc.h>
+i<eikdoc.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qs60style.h
+c000000004C8A594900000000000011D9
+t1284135241
+s4569
+i<QtGui/qcommonstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qscrollarea.h
+c000000004C8A59490000000000000CF0
+t1284135241
+s3312
+i<QtGui/qabstractscrollarea.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qscrollbar.h
+c000000004C8A59490000000000000DD5
+t1284135241
+s3541
+i<QtGui/qwidget.h>
+i<QtGui/qabstractslider.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsessionmanager.h
+c000000004C8A59490000000000000D94
+t1284135241
+s3476
+i<QtCore/qobject.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qstring.h>
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qshortcut.h
+c000000004C8A59490000000000000DA9
+t1284135241
+s3497
+i<QtGui/qwidget.h>
+i<QtGui/qkeysequence.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsizegrip.h
+c000000004C8A59490000000000000BF6
+t1284135241
+s3062
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsizepolicy.h
+c000000004C8A59490000000000002168
+t1284135241
+s8552
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qslider.h
+c000000004C8A59490000000000001166
+t1284135241
+s4454
+i<QtGui/qabstractslider.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsortfilterproxymodel.h
+c000000004C8A594900000000000021C6
+t1284135241
+s8646
+i<QtGui/qabstractproxymodel.h>
+i<QtCore/qregexp.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsound.h
+c000000004C8A59490000000000000B38
+t1284135241
+s2872
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qspinbox.h
+c000000004C8A594900000000000016E6
+t1284135241
+s5862
+i<QtGui/qabstractspinbox.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsplashscreen.h
+c000000004C8A59490000000000000D1B
+t1284135241
+s3355
+i<QtGui/qpixmap.h>
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsplitter.h
+c000000004C8A5949000000000000178C
+t1284135241
+s6028
+i<QtGui/qframe.h>
+i<QtGui/qsizepolicy.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstackedlayout.h
+c000000004C8A59490000000000000E1C
+t1284135241
+s3612
+i<QtGui/qlayout.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstackedwidget.h
+c000000004C8A59490000000000000BFA
+t1284135241
+s3066
+i<QtGui/qframe.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstandarditemmodel.h
+c000000004C8A59490000000000003E5E
+t1284135241
+s15966
+i<QtCore/qabstractitemmodel.h>
+i<QtGui/qbrush.h>
+i<QtGui/qfont.h>
+i<QtGui/qicon.h>
+i<QtCore/qdatastream.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstatictext.h
+c000000004C8A59490000000000000D44
+t1284135241
+s3396
+i<QtCore/qsize.h>
+i<QtCore/qstring.h>
+i<QtCore/qmetatype.h>
+i<QtGui/qtransform.h>
+i<QtGui/qfont.h>
+i<QtGui/qtextoption.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstatusbar.h
+c000000004C8A59490000000000000ECC
+t1284135241
+s3788
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstringlistmodel.h
+c000000004C8A59490000000000000C74
+t1284135241
+s3188
+i<QtCore/qstringlist.h>
+i<QtGui/qabstractitemview.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstyle.h
+c000000004C8A59490000000000006CF2
+t1284135241
+s27890
+i<QtCore/qobject.h>
+i<QtCore/qrect.h>
+i<QtCore/qsize.h>
+i<QtGui/qicon.h>
+i<QtGui/qpixmap.h>
+i<QtGui/qpalette.h>
+i<QtGui/qsizepolicy.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstyleditemdelegate.h
+c000000004C8A59490000000000000FF7
+t1284135241
+s4087
+i<QtGui/qabstractitemdelegate.h>
+i<QtCore/qstring.h>
+i<QtGui/qpixmap.h>
+i<QtCore/qvariant.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstylefactory.h
+c000000004C8A594900000000000008E1
+t1284135241
+s2273
+i<QtCore/qstringlist.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstyleoption.h
+c000000004C8A5949000000000000703B
+t1284135241
+s28731
+i<QtCore/qvariant.h>
+i<QtGui/qabstractspinbox.h>
+i<QtGui/qicon.h>
+i<QtGui/qmatrix.h>
+i<QtGui/qslider.h>
+i<QtGui/qstyle.h>
+i<QtGui/qtabbar.h>
+i<QtGui/qtabwidget.h>
+i<QtGui/qrubberband.h>
+i<QtGui/qframe.h>
+i<QtCore/qabstractitemmodel.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstylepainter.h
+c000000004C8A5949000000000000108B
+t1284135241
+s4235
+i<QtGui/qpainter.h>
+i<QtGui/qstyle.h>
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qstyleplugin.h
+c000000004C8A59490000000000000AE8
+t1284135241
+s2792
+i<QtCore/qplugin.h>
+i<QtCore/qfactoryinterface.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsymbianevent.h
+c000000004C8A59490000000000000B7C
+t1284135241
+s2940
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsyntaxhighlighter.h
+c000000004C8A59490000000000000E59
+t1284135241
+s3673
+i<QtCore/qglobal.h>
+i<QtCore/qobject.h>
+i<QtGui/qtextobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qsystemtrayicon.h
+c000000004C8A59490000000000000F5F
+t1284135241
+s3935
+i<QtCore/qobject.h>
+i<QtGui/qicon.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtabbar.h
+c000000004C8A59490000000000001BE1
+t1284135241
+s7137
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtableview.h
+c000000004C8A59490000000000001AC0
+t1284135241
+s6848
+i<QtGui/qabstractitemview.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtablewidget.h
+c000000004C8A5949000000000000355F
+t1284135241
+s13663
+i<QtGui/qtableview.h>
+i<QtCore/qvariant.h>
+i<QtCore/qvector.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtabwidget.h
+c000000004C8A59490000000000002254
+t1284135241
+s8788
+i<QtGui/qwidget.h>
+i<QtGui/qicon.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextbrowser.h
+c000000004C8A5949000000000000121D
+t1284135241
+s4637
+i<QtGui/qtextedit.h>
+i<QtCore/qurl.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextcursor.h
+c000000004C8A59490000000000001BE1
+t1284135241
+s7137
+i<QtCore/qstring.h>
+i<QtCore/qshareddata.h>
+i<QtGui/qtextformat.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextdocument.h
+c000000004C8A5949000000000000240B
+t1284135241
+s9227
+i<QtCore/qobject.h>
+i<QtCore/qsize.h>
+i<QtCore/qrect.h>
+i<QtGui/qfont.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextdocumentfragment.h
+c000000004C8A59490000000000000CB1
+t1284135241
+s3249
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextdocumentwriter.h
+c000000004C8A59490000000000000C15
+t1284135241
+s3093
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextedit.h
+c000000004C8A59490000000000003730
+t1284135241
+s14128
+i<QtGui/qabstractscrollarea.h>
+i<QtGui/qtextdocument.h>
+i<QtGui/qtextoption.h>
+i<QtGui/qtextcursor.h>
+i<QtGui/qtextformat.h>
+i<QtGui/qtextobject.h>
+i<QtGui/qtextlayout.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextformat.h
+c000000004C8A59490000000000007161
+t1284135241
+s29025
+i<QtGui/qcolor.h>
+i<QtGui/qfont.h>
+i<QtCore/qshareddata.h>
+i<QtCore/qvector.h>
+i<QtCore/qvariant.h>
+i<QtGui/qpen.h>
+i<QtGui/qbrush.h>
+i<QtGui/qtextoption.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextlayout.h
+c000000004C8A59490000000000001C66
+t1284135241
+s7270
+i<QtCore/qstring.h>
+i<QtCore/qnamespace.h>
+i<QtCore/qrect.h>
+i<QtCore/qvector.h>
+i<QtGui/qcolor.h>
+i<QtCore/qobject.h>
+i<QtGui/qevent.h>
+i<QtGui/qtextformat.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextlist.h
+c000000004C8A59490000000000000BA4
+t1284135241
+s2980
+i<QtGui/qtextobject.h>
+i<QtCore/qobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextobject.h
+c000000004C8A594900000000000026A3
+t1284135241
+s9891
+i<QtCore/qobject.h>
+i<QtGui/qtextformat.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtextoption.h
+c000000004C8A59490000000000001398
+t1284135241
+s5016
+i<QtCore/qnamespace.h>
+i<QtCore/qchar.h>
+i<QtCore/qmetatype.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtexttable.h
+c000000004C8A59490000000000001200
+t1284135241
+s4608
+i<QtCore/qglobal.h>
+i<QtCore/qobject.h>
+i<QtGui/qtextobject.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtoolbar.h
+c000000004C8A59490000000000001954
+t1284135241
+s6484
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtoolbox.h
+c000000004C8A59490000000000001544
+t1284135241
+s5444
+i<QtGui/qframe.h>
+i<QtGui/qicon.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtoolbutton.h
+c000000004C8A59490000000000001B49
+t1284135241
+s6985
+i<QtGui/qabstractbutton.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtooltip.h
+c000000004C8A59490000000000000BA6
+t1284135241
+s2982
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtransform.h
+c000000004C8A59490000000000002CA9
+t1284135241
+s11433
+i<QtGui/qmatrix.h>
+i<QtGui/qpainterpath.h>
+i<QtGui/qpolygon.h>
+i<QtGui/qregion.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qline.h>
+i<QtCore/qpoint.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtransportauth_qws.h
+c000000004C8A59490000000000001DF8
+t1284135241
+s7672
+i<QtCore/qglobal.h>
+i<QtCore/qobject.h>
+i<QtCore/qhash.h>
+i<QtCore/qstring.h>
+i<QtCore/qbuffer.h>
+i<QtCore/qpointer.h>
+i<sys/types.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtreeview.h
+c000000004C8A5949000000000000218E
+t1284135241
+s8590
+i<QtGui/qabstractitemview.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtreewidget.h
+c000000004C8A59490000000000004345
+t1284135241
+s17221
+i<QtGui/qtreeview.h>
+i<QtGui/qtreewidgetitemiterator.h>
+i<QtCore/qvariant.h>
+i<QtCore/qvector.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qtreewidgetitemiterator.h
+c000000004C8A594900000000000013D0
+t1284135241
+s5072
+i<QtCore/qglobal.h>
+i<QtCore/qscopedpointer.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qundogroup.h
+c000000004C8A59490000000000000D85
+t1284135241
+s3461
+i<QtCore/qobject.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qundostack.h
+c000000004C8A59490000000000001172
+t1284135241
+s4466
+i<QtCore/qobject.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qundoview.h
+c000000004C8A59490000000000000C4E
+t1284135241
+s3150
+i<QtGui/qlistview.h>
+i<QtCore/qstring.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qvalidator.h
+c000000004C8A594900000000000017F5
+t1284135241
+s6133
+i<QtCore/qobject.h>
+i<QtCore/qstring.h>
+i<QtCore/qregexp.h>
+i<QtCore/qlocale.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qvector2d.h
+c000000004C8A59490000000000001CF3
+t1284135241
+s7411
+i<QtCore/qpoint.h>
+i<QtCore/qmetatype.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qvector3d.h
+c000000004C8A5949000000000000222A
+t1284135241
+s8746
+i<QtCore/qpoint.h>
+i<QtCore/qmetatype.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qvector4d.h
+c000000004C8A594900000000000022E1
+t1284135241
+s8929
+i<QtCore/qpoint.h>
+i<QtCore/qmetatype.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qvfbhdr.h
+c000000004C8A594900000000000010F1
+t1284135241
+s4337
+i<QtGui/qcolor.h>
+i<QtGui/qwindowdefs.h>
+i<QtCore/qrect.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwhatsthis.h
+c000000004C8A59490000000000000AFC
+t1284135241
+s2812
+i<QtCore/qobject.h>
+i<QtGui/qcursor.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwidget.h
+c000000004C8A594900000000000095E9
+t1284135241
+s38377
+i<QtGui/qwindowdefs.h>
+i<QtCore/qobject.h>
+i<QtCore/qmargins.h>
+i<QtGui/qpaintdevice.h>
+i<QtGui/qpalette.h>
+i<QtGui/qfont.h>
+i<QtGui/qfontmetrics.h>
+i<QtGui/qfontinfo.h>
+i<QtGui/qsizepolicy.h>
+i<QtGui/qregion.h>
+i<QtGui/qbrush.h>
+i<QtGui/qcursor.h>
+i<QtGui/qkeysequence.h>
+i<QtGui/qevent.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwidgetaction.h
+c000000004C8A59490000000000000B82
+t1284135241
+s2946
+i<QtGui/qaction.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowdefs.h
+c000000004C8A59490000000000000EF5
+t1284135241
+s3829
+i<QtCore/qobjectdefs.h>
+i<QtCore/qnamespace.h>
+i<QtGui/qmacdefines_mac.h>
+i<QtGui/qwindowdefs_win.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowdefs_win.h
+c000000004C8A59490000000000000D23
+t1284135241
+s3363
+i<QtCore/qglobal.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowscestyle.h
+c000000004C8A59490000000000001052
+t1284135241
+s4178
+i<QtGui/qwindowsstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowsmobilestyle.h
+c000000004C8A59490000000000001058
+t1284135241
+s4184
+i<QtGui/qwindowsstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowsstyle.h
+c000000004C8A59490000000000000FAA
+t1284135241
+s4010
+i<QtGui/qcommonstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowsvistastyle.h
+c000000004C8A59490000000000001128
+t1284135241
+s4392
+i<QtGui/qwindowsxpstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwindowsxpstyle.h
+c000000004C8A59490000000000001074
+t1284135241
+s4212
+i<QtGui/qwindowsstyle.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwizard.h
+c000000004C8A594900000000000021AD
+t1284135241
+s8621
+i<QtGui/qdialog.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwmatrix.h
+c000000004C8A59490000000000000880
+t1284135241
+s2176
+i<QtGui/qmatrix.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qworkspace.h
+c000000004C8A59490000000000001135
+t1284135241
+s4405
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/Headers/qwsembedwidget.h
+c000000004C8A59490000000000000A83
+t1284135241
+s2691
+i<QtGui/qwidget.h>
+
+N/Library/Frameworks/QtGui.framework/QtGui
+c000000004C8A5A8000000000017EEDB0
+t1284135552
+s25095600
+
+N/Library/Frameworks/QtOpenGL.framework/Headers/qgl.h
+c000000004C8A594A000000000000512C
+t1284135242
+s20780
+i<QtGui/qwidget.h>
+i<QtGui/qpaintengine.h>
+i<QtOpenGL/qglcolormap.h>
+i<QtCore/qmap.h>
+i<QtCore/qscopedpointer.h>
+i<QtCore/qt_windows.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GLES/gl.h>
+i<GLES2/gl2.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Library/Frameworks/QtOpenGL.framework/Headers/qglcolormap.h
+c000000004C8A594A0000000000000CDA
+t1284135242
+s3290
+i<QtGui/qcolor.h>
+i<QtCore/qvector.h>
+
+N/Library/Frameworks/QtOpenGL.framework/QtOpenGL
+c000000004C8A5A8100000000001F8190
+t1284135553
+s2064784
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/QtOpenGL
+c000000004C8A594A000000000000010E
+t1284135242
+s270
+i<QtCore/QtCore>
+i<QtGui/QtGui>
+i"qgl.h"
+i"qglbuffer.h"
+i"qglcolormap.h"
+i"qglframebufferobject.h"
+i"qglpixelbuffer.h"
+i"qglshaderprogram.h"
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/qgl.h
+c000000004C8A594A000000000000512C
+t1284135242
+s20780
+i<QtGui/qwidget.h>
+i<QtGui/qpaintengine.h>
+i<QtOpenGL/qglcolormap.h>
+i<QtCore/qmap.h>
+i<QtCore/qscopedpointer.h>
+i<QtCore/qt_windows.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GLES/gl.h>
+i<GLES2/gl2.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/qglbuffer.h
+c000000004C8A594A0000000000001005
+t1284135242
+s4101
+i<QtCore/qscopedpointer.h>
+i<QtOpenGL/qgl.h>
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/qglcolormap.h
+c000000004C8A594A0000000000000CDA
+t1284135242
+s3290
+i<QtGui/qcolor.h>
+i<QtCore/qvector.h>
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/qglframebufferobject.h
+c000000004C8A594A0000000000001A5D
+t1284135242
+s6749
+i<QtOpenGL/qgl.h>
+i<QtGui/qpaintdevice.h>
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/qglpixelbuffer.h
+c000000004C8A594A00000000000011C2
+t1284135242
+s4546
+i<QtOpenGL/qgl.h>
+i<QtGui/qpaintdevice.h>
+
+N/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers/qglshaderprogram.h
+c000000004C8A594A0000000000003CEF
+t1284135242
+s15599
+i<QtOpenGL/qgl.h>
+i<QtGui/qvector2d.h>
+i<QtGui/qvector3d.h>
+i<QtGui/qvector4d.h>
+i<QtGui/qmatrix4x4.h>
+
+N/Library/Frameworks/QtSvg.framework/QtSvg
+c000000004C8A5A8200000000000D1984
+t1284135554
+s858500
+
+N/Library/Frameworks/QtXml.framework/QtXml
+c000000004C8A5A8100000000000C42AC
+t1284135553
+s803500
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004D6EE4860000000000043820
+t1299113094
+s276512
+
+N/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/GLUT.framework/GLUT
+c000000004A12475500000000001A2920
+t1242711893
+s1714464
+
+N/System/Library/Frameworks/GLUT.framework/Headers/glut.h
+c000000004A124745000000000000578C
+t1242711877
+s22412
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004B8EC2670000000000025B59
+t1267647079
+s154457
+
+N/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004B8EC2670000000000003F84
+t1267647079
+s16260
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004D6EE4250000000000043330
+t1299112997
+s275248
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/CloudFactory.app
+t1302800263
+s102
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app
+t1302800263
+s102
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/Info.plist
+t1302800253
+s580
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/MacOS/CloudFactory
+t1302800263
+s87784
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/PkgInfo
+t1302800253
+s8
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp
+c000000004DA725E10000000000000171
+t1302799841
+s369
+i<GLUT/glut.h>
+i"marchingcubes.hpp"
+i"mygldrawer.h"
+i<iostream>
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.cpp
+c000000004DA725E100000000000023C5
+t1302799841
+s9157
+i"marchingcubes.hpp"
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp
+c000000004DA725E100000000000045A4
+t1302799841
+s17828
+i<stdlib.h>
+i<math.h>
+i<stdio.h>
+i<vector>
+i<list>
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp
+c000000004DA725E10000000000000019
+t1302799841
+s25
+i"mygldrawer.h"
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.h
+c000000004DA725E10000000000000E9E
+t1302799841
+s3742
+i<QtOpenGL>
+i<GLUT/glut.h>
+i"marchingcubes.hpp"
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/moc_mygldrawer.cpp
+c000000004DA725E10000000000000815
+t1302799841
+s2069
+i"../../src/mygldrawer.h"
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/CloudFactory.LinkFileList
+c000000004DA7277D0000000000000259
+t1302800253
+s601
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/main.o
+t1302800259
+s834340
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/marchingcubes.o
+t1302800259
+s83656
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_mygldrawer.o
+t1302800263
+s875556
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/mygldrawer.o
+t1302800259
+s276996
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-A0A52A2ADF7A1E2A99738674.sh
+c000000004DA7277D0000000000000081
+t1302800253
+s129
+
+N/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-D7BA7D76DAB5DD13389D6332.sh
+c000000004DA7277D0000000000000080
+t1302800253
+s128
+
+N/usr/include/AvailabilityMacros.h
+c000000004A11A9B30000000000006724
+t1242671539
+s26404
+
+N/usr/include/ctype.h
+c000000004B738B7F0000000000002C18
+t1265863551
+s11288
+
+N/usr/include/limits.h
+c000000004B738B7E000000000000145A
+t1265863550
+s5210
+
+N/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/usr/include/stdarg.h
+c000000004B738B7E00000000000000EA
+t1265863550
+s234
+
+N/usr/include/stddef.h
+c000000004B738B7E0000000000001404
+t1265863550
+s5124
+
+N/usr/include/stdio.h
+c000000004B738B7F0000000000004174
+t1265863551
+s16756
+
+N/usr/include/stdlib.h
+c000000004B738B7F0000000000002DF5
+t1265863551
+s11765
+
+N/usr/include/string.h
+c000000004B738B7F0000000000001731
+t1265863551
+s5937
+
+N/usr/include/sys/types.h
+c000000004B8827560000000000002905
+t1267214166
+s10501
+
+NInfo.plist
+c000000004DA727740000000000000260
+t1302800244
+s608
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies324493052#324493053#0(0"0(0#1#0"32088628383449192#0"0#
+
+CCompileC tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/main.o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s324493053.641510
+e324493059.783138
+r1
+xCompileC
+xtmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/main.o
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp:47: warning: 'edgeTable' defined but not used
+o/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp:80: warning: 'triTable' defined but not used
+lSLF07#2@85"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp324493053#324493059#0(265"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp:47: warning: 'edgeTable' defined but not used/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp:80: warning: 'triTable' defined but not used2(22@32"'edgeTable' defined but not used324493059#0#133#0(6@86"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp324492641#47#0#47#0#24"'*' defined but not used0(22@31"'triTable' defined but not used324493059#133#132#0(6@86"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp324492641#80#0#80#0#24"'*' defined but not used0(0#0#77"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp4300882208#1719"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/CloudFactory.hmap -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/usr/include -I. -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -Itmp/moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources/i386 -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources -pipe -arch i386 -g -Wall -W -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp -o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/main.o0#
+
+CCompileC tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/marchingcubes.o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s324493059.505123
+e324493059.934663
+r1
+xCompileC
+xtmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/marchingcubes.o
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.cpp324493059#324493059#0(0"0(0#0#86"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.cpp4300882208#1737"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/CloudFactory.hmap -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/usr/include -I. -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -Itmp/moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources/i386 -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources -pipe -arch i386 -g -Wall -W -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.cpp -o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/marchingcubes.o0#
+
+CCompileC tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_mygldrawer.o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/moc_mygldrawer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s324493059.783402
+e324493063.039622
+r1
+xCompileC
+xtmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_mygldrawer.o
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/moc_mygldrawer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+o/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/../../src/marchingcubes.hpp:47: warning: 'edgeTable' defined but not used
+o/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/../../src/marchingcubes.hpp:80: warning: 'triTable' defined but not used
+lSLF07#2@99"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/moc_mygldrawer.cpp324493059#324493063#0(293"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/../../src/marchingcubes.hpp:47: warning: 'edgeTable' defined but not used/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/../../src/marchingcubes.hpp:80: warning: 'triTable' defined but not used2(22@32"'edgeTable' defined but not used324493062#0#147#0(6@100"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/../../src/marchingcubes.hpp324492641#47#0#47#0#24"'*' defined but not used0(22@31"'triTable' defined but not used324493062#147#146#0(6@100"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/../../src/marchingcubes.hpp324492641#80#0#80#0#24"'*' defined but not used0(0#0#91"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/moc_mygldrawer.cpp4300882208#1743"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/CloudFactory.hmap -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/usr/include -I. -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -Itmp/moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources/i386 -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources -pipe -arch i386 -g -Wall -W -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/moc/moc_mygldrawer.cpp -o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_mygldrawer.o0#
+
+CCompileC tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/mygldrawer.o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+s324493053.642535
+e324493059.504964
+r1
+xCompileC
+xtmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/mygldrawer.o
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oIn file included from /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp:1:
+o/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp:47: warning: 'edgeTable' defined but not used
+o/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp:80: warning: 'triTable' defined but not used
+lSLF07#2@91"Compile /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp324493053#324493059#0(374"In file included from /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp:1:/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp:47: warning: 'edgeTable' defined but not used/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp:80: warning: 'triTable' defined but not used2(22@32"'edgeTable' defined but not used324493059#109#133#2(7@105"In file included from /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp324493059#18446744073709551615#0#0(6@83"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp324492641#1#0#1#0#0"0(13@122"'edgeTable' defined but not used in /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp324493059#18446744073709551615#0#0(6@86"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp324492641#47#0#47#0#0"0(6@86"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp324492641#47#0#47#0#24"'*' defined but not used0(22@31"'triTable' defined but not used324493059#242#132#2(7@105"In file included from /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp324493059#18446744073709551615#0#0(6@83"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp324492641#1#0#1#0#0"0(13@121"'triTable' defined but not used in /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp324493059#18446744073709551615#0#0(6@86"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp324492641#80#0#80#0#0"0(6@86"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/marchingcubes.hpp324492641#80#0#80#0#24"'*' defined but not used0(0#0#83"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp4300882208#1731"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -mdynamic-no-pic -fvisibility=hidden -fvisibility-inlines-hidden -mmacosx-version-min=10.4 -gdwarf-2 -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/CloudFactory.hmap -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/include -I/Library/Frameworks/QtCore.framework/Versions/4/Headers -I/usr/include/QtCore -I/Library/Frameworks/QtGui.framework/Versions/4/Headers -I/usr/include/QtGui -I/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers -I/usr/include/QtOpenGL -I/usr/include -I. -I/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers -I/System/Library/Frameworks/AGL.framework/Headers -Itmp/moc -I/usr/local/include -I/System/Library/Frameworks/CarbonCore.framework/Headers -I/usr/local/Qt4.7/mkspecs/macx-xcode -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources/i386 -I/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources -pipe -arch i386 -g -Wall -W -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/mygldrawer.cpp -o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/mygldrawer.o0#
+
+CLd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/MacOS/CloudFactory normal i386
+s324493063.039757
+e324493063.624633
+r1
+xLd
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/MacOS/CloudFactory
+xnormal
+xi386
+lSLF07#2@126"Link /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/MacOS/CloudFactory324493063#324493063#0(0"0(0#0#0"4300882208#1111"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv MACOSX_DEPLOYMENT_TARGET 10.4    /Developer/usr/bin/g++-4.2 -arch i386 -L/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug -L/Library/Frameworks -L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib -L/System/Library/Frameworks -F/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug -filelist /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/CloudFactory.LinkFileList -mmacosx-version-min=10.4 -headerpad_max_install_names -arch i386 -L/Library/Frameworks -F/Library/Frameworks -L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib -F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib -framework QtXml -framework QtSvg -framework GLUT -framework QtOpenGL -framework QtGui -framework QtCore -framework OpenGL -framework AGL -o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/MacOS/CloudFactory0#
+
+CPBXCp build/CloudFactory.app build/Debug/CloudFactory.app
+s324493063.627690
+e324493063.682988
+r1
+xPBXCp
+xbuild/CloudFactory.app
+xbuild/Debug/CloudFactory.app
+lSLF07#2@33"Copy build/Debug/CloudFactory.app324493063#324493063#0(0"0(0#0#93"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app4300882208#385"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build0#
+
+CPhaseScriptExecution "Qt Preprocessors" /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-A0A52A2ADF7A1E2A99738674.sh
+s324493053.617067
+e324493053.641418
+r1
+xPhaseScriptExecution
+xQt Preprocessors
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-A0A52A2ADF7A1E2A99738674.sh
+omake: Nothing to be done for `preprocess'.
+lSLF07#2@42"Run custom shell script 'Qt Preprocessors'324493053#324493053#0(43"make: Nothing to be done for `preprocess'.1(13@43"make: Nothing to be done for `preprocess'.324493053#0#43#0(1@0"0(0#0#0"4300882208#18114"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER timothyluciani    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build    setenv BUILD_ROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug    setenv CACHE_ROOT /var/folders/k3/k34vT9XEF3Wyimx0ouOh6E+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/k3/k34vT9XEF3Wyimx0ouOh6E+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/k3/k34vT9XEF3Wyimx0ouOh6E+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug    setenv CONTENTS_FOLDER_PATH CloudFactory.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/CloudFactory.dst    setenv DWARF_DSYM_FILE_NAME CloudFactory.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug    setenv DYLIB_COMPATIBILITY_VERSION 1.0    setenv DYLIB_CURRENT_VERSION 1.0.0    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH CloudFactory.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH CloudFactory.app/Contents/MacOS    setenv EXECUTABLE_NAME CloudFactory    setenv EXECUTABLE_PATH CloudFactory.app/Contents/MacOS/CloudFactory    setenv FILE_LIST /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH CloudFactory.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME CloudFactory.app    setenv GCC3_VERSION 3.3    setenv GCC_DYNAMIC_NO_PIC YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/include\" /Library/Frameworks/QtCore.framework/Versions/4/Headers /usr/include/QtCore /Library/Frameworks/QtGui.framework/Versions/4/Headers /usr/include/QtGui /Library/Frameworks/QtOpenGL.framework/Versions/4/Headers /usr/include/QtOpenGL /usr/include . /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers /System/Library/Frameworks/AGL.framework/Headers tmp/moc /usr/local/include /System/Library/Frameworks/CarbonCore.framework/Headers /usr/local/Qt4.7/mkspecs/macx-xcode"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH CloudFactory.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER timothyluciani    setenv INSTALL_PATH /Users/timothyluciani/Applications    setenv INSTALL_ROOT /tmp/CloudFactory.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH CloudFactory.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/CloudFactory-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug\" /Library/Frameworks /tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib /System/Library/Frameworks/"    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/CloudFactory.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.4    setenv MAC_OS_X_VERSION_ACTUAL 1067    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0607    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal    setenv OBJROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS "-pipe -g -Wall -W -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_CPLUSPLUSFLAGS "-pipe -arch i386 -g -Wall -W -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_LDFLAGS "-headerpad_max_install_names -arch i386 -L/Library/Frameworks -F/Library/Frameworks -L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib -F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH CloudFactory.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/PkgInfo    setenv PKGINFO_PATH CloudFactory.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH CloudFactory.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH CloudFactory.app/Contents/PrivateHeaders    setenv PRODUCT_NAME CloudFactory    setenv PRODUCT_SETTINGS_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT CloudFactory    setenv PROJECT_DERIVED_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/DerivedSources    setenv PROJECT_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv PROJECT_FILE_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/CloudFactory.xcodeproj    setenv PROJECT_NAME CloudFactory    setenv PROJECT_TEMP_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build    setenv PUBLIC_HEADERS_FOLDER_PATH CloudFactory.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH CloudFactory.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH CloudFactory.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/k3/k34vT9XEF3Wyimx0ouOh6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH CloudFactory.app/Contents/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv SRCROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/SymbolRepositories    setenv SYMROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME CloudFactory    setenv TARGET_BUILD_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug    setenv TARGET_NAME CloudFactory    setenv TARGET_TEMP_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build    setenv TEMP_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build    setenv TEMP_FILES_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build    setenv TEMP_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build    setenv TEMP_ROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH CloudFactory.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER timothyluciani    setenv USER_APPS_DIR /Users/timothyluciani/Applications    setenv USER_LIBRARY_DIR /Users/timothyluciani/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH CloudFactory.app/Contents/version.plist    setenv VERSION_INFO_BUILDER timothyluciani    setenv VERSION_INFO_FILE CloudFactory_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:CloudFactory  PROJECT:CloudFactory-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME CloudFactory.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv YACCFLAGS -d    /bin/sh -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-A0A52A2ADF7A1E2A99738674.sh0#
+
+CPhaseScriptExecution "Qt Qmake" /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-D7BA7D76DAB5DD13389D6332.sh
+s324493053.113634
+e324493053.616986
+r1
+xPhaseScriptExecution
+xQt Qmake
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-D7BA7D76DAB5DD13389D6332.sh
+omake: `CloudFactory.xcodeproj/project.pbxproj' is up to date.
+lSLF07#2@34"Run custom shell script 'Qt Qmake'324493053#324493053#0(62"make: `CloudFactory.xcodeproj/project.pbxproj' is up to date.1(13@62"make: `CloudFactory.xcodeproj/project.pbxproj' is up to date.324493053#0#62#0(1@0"0(0#0#0"27584745294069872#18114"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER timothyluciani    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build    setenv BUILD_ROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug    setenv CACHE_ROOT /var/folders/k3/k34vT9XEF3Wyimx0ouOh6E+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/k3/k34vT9XEF3Wyimx0ouOh6E+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/k3/k34vT9XEF3Wyimx0ouOh6E+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug    setenv CONFIGURATION_TEMP_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug    setenv CONTENTS_FOLDER_PATH CloudFactory.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH /Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/CloudFactory.dst    setenv DWARF_DSYM_FILE_NAME CloudFactory.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug    setenv DYLIB_COMPATIBILITY_VERSION 1.0    setenv DYLIB_CURRENT_VERSION 1.0.0    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH CloudFactory.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH CloudFactory.app/Contents/MacOS    setenv EXECUTABLE_NAME CloudFactory    setenv EXECUTABLE_PATH CloudFactory.app/Contents/MacOS/CloudFactory    setenv FILE_LIST /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH CloudFactory.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug\" "    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME CloudFactory.app    setenv GCC3_VERSION 3.3    setenv GCC_DYNAMIC_NO_PIC YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_SYMBOLS_PRIVATE_EXTERN YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/include\" /Library/Frameworks/QtCore.framework/Versions/4/Headers /usr/include/QtCore /Library/Frameworks/QtGui.framework/Versions/4/Headers /usr/include/QtGui /Library/Frameworks/QtOpenGL.framework/Versions/4/Headers /usr/include/QtOpenGL /usr/include . /System/Library/Frameworks/OpenGL.framework/Versions/A/Headers /System/Library/Frameworks/AGL.framework/Headers tmp/moc /usr/local/include /System/Library/Frameworks/CarbonCore.framework/Headers /usr/local/Qt4.7/mkspecs/macx-xcode"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH CloudFactory.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH /InfoPlist.strings    setenv INSTALL_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER timothyluciani    setenv INSTALL_PATH /Users/timothyluciani/Applications    setenv INSTALL_ROOT /tmp/CloudFactory.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH CloudFactory.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/CloudFactory-LinkMap-normal-i386.txt    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug\" /Library/Frameworks /tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib /System/Library/Frameworks/"    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/CloudFactory.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.4    setenv MAC_OS_X_VERSION_ACTUAL 1067    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0607    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal    setenv OBJROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CFLAGS "-pipe -g -Wall -W -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_CPLUSPLUSFLAGS "-pipe -arch i386 -g -Wall -W -DQT_OPENGL_LIB -DQT_GUI_LIB -DQT_CORE_LIB -DQT_SHARED"    setenv OTHER_LDFLAGS "-headerpad_max_install_names -arch i386 -L/Library/Frameworks -F/Library/Frameworks -L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib -F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH CloudFactory.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/PkgInfo    setenv PKGINFO_PATH CloudFactory.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH CloudFactory.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH CloudFactory.app/Contents/PrivateHeaders    setenv PRODUCT_NAME CloudFactory    setenv PRODUCT_SETTINGS_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT CloudFactory    setenv PROJECT_DERIVED_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/DerivedSources    setenv PROJECT_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv PROJECT_FILE_PATH /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/CloudFactory.xcodeproj    setenv PROJECT_NAME CloudFactory    setenv PROJECT_TEMP_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build    setenv PUBLIC_HEADERS_FOLDER_PATH CloudFactory.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "\"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH CloudFactory.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT     setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH CloudFactory.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/k3/k34vT9XEF3Wyimx0ouOh6E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH CloudFactory.app/Contents/SharedSupport    setenv SKIP_INSTALL YES    setenv SOURCE_ROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv SRCROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/SymbolRepositories    setenv SYMROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME CloudFactory    setenv TARGET_BUILD_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug    setenv TARGET_NAME CloudFactory    setenv TARGET_TEMP_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build    setenv TEMP_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build    setenv TEMP_FILES_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build    setenv TEMP_FILE_DIR /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build    setenv TEMP_ROOT /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH CloudFactory.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER timothyluciani    setenv USER_APPS_DIR /Users/timothyluciani/Applications    setenv USER_LIBRARY_DIR /Users/timothyluciani/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH CloudFactory.app/Contents/version.plist    setenv VERSION_INFO_BUILDER timothyluciani    setenv VERSION_INFO_FILE CloudFactory_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:CloudFactory  PROJECT:CloudFactory-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME CloudFactory.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_VERSION_ACTUAL 0320    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv YACCFLAGS -d    /bin/sh -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Script-D7BA7D76DAB5DD13389D6332.sh0#
+
+CProcessInfoPlistFile /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/Info.plist Info.plist
+s324493053.074981
+e324493053.113503
+r1
+xProcessInfoPlistFile
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/Info.plist
+xInfo.plist
+lSLF07#2@18"Process Info.plist324493053#324493053#0(0"0(0#0#75"/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/Info.plist19703677874143344#390"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    builtin-infoPlistUtility Info.plist -genpkginfo /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/PkgInfo -expandbuildsettings -platform macosx -o /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app/Contents/Info.plist0#
+
+CTouch /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app
+s324493063.624749
+e324493063.627604
+r1
+xTouch
+x/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app
+lSLF07#2@99"Touch /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app324493063#324493063#0(0"0(0#0#0"13229817833259120#188"    cd /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj    /usr/bin/touch -c /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/Debug/CloudFactory.app0#
+

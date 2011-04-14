@@ -1,13 +1,22 @@
 # Project information
-message( Name : JointViewer)
-message( Author : Victor Powell)
-message( Email : vicapow at gmail dot com)
+message( Name : CloudFactory)
+message( Author : Victor Powell Timothy Luciani)
+message( Email : vicapow at gmail dot com tbl8 at pitt dot edu)
 message( Qt Version : $$QT_VERSION )
+
 TEMPLATE = app
 MOC_DIR = tmp/moc
 RCC_DIR = tmp/rcc
 UI_DIR = tmp/ui
 OBJECTS_DIR = tmp/obj
+
+WM5_PATH = ~/GeometricTools/WildMagic5/
+
+message( WM5_PATH : $$WM5_PATH )
+
+WMLIB = $(WM5_PATH)/SDK/Library/Release
+
+message( WMLIB : $$WMLIB )
 
 QT += opengl
 
@@ -26,7 +35,7 @@ CONFIG += debug
 # CONFIG += i386
 message( Architecture: i386 )
 DEPENDPATH += .
-INCLUDEPATH += .
+INCLUDEPATH += $(WM5_PATH)/SDK/Include .
 LIBS += -framework \
     QtCore \
     -framework \
@@ -40,7 +49,14 @@ LIBS += -framework \
     -framework \
     OpenGL \
     -framework \
-    GLUT
+    GLUT \
+    $$WMLIB/libWm5AglApplication.a \
+    $$WMLIB/libWm5AglGraphics.a \
+    $$WMLIB/libWm5Core.a \
+    $$WMLIB/libWm5Mathematics.a \
+    $$WMLIB/libWm5Physics.a
+
+
 CONFIG(debug, debug|release)
 :message( build type: debug )
 
