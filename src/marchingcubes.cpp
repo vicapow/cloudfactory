@@ -77,7 +77,8 @@ void convertFloatToUCharVoxel(float *** metaballs, uchar *** voxels, int sizeX, 
 
 void drawMetaball(float ***voxels,int sizeX,int sizeY,int sizeZ, int px, int py, int pz, int R ){
 	
-	int maxR = R*4;//cache R*2 because we'll be using it frequently
+	//int maxR = R*6;//cache R*2 because we'll be using it frequently
+	int maxR = 200;
 	
 	//upper and lower bounds for optimization
 	
@@ -111,6 +112,7 @@ void drawMetaball(float ***voxels,int sizeX,int sizeY,int sizeZ, int px, int py,
         }
     }
 }
+
 
 vertex interpolate(double isolevel, vertex p1, vertex p2, float valp1, float valp2) {
     if(fabs(isolevel - valp1) < 0.00001)

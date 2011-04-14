@@ -13,6 +13,7 @@
 
 //--C-STD--//
 #include <list>
+#include <vector>
 #include <cstdio>
 using namespace std;
 
@@ -22,7 +23,9 @@ using namespace Wm5;
 
 //--local--//
 #include "marchingcubes.hpp"
+#include "CloudModel.h"
 
+class CloudModel;
 
 class MetaballCanvas : public Node {
 	
@@ -31,8 +34,10 @@ public:
 	MetaballCanvas();
 	void draw();
 	void init();
+	void addMetaball(CloudModel* model);
+	void removeMetaball(CloudModel* model);
 	
-	float *** metaballs;
+	float *** voxels;
 	list<vertex> vertices;
 	int SX;
 	int SY;
@@ -43,6 +48,7 @@ public:
 	float ball2;
 	int t;
 	
+	
 
 	
 private:
@@ -52,6 +58,7 @@ private:
 	VertexFormat* format;
 	VertexBuffer* vbuffer;
 	IndexBuffer* ibuffer;
+	vector<CloudModel*> metaballs;
 };
 
 #endif /*METABALL_CANVAS*/

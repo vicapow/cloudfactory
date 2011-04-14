@@ -119,271 +119,60 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 	previous_time = current_time;
 
 	float frame_step_time = frame_time/33.33;
-
-	if(STATE_GROW_A){
-		
-		incrementer_a[0] += 1.01;
-		incrementer_a[1] += 1.01;
-		
-		if(blobs[current_cloud_a]->clouds.size() < 400){
-		
-			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(incrementer_a[0] + location_a[0], incrementer_a[1] + location_a[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
-			
-			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(-incrementer_a[0] + location_a[0], -incrementer_a[1] + location_a[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
-			
-			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(incrementer_a[0] + location_a[0], -incrementer_a[1] + location_a[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
-
-			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(-incrementer_a[0] + location_a[0], incrementer_a[0] + location_a[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
-			
-			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(location_a[0], incrementer_a[1] + location_a[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
-			
-			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(incrementer_a[0] + location_a[0], location_a[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
-			
-			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(-incrementer_a[0] + location_a[0], location_a[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
-			
-			blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(location_a[0], -incrementer_a[1] + location_a[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1]);
-		
-			float speed = 6;
-			
-			if(blobs[current_cloud_a]->clouds.size() <= 50){
-				blobs[current_cloud_a]->clouds[0]->setRadius(75);
-				speed = 6;
-			}else if(blobs[current_cloud_a]->clouds.size() <= 100){
-				blobs[current_cloud_a]->clouds[0]->setRadius(150);
-				speed = 5;
-			}else if(blobs[current_cloud_a]->clouds.size() <= 200){
-				blobs[current_cloud_a]->clouds[0]->setRadius(225);
-				speed = 4;
-			}else{ 
-				speed = 3;
-				blobs[current_cloud_a]->clouds[0]->setRadius(300);
-			}
-				
-			
-			for(unsigned int ii = 0; ii < blobs[current_cloud_a]->clouds.size(); ii ++){
-				blobs[current_cloud_a]->clouds[ii]->AddToMatrix(The_Matrix);
-				blobs[current_cloud_a]->clouds[ii]->SetSpeed(speed);
-			}
-		}		
-	} // end state grow A
 	
-	if(STATE_GROW_B){
-			
-			incrementer_b[0] += 1.01;
-			incrementer_b[1] += 1.01;
-
-		if(blobs[current_cloud_b]->clouds.size() < 400){
-			
-			blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], incrementer_b[1] + location_b[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1]);
-			
-			blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], -incrementer_b[1] + location_b[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1]);
-		
-			blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], -incrementer_b[1] + location_b[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1]);
-			
-			blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], incrementer_b[0] + location_b[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1]);
-			
-			blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(location_b[0], incrementer_b[1] + location_b[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1]);
-			
-			blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(incrementer_b[0] + location_b[0], location_b[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1]);
-			
-			blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(-incrementer_b[0] + location_b[0], location_b[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1]);
-			
-			blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(location_b[0], -incrementer_b[1] + location_b[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1]);
+	cout << "frame_step_time: " << frame_step_time << endl;
 	
-				float speed = 6;
-				
-				if(blobs[current_cloud_b]->clouds.size() <= 50){ // about original size
-					blobs[current_cloud_b]->clouds[0]->setRadius(75);
-					speed = 6;
-				}
-				else if(blobs[current_cloud_b]->clouds.size() <= 100){ // a little larget
-					blobs[current_cloud_b]->clouds[0]->setRadius(150);
-					speed = 5;
-				}
-				else if(blobs[current_cloud_b]->clouds.size() <= 200){ // larger still
-					blobs[current_cloud_b]->clouds[0]->setRadius(225);
-					speed = 4;
-				}
-				else{  // HUGE
-					speed = 3;
-					blobs[current_cloud_b]->clouds[0]->setRadius(300);
-				}
-				
-				for(unsigned int ii = 0; ii < blobs[current_cloud_b]->clouds.size(); ii ++){
-					blobs[current_cloud_b]->clouds[ii]->AddToMatrix(The_Matrix);
-					blobs[current_cloud_b]->clouds[ii]->SetSpeed(speed);
-				}
-	} // end if
-
-	} // end state grow B
-	if(STATE_GROW_C){
-		
-		incrementer_c[0] += 1.01;
-		incrementer_c[1] += 1.01;
-		
-		
-		if(blobs[current_cloud_c]->clouds.size() < 400){
-		
-			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(incrementer_c[0] + location_c[0], incrementer_c[1] + location_c[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1]);
-
-			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(-incrementer_c[0] + location_c[0], -incrementer_c[1] + location_c[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1]);
-			
-			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(incrementer_c[0] + location_c[0], -incrementer_c[1] + location_c[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1]);
-
-			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(-incrementer_c[0] + location_c[0], incrementer_c[0] + location_c[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1]);
-			
-			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(location_c[0], incrementer_c[1] + location_c[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1]);
-			
-			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(incrementer_c[0] + location_c[0], location_c[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1]);
-
-			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(-incrementer_c[0] + location_c[0], location_c[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1]);
-
-			blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(location_c[0], -incrementer_c[1] + location_c[1], 0, size, 6, "STRAIGHT"));
-			mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1]);
-			
-			float speed = 6;
-			
-			if(blobs[current_cloud_c]->clouds.size() <= 50){
-				blobs[current_cloud_c]->clouds[0]->setRadius(75);
-				speed = 6;
-			}
-			else if(blobs[current_cloud_c]->clouds.size() <= 100){
-				blobs[current_cloud_c]->clouds[0]->setRadius(150);
-				speed = 5;
-			}
-			else if(blobs[current_cloud_c]->clouds.size() <= 200){
-				blobs[current_cloud_c]->clouds[0]->setRadius(225);
-				speed = 4;
-			}
-			else{ 
-				speed = 3;
-				blobs[current_cloud_c]->clouds[0]->setRadius(300);
-			}	
-			
-			for(unsigned int ii = 0; ii < blobs[current_cloud_c]->clouds.size(); ii ++){
-				blobs[current_cloud_c]->clouds[ii]->AddToMatrix(The_Matrix);
-				blobs[current_cloud_c]->clouds[ii]->SetSpeed(speed);
-			}
-			
-		} // end if
-		
-	} // end state grow C
 	
-	if(blobs.size() > 0 && STATE_MOVE){ // move clouds up
-				
-		Time_Counter counter;
-			
-		The_Matrix->Reset();
-		counter.restart();
-		
-		for(unsigned int j = 0; j < blobs.size(); j++){
-			for(int i=0; i < (int)blobs[j]->clouds.size(); i++)
-			{		
-				if(j != current_cloud_c && j != current_cloud_b && j != current_cloud_a){
-					blobs[j]->clouds[i]->Move(frame_step_time);
-				}
-				
-				blobs[j]->clouds[i]->AddToMatrix(The_Matrix);
-				
-				if(blobs[j]->clouds[i]->Get_Py() > 1000){
-					mScene->DetachChild(blobs[j]->clouds[i]);
-					blobs[j]->clouds.erase(blobs[j]->clouds.begin() + i);
-				}			
-			}
-			
-			//remove blobs if needed
-			if(blobs[j]->clouds.size() == 0){
-				for(unsigned int k = 0; k < user_guess.size();k++){
-					if(user_guess[k] == (CloudModel*)blobs[j]){
-						user_guess.erase(user_guess.begin()+k);
-						
-						
-					}
-				}
-				blobs.erase(blobs.begin()+j);
-				
-				if(blobs.size() > 0){
-					
-					j--;//since we're removing the item at index j, we'll need to reasses the new value at that index
-					current_cloud_a--;
-					current_cloud_b--;
-					current_cloud_c--;
-				}
-			}
-		}
-		
-		if (blobs.empty()) {
-			user_guess.clear();
-		}
-		
-		counter.stop();
-			
-		Marching_Cube_Begin(The_Matrix,STEP);
-		
-		for(int j = 0; j < (int)blobs.size(); j++)	{
-			
-			for(unsigned int ii = 0; ii < blobs[j]->clouds.size(); ii++){
-								
-				blobs[j]->clouds[ii]->SetChild(0, Draw_Iso_Surface_Around_Point( The_Matrix , SEUIL , STEP ,
-																		(blobs[j]->clouds[ii]->Get_Px()/STEP)*STEP,
-																		 (blobs[j]->clouds[ii]->Get_Py()/STEP)*STEP,
-																		 (blobs[j]->clouds[ii]->Get_Pz()/STEP)*STEP) );		
-				blobs[j]->clouds[ii]->Update();
-			}
-			
-		}
+	for(int i = 0; i < blobs.size(); i++){
+		blobs[i]->update(frame_step_time);
+	}
+
+//	if(STATE_GROW_A){
+//		blobs[current_cloud_a]->model->incRadius(0.1);
+//		blobs[current_cloud_a]->model->posY = 0;
+//	}
+//	
+//	
+//	if(STATE_GROW_B){
+//		blobs[current_cloud_b]->model->incRadius(0.1);
+//		blobs[current_cloud_b]->model->posY = 0;
+//	}
+//	
+//	if(STATE_GROW_C){
+//		blobs[current_cloud_c]->model->incRadius(0.1);		
+//		blobs[current_cloud_c]->model->posY = 0;
+//	}
 	
-		mCuller.ComputeVisibleSet(mScene);
-			
-		Marching_Cube_End();	
-		
-	} // end if clouds
+	
+	Time_Counter counter;
+	counter.restart();
+
+	mCuller.ComputeVisibleSet(mScene);
 
 	
 #pragma mark Cloud Blueprint Detection
 	
-	if(user_guess.size() >= example_blueprint.size()){
-		
-		float error = 0;
-		
-		//a hack to fix the issue were a cloud will have a very small radius
-		for(unsigned int i = 0; i < user_guess.size(); i++){
-			if(user_guess[i]->getRadius() <0.1)
-				user_guess.erase(user_guess.begin()+i,user_guess.begin()+i+1);
-		}
-		
-		if( error = BluePrintDetect::CalculateError(example_blueprint,user_guess) > 0.9 ){
-			cout << " MATCH!! error: " << error;
-			The_Matrix->match = true;
-		}else{
-			The_Matrix->match = false;
-		}
-	}
+//	if(user_guess.size() >= example_blueprint.size()){
+//		
+//		float error = 0;
+//		
+//		//a hack to fix the issue were a cloud will have a very small radius
+//		for(unsigned int i = 0; i < user_guess.size(); i++){
+//			if(user_guess[i]->getRadius() <0.1)
+//				user_guess.erase(user_guess.begin()+i,user_guess.begin()+i+1);
+//		}
+//		
+//		if( error = BluePrintDetect::CalculateError(example_blueprint,user_guess) > 0.9 ){
+//			cout << " MATCH!! error: " << error;
+//			The_Matrix->match = true;
+//		}else{
+//			The_Matrix->match = false;
+//		}
+//	}
 
-    if (mRenderer->PreDraw())
+	
+    
+	if (mRenderer->PreDraw())
     {
         mRenderer->ClearBuffers();
         mRenderer->Draw(mCuller.GetVisibleSet());
@@ -442,6 +231,8 @@ void CloudFactory::Init_Texture()
 //----------------------------------------------------------------------------
 bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 {	
+	static float DEFAULT_RADIUS = 20;
+	
 	switch (key) {
 		
 		case 'A': // cannon to the far right
@@ -450,18 +241,14 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 			if(CUR_KEY != 'a'){
 				
 				//add a cloud from factory A
-				blobs.push_back(new m_cloud());
+				blobs.push_back(new m_cloud(canvas->SX/4,0,0,DEFAULT_RADIUS));
 				current_cloud_a = blobs.size() - 1;
 				
-				location_a = Wm5::Float3(670.0, 0.0, 0.0);
-				blobs[current_cloud_a]->clouds.push_back(new Metaballs3D(670, 0, 0, size, 6, "STRAIGHT")); // create new cloud
-				
-				mScene->AttachChild(blobs[current_cloud_a]->clouds[blobs[current_cloud_a]->clouds.size()-1] );
 				
 				//submit the added cloud to the user_guess list of clouds
-				if(blobs[current_cloud_a]->clouds.size()==1)
-					user_guess.push_back(blobs[current_cloud_a]->clouds[0]);
-				
+				user_guess.push_back(blobs[current_cloud_a]->model);
+				canvas->addMetaball(blobs[current_cloud_a]->model);
+
 				
 				STOP_GROWTH_A = false;
 				STATE_GROW_A = true;
@@ -475,17 +262,12 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 		{
 			if(CUR_KEY != 's'){
 				
-				blobs.push_back(new m_cloud());
+				blobs.push_back(new m_cloud(canvas->SX/2,0,0,DEFAULT_RADIUS));
 				
 				current_cloud_b = blobs.size() - 1; // get current index for growth
 				
-				location_b = Wm5::Float3(825.0, 0.0, 0.0);
-				blobs[current_cloud_b]->clouds.push_back(new Metaballs3D(825, 0, 0, size, 6, "STRAIGHT")); // create new cloud
-				mScene->AttachChild(blobs[current_cloud_b]->clouds[blobs[current_cloud_b]->clouds.size()-1] );
-				
-				//submit the added cloud to the user_guess list of clouds
-				if(blobs[current_cloud_b]->clouds.size()==1)
-					user_guess.push_back(blobs[current_cloud_b]->clouds[0]);
+				user_guess.push_back(blobs[current_cloud_b]->model);
+				canvas->addMetaball(blobs[current_cloud_b]->model);
 				
 				STOP_GROWTH_B = false;
 				STATE_GROW_B = true;
@@ -500,17 +282,12 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 		{
 			if(CUR_KEY != 'd'){
 				
-				blobs.push_back(new m_cloud());
+				blobs.push_back( new m_cloud( canvas->SX - canvas->SX/4, 0, 0, DEFAULT_RADIUS ) );
 								
 				current_cloud_c = blobs.size() - 1; // get current index for growth
 				
-				location_c = Wm5::Float3(975.0, 0.0, 0.0);
-				blobs[current_cloud_c]->clouds.push_back(new Metaballs3D(975, 0, 0, size, 6, "STRAIGHT")); // create new cloud
-				mScene->AttachChild(blobs[current_cloud_c]->clouds[blobs[current_cloud_c]->clouds.size()-1] );
-				
-				//submit the added cloud to the user_guess list of clouds
-				if(blobs[current_cloud_c]->clouds.size()==1)
-					user_guess.push_back(blobs[current_cloud_c]->clouds[0]);
+				user_guess.push_back(blobs[current_cloud_c]->model);
+				canvas->addMetaball(blobs[current_cloud_c]->model);
 			
 				STOP_GROWTH_C = false;
 				STATE_GROW_C = true;
@@ -523,15 +300,8 @@ bool CloudFactory::OnKeyDown (unsigned char key, int x, int y)
 		case 'R':
 		{
 			
-			for(unsigned int ii = 0; ii < blobs.size(); ii++){
-			
-				for(unsigned int jj = 0; jj < blobs[ii]->clouds.size(); jj++){
-				
-					mScene->DetachChild(blobs[ii]->clouds[jj]); // remove from scene
-					
-				}
-				
-				blobs[ii]->clouds.clear(); // clear clouds
+			for(unsigned int i = 0; i < blobs.size(); i++){
+				canvas->removeMetaball(blobs[i]->model);
 			}
 			
 			blobs.clear(); // clear blobs
@@ -556,11 +326,6 @@ bool CloudFactory::OnKeyUp (unsigned char key, int x, int y)
 		case 'A':
 			
 			current_cloud_a = -1;
-
-			
-			incrementer_a[0] = 1.0;
-			incrementer_a[1] = 1.0;
-			
 			STATE_GROW_A = false; // set growing to false
 			CUR_KEY = ' ';
 			break;
@@ -569,10 +334,6 @@ bool CloudFactory::OnKeyUp (unsigned char key, int x, int y)
 		case 'S':
 			
 			current_cloud_b = -1;
-			
-			incrementer_b[0] = 1.0;
-			incrementer_b[1] = 1.0;
-			
 			STATE_GROW_B = false; // set growing to false
 			CUR_KEY = ' ';
 			break;
@@ -580,10 +341,6 @@ bool CloudFactory::OnKeyUp (unsigned char key, int x, int y)
 		case 'd': // cannon to the far right
 		case 'D':{
 			current_cloud_c = -1;
-			
-			incrementer_c[0] = 1.0;
-			incrementer_c[1] = 1.0;
-			
 			STATE_GROW_C = false; // set growing to false
 			CUR_KEY = ' ';
 			break;
@@ -651,31 +408,6 @@ bool CloudFactory::OnMouseClick (int button, int state, int x,
 //	} // case mouse down
 
 return true;
-} 
-
-//----------------------------------------------------------------------------
-TriMesh* CloudFactory::CreateTorus ()
-{
-    VertexFormat* vformat = VertexFormat::Create(2,VertexFormat::AU_POSITION, VertexFormat::AT_FLOAT3, 0,VertexFormat::AU_TEXCOORD, VertexFormat::AT_FLOAT2, 0);
-	
-	//a TriMesh stores the data of a triangle mesh
-    //TriMesh* mesh = StandardMesh(vformat).Torus(32, 32, 0.25f, 0.2f);
-	TriMesh *mesh = StandardMesh(vformat).Sphere(32,32,0.1);
-	mesh->SetName("Torus");//useful for picking
-    VertexBufferAccessor vba(mesh);//if you want to access individual verticies of a mesh
-//    for (int i = 0; i < vba.GetNumVertices(); ++i)
-//    {
-//        Float2& tcoord0 = vba.TCoord<Float2>(0, i);
-//        tcoord0[0] *= 4.0f;
-//        tcoord0[1] *= 4.0f;
-//    }
-	
-    std::string baseName = Environment::GetPathR("Bricks.wmtf");
-    Texture2D* baseTexture = Texture2D::LoadWMTF(baseName);
-    baseTexture->GenerateMipmaps();
-	mesh->SetEffectInstance(Texture2DEffect::CreateUniqueInstance(baseTexture, Shader::SF_LINEAR_LINEAR, Shader::SC_REPEAT,Shader::SC_REPEAT));
-	
-    return mesh;
 }
 
 
@@ -687,7 +419,8 @@ void CloudFactory::CreateScene ()
 	mScene = level->load_level(mScene, 0);
 	
 	canvas->init();
-	canvas->LocalTransform.SetTranslate(APoint(1,0,0));
+	canvas->LocalTransform.SetScale(APoint(0.4,0.4,0.4));
+	canvas->LocalTransform.SetTranslate(APoint(0.610f,-0.1,0.1f));
 	canvas->draw();
 	
 	mScene->AttachChild(canvas);

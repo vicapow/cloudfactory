@@ -19,20 +19,25 @@ class m_cloud {
 	
 public:
 	//constructor
-	m_cloud(){
+	m_cloud( float posX, float posY, float posZ, float radius ){
 		cout << "m clouds created!" << endl;
 		
 		//there should only be oe metaball for each cloud but for now, this value isn't being used.
 		match = false;
+		model = new CloudModel(posX,posY,posZ,radius);
 	};
 	
-	std::vector<Metaballs3D*> clouds;
+	void update(float frame_time){
+		model->posY+=frame_time;
+	}
 	
+	CloudModel* model;
 	bool match;
 	
 	//desctuctor
 	~m_cloud(){
 		cout << "m clouds destroied" << endl;
+		delete model;
 	}
 	
 };
@@ -54,12 +59,11 @@ public:
 							   int y, unsigned int);
 	void Init_Texture();
 	
-	Node* metaballVertices;
-	
 	MetaballCanvas* canvas;
+	
+	
 protected:
     void CreateScene ();
-	TriMesh* CreateTorus();
 	
 	std::vector<TriMesh*> mesh;
     NodePtr mScene;

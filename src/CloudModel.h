@@ -4,9 +4,14 @@
 #ifndef CLOUD_MODEL_H
 #define CLOUD_MODEL_H
 
+#include "MetaballCanvas.h"
+
+class MetaballCanvas;
 
 class CloudModel {
 
+	friend class MetaballCanvas;
+	
 public:
 	
 	CloudModel(float x, float y, float z, float r ): posX(x) , posY(y), posZ(z), radius(r) { 
@@ -31,6 +36,10 @@ public:
 	
 	float getRadius(){
 		return radius;
+	}
+	
+	float incRadius(float r){
+		return radius += r;
 	}
 	
 private: 
