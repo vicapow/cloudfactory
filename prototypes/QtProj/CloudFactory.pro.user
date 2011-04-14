@@ -1,0 +1,242 @@
+<!DOCTYPE QtCreatorProject>
+<qtcreator>
+ <data>
+  <variable>RunConfiguration0-BaseEnvironmentBase</variable>
+  <value type="int">2</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-CommandLineArguments</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration0-ProFile</variable>
+  <value type="QString">CloudFactory.pro</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-RunConfiguration.name</variable>
+  <value type="QString">CloudFactory</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UseDyldImageSuffix</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UseTerminal</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserEnvironmentChanges</variable>
+  <valuelist type="QVariantList"/>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserSetName</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserSetWorkingDirectory</variable>
+  <value type="bool">false</value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-UserWorkingDirectory</variable>
+  <value type="QString"></value>
+ </data>
+ <data>
+  <variable>RunConfiguration0-type</variable>
+  <value type="QString">Qt4ProjectManager.Qt4RunConfiguration</value>
+ </data>
+ <data>
+  <variable>activeRunConfiguration</variable>
+  <value type="int">0</value>
+ </data>
+ <data>
+  <variable>activebuildconfiguration</variable>
+  <value type="QString">Debug</value>
+ </data>
+ <data>
+  <variable>buildConfiguration-Debug</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <value key="QtVersionId" type="int">0</value>
+   <value key="ToolChain" type="int">0</value>
+   <value key="buildConfiguration" type="int">2</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildConfiguration-Release</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+   <value key="QtVersionId" type="int">0</value>
+   <value key="buildConfiguration" type="int">0</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">Apple_PubSub_Socket_Render=/tmp/launch-0gSxmU/Render</value>
+    <value type="QString">COMMAND_MODE=unix2003</value>
+    <value type="QString">DISPLAY=/tmp/launch-WSu0n9/org.x:0</value>
+    <value type="QString">DYLD_LIBRARY_PATH=:/usr/local/Trolltech/Qt-4.6.3/lib:/Applications/OpenOffice.org.app/Contents/basis-link/program</value>
+    <value type="QString">HOME=/Users/victorpowell</value>
+    <value type="QString">LANG=en_US.UTF-8</value>
+    <value type="QString">LOGNAME=victorpowell</value>
+    <value type="QString">MANPATH=/usr/local/Trolltech/Qt-4.6.3/doc/main:</value>
+    <value type="QString">OLDPWD=/Users/victorpowell/Documents/vc/git</value>
+    <value type="QString">PATH=/Developer/Tools/Qt:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Users/victorpowell/.gem/ruby/1.8/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/mysql/bin:/usr/local/Trolltech/Qt-4.6.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Applications/OpenOffice.org.app/Contents/basis-link/program:/Users/victorpowell/flex_sdk/bin:/Applications/Doxygen.app/Contents/Resources:/:/Users/victorpowell/bin:/usr/local/scala/bin:/usr/share/jetty/bin</value>
+    <value type="QString">PWD=/Users/victorpowell/Documents/vc/git/cloudfactory3</value>
+    <value type="QString">PYTHONPATH=:/Applications/OpenOffice.org.app/Contents/basis-link/program:/Users/victorpowell/Documents/python_includes</value>
+    <value type="QString">QTDIR=/usr/local/Qt4.6</value>
+    <value type="QString">SCALA_HOME=/usr/local/scala</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/launch-WvAQFh/Listeners</value>
+    <value type="QString">TERM=xterm-color</value>
+    <value type="QString">TERM_PROGRAM=Apple_Terminal</value>
+    <value type="QString">TERM_PROGRAM_VERSION=273</value>
+    <value type="QString">TMPDIR=/var/folders/fd/fdGbrWr7EPmS539yLzAbzU+++TI/-Tmp-/</value>
+    <value type="QString">USER=victorpowell</value>
+    <value type="QString">WM4_PATH=/Users/victorpowell/GeometricTools/WildMagic4</value>
+    <value type="QString">WM5_PATH=/Users/victorpowell/GeometricTools/WildMagic5</value>
+    <value type="QString">_=/usr/bin/open</value>
+    <value type="QString">__CF_USER_TEXT_ENCODING=0x1F5:0:0</value>
+    <value type="QString">bio=/Users/victorpowell/Documents/Work/BioLab</value>
+    <value type="QString">git=/Users/victorpowell/Documents/vc/git</value>
+    <value type="QString">school=/Users/victorpowell/Documents/School</value>
+    <value type="QString">webdir=/Library/WebServer/Documents</value>
+    <value type="QString">work=/Users/victorpowell/Documents/Work</value>
+   </valuelist>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">/Users/victorpowell/Documents/vc/git/cloudfactory3/CloudFactory.pro</value>
+    <value type="QString">-spec</value>
+    <value type="QString">macx-g++</value>
+    <value type="QString">-r</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/qmake</value>
+   <value key="abstractProcess.enabled" type="bool">false</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/Users/victorpowell/Documents/vc/git/cloudfactory3</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <valuelist key="abstractProcess.Environment" type="QVariantList">
+    <value type="QString">Apple_PubSub_Socket_Render=/tmp/launch-0gSxmU/Render</value>
+    <value type="QString">COMMAND_MODE=unix2003</value>
+    <value type="QString">DISPLAY=/tmp/launch-WSu0n9/org.x:0</value>
+    <value type="QString">DYLD_LIBRARY_PATH=:/usr/local/Trolltech/Qt-4.6.3/lib:/Applications/OpenOffice.org.app/Contents/basis-link/program</value>
+    <value type="QString">HOME=/Users/victorpowell</value>
+    <value type="QString">LANG=en_US.UTF-8</value>
+    <value type="QString">LOGNAME=victorpowell</value>
+    <value type="QString">MANPATH=/usr/local/Trolltech/Qt-4.6.3/doc/main:</value>
+    <value type="QString">OLDPWD=/Users/victorpowell/Documents/vc/git</value>
+    <value type="QString">PATH=/Developer/Tools/Qt:/Library/Frameworks/Python.framework/Versions/2.7/bin:/opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/Users/victorpowell/.gem/ruby/1.8/bin:/Library/Frameworks/Python.framework/Versions/Current/bin:/usr/local/mysql/bin:/usr/local/Trolltech/Qt-4.6.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/X11/bin:/Applications/OpenOffice.org.app/Contents/basis-link/program:/Users/victorpowell/flex_sdk/bin:/Applications/Doxygen.app/Contents/Resources:/:/Users/victorpowell/bin:/usr/local/scala/bin:/usr/share/jetty/bin</value>
+    <value type="QString">PWD=/Users/victorpowell/Documents/vc/git/cloudfactory3</value>
+    <value type="QString">PYTHONPATH=:/Applications/OpenOffice.org.app/Contents/basis-link/program:/Users/victorpowell/Documents/python_includes</value>
+    <value type="QString">QTDIR=/usr/local/Qt4.6</value>
+    <value type="QString">SCALA_HOME=/usr/local/scala</value>
+    <value type="QString">SHELL=/bin/bash</value>
+    <value type="QString">SHLVL=1</value>
+    <value type="QString">SSH_AUTH_SOCK=/tmp/launch-WvAQFh/Listeners</value>
+    <value type="QString">TERM=xterm-color</value>
+    <value type="QString">TERM_PROGRAM=Apple_Terminal</value>
+    <value type="QString">TERM_PROGRAM_VERSION=273</value>
+    <value type="QString">TMPDIR=/var/folders/fd/fdGbrWr7EPmS539yLzAbzU+++TI/-Tmp-/</value>
+    <value type="QString">USER=victorpowell</value>
+    <value type="QString">WM4_PATH=/Users/victorpowell/GeometricTools/WildMagic4</value>
+    <value type="QString">WM5_PATH=/Users/victorpowell/GeometricTools/WildMagic5</value>
+    <value type="QString">_=/usr/bin/open</value>
+    <value type="QString">__CF_USER_TEXT_ENCODING=0x1F5:0:0</value>
+    <value type="QString">bio=/Users/victorpowell/Documents/Work/BioLab</value>
+    <value type="QString">git=/Users/victorpowell/Documents/vc/git</value>
+    <value type="QString">school=/Users/victorpowell/Documents/School</value>
+    <value type="QString">webdir=/Library/WebServer/Documents</value>
+    <value type="QString">work=/Users/victorpowell/Documents/Work</value>
+   </valuelist>
+   <value key="abstractProcess.IgnoreReturnValue" type="bool">false</value>
+   <valuelist key="abstractProcess.arguments" type="QVariantList">
+    <value type="QString">-w</value>
+   </valuelist>
+   <value key="abstractProcess.command" type="QString">/usr/bin/make</value>
+   <value key="abstractProcess.enabled" type="bool">true</value>
+   <value key="abstractProcess.workingDirectory" type="QString">/Users/victorpowell/Documents/vc/git/cloudfactory3</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Debug-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Debug</value>
+   <value key="cleanConfig" type="bool">true</value>
+   <valuelist key="makeargs" type="QVariantList">
+    <value type="QString">clean</value>
+   </valuelist>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfiguration-Release-cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString">Release</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildconfigurations</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">Debug</value>
+   <value type="QString">Release</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>buildstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+   <value key="mkspec" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildstep1</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>buildsteps</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">trolltech.qt4projectmanager.qmake</value>
+   <value type="QString">trolltech.qt4projectmanager.make</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>cleanstep0</variable>
+  <valuemap type="QVariantMap">
+   <value key="ProjectExplorer.BuildConfiguration.DisplayName" type="QString"></value>
+   <value key="clean" type="bool">true</value>
+  </valuemap>
+ </data>
+ <data>
+  <variable>cleansteps</variable>
+  <valuelist type="QVariantList">
+   <value type="QString">trolltech.qt4projectmanager.make</value>
+  </valuelist>
+ </data>
+ <data>
+  <variable>defaultFileEncoding</variable>
+  <value type="QByteArray">System</value>
+ </data>
+ <data>
+  <variable>project</variable>
+  <valuemap type="QVariantMap"/>
+ </data>
+</qtcreator>
