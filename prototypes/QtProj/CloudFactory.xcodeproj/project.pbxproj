@@ -10,15 +10,22 @@
 		069D05B0128AE5DC7EE31738 /* QtCore.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */; };
 		08D8EC4D0C273BC5E194E43D /* QtSvg.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 2D7FF9EBB69BCF2C19DC629B /* QtSvg.framework */; };
 		0C6D4628EE0B0D1479A20551 /* AGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = C6766F86E49E9C8701C8E637 /* AGL.framework */; };
-		29864F6F334F64A0D1FB8694 /* moc_mygldrawer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6F432939B3AD03FC43F120EC /* moc_mygldrawer.cpp */; settings = {ATTRIBUTES = (); }; };
+		1DB324E09BE5A95B20C05375 /* CloudFactory.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */; settings = {ATTRIBUTES = (); }; };
+		3A247C79376D7E1FEA8D72B7 /* MetaballCanvas.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */; settings = {ATTRIBUTES = (); }; };
 		41569C8A8920C770CF409E9A /* GLUT.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 998A1319FFA084ADB552E479 /* GLUT.framework */; };
 		450A0D11527AF164AEFE7377 /* QtOpenGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = C374004D45E01156F931B37D /* QtOpenGL.framework */; };
 		501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 9B36DA7E32F0304E780E7972 /* QtGui.framework */; };
-		99DB3B5790F51F1B6DD6E80C /* mygldrawer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1162C541CAF1C90EC8DE8DF2 /* mygldrawer.cpp */; settings = {ATTRIBUTES = (); }; };
 		BCEF71E1EDFB18DA77DC750B /* OpenGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA18A6831232F53228631AD1 /* OpenGL.framework */; };
 		C2643FEB592DBFD1429BE4E1 /* QtXml.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 8EE92F8FA333C9E415C5B34E /* QtXml.framework */; };
-		F0B5F66B13579B6B00B12947 /* CloudFactory.app in Project Copy */ = {isa = PBXBuildFile; fileRef = F0B5F66813579B6B00B12947 /* CloudFactory.app */; };
-		FA899CEA0BC3739C9BF0DC55 /* marchingcubes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3E128FBEE267263828B2D63B /* marchingcubes.cpp */; settings = {ATTRIBUTES = (); }; };
+		F098A9241357F78E00B9EB9C /* CloudFactory.app in Project Copy */ = {isa = PBXBuildFile; fileRef = F098A9211357F78E00B9EB9C /* CloudFactory.app */; };
+		F098A9501357FA0800B9EB9C /* marchingcubes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F098A94E1357FA0800B9EB9C /* marchingcubes.cpp */; };
+		F098A9A81358038D00B9EB9C /* MtlLoader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F098A9A01358038D00B9EB9C /* MtlLoader.cpp */; };
+		F098A9A91358038D00B9EB9C /* MtlLoader.inl in Bundle Resources */ = {isa = PBXBuildFile; fileRef = F098A9A21358038D00B9EB9C /* MtlLoader.inl */; };
+		F098A9AA1358038D00B9EB9C /* MtlLoaderCodes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F098A9A31358038D00B9EB9C /* MtlLoaderCodes.cpp */; };
+		F098A9AB1358038D00B9EB9C /* ObjLoader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F098A9A41358038D00B9EB9C /* ObjLoader.cpp */; };
+		F098A9AC1358038D00B9EB9C /* ObjLoader.inl in Bundle Resources */ = {isa = PBXBuildFile; fileRef = F098A9A61358038D00B9EB9C /* ObjLoader.inl */; };
+		F098A9AD1358038D00B9EB9C /* ObjLoaderCodes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F098A9A71358038D00B9EB9C /* ObjLoaderCodes.cpp */; };
+		F269DE3367294E8BA56D96DF /* moc_CloudFactory.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 8285E7D52ED689509BA60BD2 /* moc_CloudFactory.cpp */; settings = {ATTRIBUTES = (); }; };
 		FD1638E377D97C82BDB438FB /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7EC3C68A81EFFF79B6CA22AC /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
 
@@ -29,7 +36,7 @@
 			dstPath = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build;
 			dstSubfolderSpec = 0;
 			files = (
-				F0B5F66B13579B6B00B12947 /* CloudFactory.app in Project Copy */,
+				F098A9241357F78E00B9EB9C /* CloudFactory.app in Project Copy */,
 			);
 			name = "Project Copy";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -38,20 +45,33 @@
 
 /* Begin PBXFileReference section */
 		058F84791D3B3C38C3AEDBEC /* CloudFactory.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = CloudFactory.pro; sourceTree = "<group>"; };
-		0AC30B5107EC47D83280529A /* mygldrawer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mygldrawer.h; path = src/mygldrawer.h; sourceTree = "<group>"; };
-		1162C541CAF1C90EC8DE8DF2 /* mygldrawer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mygldrawer.cpp; path = src/mygldrawer.cpp; sourceTree = "<group>"; };
+		2CF22B05A98876766CDB1112 /* CloudFactory.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CloudFactory.hpp; path = src/CloudFactory.hpp; sourceTree = "<group>"; };
 		2D7FF9EBB69BCF2C19DC629B /* QtSvg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtSvg.framework; path = /Library/Frameworks/QtSvg.framework; sourceTree = "<absolute>"; };
-		3E128FBEE267263828B2D63B /* marchingcubes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = marchingcubes.cpp; path = src/marchingcubes.cpp; sourceTree = "<group>"; };
-		6F432939B3AD03FC43F120EC /* moc_mygldrawer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_mygldrawer.cpp; path = tmp/moc/moc_mygldrawer.cpp; sourceTree = "<group>"; };
+		4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MetaballCanvas.cpp; path = src/MetaballCanvas.cpp; sourceTree = "<group>"; };
 		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
 		7EC3C68A81EFFF79B6CA22AC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		8285E7D52ED689509BA60BD2 /* moc_CloudFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_CloudFactory.cpp; path = tmp/moc/moc_CloudFactory.cpp; sourceTree = "<group>"; };
 		8EE92F8FA333C9E415C5B34E /* QtXml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtXml.framework; path = /Library/Frameworks/QtXml.framework; sourceTree = "<absolute>"; };
 		998A1319FFA084ADB552E479 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = /System/Library/Frameworks/GLUT.framework; sourceTree = "<absolute>"; };
 		9B36DA7E32F0304E780E7972 /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /Library/Frameworks/QtGui.framework; sourceTree = "<absolute>"; };
+		A8045C1644BEF096439848D2 /* CloudModel.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = CloudModel.hpp; path = src/CloudModel.hpp; sourceTree = "<group>"; };
+		AB0328AB8DFC846100D20771 /* MetaballCanvas.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = MetaballCanvas.hpp; path = src/MetaballCanvas.hpp; sourceTree = "<group>"; };
 		C374004D45E01156F931B37D /* QtOpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtOpenGL.framework; path = /Library/Frameworks/QtOpenGL.framework; sourceTree = "<absolute>"; };
 		C6766F86E49E9C8701C8E637 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		DA18A6831232F53228631AD1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
-		F0B5F66813579B6B00B12947 /* CloudFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CloudFactory.cpp; path = src/CloudFactory.cpp; sourceTree = "<group>"; };
+		F098A9211357F78E00B9EB9C /* CloudFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F098A94E1357FA0800B9EB9C /* marchingcubes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = marchingcubes.cpp; path = src/marchingcubes.cpp; sourceTree = "<group>"; };
+		F098A94F1357FA0800B9EB9C /* marchingcubes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = marchingcubes.hpp; path = src/marchingcubes.hpp; sourceTree = "<group>"; };
+		F098A9881357FEBD00B9EB9C /* Cannons.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Cannons.hpp; path = src/Cannons.hpp; sourceTree = "<group>"; };
+		F098A9A01358038D00B9EB9C /* MtlLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtlLoader.cpp; sourceTree = "<group>"; };
+		F098A9A11358038D00B9EB9C /* MtlLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MtlLoader.h; sourceTree = "<group>"; };
+		F098A9A21358038D00B9EB9C /* MtlLoader.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MtlLoader.inl; sourceTree = "<group>"; };
+		F098A9A31358038D00B9EB9C /* MtlLoaderCodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MtlLoaderCodes.cpp; sourceTree = "<group>"; };
+		F098A9A41358038D00B9EB9C /* ObjLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjLoader.cpp; sourceTree = "<group>"; };
+		F098A9A51358038D00B9EB9C /* ObjLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjLoader.h; sourceTree = "<group>"; };
+		F098A9A61358038D00B9EB9C /* ObjLoader.inl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ObjLoader.inl; sourceTree = "<group>"; };
+		F098A9A71358038D00B9EB9C /* ObjLoaderCodes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ObjLoaderCodes.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +97,13 @@
 		05596AB53D8D521C69802C27 /* CloudFactory */ = {
 			isa = PBXGroup;
 			children = (
+				F098A99F1358038D00B9EB9C /* OBJ */,
 				FB61758D0F0FDA4BA867C3D5 /* Sources */,
 				46E892BBB6BB6952967E0561 /* Temporary Sources */,
 				883D7615C4D2DE3FA1218F12 /* Headers */,
 				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
 				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
-				F0B5F66913579B6B00B12947 /* Products */,
+				F098A9221357F78E00B9EB9C /* Products */,
 			);
 			name = CloudFactory;
 			sourceTree = "<group>";
@@ -90,9 +111,10 @@
 		06674E1DE8D3EB6E763DFFDA /* src */ = {
 			isa = PBXGroup;
 			children = (
+				EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */,
 				7EC3C68A81EFFF79B6CA22AC /* main.cpp */,
-				1162C541CAF1C90EC8DE8DF2 /* mygldrawer.cpp */,
-				3E128FBEE267263828B2D63B /* marchingcubes.cpp */,
+				4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */,
+				F098A94E1357FA0800B9EB9C /* marchingcubes.cpp */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -100,7 +122,7 @@
 		1822DBD1C59A119596E70204 /* moc */ = {
 			isa = PBXGroup;
 			children = (
-				6F432939B3AD03FC43F120EC /* moc_mygldrawer.cpp */,
+				8285E7D52ED689509BA60BD2 /* moc_CloudFactory.cpp */,
 			);
 			name = moc;
 			sourceTree = "<group>";
@@ -152,18 +174,37 @@
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
 		};
-		F0B5F66913579B6B00B12947 /* Products */ = {
+		F098A9221357F78E00B9EB9C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0B5F66813579B6B00B12947 /* CloudFactory.app */,
+				F098A9211357F78E00B9EB9C /* CloudFactory.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F098A99F1358038D00B9EB9C /* OBJ */ = {
+			isa = PBXGroup;
+			children = (
+				F098A9A01358038D00B9EB9C /* MtlLoader.cpp */,
+				F098A9A11358038D00B9EB9C /* MtlLoader.h */,
+				F098A9A21358038D00B9EB9C /* MtlLoader.inl */,
+				F098A9A31358038D00B9EB9C /* MtlLoaderCodes.cpp */,
+				F098A9A41358038D00B9EB9C /* ObjLoader.cpp */,
+				F098A9A51358038D00B9EB9C /* ObjLoader.h */,
+				F098A9A61358038D00B9EB9C /* ObjLoader.inl */,
+				F098A9A71358038D00B9EB9C /* ObjLoaderCodes.cpp */,
+			);
+			path = OBJ;
 			sourceTree = "<group>";
 		};
 		F4AF6147B42623F6B3284738 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				0AC30B5107EC47D83280529A /* mygldrawer.h */,
+				F098A9881357FEBD00B9EB9C /* Cannons.hpp */,
+				F098A94F1357FA0800B9EB9C /* marchingcubes.hpp */,
+				2CF22B05A98876766CDB1112 /* CloudFactory.hpp */,
+				A8045C1644BEF096439848D2 /* CloudModel.hpp */,
+				AB0328AB8DFC846100D20771 /* MetaballCanvas.hpp */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -181,7 +222,7 @@
 /* Begin PBXNativeTarget section */
 		2A165002224AA4EE4F32A692 /* CloudFactory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0B5F67913579B8000B12947 /* Build configuration list for PBXNativeTarget "CloudFactory" */;
+			buildConfigurationList = F098A9361357F79800B9EB9C /* Build configuration list for PBXNativeTarget "CloudFactory" */;
 			buildPhases = (
 				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
 				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
@@ -197,7 +238,7 @@
 			name = CloudFactory;
 			productInstallPath = build/;
 			productName = CloudFactory;
-			productReference = F0B5F66813579B6B00B12947 /* CloudFactory.app */;
+			productReference = F098A9211357F78E00B9EB9C /* CloudFactory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -209,7 +250,7 @@
 			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 05596AB53D8D521C69802C27 /* CloudFactory */;
-			productRefGroup = F0B5F66913579B6B00B12947 /* Products */;
+			productRefGroup = F098A9221357F78E00B9EB9C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -223,6 +264,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F098A9A91358038D00B9EB9C /* MtlLoader.inl in Bundle Resources */,
+				F098A9AC1358038D00B9EB9C /* ObjLoader.inl in Bundle Resources */,
 			);
 			name = "Bundle Resources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,10 +300,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DB324E09BE5A95B20C05375 /* CloudFactory.cpp in Build Sources */,
 				FD1638E377D97C82BDB438FB /* main.cpp in Build Sources */,
-				99DB3B5790F51F1B6DD6E80C /* mygldrawer.cpp in Build Sources */,
-				FA899CEA0BC3739C9BF0DC55 /* marchingcubes.cpp in Build Sources */,
-				29864F6F334F64A0D1FB8694 /* moc_mygldrawer.cpp in Build Sources */,
+				3A247C79376D7E1FEA8D72B7 /* MetaballCanvas.cpp in Build Sources */,
+				F269DE3367294E8BA56D96DF /* moc_CloudFactory.cpp in Build Sources */,
+				F098A9501357FA0800B9EB9C /* marchingcubes.cpp in Build Sources */,
+				F098A9A81358038D00B9EB9C /* MtlLoader.cpp in Build Sources */,
+				F098A9AA1358038D00B9EB9C /* MtlLoaderCodes.cpp in Build Sources */,
+				F098A9AB1358038D00B9EB9C /* ObjLoader.cpp in Build Sources */,
+				F098A9AD1358038D00B9EB9C /* ObjLoaderCodes.cpp in Build Sources */,
 			);
 			name = "Build Sources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,7 +333,7 @@
 			};
 			name = Release;
 		};
-		F0B5F66F13579B6B00B12947 /* Debug */ = {
+		F098A9281357F78F00B9EB9C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
@@ -367,7 +415,7 @@
 			};
 			name = Debug;
 		};
-		F0B5F67013579B6B00B12947 /* Release */ = {
+		F098A9291357F78F00B9EB9C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
@@ -448,7 +496,7 @@
 			};
 			name = Release;
 		};
-		F0B5F67113579B6B00B12947 /* Default */ = {
+		F098A92A1357F78F00B9EB9C /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
@@ -539,12 +587,12 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0B5F67913579B8000B12947 /* Build configuration list for PBXNativeTarget "CloudFactory" */ = {
+		F098A9361357F79800B9EB9C /* Build configuration list for PBXNativeTarget "CloudFactory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0B5F66F13579B6B00B12947 /* Debug */,
-				F0B5F67013579B6B00B12947 /* Release */,
-				F0B5F67113579B6B00B12947 /* Default */,
+				F098A9281357F78F00B9EB9C /* Debug */,
+				F098A9291357F78F00B9EB9C /* Release */,
+				F098A92A1357F78F00B9EB9C /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;

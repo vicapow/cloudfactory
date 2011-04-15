@@ -61,9 +61,6 @@ CONFIG(debug, debug|release)
 :message( build type: debug )
 
 # include(src/src.pri)
-SOURCES += src/main.cpp \
-    src/mygldrawer.cpp
-SOURCES += src/marchingcubes.cpp
-SOURCES += src/marchingcubes.hpp
+SOURCES += src/*.cpp
+HEADERS += src/*.hpp
 DESTDIR = ./build
-HEADERS += src/mygldrawer.h

@@ -4,15 +4,11 @@
 **/
 #ifndef MARCHING_CUBES
 #define MARCHING_CUBES
-
-//--CSTD--//
 #include <stdlib.h>
 #include <math.h>
 #include <stdio.h>
 #include <vector>
 #include <list>
-
-
 using namespace std;
 typedef unsigned char uchar;
 struct vertex {
@@ -36,7 +32,7 @@ void convertFloatToUCharVoxel(float *** metaballs, uchar *** voxels, int sizeX, 
 
 void drawMetaball(float ***voxels,int sizeX,int sizeY,int sizeZ, int px, int py, int pz, int R);
 
-vertex interpolate(double isolevel, vertex p1, vertex p2, float val1, float val2);
+void interpolate(double isolevel, vertex p1, vertex p2, float val1, float val2, vertex& p);
 
 void processCube(cube cube, double isolevel);
 
