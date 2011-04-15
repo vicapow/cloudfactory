@@ -46,7 +46,22 @@ void CloudFactory::onEnterFrame(){
 	int frame_time = elapsedTimer.restart();
 	list<m_cloud*>::iterator it;
 	for( it = clouds.begin(); it != clouds.end(); it++){
-		(*it)->update(frame_time/50.0f);
+		(*it)->update(frame_time/25.0f);
+	}
+	
+	if(STATE_GROW_A && cur_cloud_a ){
+		cur_cloud_a->model->posY = 0;
+		cur_cloud_a->model->incRadius(8);
+	}
+	
+	if(STATE_GROW_B && cur_cloud_b ){
+		cur_cloud_b->model->posY = 0;
+		cur_cloud_b->model->incRadius(8);
+	}
+	
+	if(STATE_GROW_C && cur_cloud_c ){
+		cur_cloud_c->model->posY = 0;
+		cur_cloud_c->model->incRadius(8);
 	}
 	
 	paintGL();

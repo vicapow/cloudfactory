@@ -69,7 +69,7 @@ void MetaballCanvas::draw(){
 	//drawMetaball(voxels,SX,SY,SZ,SX/2,20,SZ-5,12);
 	
 	clearVertexList();
-	vertices = runMarchingCubes(voxels,SX,SY,SZ,4,4,4,0.012);
+	vertices = runMarchingCubes(voxels,SX,SY,SZ,9,9,9,0.012);
 	
 	//cout << "update" << endl;
 	draw_gl();

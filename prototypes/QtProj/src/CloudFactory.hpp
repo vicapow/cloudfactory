@@ -40,11 +40,11 @@ class m_cloud {
 		//there should only be oe metaball for each cloud but for now, this value isn't being used.
 		match = false;
 		model = new CloudModel(posX,posY,posZ,radius);
-		model->velY = 2;
+		model->velY = 1;
 	};
 
 	void update(float frame_time){
-		model->posY+= frame_time * model->velY;
+		model->posY+= frame_time * (100 / (model->getRadius()+50) );
 		cout << "frame time: " << frame_time << endl;
 	}
 
