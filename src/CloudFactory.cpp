@@ -87,11 +87,6 @@ bool CloudFactory::OnInitialize ()
 	incrementer_a = Wm5::Float3(1.0, 1.0, 1.0);
 	incrementer_b = Wm5::Float3(1.0, 1.0, 1.0);
 	incrementer_c = Wm5::Float3(1.0, 1.0, 1.0);
-	
-	
-	
-	
-
 
     return true;
 }
@@ -126,23 +121,6 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 	for(int i = 0; i < blobs.size(); i++){
 		blobs[i]->update(frame_step_time);
 	}
-
-//	if(STATE_GROW_A){
-//		blobs[current_cloud_a]->model->incRadius(0.1);
-//		blobs[current_cloud_a]->model->posY = 0;
-//	}
-//	
-//	
-//	if(STATE_GROW_B){
-//		blobs[current_cloud_b]->model->incRadius(0.1);
-//		blobs[current_cloud_b]->model->posY = 0;
-//	}
-//	
-//	if(STATE_GROW_C){
-//		blobs[current_cloud_c]->model->incRadius(0.1);		
-//		blobs[current_cloud_c]->model->posY = 0;
-//	}
-	
 	
 	Time_Counter counter;
 	counter.restart();
@@ -151,25 +129,6 @@ void CloudFactory::OnIdle () // aka, On Enter Frame
 
 	
 #pragma mark Cloud Blueprint Detection
-	
-//	if(user_guess.size() >= example_blueprint.size()){
-//		
-//		float error = 0;
-//		
-//		//a hack to fix the issue were a cloud will have a very small radius
-//		for(unsigned int i = 0; i < user_guess.size(); i++){
-//			if(user_guess[i]->getRadius() <0.1)
-//				user_guess.erase(user_guess.begin()+i,user_guess.begin()+i+1);
-//		}
-//		
-//		if( error = BluePrintDetect::CalculateError(example_blueprint,user_guess) > 0.9 ){
-//			cout << " MATCH!! error: " << error;
-//			The_Matrix->match = true;
-//		}else{
-//			The_Matrix->match = false;
-//		}
-//	}
-
 	
     
 	if (mRenderer->PreDraw())

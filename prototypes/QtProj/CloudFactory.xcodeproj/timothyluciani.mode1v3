@@ -252,7 +252,7 @@
 						<dict>
 							<key>PBXSmartGroupTreeModuleColumnWidthsKey</key>
 							<array>
-								<real>232</real>
+								<real>206</real>
 							</array>
 							<key>PBXSmartGroupTreeModuleColumnsKey_v4</key>
 							<array>
@@ -274,14 +274,14 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>15</integer>
-									<integer>10</integer>
-									<integer>9</integer>
+									<integer>4</integer>
+									<integer>3</integer>
+									<integer>2</integer>
 									<integer>0</integer>
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 0}, {232, 664}}</string>
+							<string>{{0, 0}, {206, 664}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -293,11 +293,11 @@
 					<key>GeometryConfiguration</key>
 					<dict>
 						<key>Frame</key>
-						<string>{{0, 0}, {249, 682}}</string>
+						<string>{{0, 0}, {223, 682}}</string>
 						<key>GroupTreeTableConfiguration</key>
 						<array>
 							<string>MainColumn</string>
-							<real>232</real>
+							<real>206</real>
 						</array>
 						<key>RubberWindowFrame</key>
 						<string>0 55 1276 723 0 0 1280 778 </string>
@@ -305,7 +305,7 @@
 					<key>Module</key>
 					<string>PBXSmartGroupTreeModule</string>
 					<key>Proportion</key>
-					<string>249pt</string>
+					<string>223pt</string>
 				</dict>
 				<dict>
 					<key>Dock</key>
@@ -318,7 +318,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MetaballCanvas.cpp</string>
+								<string>CloudFactory.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,11 +326,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MetaballCanvas.cpp</string>
+										<string>CloudFactory.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F08415251358EA9600BC5D4A</string>
+										<string>F084154213591AFC00BC5D4A</string>
 										<key>history</key>
 										<array>
 											<string>F03AA57F1357CC92000EA162</string>
@@ -364,12 +364,12 @@
 											<string>F08414511358DA7B00BC5D4A</string>
 											<string>F08414B51358DE9E00BC5D4A</string>
 											<string>F08414DB1358E77B00BC5D4A</string>
-											<string>F084150E1358E9D200BC5D4A</string>
-											<string>F08415191358EA6900BC5D4A</string>
 											<string>F084151A1358EA6900BC5D4A</string>
 											<string>F084151B1358EA6900BC5D4A</string>
 											<string>F084151C1358EA6900BC5D4A</string>
-											<string>F08414E11358E80200BC5D4A</string>
+											<string>F0841529135916A400BC5D4A</string>
+											<string>F084152A135916A400BC5D4A</string>
+											<string>F08415341359176B00BC5D4A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -381,7 +381,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 0}, {1022, 620}}</string>
+								<string>{{0, 0}, {1048, 620}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 55 1276 723 0 0 1280 778 </string>
 							</dict>
@@ -401,7 +401,7 @@
 							<key>GeometryConfiguration</key>
 							<dict>
 								<key>Frame</key>
-								<string>{{0, 625}, {1022, 57}}</string>
+								<string>{{0, 625}, {1048, 57}}</string>
 								<key>RubberWindowFrame</key>
 								<string>0 55 1276 723 0 0 1280 778 </string>
 							</dict>
@@ -412,7 +412,7 @@
 						</dict>
 					</array>
 					<key>Proportion</key>
-					<string>1022pt</string>
+					<string>1048pt</string>
 				</dict>
 			</array>
 			<key>Name</key>
@@ -567,13 +567,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>F08415261358EA9600BC5D4A</string>
 		<string>F08412B61358B4B500BC5D4A</string>
 		<string>F08412B71358B4B500BC5D4A</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>F03AA4471357AC78000EA162</string>
-		<string>/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/CloudFactory.xcodeproj</string>
 		<string>1C78EAAD065D492600B07095</string>
+		<string>/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/CloudFactory.xcodeproj</string>
+		<string>F03AA4471357AC78000EA162</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 55 1276 723 0 0 1280 778 </string>
@@ -592,12 +591,14 @@
 					<key>Dock</key>
 					<array>
 						<dict>
+							<key>BecomeActive</key>
+							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string></string>
+								<string>CloudFactory.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -666,7 +667,7 @@
 			<key>WindowToolGUID</key>
 			<string>F03AA4471357AC78000EA162</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

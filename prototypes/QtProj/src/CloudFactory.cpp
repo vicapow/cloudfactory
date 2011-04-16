@@ -46,7 +46,21 @@ void CloudFactory::onEnterFrame(){
 	int frame_time = elapsedTimer.restart();
 	list<m_cloud*>::iterator it;
 	for( it = clouds.begin(); it != clouds.end(); it++){
-		(*it)->update(frame_time/25.0f);
+		
+		m_cloud* cloud = (*it);//convient pointer
+		
+		//take a step
+		cloud->update(frame_time/25.0f);
+		
+		if( cloud->model->posY - cloud->model->getRadius() > canvas->SY ){
+			
+			this->removeMetaball(cloud->model);
+			
+			//remove the cloud from the clouds list
+			clouds.remove(cloud);
+			delete cloud;
+			it--;
+		}
 	}
 	
 	if(STATE_GROW_A && cur_cloud_a ){
@@ -68,6 +82,20 @@ void CloudFactory::onEnterFrame(){
 	
 	//cout << "on enter frame " << endl;
 	
+}
+
+void CloudFactory::removeMetaball(CloudModel* model ){
+	
+	//remove the model from the guess vector
+	for(int i = 0; i < user_guess.size();i++){
+		if(user_guess[i] == model){
+			user_guess.erase( user_guess.begin() + i );
+			break;
+		}
+	}
+	
+	//remove the cloud from the metaball canvas
+	canvas->removeMetaball(model);
 }
 
 void CloudFactory::paintGL()

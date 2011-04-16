@@ -76,6 +76,7 @@ protected:
 	void paintGL();
 	virtual void keyPressEvent(QKeyEvent *event);
 	virtual void keyReleaseEvent(QKeyEvent *event);
+	void removeMetaball(CloudModel* cloud);
 	
 	/* game functions */
 	

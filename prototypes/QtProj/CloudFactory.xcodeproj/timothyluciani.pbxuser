@@ -8,16 +8,16 @@
 	};
 	2CF22B05A98876766CDB1112 /* CloudFactory.hpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {961, 1417}}";
-			sepNavSelRange = "{677, 0}";
-			sepNavVisRange = "{351, 939}";
+			sepNavIntBoundsRect = "{{0, 0}, {1215, 1326}}";
+			sepNavSelRange = "{1370, 0}";
+			sepNavVisRange = "{1156, 708}";
 		};
 	};
 	4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1027, 1183}}";
 			sepNavSelRange = "{1596, 0}";
-			sepNavVisRange = "{852, 1150}";
+			sepNavVisRange = "{767, 1232}";
 		};
 	};
 	7EC3C68A81EFFF79B6CA22AC /* main.cpp */ = {
@@ -69,7 +69,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					783,
+					809,
 					20,
 					48,
 					43,
@@ -385,6 +385,19 @@
 			F084151D1358EA6900BC5D4A /* PBXTextBookmark */ = F084151D1358EA6900BC5D4A /* PBXTextBookmark */;
 			F08415211358EA7C00BC5D4A /* PBXTextBookmark */ = F08415211358EA7C00BC5D4A /* PBXTextBookmark */;
 			F08415251358EA9600BC5D4A /* PBXTextBookmark */ = F08415251358EA9600BC5D4A /* PBXTextBookmark */;
+			F0841529135916A400BC5D4A /* PBXTextBookmark */ = F0841529135916A400BC5D4A /* PBXTextBookmark */;
+			F084152A135916A400BC5D4A /* PBXTextBookmark */ = F084152A135916A400BC5D4A /* PBXTextBookmark */;
+			F084152B135916A400BC5D4A /* PBXTextBookmark */ = F084152B135916A400BC5D4A /* PBXTextBookmark */;
+			F084152C135916A400BC5D4A /* PBXTextBookmark */ = F084152C135916A400BC5D4A /* PBXTextBookmark */;
+			F084152F1359174900BC5D4A /* PBXTextBookmark */ = F084152F1359174900BC5D4A /* PBXTextBookmark */;
+			F08415341359176B00BC5D4A /* XCBuildMessageTextBookmark */ = F08415341359176B00BC5D4A /* XCBuildMessageTextBookmark */;
+			F08415351359176B00BC5D4A /* PBXTextBookmark */ = F08415351359176B00BC5D4A /* PBXTextBookmark */;
+			F08415371359193D00BC5D4A /* PBXTextBookmark */ = F08415371359193D00BC5D4A /* PBXTextBookmark */;
+			F08415381359195100BC5D4A /* PBXTextBookmark */ = F08415381359195100BC5D4A /* PBXTextBookmark */;
+			F08415391359199D00BC5D4A /* PBXTextBookmark */ = F08415391359199D00BC5D4A /* PBXTextBookmark */;
+			F084153C13591A1900BC5D4A /* PBXTextBookmark */ = F084153C13591A1900BC5D4A /* PBXTextBookmark */;
+			F084153F13591A5F00BC5D4A /* PBXTextBookmark */ = F084153F13591A5F00BC5D4A /* PBXTextBookmark */;
+			F084154213591AFC00BC5D4A /* PBXTextBookmark */ = F084154213591AFC00BC5D4A /* PBXTextBookmark */;
 			F098A9AF1358046200B9EB9C = F098A9AF1358046200B9EB9C /* PBXTextBookmark */;
 			F098AB951358955400B9EB9C = F098AB951358955400B9EB9C /* PBXTextBookmark */;
 			F098ABEE13589CB800B9EB9C = F098ABEE13589CB800B9EB9C /* PBXTextBookmark */;
@@ -418,9 +431,9 @@
 	};
 	EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {961, 4147}}";
-			sepNavSelRange = "{1152, 0}";
-			sepNavVisRange = "{803, 973}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 4485}}";
+			sepNavSelRange = "{1437, 0}";
+			sepNavVisRange = "{662, 1103}";
 			sepNavWindowFrame = "{{15, 0}, {1023, 778}}";
 		};
 	};
@@ -909,7 +922,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 95";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1836;
 		rType = 0;
 		vrLen = 1019;
 		vrLoc = 759;
@@ -919,7 +932,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 51";
 		rLen = 0;
-		rLoc = 1158;
+		rLoc = 1441;
 		rType = 0;
 		vrLen = 958;
 		vrLoc = 455;
@@ -929,7 +942,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 51";
 		rLen = 0;
-		rLoc = 1158;
+		rLoc = 1441;
 		rType = 0;
 		vrLen = 958;
 		vrLoc = 455;
@@ -959,7 +972,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 95";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1836;
 		rType = 0;
 		vrLen = 963;
 		vrLoc = 815;
@@ -969,7 +982,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 95";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1836;
 		rType = 0;
 		vrLen = 698;
 		vrLoc = 165;
@@ -979,7 +992,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 52";
 		rLen = 0;
-		rLoc = 1538;
+		rLoc = 1821;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 519;
@@ -989,7 +1002,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 54";
 		rLen = 0;
-		rLoc = 1538;
+		rLoc = 1821;
 		rType = 0;
 		vrLen = 903;
 		vrLoc = 519;
@@ -999,7 +1012,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 54";
 		rLen = 0;
-		rLoc = 1538;
+		rLoc = 1821;
 		rType = 0;
 		vrLen = 945;
 		vrLoc = 519;
@@ -1069,7 +1082,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 95";
 		rLen = 0;
-		rLoc = 1795;
+		rLoc = 1836;
 		rType = 0;
 		vrLen = 677;
 		vrLoc = 186;
@@ -1079,7 +1092,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 50";
 		rLen = 0;
-		rLoc = 1158;
+		rLoc = 1441;
 		rType = 0;
 		vrLen = 971;
 		vrLoc = 567;
@@ -1089,7 +1102,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 50";
 		rLen = 0;
-		rLoc = 1158;
+		rLoc = 1441;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 666;
@@ -1099,7 +1112,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 54";
 		rLen = 0;
-		rLoc = 1504;
+		rLoc = 1787;
 		rType = 0;
 		vrLen = 762;
 		vrLoc = 1098;
@@ -1249,7 +1262,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 52";
 		rLen = 0;
-		rLoc = 1498;
+		rLoc = 1781;
 		rType = 0;
 		vrLen = 679;
 		vrLoc = 983;
@@ -1259,7 +1272,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 78";
 		rLen = 0;
-		rLoc = 1922;
+		rLoc = 2524;
 		rType = 0;
 		vrLen = 930;
 		vrLoc = 1245;
@@ -1269,7 +1282,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 77";
 		rLen = 0;
-		rLoc = 1922;
+		rLoc = 2524;
 		rType = 0;
 		vrLen = 878;
 		vrLoc = 453;
@@ -1279,7 +1292,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 78";
 		rLen = 0;
-		rLoc = 1922;
+		rLoc = 2524;
 		rType = 0;
 		vrLen = 786;
 		vrLoc = 1124;
@@ -1289,7 +1302,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 78";
 		rLen = 0;
-		rLoc = 1922;
+		rLoc = 2524;
 		rType = 0;
 		vrLen = 711;
 		vrLoc = 1087;
@@ -1359,7 +1372,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 98";
 		rLen = 0;
-		rLoc = 1822;
+		rLoc = 1863;
 		rType = 0;
 		vrLen = 793;
 		vrLoc = 322;
@@ -1549,7 +1562,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 98";
 		rLen = 0;
-		rLoc = 1822;
+		rLoc = 1863;
 		rType = 0;
 		vrLen = 296;
 		vrLoc = 819;
@@ -2339,7 +2352,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 95";
 		rLen = 12;
-		rLoc = 1763;
+		rLoc = 1804;
 		rType = 0;
 		vrLen = 778;
 		vrLoc = 1063;
@@ -2369,7 +2382,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 95";
 		rLen = 0;
-		rLoc = 1762;
+		rLoc = 1803;
 		rType = 0;
 		vrLen = 780;
 		vrLoc = 1063;
@@ -2399,7 +2412,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 95";
 		rLen = 0;
-		rLoc = 1762;
+		rLoc = 1803;
 		rType = 0;
 		vrLen = 754;
 		vrLoc = 1088;
@@ -2429,7 +2442,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 49";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 577;
 		vrLoc = 635;
@@ -2439,7 +2452,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 47";
 		rLen = 0;
-		rLoc = 1139;
+		rLoc = 1205;
 		rType = 0;
 		vrLen = 649;
 		vrLoc = 707;
@@ -2459,7 +2472,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 47";
 		rLen = 0;
-		rLoc = 1139;
+		rLoc = 1205;
 		rType = 0;
 		vrLen = 649;
 		vrLoc = 707;
@@ -2469,7 +2482,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 47";
 		rLen = 0;
-		rLoc = 1139;
+		rLoc = 1205;
 		rType = 0;
 		vrLen = 649;
 		vrLoc = 709;
@@ -2509,7 +2522,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 95";
 		rLen = 0;
-		rLoc = 2336;
+		rLoc = 2938;
 		rType = 0;
 		vrLen = 657;
 		vrLoc = 1582;
@@ -2519,7 +2532,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 95";
 		rLen = 0;
-		rLoc = 2336;
+		rLoc = 2938;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 1618;
@@ -2529,7 +2542,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 95";
 		rLen = 0;
-		rLoc = 2336;
+		rLoc = 2938;
 		rType = 0;
 		vrLen = 621;
 		vrLoc = 1618;
@@ -2589,7 +2602,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 94";
 		rLen = 0;
-		rLoc = 2310;
+		rLoc = 2912;
 		rType = 0;
 		vrLen = 693;
 		vrLoc = 1618;
@@ -2629,7 +2642,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 131";
 		rLen = 0;
-		rLoc = 2953;
+		rLoc = 3555;
 		rType = 0;
 		vrLen = 603;
 		vrLoc = 2506;
@@ -2706,7 +2719,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1123;
+		rLoc = 1170;
 		rType = 0;
 		vrLen = 658;
 		vrLoc = 803;
@@ -2726,7 +2739,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 47";
 		rLen = 0;
-		rLoc = 1122;
+		rLoc = 1169;
 		rType = 0;
 		vrLen = 675;
 		vrLoc = 803;
@@ -2776,7 +2789,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1139;
+		rLoc = 1205;
 		rType = 0;
 		vrLen = 518;
 		vrLoc = 958;
@@ -2786,7 +2799,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 961;
@@ -2806,7 +2819,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 564;
 		vrLoc = 961;
@@ -2816,7 +2829,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 676;
 		vrLoc = 709;
@@ -2826,7 +2839,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 662;
 		vrLoc = 784;
@@ -2836,7 +2849,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 589;
 		vrLoc = 862;
@@ -2856,7 +2869,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 617;
 		vrLoc = 862;
@@ -2866,7 +2879,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 521;
 		vrLoc = 958;
@@ -2896,7 +2909,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1155;
+		rLoc = 1221;
 		rType = 0;
 		vrLen = 523;
 		vrLoc = 958;
@@ -2906,7 +2919,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 48";
 		rLen = 0;
-		rLoc = 1154;
+		rLoc = 1220;
 		rType = 0;
 		vrLen = 524;
 		vrLoc = 960;
@@ -2916,7 +2929,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 91";
 		rLen = 11;
-		rLoc = 1603;
+		rLoc = 1644;
 		rType = 0;
 		vrLen = 876;
 		vrLoc = 926;
@@ -2926,7 +2939,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 92";
 		rLen = 0;
-		rLoc = 2197;
+		rLoc = 2799;
 		rType = 0;
 		vrLen = 1060;
 		vrLoc = 1529;
@@ -2936,7 +2949,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 130";
 		rLen = 0;
-		rLoc = 3127;
+		rLoc = 3729;
 		rType = 0;
 		vrLen = 883;
 		vrLoc = 2545;
@@ -2946,7 +2959,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 149";
 		rLen = 0;
-		rLoc = 3577;
+		rLoc = 4179;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 2545;
@@ -2976,7 +2989,7 @@
 		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
 		name = "CloudFactory.hpp: 88";
 		rLen = 10;
-		rLoc = 1548;
+		rLoc = 1589;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 968;
@@ -2986,7 +2999,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 96";
 		rLen = 10;
-		rLoc = 2315;
+		rLoc = 2917;
 		rType = 0;
 		vrLen = 940;
 		vrLoc = 1524;
@@ -2996,7 +3009,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 96";
 		rLen = 0;
-		rLoc = 2354;
+		rLoc = 2956;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 1569;
@@ -3006,7 +3019,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 129";
 		rLen = 0;
-		rLoc = 3023;
+		rLoc = 3625;
 		rType = 0;
 		vrLen = 813;
 		vrLoc = 2140;
@@ -3016,7 +3029,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 129";
 		rLen = 0;
-		rLoc = 3023;
+		rLoc = 3625;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 2496;
@@ -3086,7 +3099,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 129";
 		rLen = 0;
-		rLoc = 3023;
+		rLoc = 3625;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 2496;
@@ -3096,7 +3109,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 55";
 		rLen = 0;
-		rLoc = 1484;
+		rLoc = 1767;
 		rType = 0;
 		vrLen = 950;
 		vrLoc = 709;
@@ -3106,7 +3119,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 54";
 		rLen = 0;
-		rLoc = 1263;
+		rLoc = 1546;
 		rType = 0;
 		vrLen = 895;
 		vrLoc = 784;
@@ -3116,7 +3129,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 54";
 		rLen = 0;
-		rLoc = 1263;
+		rLoc = 1546;
 		rType = 0;
 		vrLen = 829;
 		vrLoc = 862;
@@ -3126,7 +3139,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 54";
 		rLen = 0;
-		rLoc = 1263;
+		rLoc = 1546;
 		rType = 0;
 		vrLen = 751;
 		vrLoc = 958;
@@ -3136,7 +3149,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 54";
 		rLen = 0;
-		rLoc = 1263;
+		rLoc = 1546;
 		rType = 0;
 		vrLen = 801;
 		vrLoc = 961;
@@ -3146,7 +3159,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 54";
 		rLen = 0;
-		rLoc = 1265;
+		rLoc = 1548;
 		rType = 0;
 		vrLen = 802;
 		vrLoc = 961;
@@ -3216,7 +3229,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 62";
 		rLen = 105;
-		rLoc = 1379;
+		rLoc = 1662;
 		rType = 0;
 		vrLen = 985;
 		vrLoc = 709;
@@ -3226,7 +3239,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 49";
 		rLen = 0;
-		rLoc = 1152;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 951;
 		vrLoc = 803;
@@ -3236,7 +3249,7 @@
 		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
 		name = "CloudFactory.cpp: 49";
 		rLen = 0;
-		rLoc = 1152;
+		rLoc = 1218;
 		rType = 0;
 		vrLen = 973;
 		vrLoc = 803;
@@ -3300,6 +3313,135 @@
 		rType = 0;
 		vrLen = 1150;
 		vrLoc = 852;
+	};
+	F0841529135916A400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */;
+		name = "MetaballCanvas.cpp: 72";
+		rLen = 0;
+		rLoc = 1596;
+		rType = 0;
+		vrLen = 1232;
+		vrLoc = 767;
+	};
+	F084152A135916A400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 2CF22B05A98876766CDB1112 /* CloudFactory.hpp */;
+		name = "CloudFactory.hpp: 44";
+		rLen = 0;
+		rLoc = 677;
+		rType = 0;
+		vrLen = 939;
+		vrLoc = 351;
+	};
+	F084152B135916A400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 50";
+		rLen = 0;
+		rLoc = 1440;
+		rType = 0;
+		vrLen = 967;
+		vrLoc = 660;
+	};
+	F084152C135916A400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 51";
+		rLen = 0;
+		rLoc = 1300;
+		rType = 0;
+		vrLen = 1003;
+		vrLoc = 660;
+	};
+	F084152F1359174900BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 52";
+		rLen = 0;
+		rLoc = 1300;
+		rType = 0;
+		vrLen = 1020;
+		vrLoc = 660;
+	};
+	F08415341359176B00BC5D4A /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Base operand of '->' has non-pointer type 'std::list<m_cloud*, std::allocator<m_cloud*> >'";
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 0;
+		rLoc = 61;
+		rType = 1;
+	};
+	F08415351359176B00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 52";
+		rLen = 0;
+		rLoc = 1300;
+		rType = 0;
+		vrLen = 1014;
+		vrLoc = 662;
+	};
+	F08415371359193D00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 52";
+		rLen = 0;
+		rLoc = 1300;
+		rType = 0;
+		vrLen = 1044;
+		vrLoc = 662;
+	};
+	F08415381359195100BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 52";
+		rLen = 0;
+		rLoc = 1300;
+		rType = 0;
+		vrLen = 1043;
+		vrLoc = 662;
+	};
+	F08415391359199D00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 52";
+		rLen = 0;
+		rLoc = 1300;
+		rType = 0;
+		vrLen = 1152;
+		vrLoc = 662;
+	};
+	F084153C13591A1900BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 58";
+		rLen = 0;
+		rLoc = 1300;
+		rType = 0;
+		vrLen = 1128;
+		vrLoc = 662;
+	};
+	F084153F13591A5F00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 56";
+		rLen = 0;
+		rLoc = 1436;
+		rType = 0;
+		vrLen = 1050;
+		vrLoc = 662;
+	};
+	F084154213591AFC00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 63";
+		rLen = 0;
+		rLoc = 1437;
+		rType = 0;
+		vrLen = 1103;
+		vrLoc = 662;
 	};
 	F098A9231357F78E00B9EB9C /* CloudFactory */ = {
 		isa = PBXExecutable;
