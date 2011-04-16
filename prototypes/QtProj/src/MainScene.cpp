@@ -180,7 +180,7 @@ void MainScene::draw_GL(){
 	GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
 	GLfloat light_diffuse[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
 	GLfloat light_specular[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
-	GLfloat light_position[] = { -500.0, 500.0, -100.0, 0.0 };
+	GLfloat light_position[] = { -500.0, 500.0, 500.0, 0.0 };
 	
 	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);

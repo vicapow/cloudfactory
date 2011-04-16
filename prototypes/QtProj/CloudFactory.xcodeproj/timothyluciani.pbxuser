@@ -9,9 +9,9 @@
 	};
 	28040D5C89B120DEC9E64354 /* MainScene.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 1417}}";
-			sepNavSelRange = "{1212, 0}";
-			sepNavVisRange = "{393, 784}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 1430}}";
+			sepNavSelRange = "{626, 0}";
+			sepNavVisRange = "{394, 783}";
 		};
 	};
 	2A165002224AA4EE4F32A692 /* CloudFactory */ = {
@@ -987,6 +987,25 @@
 			F0841B2C1359F87900BC5D4A /* PBXTextBookmark */ = F0841B2C1359F87900BC5D4A /* PBXTextBookmark */;
 			F0841B2D1359F87900BC5D4A /* PBXTextBookmark */ = F0841B2D1359F87900BC5D4A /* PBXTextBookmark */;
 			F0841B2E1359F87900BC5D4A /* PBXTextBookmark */ = F0841B2E1359F87900BC5D4A /* PBXTextBookmark */;
+			F0841B361359F94400BC5D4A /* PBXTextBookmark */ = F0841B361359F94400BC5D4A /* PBXTextBookmark */;
+			F0841B371359F94400BC5D4A /* PBXTextBookmark */ = F0841B371359F94400BC5D4A /* PBXTextBookmark */;
+			F0841B381359F94400BC5D4A /* PBXTextBookmark */ = F0841B381359F94400BC5D4A /* PBXTextBookmark */;
+			F0841B391359F94400BC5D4A /* PBXTextBookmark */ = F0841B391359F94400BC5D4A /* PBXTextBookmark */;
+			F0841B3A1359F94400BC5D4A /* PBXTextBookmark */ = F0841B3A1359F94400BC5D4A /* PBXTextBookmark */;
+			F0841B3E1359F96200BC5D4A /* PBXTextBookmark */ = F0841B3E1359F96200BC5D4A /* PBXTextBookmark */;
+			F0841B421359F97D00BC5D4A /* PBXTextBookmark */ = F0841B421359F97D00BC5D4A /* PBXTextBookmark */;
+			F0841B461359F98D00BC5D4A /* PBXTextBookmark */ = F0841B461359F98D00BC5D4A /* PBXTextBookmark */;
+			F0841B4A1359FA3200BC5D4A /* PBXTextBookmark */ = F0841B4A1359FA3200BC5D4A /* PBXTextBookmark */;
+			F0841B4B1359FA3200BC5D4A /* PBXTextBookmark */ = F0841B4B1359FA3200BC5D4A /* PBXTextBookmark */;
+			F0841B4C1359FA3200BC5D4A /* PBXTextBookmark */ = F0841B4C1359FA3200BC5D4A /* PBXTextBookmark */;
+			F0841B4D1359FA3200BC5D4A /* PBXTextBookmark */ = F0841B4D1359FA3200BC5D4A /* PBXTextBookmark */;
+			F0841B4E1359FA3200BC5D4A /* PBXTextBookmark */ = F0841B4E1359FA3200BC5D4A /* PBXTextBookmark */;
+			F0841B4F1359FA3200BC5D4A /* PBXTextBookmark */ = F0841B4F1359FA3200BC5D4A /* PBXTextBookmark */;
+			F0841B531359FA3F00BC5D4A /* PBXTextBookmark */ = F0841B531359FA3F00BC5D4A /* PBXTextBookmark */;
+			F0841B571359FA6C00BC5D4A /* PBXTextBookmark */ = F0841B571359FA6C00BC5D4A /* PBXTextBookmark */;
+			F0841B581359FA6C00BC5D4A /* PBXTextBookmark */ = F0841B581359FA6C00BC5D4A /* PBXTextBookmark */;
+			F0841B591359FA6C00BC5D4A /* PBXTextBookmark */ = F0841B591359FA6C00BC5D4A /* PBXTextBookmark */;
+			F0841B5A1359FA6C00BC5D4A /* PBXTextBookmark */ = F0841B5A1359FA6C00BC5D4A /* PBXTextBookmark */;
 			F098A9AF1358046200B9EB9C = F098A9AF1358046200B9EB9C /* PBXTextBookmark */;
 			F098AB951358955400B9EB9C = F098AB951358955400B9EB9C /* PBXTextBookmark */;
 			F098ABEE13589CB800B9EB9C = F098ABEE13589CB800B9EB9C /* PBXTextBookmark */;
@@ -1034,9 +1053,9 @@
 	};
 	EAF9AA957835F5256127630B /* MainScene.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 5525}}";
-			sepNavSelRange = "{3039, 0}";
-			sepNavVisRange = "{2962, 1168}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 5382}}";
+			sepNavSelRange = "{3874, 0}";
+			sepNavVisRange = "{3503, 1211}";
 			sepNavWindowFrame = "{{15, 0}, {1023, 778}}";
 		};
 	};
@@ -6675,7 +6694,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 280";
 		rLen = 0;
-		rLoc = 5238;
+		rLoc = 5237;
 		rType = 0;
 		vrLen = 1287;
 		vrLoc = 5684;
@@ -6849,7 +6868,7 @@
 	F08418F91359516F00BC5D4A /* GraphicsView.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {987, 555}}";
-			sepNavSelRange = "{460, 0}";
+			sepNavSelRange = "{189, 0}";
 			sepNavVisRange = "{0, 924}";
 		};
 	};
@@ -7042,7 +7061,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 337";
 		rLen = 0;
-		rLoc = 6824;
+		rLoc = 6823;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 6941;
@@ -7102,7 +7121,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 422";
 		rLen = 48;
-		rLoc = 8520;
+		rLoc = 8519;
 		rType = 0;
 		vrLen = 686;
 		vrLoc = 9002;
@@ -7132,7 +7151,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 337";
 		rLen = 9;
-		rLoc = 6825;
+		rLoc = 6824;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 6941;
@@ -7191,7 +7210,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 422";
 		rLen = 0;
-		rLoc = 8548;
+		rLoc = 8547;
 		rType = 0;
 		vrLen = 618;
 		vrLoc = 8759;
@@ -7361,7 +7380,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 253";
 		rLen = 0;
-		rLoc = 4759;
+		rLoc = 4758;
 		rType = 0;
 		vrLen = 808;
 		vrLoc = 4779;
@@ -7461,7 +7480,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 196";
 		rLen = 0;
-		rLoc = 4093;
+		rLoc = 4092;
 		rType = 0;
 		vrLen = 1195;
 		vrLoc = 3363;
@@ -7471,7 +7490,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 219";
 		rLen = 0;
-		rLoc = 4611;
+		rLoc = 4610;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 4461;
@@ -7481,7 +7500,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 219";
 		rLen = 0;
-		rLoc = 4611;
+		rLoc = 4610;
 		rType = 0;
 		vrLen = 914;
 		vrLoc = 4515;
@@ -7491,7 +7510,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 219";
 		rLen = 0;
-		rLoc = 4611;
+		rLoc = 4610;
 		rType = 0;
 		vrLen = 921;
 		vrLoc = 4515;
@@ -7591,7 +7610,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 219";
 		rLen = 0;
-		rLoc = 4611;
+		rLoc = 4610;
 		rType = 0;
 		vrLen = 918;
 		vrLoc = 4515;
@@ -7601,7 +7620,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 221";
 		rLen = 0;
-		rLoc = 4667;
+		rLoc = 4666;
 		rType = 0;
 		vrLen = 861;
 		vrLoc = 4393;
@@ -7718,16 +7737,16 @@
 	};
 	F08419CA13595AAC00BC5D4A /* BluePrintHUD.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 559}}";
-			sepNavSelRange = "{294, 0}";
-			sepNavVisRange = "{0, 619}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 572}}";
+			sepNavSelRange = "{617, 0}";
+			sepNavVisRange = "{3, 629}";
 		};
 	};
 	F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {987, 1248}}";
-			sepNavSelRange = "{1584, 0}";
-			sepNavVisRange = "{1248, 961}";
+			sepNavIntBoundsRect = "{{0, 0}, {987, 1365}}";
+			sepNavSelRange = "{330, 0}";
+			sepNavVisRange = "{41, 1076}";
 		};
 	};
 	F08419D713595CBE00BC5D4A /* PBXTextBookmark */ = {
@@ -7735,7 +7754,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 379";
 		rLen = 0;
-		rLoc = 8548;
+		rLoc = 8547;
 		rType = 0;
 		vrLen = 1018;
 		vrLoc = 3469;
@@ -7746,7 +7765,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 16;
+		rLoc = 17;
 		rType = 1;
 	};
 	F08419D913595CBE00BC5D4A /* PBXTextBookmark */ = {
@@ -7754,7 +7773,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 13";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 608;
 		vrLoc = 0;
@@ -7824,7 +7843,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 19";
 		rLen = 0;
-		rLoc = 448;
+		rLoc = 463;
 		rType = 0;
 		vrLen = 1141;
 		vrLoc = 392;
@@ -7834,7 +7853,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 19";
 		rLen = 0;
-		rLoc = 448;
+		rLoc = 463;
 		rType = 0;
 		vrLen = 1116;
 		vrLoc = 393;
@@ -7914,7 +7933,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 13";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 1055;
 		vrLoc = 0;
@@ -7924,7 +7943,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 14";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 1018;
 		vrLoc = 3;
@@ -7934,7 +7953,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 14";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 1072;
 		vrLoc = 3;
@@ -8024,7 +8043,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 64";
 		rLen = 0;
-		rLoc = 1137;
+		rLoc = 1156;
 		rType = 0;
 		vrLen = 1003;
 		vrLoc = 704;
@@ -8034,7 +8053,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 25";
 		rLen = 0;
-		rLoc = 548;
+		rLoc = 563;
 		rType = 0;
 		vrLen = 1004;
 		vrLoc = 254;
@@ -8044,7 +8063,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 25";
 		rLen = 0;
-		rLoc = 517;
+		rLoc = 532;
 		rType = 0;
 		vrLen = 1056;
 		vrLoc = 686;
@@ -8054,7 +8073,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 87";
 		rLen = 0;
-		rLoc = 2204;
+		rLoc = 2318;
 		rType = 0;
 		vrLen = 975;
 		vrLoc = 1111;
@@ -8094,7 +8113,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 67";
 		rLen = 0;
-		rLoc = 1137;
+		rLoc = 1156;
 		rType = 0;
 		vrLen = 974;
 		vrLoc = 1102;
@@ -8144,7 +8163,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 25";
 		rLen = 0;
-		rLoc = 517;
+		rLoc = 532;
 		rType = 0;
 		vrLen = 1078;
 		vrLoc = 24;
@@ -8164,7 +8183,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 206";
 		rLen = 0;
-		rLoc = 4667;
+		rLoc = 4666;
 		rType = 0;
 		vrLen = 863;
 		vrLoc = 3921;
@@ -8174,7 +8193,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 206";
 		rLen = 0;
-		rLoc = 4667;
+		rLoc = 4666;
 		rType = 0;
 		vrLen = 1012;
 		vrLoc = 3713;
@@ -8194,7 +8213,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 25";
 		rLen = 0;
-		rLoc = 517;
+		rLoc = 532;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 1100;
@@ -8204,7 +8223,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 65";
 		rLen = 0;
-		rLoc = 1137;
+		rLoc = 1156;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 1100;
@@ -8214,7 +8233,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 20";
 		rLen = 0;
-		rLoc = 453;
+		rLoc = 468;
 		rType = 0;
 		vrLen = 968;
 		vrLoc = 335;
@@ -8224,7 +8243,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 20";
 		rLen = 0;
-		rLoc = 453;
+		rLoc = 468;
 		rType = 0;
 		vrLen = 987;
 		vrLoc = 337;
@@ -8234,7 +8253,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 20";
 		rLen = 0;
-		rLoc = 443;
+		rLoc = 458;
 		rType = 0;
 		vrLen = 1086;
 		vrLoc = 409;
@@ -8244,7 +8263,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 65";
 		rLen = 0;
-		rLoc = 1137;
+		rLoc = 1156;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 1100;
@@ -8254,7 +8273,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 50";
 		rLen = 0;
-		rLoc = 1135;
+		rLoc = 1154;
 		rType = 0;
 		vrLen = 1090;
 		vrLoc = 834;
@@ -8284,7 +8303,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 75";
 		rLen = 66;
-		rLoc = 1683;
+		rLoc = 1782;
 		rType = 0;
 		vrLen = 1031;
 		vrLoc = 1134;
@@ -8314,7 +8333,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 14";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 597;
 		vrLoc = 0;
@@ -8442,7 +8461,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 79";
 		rLen = 0;
-		rLoc = 1862;
+		rLoc = 1976;
 		rType = 0;
 		vrLen = 935;
 		vrLoc = 1219;
@@ -8452,7 +8471,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 79";
 		rLen = 0;
-		rLoc = 1862;
+		rLoc = 1976;
 		rType = 0;
 		vrLen = 987;
 		vrLoc = 946;
@@ -8502,7 +8521,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 85";
 		rLen = 0;
-		rLoc = 1862;
+		rLoc = 1976;
 		rType = 0;
 		vrLen = 871;
 		vrLoc = 1136;
@@ -8512,7 +8531,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 15";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 859;
 		vrLoc = 1163;
@@ -8522,7 +8541,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 48";
 		rLen = 0;
-		rLoc = 1099;
+		rLoc = 1114;
 		rType = 0;
 		vrLen = 867;
 		vrLoc = 315;
@@ -8532,7 +8551,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 48";
 		rLen = 0;
-		rLoc = 1099;
+		rLoc = 1114;
 		rType = 0;
 		vrLen = 811;
 		vrLoc = 1132;
@@ -8682,7 +8701,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 61";
 		rLen = 0;
-		rLoc = 1137;
+		rLoc = 1156;
 		rType = 0;
 		vrLen = 858;
 		vrLoc = 1063;
@@ -8712,7 +8731,7 @@
 		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
 		name = "MainScene.cpp: 223";
 		rLen = 14;
-		rLoc = 4832;
+		rLoc = 4831;
 		rType = 0;
 		vrLen = 1092;
 		vrLoc = 506;
@@ -8732,7 +8751,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 61";
 		rLen = 0;
-		rLoc = 1137;
+		rLoc = 1156;
 		rType = 0;
 		vrLen = 932;
 		vrLoc = 333;
@@ -8742,7 +8761,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 48";
 		rLen = 0;
-		rLoc = 1099;
+		rLoc = 1114;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 188;
@@ -8752,7 +8771,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 79";
 		rLen = 0;
-		rLoc = 1679;
+		rLoc = 1778;
 		rType = 0;
 		vrLen = 846;
 		vrLoc = 1137;
@@ -8762,7 +8781,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 78";
 		rLen = 0;
-		rLoc = 1679;
+		rLoc = 1778;
 		rType = 0;
 		vrLen = 906;
 		vrLoc = 1138;
@@ -8772,7 +8791,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 53";
 		rLen = 0;
-		rLoc = 1133;
+		rLoc = 1152;
 		rType = 0;
 		vrLen = 891;
 		vrLoc = 1117;
@@ -8832,7 +8851,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 52";
 		rLen = 0;
-		rLoc = 1133;
+		rLoc = 1152;
 		rType = 0;
 		vrLen = 890;
 		vrLoc = 1117;
@@ -8842,7 +8861,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 72";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1699;
 		rType = 0;
 		vrLen = 846;
 		vrLoc = 1134;
@@ -8852,7 +8871,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 15";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 898;
 		vrLoc = 1375;
@@ -8862,7 +8881,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 73";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1699;
 		rType = 0;
 		vrLen = 934;
 		vrLoc = 1339;
@@ -9022,7 +9041,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 14";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 996;
 		vrLoc = 0;
@@ -9032,7 +9051,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 29";
 		rLen = 0;
-		rLoc = 550;
+		rLoc = 565;
 		rType = 0;
 		vrLen = 993;
 		vrLoc = 3;
@@ -9081,7 +9100,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 20";
 		rLen = 0;
-		rLoc = 457;
+		rLoc = 472;
 		rType = 0;
 		vrLen = 982;
 		vrLoc = 156;
@@ -9091,7 +9110,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 20";
 		rLen = 0;
-		rLoc = 457;
+		rLoc = 472;
 		rType = 0;
 		vrLen = 1041;
 		vrLoc = 680;
@@ -9101,7 +9120,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 45";
 		rLen = 0;
-		rLoc = 1097;
+		rLoc = 1112;
 		rType = 0;
 		vrLen = 1044;
 		vrLoc = 1136;
@@ -9151,7 +9170,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 68";
 		rLen = 0;
-		rLoc = 1601;
+		rLoc = 1620;
 		rType = 0;
 		vrLen = 869;
 		vrLoc = 996;
@@ -9211,7 +9230,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 71";
 		rLen = 6;
-		rLoc = 1633;
+		rLoc = 1684;
 		rType = 0;
 		vrLen = 908;
 		vrLoc = 1048;
@@ -9221,7 +9240,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 77";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1699;
 		rType = 0;
 		vrLen = 864;
 		vrLoc = 1104;
@@ -9231,7 +9250,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 75";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1699;
 		rType = 0;
 		vrLen = 913;
 		vrLoc = 1104;
@@ -9241,7 +9260,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 75";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1699;
 		rType = 0;
 		vrLen = 920;
 		vrLoc = 1104;
@@ -9251,7 +9270,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 75";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1699;
 		rType = 0;
 		vrLen = 917;
 		vrLoc = 1106;
@@ -9261,7 +9280,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 81";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1699;
 		rType = 0;
 		vrLen = 903;
 		vrLoc = 1138;
@@ -9271,7 +9290,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 73";
 		rLen = 0;
-		rLoc = 1648;
+		rLoc = 1699;
 		rType = 0;
 		vrLen = 871;
 		vrLoc = 1218;
@@ -9321,7 +9340,7 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 16";
 		rLen = 0;
-		rLoc = 381;
+		rLoc = 396;
 		rType = 0;
 		vrLen = 1017;
 		vrLoc = 87;
@@ -9401,10 +9420,200 @@
 		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
 		name = "BluePrintHUD.cpp: 67";
 		rLen = 0;
-		rLoc = 1584;
+		rLoc = 1603;
 		rType = 0;
 		vrLen = 961;
 		vrLoc = 1248;
+	};
+	F0841B361359F94400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08418F91359516F00BC5D4A /* GraphicsView.cpp */;
+		name = "GraphicsView.cpp: 24";
+		rLen = 0;
+		rLoc = 460;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 0;
+	};
+	F0841B371359F94400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = AB0328AB8DFC846100D20771 /* MetaballCanvas.hpp */;
+		name = "MetaballCanvas.hpp: 35";
+		rLen = 0;
+		rLoc = 496;
+		rType = 0;
+		vrLen = 593;
+		vrLoc = 295;
+	};
+	F0841B381359F94400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CA13595AAC00BC5D4A /* BluePrintHUD.h */;
+		name = "BluePrintHUD.h: 37";
+		rLen = 0;
+		rLoc = 617;
+		rType = 0;
+		vrLen = 632;
+		vrLoc = 0;
+	};
+	F0841B391359F94400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 88";
+		rLen = 14;
+		rLoc = 1962;
+		rType = 0;
+		vrLen = 992;
+		vrLoc = 1297;
+	};
+	F0841B3A1359F94400BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 77";
+		rLen = 0;
+		rLoc = 1742;
+		rType = 0;
+		vrLen = 841;
+		vrLoc = 1117;
+	};
+	F0841B3E1359F96200BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 23";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 397;
+	};
+	F0841B421359F97D00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 72";
+		rLen = 0;
+		rLoc = 1667;
+		rType = 0;
+		vrLen = 845;
+		vrLoc = 1117;
+	};
+	F0841B461359F98D00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 23";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 913;
+		vrLoc = 399;
+	};
+	F0841B4A1359FA3200BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CA13595AAC00BC5D4A /* BluePrintHUD.h */;
+		name = "BluePrintHUD.h: 37";
+		rLen = 0;
+		rLoc = 617;
+		rType = 0;
+		vrLen = 629;
+		vrLoc = 3;
+	};
+	F0841B4B1359FA3200BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08418F91359516F00BC5D4A /* GraphicsView.cpp */;
+		name = "GraphicsView.cpp: 24";
+		rLen = 0;
+		rLoc = 460;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 0;
+	};
+	F0841B4C1359FA3200BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28040D5C89B120DEC9E64354 /* MainScene.h */;
+		name = "MainScene.h: 39";
+		rLen = 0;
+		rLoc = 626;
+		rType = 0;
+		vrLen = 783;
+		vrLoc = 394;
+	};
+	F0841B4D1359FA3200BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
+		name = "MainScene.cpp: 44";
+		rLen = 0;
+		rLoc = 962;
+		rType = 0;
+		vrLen = 1086;
+		vrLoc = 533;
+	};
+	F0841B4E1359FA3200BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 23";
+		rLen = 0;
+		rLoc = 463;
+		rType = 0;
+		vrLen = 1009;
+		vrLoc = 0;
+	};
+	F0841B4F1359FA3200BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 14";
+		rLen = 0;
+		rLoc = 326;
+		rType = 0;
+		vrLen = 1006;
+		vrLoc = 3;
+	};
+	F0841B531359FA3F00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 14";
+		rLen = 0;
+		rLoc = 330;
+		rType = 0;
+		vrLen = 1072;
+		vrLoc = 41;
+	};
+	F0841B571359FA6C00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */;
+		name = "BluePrintHUD.cpp: 14";
+		rLen = 0;
+		rLoc = 330;
+		rType = 0;
+		vrLen = 1076;
+		vrLoc = 41;
+	};
+	F0841B581359FA6C00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F08418F91359516F00BC5D4A /* GraphicsView.cpp */;
+		name = "GraphicsView.cpp: 13";
+		rLen = 0;
+		rLoc = 189;
+		rType = 0;
+		vrLen = 924;
+		vrLoc = 0;
+	};
+	F0841B591359FA6C00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
+		name = "MainScene.cpp: 44";
+		rLen = 0;
+		rLoc = 962;
+		rType = 0;
+		vrLen = 1082;
+		vrLoc = 533;
+	};
+	F0841B5A1359FA6C00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = EAF9AA957835F5256127630B /* MainScene.cpp */;
+		name = "MainScene.cpp: 183";
+		rLen = 0;
+		rLoc = 3874;
+		rType = 0;
+		vrLen = 1211;
+		vrLoc = 3503;
 	};
 	F098A9AF1358046200B9EB9C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;

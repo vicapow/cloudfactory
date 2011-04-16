@@ -11,15 +11,16 @@
 
 BluePrintHUD::BluePrintHUD( QWidget* parent): QGLWidget(parent) {
 	blueprint.push_back( new CloudModel( 100, 100, 100, 10 ) );
-	resize(100,100);
+	resize(200,150);
 	canvas = new MetaballCanvas();
 	canvas->init();
+	dirty = true;
 }
 
 
 void BluePrintHUD::initializeGL(){
 	
-	glClearColor(0.0, 1.0, 0.0, 1.0);
+	glClearColor(1.0, 1.0, 1.0, 1.0);
 	
 	glEnable(GL_LIGHTING);
 	glEnable(GL_COLOR_MATERIAL);
@@ -48,6 +49,8 @@ void BluePrintHUD::initializeGL(){
 
 void BluePrintHUD::paintGL(){
 	
+	
+	
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 	
 	glEnable(GL_NORMALIZE);
@@ -66,9 +69,14 @@ void BluePrintHUD::paintGL(){
 	
 	//static int t = 0;
 	//glColor3f(0,sin(t++),1);
+	glColor3f(0,0,1);
 	
-	canvas->draw();
-
+	if(dirty){
+		canvas->draw();
+		dirty = false;
+	}else{
+		canvas->draw_gl();
+	}
 	
 	glFlush();
 	swapBuffers();
@@ -79,6 +87,7 @@ void BluePrintHUD::setBluePrint( vector<CloudModel*>& blueprint){
 	for(int i = 0; i < blueprint.size();i++){
 		canvas->addMetaball(blueprint[i]);
 	}
+	dirty = true;
 }
 
 
