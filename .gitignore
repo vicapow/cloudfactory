@@ -1,2 +1,4 @@
 build/
+prototypes/QtProj/CloudFactory.xcodeproj
+prototypes/QtProj/Makefile
 prototypes/QtProj/tmp/
