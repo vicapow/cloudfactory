@@ -30,12 +30,13 @@
 #include "MetaballCanvas.hpp"
 #include "BluePrintDetect.h"
 #include "BluePrintHUD.h"
+#include "HUDWidget.h"
 
 using namespace std;
 using namespace Wm5;
 
 class MainScene : public QGraphicsScene {
-	
+	Q_OBJECT
 public:
 	
 	MainScene();
@@ -67,6 +68,10 @@ public:
 	QElapsedTimer elapsedTimer;
 	float correctness;
 	BluePrintHUD* blueprint_hud;
+	HUDWidget* hud;
+	
+signals:
+	void levelPassed();
 	
 protected:
 	void draw_GL();
@@ -93,7 +98,7 @@ public:
 	};
 	
 	void update(float frame_time){
-		model->posY+= frame_time * (100 / (model->getRadius()+50) );
+		model->posY+= frame_time * ( 25 / (model->getRadius()*2 ) + 0.5 );
 		//cout << "frame time: " << frame_time << endl;
 	}
 	

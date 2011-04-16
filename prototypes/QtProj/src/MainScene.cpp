@@ -37,12 +37,20 @@ MainScene::MainScene(){
 	
 	create_scene();
 	
+	hud = new HUDWidget();
 	
 	blueprint_hud = new BluePrintHUD();
-	this->addWidget( blueprint_hud );
-	vector<CloudModel*> blueprint;
+	//this->addWidget( blueprint_hud );
 	blueprint.push_back(new CloudModel( 100, 100, 100, 10 ));
 	blueprint_hud->setBluePrint( blueprint );
+
+	this->addWidget(hud);
+	hud->setContentsMargins(0, 0, 0, 0);
+	hud->setToolTip("Use this blueprint to create clouds");
+	QVBoxLayout* layout = new QVBoxLayout();
+	layout->setContentsMargins(1,1,1,1);
+	hud->setLayout(layout);
+	layout->addWidget(blueprint_hud);
 }
 
 void MainScene::onEnterFrame(){
@@ -85,6 +93,10 @@ void MainScene::onEnterFrame(){
 	
 	//detect pattern
 	correctness = BluePrintDetect::CalculateError( blueprint , user_guess );
+	if(correctness>0.9){
+		emit levelPassed();
+		cout << " level passed! " << endl;
+	}
 	
 	draw_GL();
 	
@@ -93,56 +105,56 @@ void MainScene::onEnterFrame(){
 
 void MainScene::create_scene(){
 	
-	glClearColor(0.0, 0.0, 0.0, 1.0);
-	
-	// set camera positions
-	
-	load_image("Night.raw");
-	
-	can_ind = glGenLists(3);
-	
-	/* cannon 1 */
-	glNewList(can_ind, GL_COMPILE);
-	
-	APoint trans = APoint(2.0, -4.0, 0.0);
-	APoint scale = APoint(1.0, 1.0, 1.0);
-	
-	CreateCannon(trans, scale);
-	
-	glEndList();
-	
-	/* cannon 2 */
-	
-	glNewList(can_ind+1, GL_COMPILE);
-	
-	trans = APoint(0.0, -4.0, 0.0);
-	scale = APoint(1.0, 1.0, 1.0);
-	
-	CreateCannon(trans, scale);
-	
-	glEndList();
-	
-	
-	/* cannon 2 */
-	
-	glNewList(can_ind +2, GL_COMPILE);
-	
-	trans = APoint(-2.0, -4.0, 0.0);
-	scale = APoint(1.0, 1.0, 1.0);
-	
-    glMatrixMode(GL_MODELVIEW);
-	glPushMatrix();
-    glLoadIdentity();
-	glScalef( 100,100,100 );
-	glTranslatef(100,0,0);
-	CreateCannon(trans, scale);
-	glPopMatrix();
-	
-	glEndList();
-	
-	glEnable(GL_LIGHTING);
-	glEnable(GL_COLOR_MATERIAL);
-	
+//	glClearColor(0.0, 0.0, 0.0, 1.0);
+//	
+//	// set camera positions
+//	
+//	load_image("texture.raw");
+//	
+//	can_ind = glGenLists(3);
+//	
+//	/* cannon 1 */
+//	glNewList(can_ind, GL_COMPILE);
+//	
+//	APoint trans = APoint(2.0, -4.0, 0.0);
+//	APoint scale = APoint(1.0, 1.0, 1.0);
+//	
+//	CreateCannon(trans, scale);
+//	
+//	glEndList();
+//	
+//	/* cannon 2 */
+//	
+//	glNewList(can_ind+1, GL_COMPILE);
+//	
+//	trans = APoint(0.0, -4.0, 0.0);
+//	scale = APoint(1.0, 1.0, 1.0);
+//	
+//	CreateCannon(trans, scale);
+//	
+//	glEndList();
+//	
+//	
+//	/* cannon 2 */
+//	
+//	glNewList(can_ind +2, GL_COMPILE);
+//	
+//	trans = APoint(-2.0, -4.0, 0.0);
+//	scale = APoint(1.0, 1.0, 1.0);
+//	
+//    glMatrixMode(GL_MODELVIEW);
+//	glPushMatrix();
+//    glLoadIdentity();
+//	glScalef( 100,100,100 );
+//	glTranslatef(100,0,0);
+//	CreateCannon(trans, scale);
+//	glPopMatrix();
+//	
+//	glEndList();
+//	
+//	glEnable(GL_LIGHTING);
+//	glEnable(GL_COLOR_MATERIAL);
+//	
 	
 	canvas = new MetaballCanvas();
 	canvas->init();
@@ -151,7 +163,7 @@ void MainScene::create_scene(){
 
 void MainScene::draw_GL(){
 	
-	cout << "draw GL" << endl;
+	//cout << "draw GL" << endl;
 	
 	glViewport(0, 0, (GLsizei) width(), (GLsizei) height() );
 	glMatrixMode(GL_PROJECTION);
@@ -159,18 +171,15 @@ void MainScene::draw_GL(){
 	gluPerspective(30, (GLfloat) width()/(GLfloat) height(), 1.0, 1000.0);	
 	gluLookAt(canvas->SX/2, canvas->SY/2, canvas->SZ*10 , canvas->SX/2, canvas->SY/2, 0, 0, 1, 0);
 	
-	glClearColor(1.0, 0.0, 0.0, 1.0);
+	glClearColor(0.21, 0.385, 1.0, 1.0);
 
 	
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-	
+
     glEnable(GL_NORMALIZE);
     glEnable(GL_COLOR_MATERIAL);
 	
-	
-	glEnable(GL_LIGHTING);
-	glEnable(GL_COLOR_MATERIAL);
-	
+	glEnable(GL_LIGHTING);	
 	
 	glShadeModel(GL_SMOOTH);
     glEnable(GL_DEPTH_TEST);
@@ -180,7 +189,7 @@ void MainScene::draw_GL(){
 	GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
 	GLfloat light_diffuse[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
 	GLfloat light_specular[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
-	GLfloat light_position[] = { -500.0, 500.0, 500.0, 0.0 };
+	GLfloat light_position[] = { -500.0, 500.0, -500.0, 0.0 };
 	
 	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
@@ -199,9 +208,7 @@ void MainScene::draw_GL(){
 	glListBase(can_ind);
 	glCallLists(3, GL_UNSIGNED_BYTE, lists);
 	
-	//display_image(640, 480);
-	
-	
+	//display_image(256, 256);
 	
 	// Set material properties which will be assigned by glColor
     glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
@@ -209,11 +216,13 @@ void MainScene::draw_GL(){
     glMaterialfv(GL_FRONT, GL_SPECULAR, specReflection);
 	
 	glColor3f(1-correctness+0.5,1,1-correctness+0.5 );
+	//glColor3f(1,0,0);
 	
 	//cout << "correctness: " << correctness << endl;
 	
 	// Draw the triangles
     canvas->draw();
+
 	
 	glPopMatrix();
 	
@@ -251,7 +260,10 @@ void MainScene::load_image(const char * filename){
 	
     // open texture data
     file = fopen( filename, "rb" );
-    if ( file == NULL ) return;
+    if ( file == NULL ){
+		cerr << "unable to open file: " << filename << endl;
+		exit(EXIT_FAILURE);
+	}
 	
     // allocate buffer
     width = 256;
@@ -284,17 +296,24 @@ void MainScene::display_image(int width, int height)
 {
 	// bind and draw the foreground texture
 	
+	glDisable(GL_LIGHTING);
+	glDisable(GL_COLOR_MATERIAL);
+
+	glColor3f(1,1,1);
+	
 	glEnable(GL_TEXTURE_2D);   
 	glBindTexture(GL_TEXTURE_2D, texture);
 	
 	glBegin(GL_QUADS);
-	glTexCoord2f(0.0f,0.0f); glVertex2f(0     , 0 +  0);
-	glTexCoord2f(1.0f,0.0f); glVertex2f(1, 0 +  0);
-	glTexCoord2f(1.0f,1.0f); glVertex2f(1, 1);
-	glTexCoord2f(0.0f,1.0f); glVertex2f(0     , 1);
+	glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);
+	glTexCoord2f(1.0f,0.0f); glVertex3f(width, 0,0);
+	glTexCoord2f(1.0f,1.0f); glVertex3f(width,height,0);
+	glTexCoord2f(0.0f,1.0f); glVertex3f(0,height,0);
 	glEnd();
 	
 	glDisable(GL_TEXTURE_2D);
+	glEnable(GL_LIGHTING);
+	glEnable(GL_COLOR_MATERIAL);
 }
 
 

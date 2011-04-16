@@ -36,7 +36,10 @@ float BluePrintDetect::CalculateError( vector<CloudModel*> blueprints, vector<Cl
 
 		score += BluePrintDetect::CloudsDeviation(cloud,closest,diff);
 	}
-	return score / blueprints.size();
+	if(blueprints.size()>0)
+		return score / blueprints.size();
+	else 
+		return 0;
 }
 
 void BluePrintDetect::ComputeCenterOfMass( vector<CloudModel*> clouds , Point& weightedPosR ){

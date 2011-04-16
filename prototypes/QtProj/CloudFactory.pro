@@ -19,6 +19,7 @@ WMLIB = $(WM5_PATH)/SDK/Library/Release
 message( WMLIB : $$WMLIB )
 
 QT += opengl
+QT += xml
 
 # Architecture needs to be i386 for now
 # arch i386
@@ -31,6 +32,8 @@ QMAKE_LFLAGS_DEBUG += -arch \
 QMAKE_LFLAGS_RELEASE += -arch \
     i386
 CONFIG += debug
+
+RESOURCES = resources.qrc
 
 # CONFIG += i386
 message( Architecture: i386 )

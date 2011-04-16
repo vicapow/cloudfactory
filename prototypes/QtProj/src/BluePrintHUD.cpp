@@ -11,7 +11,6 @@
 
 BluePrintHUD::BluePrintHUD( QWidget* parent): QGLWidget(parent) {
 	blueprint.push_back( new CloudModel( 100, 100, 100, 10 ) );
-	resize(200,150);
 	canvas = new MetaballCanvas();
 	canvas->init();
 	dirty = true;
@@ -25,7 +24,7 @@ void BluePrintHUD::initializeGL(){
 	glEnable(GL_LIGHTING);
 	glEnable(GL_COLOR_MATERIAL);
 	
-	cout << "initalize GL" << endl;
+	//cout << "initalize GL" << endl;
 	
 	makeCurrent();
 	
@@ -56,7 +55,7 @@ void BluePrintHUD::paintGL(){
 	glEnable(GL_NORMALIZE);
 	glEnable(GL_COLOR_MATERIAL);
 	
-	cout << " BluePrintHUD: redraw " << endl;
+	//cout << " BluePrintHUD: redraw " << endl;
 	
 	glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();

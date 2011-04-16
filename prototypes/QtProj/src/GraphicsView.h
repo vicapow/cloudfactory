@@ -16,19 +16,29 @@
 
 
 #include "MainScene.h"
+#include "HomeScreen.h"
 
 
-class GraphicsView : public QGraphicsView
-{
+class GraphicsView : public QGraphicsView{
+	
+	Q_OBJECT
+	
 public:
 	GraphicsView();
     
 	MainScene* mainScene;
+
+public slots:
+	void hideHomeScreen();
 	
 protected:
 	void resizeEvent(QResizeEvent *event);
 	virtual void keyPressEvent(QKeyEvent *event);
 	virtual void keyReleaseEvent(QKeyEvent *event);
+	
+	HomeScreen* homeScreen;
+
+
 };
 
 #endif GRAPHICS_VIEW
