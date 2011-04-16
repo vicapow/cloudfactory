@@ -7,8 +7,6 @@
  *
  */
 
-
-
 #ifndef MAIN_SCENE
 #define MAIN_SCENE
 
@@ -63,6 +61,8 @@ public:
 	m_cloud* cur_cloud_c;
 	
 	GLuint texture;
+	GLubyte tex_byte[512 * 512 *3] ;
+	
 	GLuint can_ind;
 	QTimer* timer;//the timer that fires draw events
 	QElapsedTimer elapsedTimer;
@@ -77,7 +77,6 @@ protected:
 	void draw_GL();
 	void remove_metaball(CloudModel* cloud);
 	void create_scene();
-	void load_image(const char * filename);
 	void display_image(int width, int height);
 	
 };

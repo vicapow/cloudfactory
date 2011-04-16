@@ -7,10 +7,7 @@
  *
  */
 
-
-
 #include "GraphicsView.h"
-
 
 GraphicsView::GraphicsView()
 {
@@ -26,8 +23,6 @@ GraphicsView::GraphicsView()
 	homeScreen = new HomeScreen();
 	mainScene->addItem( homeScreen );
 	connect( homeScreen , SIGNAL(onPlay()) , this , SLOT(hideHomeScreen()) );
-	
-
 }
 
 void GraphicsView::keyPressEvent(QKeyEvent *event){

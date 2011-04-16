@@ -1,6 +1,3 @@
-
-
-
 #ifndef CLOUD_MODEL_H
 #define CLOUD_MODEL_H
 

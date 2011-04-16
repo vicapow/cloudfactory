@@ -8,7 +8,7 @@
  */
 
 #include "MainScene.h"
-
+#include "Images.hpp"
 #include "Cannons.hpp"
 
 /* globals used to determine state of game */
@@ -99,17 +99,16 @@ void MainScene::onEnterFrame(){
 	}
 	
 	draw_GL();
-	
 }
-
 
 void MainScene::create_scene(){
 	
-//	glClearColor(0.0, 0.0, 0.0, 1.0);
-//	
-//	// set camera positions
-//	
-//	load_image("texture.raw");
+	glClearColor(0.0, 0.0, 0.0, 1.0);
+	
+	load_bmp("bg2.bmp", tex_byte, 512, &texture) ; 
+
+//	set camera positions
+	
 //	
 //	can_ind = glGenLists(3);
 //	
@@ -160,11 +159,8 @@ void MainScene::create_scene(){
 	canvas->init();
 }
 
-
 void MainScene::draw_GL(){
-	
-	//cout << "draw GL" << endl;
-	
+		
 	glViewport(0, 0, (GLsizei) width(), (GLsizei) height() );
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
@@ -173,7 +169,6 @@ void MainScene::draw_GL(){
 	
 	glClearColor(0.21, 0.385, 1.0, 1.0);
 
-	
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glEnable(GL_NORMALIZE);
@@ -196,7 +191,6 @@ void MainScene::draw_GL(){
 	glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
 	glLightfv(GL_LIGHT0, GL_POSITION, light_position);
 	
-	
     glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glLoadIdentity();
@@ -208,7 +202,8 @@ void MainScene::draw_GL(){
 	glListBase(can_ind);
 	glCallLists(3, GL_UNSIGNED_BYTE, lists);
 	
-	//display_image(256, 256);
+	// draw background here
+	display_image(512, 512);
 	
 	// Set material properties which will be assigned by glColor
     glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
@@ -222,7 +217,6 @@ void MainScene::draw_GL(){
 	
 	// Draw the triangles
     canvas->draw();
-
 	
 	glPopMatrix();
 	
@@ -230,17 +224,15 @@ void MainScene::draw_GL(){
 	glutSwapBuffers();
 }
 
-
 void MainScene::drawBackground(QPainter *painter, const QRectF &)
 {	
 	onEnterFrame();
 }
 
-
 void MainScene::remove_metaball(CloudModel* model ){
 	
 	//remove the model from the guess vector
-	for(int i = 0; i < user_guess.size();i++){
+	for(unsigned int i = 0; i < user_guess.size();i++){
 		if(user_guess[i] == model){
 			user_guess.erase( user_guess.begin() + i );
 			break;
@@ -251,71 +243,32 @@ void MainScene::remove_metaball(CloudModel* model ){
 	canvas->removeMetaball(model);
 }
 
-
-void MainScene::load_image(const char * filename){
-	
-    int width, height;
-    char * data;
-    FILE * file;
-	
-    // open texture data
-    file = fopen( filename, "rb" );
-    if ( file == NULL ){
-		cerr << "unable to open file: " << filename << endl;
-		exit(EXIT_FAILURE);
-	}
-	
-    // allocate buffer
-    width = 256;
-    height = 256;
-    data = (char*)malloc( width * height * 3 );
-	
-    // read texture data
-    fread( data, width * height * 3, 1, file );
-    fclose( file );
-	
-    // allocate a texture name
-    glGenTextures( 1, &texture );
-	
-    // select our current texture
-    glBindTexture( GL_TEXTURE_2D, texture );
-    // select modulate to mix texture with color for shading
-    glTexEnvf( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE );
-    // when texture area is small, bilinear filter the closest mipmap
-    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR_MIPMAP_NEAREST );
-    // when texture area is large, bilinear filter the first mipmap
-    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR );
-    // build our texture mipmaps
-    gluBuild2DMipmaps( GL_TEXTURE_2D, 3, width, height, GL_RGB, GL_UNSIGNED_BYTE, data );
-	
-    // free buffer
-    free( data );
-}
-
 void MainScene::display_image(int width, int height)
 {
 	// bind and draw the foreground texture
-	
+		
 	glDisable(GL_LIGHTING);
 	glDisable(GL_COLOR_MATERIAL);
 
-	glColor3f(1,1,1);
+	glClearColor(0,0,0,0); // else black
 	
-	glEnable(GL_TEXTURE_2D);   
 	glBindTexture(GL_TEXTURE_2D, texture);
+	glEnable(GL_TEXTURE_2D);
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE );
 	
 	glBegin(GL_QUADS);
-	glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);
-	glTexCoord2f(1.0f,0.0f); glVertex3f(width, 0,0);
-	glTexCoord2f(1.0f,1.0f); glVertex3f(width,height,0);
-	glTexCoord2f(0.0f,1.0f); glVertex3f(0,height,0);
+	
+		glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);
+		glTexCoord2f(1.0f,0.0f); glVertex3f(width, 0,0);
+		glTexCoord2f(1.0f,1.0f); glVertex3f(width,height,0);
+		glTexCoord2f(0.0f,1.0f); glVertex3f(0,height,0);
+	
 	glEnd();
 	
 	glDisable(GL_TEXTURE_2D);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_COLOR_MATERIAL);
 }
-
 
 void MainScene::onKeyPress(QKeyEvent* event){
 	
@@ -400,7 +353,6 @@ void MainScene::onKeyPress(QKeyEvent* event){
 			break;
 	}
 }
-
 
 void MainScene::onKeyRelease(QKeyEvent* event){
 

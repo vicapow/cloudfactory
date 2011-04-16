@@ -14,10 +14,8 @@
 #include <QtGui/QResizeEvent>
 #include <QtOpenGL>
 
-
 #include "MainScene.h"
 #include "HomeScreen.h"
-
 
 class GraphicsView : public QGraphicsView{
 	
@@ -37,7 +35,6 @@ protected:
 	virtual void keyReleaseEvent(QKeyEvent *event);
 	
 	HomeScreen* homeScreen;
-
 
 };
 
