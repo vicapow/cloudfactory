@@ -2,6 +2,8 @@
 #include "GraphicsView.h"
 #include <iostream>
 
+#include <QLabel>
+
 using namespace std;
 
 int main(int argc, char **argv) {
@@ -22,14 +24,13 @@ int main(int argc, char **argv) {
 	
 	//example of drawing an image
 	
-//	QGraphicsScene scene;
-//    QGraphicsView view(&scene);
 //	QPixmap img("Night.jpeg");
-//	
 //    QGraphicsPixmapItem item(img);
-//    scene.addItem(&item);
-//    view.show();
+//    view.mainScene->addItem(&item);
 	
+	QLabel* label = new QLabel("Hello WOrld");
+	label->move( view.width()/2 , view.height() /2 );
+	view.mainScene->addWidget(label);
 	
     return app.exec();
 }

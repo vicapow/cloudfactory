@@ -17,6 +17,7 @@
 
 #include "MainScene.h"
 
+
 class GraphicsView : public QGraphicsView
 {
 public:

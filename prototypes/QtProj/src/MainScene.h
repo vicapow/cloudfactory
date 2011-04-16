@@ -29,6 +29,7 @@
 //--local--//
 #include "MetaballCanvas.hpp"
 #include "BluePrintDetect.h"
+#include "BluePrintHUD.h"
 
 using namespace std;
 using namespace Wm5;
@@ -65,6 +66,7 @@ public:
 	QTimer* timer;//the timer that fires draw events
 	QElapsedTimer elapsedTimer;
 	float correctness;
+	BluePrintHUD* blueprint_hud;
 	
 protected:
 	void draw_GL();

@@ -24,6 +24,7 @@
 		DF9ED058BB8FBA211DDC4D62 /* ObjLoader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 971948060541802D6B3497C6 /* ObjLoader.cpp */; settings = {ATTRIBUTES = (); }; };
 		F08418E31359500C00BC5D4A /* CloudFactory.app in Project Copy */ = {isa = PBXBuildFile; fileRef = F08418E01359500C00BC5D4A /* CloudFactory.app */; };
 		F08418FA1359516F00BC5D4A /* GraphicsView.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F08418F91359516F00BC5D4A /* GraphicsView.cpp */; };
+		F08419CC13595AAC00BC5D4A /* BluePrintHUD.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */; };
 		FA899CEA0BC3739C9BF0DC55 /* marchingcubes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3E128FBEE267263828B2D63B /* marchingcubes.cpp */; settings = {ATTRIBUTES = (); }; };
 		FD1638E377D97C82BDB438FB /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7EC3C68A81EFFF79B6CA22AC /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
@@ -71,6 +72,8 @@
 		EAF9AA957835F5256127630B /* MainScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainScene.cpp; path = src/MainScene.cpp; sourceTree = "<group>"; };
 		F08418E01359500C00BC5D4A /* CloudFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F08418F91359516F00BC5D4A /* GraphicsView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphicsView.cpp; sourceTree = "<group>"; };
+		F08419CA13595AAC00BC5D4A /* BluePrintHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluePrintHUD.h; path = src/BluePrintHUD.h; sourceTree = "<group>"; };
+		F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BluePrintHUD.cpp; path = src/BluePrintHUD.cpp; sourceTree = "<group>"; };
 		FEC53AC03C18172B46EECE16 /* ObjLoaderCodes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ObjLoaderCodes.cpp; path = src/ObjLoaderCodes.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -174,6 +177,8 @@
 				28040D5C89B120DEC9E64354 /* MainScene.h */,
 				3A1F1FF141BCB4F3F8D9A821 /* MtlLoader.h */,
 				6AC214E2288B17EBE969F4B9 /* ObjLoader.h */,
+				F08419CA13595AAC00BC5D4A /* BluePrintHUD.h */,
+				F08419CB13595AAC00BC5D4A /* BluePrintHUD.cpp */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -277,6 +282,7 @@
 				DF9ED058BB8FBA211DDC4D62 /* ObjLoader.cpp in Build Sources */,
 				5E776814E7756D95B00E500F /* ObjLoaderCodes.cpp in Build Sources */,
 				F08418FA1359516F00BC5D4A /* GraphicsView.cpp in Build Sources */,
+				F08419CC13595AAC00BC5D4A /* BluePrintHUD.cpp in Build Sources */,
 			);
 			name = "Build Sources";
 			runOnlyForDeploymentPostprocessing = 0;

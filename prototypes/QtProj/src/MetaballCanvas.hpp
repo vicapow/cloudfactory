@@ -38,6 +38,8 @@ public:
 	void init();
 	void addMetaball(CloudModel* model);
 	void removeMetaball(CloudModel* model);
+	void removeAllMetaballs();
+	void draw_gl();
 	
 	float *** voxels;
 	list<vertex> vertices;
@@ -53,8 +55,7 @@ public:
 private:
 	
 	vector<CloudModel*> metaballs;
-	
-	void draw_gl();
+
 };
 
 #endif /*METABALL_CANVAS*/

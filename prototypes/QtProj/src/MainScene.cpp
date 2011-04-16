@@ -36,6 +36,13 @@ MainScene::MainScene(){
 	glutInitDisplayMode (GLUT_DOUBLE);
 	
 	create_scene();
+	
+	
+	blueprint_hud = new BluePrintHUD();
+	this->addWidget( blueprint_hud );
+	vector<CloudModel*> blueprint;
+	blueprint.push_back(new CloudModel( 100, 100, 100, 10 ));
+	blueprint_hud->setBluePrint( blueprint );
 }
 
 void MainScene::onEnterFrame(){
@@ -139,27 +146,12 @@ void MainScene::create_scene(){
 	
 	canvas = new MetaballCanvas();
 	canvas->init();
-	
-	
-//	glShadeModel(GL_SMOOTH);
-//    glEnable(GL_DEPTH_TEST);
-//    glEnable(GL_LIGHTING);
-//    glEnable(GL_LIGHT0);
-//	
-//	GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
-//	GLfloat light_diffuse[] = { 1.0, 1.0, 1.0, 1.0 };
-//	GLfloat light_specular[] = { 1.0, 1.0, 1.0, 1.0 };
-//	GLfloat light_position[] = { -500.0, 500.0, -100.0, 0.0 };
-//	
-//	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
-//	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
-//	glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
-//	glLightfv(GL_LIGHT0, GL_POSITION, light_position);
-	
 }
 
 
 void MainScene::draw_GL(){
+	
+	cout << "draw GL" << endl;
 	
 	glViewport(0, 0, (GLsizei) width(), (GLsizei) height() );
 	glMatrixMode(GL_PROJECTION);
@@ -186,8 +178,8 @@ void MainScene::draw_GL(){
     glEnable(GL_LIGHT0);
 	
 	GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
-	GLfloat light_diffuse[] = { 1.0, 1.0, 1.0, 1.0 };
-	GLfloat light_specular[] = { 1.0, 1.0, 1.0, 1.0 };
+	GLfloat light_diffuse[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
+	GLfloat light_specular[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
 	GLfloat light_position[] = { -500.0, 500.0, -100.0, 0.0 };
 	
 	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);

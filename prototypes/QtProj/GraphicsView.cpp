@@ -37,4 +37,5 @@ void GraphicsView::keyReleaseEvent(QKeyEvent *event){
 void GraphicsView::resizeEvent(QResizeEvent *event) {
 	if (scene()) scene()->setSceneRect(QRect(QPoint(0, 0), event->size()));
 	QGraphicsView::resizeEvent(event);
+	mainScene->blueprint_hud->move(width()-mainScene->blueprint_hud->width(),0);
 }
