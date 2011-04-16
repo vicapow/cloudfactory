@@ -274,7 +274,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>4</integer>
+									<integer>6</integer>
 									<integer>3</integer>
 									<integer>2</integer>
 									<integer>0</integer>
@@ -330,7 +330,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>F08415C11359240100BC5D4A</string>
+										<string>F08416A513592EC600BC5D4A</string>
 										<key>history</key>
 										<array>
 											<string>F03AA57F1357CC92000EA162</string>
@@ -361,15 +361,17 @@
 											<string>F098AC611358A43900B9EB9C</string>
 											<string>F098ACCE1358AAE900B9EB9C</string>
 											<string>F08414511358DA7B00BC5D4A</string>
-											<string>F084151B1358EA6900BC5D4A</string>
-											<string>F084151C1358EA6900BC5D4A</string>
-											<string>F084156F1359208A00BC5D4A</string>
-											<string>F084157A135920F800BC5D4A</string>
-											<string>F084157F1359216C00BC5D4A</string>
-											<string>F08415801359216C00BC5D4A</string>
-											<string>F08415811359216C00BC5D4A</string>
-											<string>F084158C1359221F00BC5D4A</string>
-											<string>F084158F1359222E00BC5D4A</string>
+											<string>F08415C4135924DF00BC5D4A</string>
+											<string>F08415DA1359255B00BC5D4A</string>
+											<string>F08415E11359256C00BC5D4A</string>
+											<string>F08415E21359256C00BC5D4A</string>
+											<string>F084161F1359277B00BC5D4A</string>
+											<string>F08416201359277B00BC5D4A</string>
+											<string>F08416291359293300BC5D4A</string>
+											<string>F084162A1359293300BC5D4A</string>
+											<string>F084166313592B5D00BC5D4A</string>
+											<string>F084166E13592C2000BC5D4A</string>
+											<string>F084166F13592C2000BC5D4A</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -567,6 +569,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>F08416A613592EC600BC5D4A</string>
 		<string>F08412B61358B4B500BC5D4A</string>
 		<string>F08412B71358B4B500BC5D4A</string>
 		<string>1CD10A99069EF8BA00B06720</string>
@@ -598,7 +601,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>CloudFactory.cpp</string>
+								<string>BluePrintDetect.h</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -667,7 +670,7 @@
 			<key>WindowToolGUID</key>
 			<string>F03AA4471357AC78000EA162</string>
 			<key>WindowToolIsVisible</key>
-			<true/>
+			<false/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>

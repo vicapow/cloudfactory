@@ -17,6 +17,7 @@
 		501667F26B3C1FF6767A7C12 /* QtGui.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 9B36DA7E32F0304E780E7972 /* QtGui.framework */; };
 		BCEF71E1EDFB18DA77DC750B /* OpenGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA18A6831232F53228631AD1 /* OpenGL.framework */; };
 		C2643FEB592DBFD1429BE4E1 /* QtXml.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 8EE92F8FA333C9E415C5B34E /* QtXml.framework */; };
+		F0841628135928E800BC5D4A /* BluePrintDetect.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F0841626135928E800BC5D4A /* BluePrintDetect.cpp */; };
 		F098A9241357F78E00B9EB9C /* CloudFactory.app in Project Copy */ = {isa = PBXBuildFile; fileRef = F098A9211357F78E00B9EB9C /* CloudFactory.app */; };
 		F098A9501357FA0800B9EB9C /* marchingcubes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F098A94E1357FA0800B9EB9C /* marchingcubes.cpp */; };
 		F098A9A81358038D00B9EB9C /* MtlLoader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F098A9A01358038D00B9EB9C /* MtlLoader.cpp */; };
@@ -60,6 +61,8 @@
 		C6766F86E49E9C8701C8E637 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
 		DA18A6831232F53228631AD1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = CloudFactory.cpp; path = src/CloudFactory.cpp; sourceTree = "<group>"; };
+		F0841626135928E800BC5D4A /* BluePrintDetect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = BluePrintDetect.cpp; path = src/BluePrintDetect.cpp; sourceTree = "<group>"; };
+		F0841627135928E800BC5D4A /* BluePrintDetect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BluePrintDetect.h; path = src/BluePrintDetect.h; sourceTree = "<group>"; };
 		F098A9211357F78E00B9EB9C /* CloudFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F098A94E1357FA0800B9EB9C /* marchingcubes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = marchingcubes.cpp; path = src/marchingcubes.cpp; sourceTree = "<group>"; };
 		F098A94F1357FA0800B9EB9C /* marchingcubes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = marchingcubes.hpp; path = src/marchingcubes.hpp; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 		06674E1DE8D3EB6E763DFFDA /* src */ = {
 			isa = PBXGroup;
 			children = (
+				F0841626135928E800BC5D4A /* BluePrintDetect.cpp */,
+				F0841627135928E800BC5D4A /* BluePrintDetect.h */,
 				EE9D1EC63720A3A63DF45AA0 /* CloudFactory.cpp */,
 				7EC3C68A81EFFF79B6CA22AC /* main.cpp */,
 				4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */,
@@ -309,6 +314,7 @@
 				F098A9AA1358038D00B9EB9C /* MtlLoaderCodes.cpp in Build Sources */,
 				F098A9AB1358038D00B9EB9C /* ObjLoader.cpp in Build Sources */,
 				F098A9AD1358038D00B9EB9C /* ObjLoaderCodes.cpp in Build Sources */,
+				F0841628135928E800BC5D4A /* BluePrintDetect.cpp in Build Sources */,
 			);
 			name = "Build Sources";
 			runOnlyForDeploymentPostprocessing = 0;
