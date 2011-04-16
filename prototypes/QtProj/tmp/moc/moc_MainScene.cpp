@@ -1,7 +1,11 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'MainScene.h'
 **
+<<<<<<< HEAD
+** Created: Sat Apr 16 17:53:39 2011
+=======
 ** Created: Sat Apr 16 17:52:25 2011
+>>>>>>> d3c9004ffb699c955acc2bb0f798287a85158c2b
 **      by: The Qt Meta Object Compiler version 62 (Qt 4.7.0)
 **
 ** WARNING! All changes made in this file will be lost!
