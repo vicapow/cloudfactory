@@ -16,12 +16,6 @@ GLfloat posX, posY, posZ;
 void CloudFactory::initializeGL()
 {
 	
-	glClearColor(0.0, 0.0, 0.0, 1.0);
-	
-	// set camera positions
-
-	load_image("Night.raw");
-	
 	create_scene();
 	
 	timer = new QTimer();
@@ -57,9 +51,9 @@ void CloudFactory::onEnterFrame(){
 			this->removeMetaball(cloud->model);
 			
 			//remove the cloud from the clouds list
+			it--;
 			clouds.remove(cloud);
 			delete cloud;
-			it--;
 		}
 	}
 	
@@ -100,9 +94,20 @@ void CloudFactory::removeMetaball(CloudModel* model ){
 
 void CloudFactory::paintGL()
 {
-	glClear(GL_COLOR_BUFFER_BIT);
+	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+	
+    glEnable(GL_NORMALIZE);
+    glEnable(GL_COLOR_MATERIAL);
+	
+	
+    // Set material properties which will be assigned by glColor
+    glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
+    float specReflection[] = { 0.8f, 0.8f, 0.8f, 1.0f };
+    glMaterialfv(GL_FRONT, GL_SPECULAR, specReflection);
 	
     glMatrixMode(GL_MODELVIEW);
+	glPushMatrix();
+	glLoadIdentity();
 	// specify the lists to be drawn
 	GLubyte lists[3]; 
 	lists[0] = 0; lists[1] = 1; lists[2] = 2;
@@ -116,6 +121,8 @@ void CloudFactory::paintGL()
 	
 	// Draw the triangles
     canvas->draw();
+	
+	glPopMatrix();
 	
 	glFlush();
 	swapBuffers();
@@ -295,7 +302,11 @@ void CloudFactory::display_image(int width, int height)
 
 void CloudFactory::create_scene(){
 	
-	makeCurrent();
+	glClearColor(0.0, 0.0, 0.0, 1.0);
+	
+	// set camera positions
+	
+	load_image("Night.raw");
 	
 	can_ind = glGenLists(3);
 	
@@ -328,19 +339,43 @@ void CloudFactory::create_scene(){
 	trans = APoint(-2.0, -4.0, 0.0);
 	scale = APoint(1.0, 1.0, 1.0);
 	
+    glMatrixMode(GL_MODELVIEW);
+	glPushMatrix();
+    glLoadIdentity();
+	glScalef( 100,100,100 );
+	glTranslatef(100,0,0);
 	CreateCannon(trans, scale);
+	glPopMatrix();
 	
 	glEndList();
+	
+	glEnable(GL_LIGHTING);
+	glEnable(GL_COLOR_MATERIAL);
 	
 	
 	canvas = new MetaballCanvas();
 	canvas->init();
 	
-//	canvas->LocalTransform.SetScale(APoint(0.4,0.4,0.4));
-//	canvas->LocalTransform.SetTranslate(APoint(0.610f,-0.1,0.1f));
-//	canvas->draw();
+	makeCurrent();
 	
-//	mScene->AttachChild(canvas);
+	glShadeModel(GL_SMOOTH);
+    glEnable(GL_DEPTH_TEST);
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+	
+	// Create light components
+    GLfloat ambientLight[] = { 0.2f, 0.2f, 0.2f, 1.0f };
+    GLfloat diffuseLight[] = { 0.8f, 0.8f, 0.8, 1.0f };
+    GLfloat specularLight[] = { 0.5f, 0.5f, 0.5f, 1.0f };
+    GLfloat position[] = { -1.5f, 1.0f, -4.0f, 1.0f };
+	
+	// Assign created components to GL_LIGHT0
+    glLightfv(GL_LIGHT0, GL_AMBIENT, ambientLight);
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuseLight);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, specularLight);
+    glLightfv(GL_LIGHT0, GL_POSITION, position);
+	
+	
 
 }
 

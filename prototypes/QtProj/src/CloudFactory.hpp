@@ -45,7 +45,7 @@ class m_cloud {
 
 	void update(float frame_time){
 		model->posY+= frame_time * (100 / (model->getRadius()+50) );
-		cout << "frame time: " << frame_time << endl;
+		//cout << "frame time: " << frame_time << endl;
 	}
 
 	CloudModel* model;
@@ -53,7 +53,7 @@ class m_cloud {
 
 	//desctuctor
 	~m_cloud(){
-		cout << "m clouds destroied" << endl;
+		//cout << "m clouds destroied" << endl;
 		delete model;
 	}
 
