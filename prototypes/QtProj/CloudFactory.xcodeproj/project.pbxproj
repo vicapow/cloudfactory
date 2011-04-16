@@ -26,11 +26,12 @@
 		B0181F3C1825D15ECD240886 /* MainScene.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EAF9AA957835F5256127630B /* MainScene.cpp */; settings = {ATTRIBUTES = (); }; };
 		BCEF71E1EDFB18DA77DC750B /* OpenGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA18A6831232F53228631AD1 /* OpenGL.framework */; };
 		C2643FEB592DBFD1429BE4E1 /* QtXml.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 8EE92F8FA333C9E415C5B34E /* QtXml.framework */; };
+		C5F056F27135DC2C954BAF8A /* Levels.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2E37EB353839BEFDCD7FD90D /* Levels.cpp */; settings = {ATTRIBUTES = (); }; };
 		CF5450440D4C370A449BBB6B /* BluePrintHUD.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F5065AD5E7EAA32E8D5BBEE1 /* BluePrintHUD.cpp */; settings = {ATTRIBUTES = (); }; };
 		DBF592F4CB0D12BA9B70B929 /* HomeScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9534CC433110D39C6EB142A3 /* HomeScreen.cpp */; settings = {ATTRIBUTES = (); }; };
+		DCF233696ED36C5052AC9160 /* HUDWidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F5A09D0402AA6843A246DE8E /* HUDWidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		DF9ED058BB8FBA211DDC4D62 /* ObjLoader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 971948060541802D6B3497C6 /* ObjLoader.cpp */; settings = {ATTRIBUTES = (); }; };
-		F0841DFB135A16CA00BC5D4A /* CloudFactory.app in Project Copy */ = {isa = PBXBuildFile; fileRef = F0841DF8135A16CA00BC5D4A /* CloudFactory.app */; };
-		F0841E21135A191500BC5D4A /* HUDWidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F0841E20135A191500BC5D4A /* HUDWidget.cpp */; };
+		F0842129135A475600BC5D4A /* CloudFactory.app in Project Copy */ = {isa = PBXBuildFile; fileRef = F0842126135A475500BC5D4A /* CloudFactory.app */; };
 		FA899CEA0BC3739C9BF0DC55 /* marchingcubes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3E128FBEE267263828B2D63B /* marchingcubes.cpp */; settings = {ATTRIBUTES = (); }; };
 		FD1638E377D97C82BDB438FB /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7EC3C68A81EFFF79B6CA22AC /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
@@ -42,7 +43,7 @@
 			dstPath = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build;
 			dstSubfolderSpec = 0;
 			files = (
-				F0841DFB135A16CA00BC5D4A /* CloudFactory.app in Project Copy */,
+				F0842129135A475600BC5D4A /* CloudFactory.app in Project Copy */,
 			);
 			name = "Project Copy";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,10 +56,12 @@
 		15E0846EF40BBFDC41D42F1C /* marchingcubes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = marchingcubes.hpp; path = src/marchingcubes.hpp; sourceTree = "<group>"; };
 		28040D5C89B120DEC9E64354 /* MainScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = src/MainScene.h; sourceTree = "<group>"; };
 		2D7FF9EBB69BCF2C19DC629B /* QtSvg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtSvg.framework; path = /Library/Frameworks/QtSvg.framework; sourceTree = "<absolute>"; };
+		2E37EB353839BEFDCD7FD90D /* Levels.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Levels.cpp; path = src/Levels.cpp; sourceTree = "<group>"; };
 		2ED7751F608F126B92193F3B /* GraphicsView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GraphicsView.cpp; path = src/GraphicsView.cpp; sourceTree = "<group>"; };
 		3A1F1FF141BCB4F3F8D9A821 /* MtlLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MtlLoader.h; path = src/MtlLoader.h; sourceTree = "<group>"; };
 		3BCBED768A8E8163ADCC2AD0 /* moc_GraphicsView.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_GraphicsView.cpp; path = tmp/moc/moc_GraphicsView.cpp; sourceTree = "<group>"; };
 		3E128FBEE267263828B2D63B /* marchingcubes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = marchingcubes.cpp; path = src/marchingcubes.cpp; sourceTree = "<group>"; };
+		44E8C9686A2063C579303FC8 /* Levels.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Levels.h; path = src/Levels.h; sourceTree = "<group>"; };
 		4A7B2B45EDAE8E36E206770D /* BluePrintHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BluePrintHUD.h; path = src/BluePrintHUD.h; sourceTree = "<group>"; };
 		4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MetaballCanvas.cpp; path = src/MetaballCanvas.cpp; sourceTree = "<group>"; };
 		6AC214E2288B17EBE969F4B9 /* ObjLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjLoader.h; path = src/ObjLoader.h; sourceTree = "<group>"; };
@@ -66,6 +69,7 @@
 		79A9EC8DF3D2B906ACDEE802 /* BluePrintDetect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BluePrintDetect.cpp; path = src/BluePrintDetect.cpp; sourceTree = "<group>"; };
 		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
 		7EC3C68A81EFFF79B6CA22AC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
+		82A0FE745A49FA5AE75EBD33 /* HUDWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HUDWidget.h; path = src/HUDWidget.h; sourceTree = "<group>"; };
 		8EE92F8FA333C9E415C5B34E /* QtXml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtXml.framework; path = /Library/Frameworks/QtXml.framework; sourceTree = "<absolute>"; };
 		9534CC433110D39C6EB142A3 /* HomeScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HomeScreen.cpp; path = src/HomeScreen.cpp; sourceTree = "<group>"; };
 		971948060541802D6B3497C6 /* ObjLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ObjLoader.cpp; path = src/ObjLoader.cpp; sourceTree = "<group>"; };
@@ -85,10 +89,9 @@
 		DA18A6831232F53228631AD1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		DCBE774DF67D9DAD2FE51695 /* MtlLoaderCodes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MtlLoaderCodes.cpp; path = src/MtlLoaderCodes.cpp; sourceTree = "<group>"; };
 		EAF9AA957835F5256127630B /* MainScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainScene.cpp; path = src/MainScene.cpp; sourceTree = "<group>"; };
-		F0841DF8135A16CA00BC5D4A /* CloudFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F0841E1F135A191500BC5D4A /* HUDWidget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HUDWidget.h; path = src/HUDWidget.h; sourceTree = "<group>"; };
-		F0841E20135A191500BC5D4A /* HUDWidget.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = HUDWidget.cpp; path = src/HUDWidget.cpp; sourceTree = "<group>"; };
+		F0842126135A475500BC5D4A /* CloudFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5065AD5E7EAA32E8D5BBEE1 /* BluePrintHUD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BluePrintHUD.cpp; path = src/BluePrintHUD.cpp; sourceTree = "<group>"; };
+		F5A09D0402AA6843A246DE8E /* HUDWidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HUDWidget.cpp; path = src/HUDWidget.cpp; sourceTree = "<group>"; };
 		FEC53AC03C18172B46EECE16 /* ObjLoaderCodes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ObjLoaderCodes.cpp; path = src/ObjLoaderCodes.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -121,7 +124,7 @@
 				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
 				52C235EBF1C9B07808119459 /* Sources [RCC] */,
 				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
-				F0841DF9135A16CA00BC5D4A /* Products */,
+				F0842127135A475500BC5D4A /* Products */,
 			);
 			name = CloudFactory;
 			sourceTree = "<group>";
@@ -133,6 +136,8 @@
 				F5065AD5E7EAA32E8D5BBEE1 /* BluePrintHUD.cpp */,
 				2ED7751F608F126B92193F3B /* GraphicsView.cpp */,
 				9534CC433110D39C6EB142A3 /* HomeScreen.cpp */,
+				F5A09D0402AA6843A246DE8E /* HUDWidget.cpp */,
+				2E37EB353839BEFDCD7FD90D /* Levels.cpp */,
 				7EC3C68A81EFFF79B6CA22AC /* main.cpp */,
 				EAF9AA957835F5256127630B /* MainScene.cpp */,
 				3E128FBEE267263828B2D63B /* marchingcubes.cpp */,
@@ -141,8 +146,6 @@
 				DCBE774DF67D9DAD2FE51695 /* MtlLoaderCodes.cpp */,
 				971948060541802D6B3497C6 /* ObjLoader.cpp */,
 				FEC53AC03C18172B46EECE16 /* ObjLoaderCodes.cpp */,
-				F0841E1F135A191500BC5D4A /* HUDWidget.h */,
-				F0841E20135A191500BC5D4A /* HUDWidget.cpp */,
 			);
 			name = src;
 			sourceTree = "<group>";
@@ -221,10 +224,10 @@
 			name = "External Frameworks and Libraries";
 			sourceTree = "<group>";
 		};
-		F0841DF9135A16CA00BC5D4A /* Products */ = {
+		F0842127135A475500BC5D4A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F0841DF8135A16CA00BC5D4A /* CloudFactory.app */,
+				F0842126135A475500BC5D4A /* CloudFactory.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -240,6 +243,8 @@
 				4A7B2B45EDAE8E36E206770D /* BluePrintHUD.h */,
 				A988A788CB2A5C5ACD40D92B /* GraphicsView.h */,
 				AB453A8342605CCA703B63FB /* HomeScreen.h */,
+				82A0FE745A49FA5AE75EBD33 /* HUDWidget.h */,
+				44E8C9686A2063C579303FC8 /* Levels.h */,
 				28040D5C89B120DEC9E64354 /* MainScene.h */,
 				3A1F1FF141BCB4F3F8D9A821 /* MtlLoader.h */,
 				6AC214E2288B17EBE969F4B9 /* ObjLoader.h */,
@@ -260,7 +265,7 @@
 /* Begin PBXNativeTarget section */
 		2A165002224AA4EE4F32A692 /* CloudFactory */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F0841E11135A16E100BC5D4A /* Build configuration list for PBXNativeTarget "CloudFactory" */;
+			buildConfigurationList = F0842132135A477400BC5D4A /* Build configuration list for PBXNativeTarget "CloudFactory" */;
 			buildPhases = (
 				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
 				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
@@ -276,7 +281,7 @@
 			name = CloudFactory;
 			productInstallPath = build/;
 			productName = CloudFactory;
-			productReference = F0841DF8135A16CA00BC5D4A /* CloudFactory.app */;
+			productReference = F0842126135A475500BC5D4A /* CloudFactory.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -288,7 +293,7 @@
 			compatibilityVersion = "Xcode 2.4";
 			hasScannedForEncodings = 1;
 			mainGroup = 05596AB53D8D521C69802C27 /* CloudFactory */;
-			productRefGroup = F0841DF9135A16CA00BC5D4A /* Products */;
+			productRefGroup = F0842127135A475500BC5D4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -340,6 +345,8 @@
 				CF5450440D4C370A449BBB6B /* BluePrintHUD.cpp in Build Sources */,
 				36FDDA035446492246313663 /* GraphicsView.cpp in Build Sources */,
 				DBF592F4CB0D12BA9B70B929 /* HomeScreen.cpp in Build Sources */,
+				DCF233696ED36C5052AC9160 /* HUDWidget.cpp in Build Sources */,
+				C5F056F27135DC2C954BAF8A /* Levels.cpp in Build Sources */,
 				FD1638E377D97C82BDB438FB /* main.cpp in Build Sources */,
 				B0181F3C1825D15ECD240886 /* MainScene.cpp in Build Sources */,
 				FA899CEA0BC3739C9BF0DC55 /* marchingcubes.cpp in Build Sources */,
@@ -352,7 +359,6 @@
 				01D8EB3FA1277338705EF002 /* moc_HomeScreen.cpp in Build Sources */,
 				17F38B403AD159035AB1506C /* moc_MainScene.cpp in Build Sources */,
 				796683C49CF16E00D8F18E70 /* qrc_resources.cpp in Build Sources */,
-				F0841E21135A191500BC5D4A /* HUDWidget.cpp in Build Sources */,
 			);
 			name = "Build Sources";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -377,7 +383,7 @@
 			};
 			name = Release;
 		};
-		F0841DFF135A16CA00BC5D4A /* Debug */ = {
+		F084212D135A475600BC5D4A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
@@ -463,7 +469,7 @@
 			};
 			name = Debug;
 		};
-		F0841E00135A16CA00BC5D4A /* Release */ = {
+		F084212E135A475600BC5D4A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
@@ -548,7 +554,7 @@
 			};
 			name = Release;
 		};
-		F0841E01135A16CA00BC5D4A /* Default */ = {
+		F084212F135A475600BC5D4A /* Default */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
@@ -643,12 +649,12 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F0841E11135A16E100BC5D4A /* Build configuration list for PBXNativeTarget "CloudFactory" */ = {
+		F0842132135A477400BC5D4A /* Build configuration list for PBXNativeTarget "CloudFactory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0841DFF135A16CA00BC5D4A /* Debug */,
-				F0841E00135A16CA00BC5D4A /* Release */,
-				F0841E01135A16CA00BC5D4A /* Default */,
+				F084212D135A475600BC5D4A /* Debug */,
+				F084212E135A475600BC5D4A /* Release */,
+				F084212F135A475600BC5D4A /* Default */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;

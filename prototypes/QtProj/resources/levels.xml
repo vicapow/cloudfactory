@@ -1,12 +1,9 @@
-
-
-<?xml version="1.0">
 <levels>
 	<level id="1" cannons="1">
-		<model x="100" y="100" z="0" r="10" />
+		<model x="100" y="100" z="0" r="10"></model>
 	</level>
 	<level id="2" cannons="2">
-		<model x="50" y="100" z="0" r="10" />
-		<model x="150" y="100" z="0" r="10" />
+		<model x="50" y="100" z="0" r="10"></model>
+		<model x="150" y="100" z="0" r="10"></model>
 	</level>
 </levels>
