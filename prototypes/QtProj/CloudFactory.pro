@@ -63,4 +63,5 @@ CONFIG(debug, debug|release)
 # include(src/src.pri)
 SOURCES += src/*.cpp
 HEADERS += src/*.hpp
+HEADERS += src/*.h
 DESTDIR = ./build

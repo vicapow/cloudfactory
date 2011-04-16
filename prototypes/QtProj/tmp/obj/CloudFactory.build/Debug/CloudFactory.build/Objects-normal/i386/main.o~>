@@ -1,0 +1,5 @@
+In file included from /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp:2:
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/GraphicsView.h:21: error: ISO C++ forbids declaration of 'MainScene' with no type
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/GraphicsView.h:21: error: expected ';' before '*' token
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp: In function 'int main(int, char**)':
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/src/main.cpp:9: error: variable 'QApplication app' has initializer but incomplete type

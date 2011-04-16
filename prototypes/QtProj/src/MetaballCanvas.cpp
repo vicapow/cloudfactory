@@ -43,11 +43,9 @@ void MetaballCanvas::removeMetaball(CloudModel* model){
 
 void MetaballCanvas::draw(){
 	
-	//cout << "draw" << endl;
+	cout << "MetaballCanvas::draw" << endl;
 	
 	initVoxels(voxels,SX,SY,SZ);//clear the voxel field
-
-	
 	
 	for(int i = metaballs.size()-1; i>=0;i--){
 		CloudModel* model = metaballs[i];
