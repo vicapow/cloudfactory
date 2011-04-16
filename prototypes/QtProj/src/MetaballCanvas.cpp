@@ -56,17 +56,18 @@ void MetaballCanvas::draw(){
 	}
 	
 	
-//	//--init metaball data
+	//--init metaball data
 //	t++;
 //	ball1 = sin(t/10.0) * 50 + 100 ;
 //	ball2 = SX - ball1;
 //	
 ////	//this is just an example of drawing metaballs
-//	drawMetaball(voxels,SX,SY,SZ,SX-SX/4-10,ball1,SZ-5,12);
-//	drawMetaball(voxels,SX,SY,SZ,SX/2,ball2,SZ-5,12);
-//	drawMetaball(voxels,SX,SY,SZ,SX/4+10,ball1,SZ-5,12);
+//	drawMetaball(voxels,SX,SY,SZ,SX-SX/4+10,ball1,SZ-5,10);
+//	drawMetaball(voxels,SX,SY,SZ,SX/2,ball2,SZ-5,10);
+//	drawMetaball(voxels,SX,SY,SZ,SX/4-10,ball1,SZ-5,10);
 	
-	//drawMetaball(voxels,SX,SY,SZ,SX/2,20,SZ-5,12);
+	//drawMetaball(voxels,SX,SY,SZ,SX/2,SY/2,SZ-5,10);
+	//drawMetaball(voxels,SX,SY,SZ,SX-20,SY/2,SZ-5,20);
 	
 	clearVertexList();
 	vertices = runMarchingCubes(voxels,SX,SY,SZ,9,9,9,0.012);

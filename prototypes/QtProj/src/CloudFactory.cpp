@@ -24,6 +24,10 @@ void CloudFactory::initializeGL()
 	
 	elapsedTimer.start();
 	
+	blueprint.push_back( new CloudModel( 100, 100, 100, 10 ) );
+	
+	correctness = 0;
+	
 }
 
 void CloudFactory::resizeGL( int w, int h )
@@ -46,12 +50,13 @@ void CloudFactory::onEnterFrame(){
 		//take a step
 		cloud->update(frame_time/25.0f);
 		
+		//remove the cloud if it goes beyond the edge of the screen
 		if( cloud->model->posY - cloud->model->getRadius() > canvas->SY ){
 			
 			this->removeMetaball(cloud->model);
 			
 			//remove the cloud from the clouds list
-			it--;
+			it--;//update the intorator to reflect the missing cloud
 			clouds.remove(cloud);
 			delete cloud;
 		}
@@ -59,18 +64,22 @@ void CloudFactory::onEnterFrame(){
 	
 	if(STATE_GROW_A && cur_cloud_a ){
 		cur_cloud_a->model->posY = 0;
-		cur_cloud_a->model->incRadius(8);
+		cur_cloud_a->model->incRadius(1);
 	}
 	
 	if(STATE_GROW_B && cur_cloud_b ){
 		cur_cloud_b->model->posY = 0;
-		cur_cloud_b->model->incRadius(8);
+		cur_cloud_b->model->incRadius(1);
 	}
 	
 	if(STATE_GROW_C && cur_cloud_c ){
 		cur_cloud_c->model->posY = 0;
-		cur_cloud_c->model->incRadius(8);
+		cur_cloud_c->model->incRadius(1);
 	}
+	
+	//detect pattern
+	correctness = BluePrintDetect::CalculateError( blueprint , user_guess );
+	
 	
 	paintGL();
 	
@@ -100,11 +109,6 @@ void CloudFactory::paintGL()
     glEnable(GL_COLOR_MATERIAL);
 	
 	
-    // Set material properties which will be assigned by glColor
-    glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
-    float specReflection[] = { 0.8f, 0.8f, 0.8f, 1.0f };
-    glMaterialfv(GL_FRONT, GL_SPECULAR, specReflection);
-	
     glMatrixMode(GL_MODELVIEW);
 	glPushMatrix();
 	glLoadIdentity();
@@ -119,6 +123,16 @@ void CloudFactory::paintGL()
 	display_image(640, 480);
 	
 	
+	
+	// Set material properties which will be assigned by glColor
+    glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
+    float specReflection[] = { 0.8, 0.8, 0.8, 1.0f };
+    glMaterialfv(GL_FRONT, GL_SPECULAR, specReflection);
+	
+	glColor3f(1-correctness+0.5,1,1-correctness+0.5 );
+	
+	cout << "correctness: " << correctness << endl;
+	
 	// Draw the triangles
     canvas->draw();
 	
@@ -130,7 +144,7 @@ void CloudFactory::paintGL()
 
 void CloudFactory::keyPressEvent(QKeyEvent *event){
 
-	static float DEFAULT_RADIUS = 20;
+	static float DEFAULT_RADIUS = 5;
 	
 	switch (event->key()) {
 			
@@ -358,22 +372,20 @@ void CloudFactory::create_scene(){
 	
 	makeCurrent();
 	
-	glShadeModel(GL_SMOOTH);
-    glEnable(GL_DEPTH_TEST);
-    glEnable(GL_LIGHTING);
-    glEnable(GL_LIGHT0);
-	
-	// Create light components
-    GLfloat ambientLight[] = { 0.2f, 0.2f, 0.2f, 1.0f };
-    GLfloat diffuseLight[] = { 0.8f, 0.8f, 0.8, 1.0f };
-    GLfloat specularLight[] = { 0.5f, 0.5f, 0.5f, 1.0f };
-    GLfloat position[] = { -1.5f, 1.0f, -4.0f, 1.0f };
-	
-	// Assign created components to GL_LIGHT0
-    glLightfv(GL_LIGHT0, GL_AMBIENT, ambientLight);
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, diffuseLight);
-    glLightfv(GL_LIGHT0, GL_SPECULAR, specularLight);
-    glLightfv(GL_LIGHT0, GL_POSITION, position);
+//	glShadeModel(GL_SMOOTH);
+//    glEnable(GL_DEPTH_TEST);
+//    glEnable(GL_LIGHTING);
+//    glEnable(GL_LIGHT0);
+//	
+//	GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
+//	GLfloat light_diffuse[] = { 1.0, 1.0, 1.0, 1.0 };
+//	GLfloat light_specular[] = { 1.0, 1.0, 1.0, 1.0 };
+//	GLfloat light_position[] = { -500.0, 500.0, -100.0, 0.0 };
+//	
+//	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
+//	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
+//	glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
+//	glLightfv(GL_LIGHT0, GL_POSITION, light_position);
 	
 	
 

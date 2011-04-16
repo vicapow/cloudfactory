@@ -77,7 +77,7 @@ void convertFloatToUCharVoxel(float *** metaballs, uchar *** voxels, int sizeX, 
 
 void drawMetaball(float ***voxels,int sizeX,int sizeY,int sizeZ, int px, int py, int pz, int R ){
 	
-	int maxR = R*2;//cache R*2 because we'll be using it frequently
+	int maxR = R*10;//cache R*2 because we'll be using it frequently
 	
 	//upper and lower bounds for optimization
 	
@@ -106,7 +106,7 @@ void drawMetaball(float ***voxels,int sizeX,int sizeY,int sizeZ, int px, int py,
     for(int x = lx; x < ux; x++) {
         for(int y = ly; y < uy; y++) {
 			for(int z = 0; z < sizeZ; z++){
-				voxels[x][y][z] += ( sqrt(R) / (float)( (x-px)*(x-px) + (y-py)*(y-py) + (z-pz)*(z-pz)*2 ) );
+				voxels[x][y][z] += ( (R) / (float)( (x-px)*(x-px) + (y-py)*(y-py) + (z-pz)*(z-pz)*4 ) );
 			}
         }
     }

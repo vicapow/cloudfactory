@@ -21,6 +21,7 @@
 
 #include "CloudModel.hpp"
 #include "MetaballCanvas.hpp"
+#include "BluePrintDetect.h"
 
 
 
@@ -86,7 +87,8 @@ protected:
 	
 	/* data structures */
 	MetaballCanvas* canvas;
-	std::vector<CloudModel*> user_guess;
+	vector<CloudModel*> user_guess;
+	vector<CloudModel*> blueprint;
 	list<struct m_cloud*> clouds;
 	
 	m_cloud* cur_cloud_a;
@@ -97,6 +99,7 @@ protected:
 	GLuint can_ind;
 	QTimer* timer;//the timer that fires draw events
 	QElapsedTimer elapsedTimer;
+	float correctness;
 	
 protected slots:
 	void onEnterFrame();
