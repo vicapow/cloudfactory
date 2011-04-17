@@ -32,8 +32,8 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 324568162;
-			PBXWorkspaceStateSaveDate = 324568162;
+			PBXPerProjectTemplateStateSaveDate = 324685394;
+			PBXWorkspaceStateSaveDate = 324685394;
 		};
 		perUserProjectItems = {
 			F03AA4611357B88F000EA162 /* PBXTextBookmark */ = F03AA4611357B88F000EA162 /* PBXTextBookmark */;
@@ -45,8 +45,8 @@
 			F03AA6971357EC96000EA162 /* PBXTextBookmark */ = F03AA6971357EC96000EA162 /* PBXTextBookmark */;
 			F03AA6981357EC96000EA162 /* PBXTextBookmark */ = F03AA6981357EC96000EA162 /* PBXTextBookmark */;
 			F0708FD11343C19900AA43BE /* PBXTextBookmark */ = F0708FD11343C19900AA43BE /* PBXTextBookmark */;
+			F084216C135A4E6C00BC5D4A /* PBXTextBookmark */ = F084216C135A4E6C00BC5D4A /* PBXTextBookmark */;
 			F098AA6B1358846D00B9EB9C /* PBXTextBookmark */ = F098AA6B1358846D00B9EB9C /* PBXTextBookmark */;
-			F098AA6C1358846D00B9EB9C /* PBXTextBookmark */ = F098AA6C1358846D00B9EB9C /* PBXTextBookmark */;
 			F098AA6D1358846D00B9EB9C /* PBXTextBookmark */ = F098AA6D1358846D00B9EB9C /* PBXTextBookmark */;
 			F0F4DF311342D7C800666F47 /* PBXTextBookmark */ = F0F4DF311342D7C800666F47 /* PBXTextBookmark */;
 			F0F4DF321342D7C800666F47 /* PBXTextBookmark */ = F0F4DF321342D7C800666F47 /* PBXTextBookmark */;
@@ -186,6 +186,16 @@
 		path = /Users/timothyluciani/Applications/GeometricTools/WildMagic5/SDK/Include/Wm5LightDirPerVerEffect.h;
 		sourceTree = "<absolute>";
 	};
+	F084216C135A4E6C00BC5D4A /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */;
+		name = "CloudFactory.cpp: 66";
+		rLen = 45;
+		rLoc = 1837;
+		rType = 0;
+		vrLen = 1198;
+		vrLoc = 1040;
+	};
 	F098AA6B1358846D00B9EB9C /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = F0ED31871342BCD7004AF5D6 /* CloudFactory.h */;
@@ -194,16 +204,6 @@
 		rLoc = 1479;
 		rType = 0;
 		vrLen = 784;
-		vrLoc = 0;
-	};
-	F098AA6C1358846D00B9EB9C /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */;
-		name = "CloudFactory.cpp: 16";
-		rLen = 0;
-		rLoc = 402;
-		rType = 0;
-		vrLen = 1123;
 		vrLoc = 0;
 	};
 	F098AA6D1358846D00B9EB9C /* PBXTextBookmark */ = {
@@ -246,9 +246,9 @@
 	};
 	F0ED31861342BCD7004AF5D6 /* CloudFactory.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {887, 4849}}";
+			sepNavIntBoundsRect = "{{0, 0}, {887, 4862}}";
 			sepNavSelRange = "{1837, 45}";
-			sepNavVisRange = "{1034, 1204}";
+			sepNavVisRange = "{1040, 1198}";
 		};
 	};
 	F0ED31871342BCD7004AF5D6 /* CloudFactory.h */ = {
