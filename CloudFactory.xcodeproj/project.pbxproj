@@ -300,6 +300,7 @@
 			isa = PBXProject;
 			buildConfigurationList = 3C4B93AC08674C10001A085C /* Build configuration list for PBXProject "CloudFactory" */;
 			compatibilityVersion = "Xcode 3.0";
+			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
