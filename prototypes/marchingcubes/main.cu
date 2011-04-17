@@ -27,20 +27,20 @@ void renderScene(void) {
 	memset(metaballs, 0, sizeof(float) * SX * SY * SZ);
 	cudaMemset(gpuMeta, 0, sizeof(float) * SX * SY * SZ);
 	
-	drawMetaball<<<nBlocks, threadsPerBlock>>> (gpuMeta,SX,SY,SZ,ball1,SY/2,SZ-5,10);
+	drawMetaball<<<nBlocks, threadsPerBlock>>> (gpuMeta,SX,SY,SZ,ball1,SY/2,SZ-5,120);
 	cudaThreadSynchronize();	
-	drawMetaball<<<nBlocks, threadsPerBlock>>> (gpuMeta,SX,SY,SZ,ball2,SY/2,SZ-5,10);
+	drawMetaball<<<nBlocks, threadsPerBlock>>> (gpuMeta,SX,SY,SZ,ball2,SY/2,SZ-5,120);
 	cudaThreadSynchronize();	
-	drawMetaball<<<nBlocks, threadsPerBlock>>> (gpuMeta,SX,SY,SZ,SX/2,ball1,SZ-5,10);
+	drawMetaball<<<nBlocks, threadsPerBlock>>> (gpuMeta,SX,SY,SZ,SX/2,ball1,SZ-5,120);
 	cudaThreadSynchronize();
-	drawMetaball<<<nBlocks, threadsPerBlock>>> (gpuMeta,SX,SY,SZ,SX/2,ball2,SZ-5,10);
+	drawMetaball<<<nBlocks, threadsPerBlock>>> (gpuMeta,SX,SY,SZ,SX/2,ball2,SZ-5,120);
 	cudaThreadSynchronize();
 		
 	cudaMemcpy(metaballs, gpuMeta, sizeof(float) * SX * SY * SZ, cudaMemcpyDeviceToHost);
 		
 	clearVertexList();
 	
-	vertices = runMarchingCubes(metaballs,SX,SY,SZ,6,6,6,1);
+	vertices = runMarchingCubes(metaballs,SX,SY,SZ,3,3,3,1);
 	
 	ball1 = sin(t/10.0) * 50 + 50 ;
 	ball2 = SX - ball1;
@@ -76,7 +76,7 @@ void renderScene(void) {
 
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    //glRotatef(angle, 0.0f, 1.0f, 0.0f);
+    glRotatef(angle, 0.0f, 1.0f, 0.0f);
 
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
@@ -84,7 +84,7 @@ void renderScene(void) {
     glScalef( 2.0 / SX, 2.0 / SX , 2.0 / SX );
     glColor3f(0.0f, 0.6f, 0.0f);
     glTranslatef( -SX/2.0 , -SY/2.0, -50.0f);
-    //glRotatef(80.0f, 0.0f, 0.0f, 1.0f);
+    ///glRotatef(80.0f, 0.0f, 0.0f, 1.0f);
 
     // Draw the triangles
     list<vertex>::iterator it;

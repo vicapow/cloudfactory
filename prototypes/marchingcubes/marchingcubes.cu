@@ -18,7 +18,11 @@ void drawMetaball(float *voxels, int sizeX, int sizeY, int sizeZ, int px, int py
  	float y = index/sizeY;
 	
 	for(int z = 0; z < sizeZ; z++)		
-		voxels[getIndex(x,y,z, sizeX, sizeY, sizeZ)] += ( R / sqrtf( (x-px)*(x-px) + (y-py)*(y-py) + (z-pz)*(z-pz)*2 ) ) ;			
+		voxels[ (int)(x + (y*sizeX) + (z * sizeX * sizeY)) ] += ( R / (float)( (x-px)*(x-px) + (y-py)*(y-py) + (z-pz)*(z-pz)*4 ) ) ;
+		
+		//voxels[x][y][z] += ( (R) / (float)( (x-px)*(x-px) + (y-py)*(y-py) + (z-pz)*(z-pz)*4 ) );
+		
+					
 }
 
 vertex interpolate(double isolevel, vertex p1, vertex p2, float valp1, float valp2) {
