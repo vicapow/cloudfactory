@@ -40,9 +40,6 @@ MainScene::MainScene(){
 	hud = new HUDWidget();
 	
 	blueprint_hud = new BluePrintHUD();
-	//this->addWidget( blueprint_hud );
-	blueprint.push_back(new CloudModel( 100, 100, 100, 10 ));
-	blueprint_hud->setBluePrint( blueprint );
 
 	this->addWidget(hud);
 	hud->setContentsMargins(0, 0, 0, 0);
@@ -51,6 +48,11 @@ MainScene::MainScene(){
 	layout->setContentsMargins(1,1,1,1);
 	hud->setLayout(layout);
 	layout->addWidget(blueprint_hud);
+}
+
+void MainScene::setBlueprint( const vector<CloudModel*>& blueprint ){
+	this->blueprint = blueprint;
+	blueprint_hud->setBluePrint( this->blueprint );
 }
 
 void MainScene::onEnterFrame(){
@@ -94,8 +96,8 @@ void MainScene::onEnterFrame(){
 	//detect pattern
 	correctness = BluePrintDetect::CalculateError( blueprint , user_guess );
 	if(correctness>0.9){
-		emit levelPassed();
-		//cout << " level passed! " << endl;
+		clearClouds();
+		emit onLevelPassed();
 	}
 	
 	draw_GL();
@@ -105,7 +107,7 @@ void MainScene::create_scene(){
 	
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 	
-	load_bmp("../../resources/bg2.bmp", tex_byte, 256, &texture) ; 
+	load_bmp("../../resources/bg2.bmp", tex_byte, 256, &texture); 
 	
 	cout << "TEXTURE: " << texture << endl;
 
@@ -286,7 +288,6 @@ void MainScene::onKeyPress(QKeyEvent* event){
 				clouds.push_back( cur_cloud_a = new m_cloud(canvas->SX/4,0,0,DEFAULT_RADIUS));
 				
 				//submit the added cloud to the user_guess list of clouds
-				user_guess.push_back(cur_cloud_a->model);
 				canvas->addMetaball(cur_cloud_a->model);
 				
 				
@@ -303,7 +304,6 @@ void MainScene::onKeyPress(QKeyEvent* event){
 			if(CUR_KEY != 's'){
 				
 				clouds.push_back( cur_cloud_b = new m_cloud(canvas->SX/2,0,0,DEFAULT_RADIUS));
-				user_guess.push_back(cur_cloud_b->model);
 				canvas->addMetaball(cur_cloud_b->model);
 				
 				STOP_GROWTH_B = false;
@@ -320,7 +320,6 @@ void MainScene::onKeyPress(QKeyEvent* event){
 			if(CUR_KEY != 'd'){
 				
 				clouds.push_back( cur_cloud_c = new m_cloud(canvas->SX - canvas->SX/4 ,0,0,DEFAULT_RADIUS));
-				user_guess.push_back(cur_cloud_c->model);
 				canvas->addMetaball(cur_cloud_c->model);
 				
 				STOP_GROWTH_C = false;
@@ -330,29 +329,28 @@ void MainScene::onKeyPress(QKeyEvent* event){
 			
 			break;
 		}
+		
 		case 'r': // reset
 		case 'R':
-		{
-			
-			user_guess.clear(); // clear guesses
-			
-			for(unsigned int i = 0; i < clouds.size(); i++){
-			}
-			
-			//delete all the clouds
-			list<m_cloud*>::iterator it;
-			for( it = clouds.begin(); it != clouds.end(); it++){
-				canvas->removeMetaball( (*it)->model );
-				delete (*it);
-			}
-			
-			clouds.clear(); // clear clouds list
-			
-		}break;
+			clearClouds();
+			break;
 			
 		default:
 			break;
 	}
+}
+
+void MainScene::clearClouds(){
+	user_guess.clear(); // clear guesses
+	
+	//delete all the clouds
+	list<m_cloud*>::iterator it;
+	for( it = clouds.begin(); it != clouds.end(); it++){
+		canvas->removeMetaball( (*it)->model );
+		delete (*it);
+	}
+	
+	clouds.clear(); // clear clouds list
 }
 
 void MainScene::onKeyRelease(QKeyEvent* event){
@@ -362,6 +360,7 @@ void MainScene::onKeyRelease(QKeyEvent* event){
 		case 'a': // cannot to the far left
 		case 'A':
 			
+			user_guess.push_back(cur_cloud_a->model);
 			cur_cloud_a = NULL;
 			STATE_GROW_A = false; // set growing to false
 			CUR_KEY = ' ';
@@ -369,7 +368,8 @@ void MainScene::onKeyRelease(QKeyEvent* event){
 			
 		case 's': // middle cannon
 		case 'S':
-			
+
+			user_guess.push_back(cur_cloud_b->model);
 			cur_cloud_b = NULL;
 			STATE_GROW_B = false; // set growing to false
 			CUR_KEY = ' ';
@@ -377,6 +377,7 @@ void MainScene::onKeyRelease(QKeyEvent* event){
 			
 		case 'd': // cannon to the far right
 		case 'D':{
+			user_guess.push_back(cur_cloud_c->model);
 			cur_cloud_c = NULL;
 			STATE_GROW_C = false; // set growing to false
 			CUR_KEY = ' ';

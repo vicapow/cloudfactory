@@ -1,2 +1,2 @@
 #!/bin/sh
-make -C /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj -f 'CloudFactory.xcodeproj/qt_preprocess.mak'
+make -C /Users/victorpowell/Documents/School/CS1666/cloudfactory/prototypes/QtProj -f 'CloudFactory.xcodeproj/qt_preprocess.mak'

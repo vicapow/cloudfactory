@@ -43,6 +43,8 @@ public:
 	void onEnterFrame();
 	void onKeyPress(QKeyEvent* event);
 	void onKeyRelease(QKeyEvent* event);
+	void setBlueprint( const vector<CloudModel*>& blueprint );
+	void clearClouds();
 	
 	float angle;
 	
@@ -71,7 +73,7 @@ public:
 	HUDWidget* hud;
 	
 signals:
-	void levelPassed();
+	void onLevelPassed();
 	
 protected:
 	void draw_GL();

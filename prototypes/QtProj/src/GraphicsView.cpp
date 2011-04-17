@@ -18,11 +18,20 @@ GraphicsView::GraphicsView()
 
 	mainScene = new MainScene();
 	this->setScene(mainScene);
-	mainScene->addText("Hello World!");
+	connect( mainScene , SIGNAL(onLevelPassed()) , this , SLOT(advanceLevel()));
 	
 	homeScreen = new HomeScreen();
 	mainScene->addItem( homeScreen );
 	connect( homeScreen , SIGNAL(onPlay()) , this , SLOT(hideHomeScreen()) );
+	
+	levels = new Levels(":/resources/levels.xml");
+	
+	current_level = 0;
+	advanceLevel();
+}
+
+void GraphicsView::loadLevel(const Level& level){
+	mainScene->setBlueprint(level.blueprint);
 }
 
 void GraphicsView::keyPressEvent(QKeyEvent *event){
@@ -45,4 +54,10 @@ void GraphicsView::resizeEvent(QResizeEvent *event) {
 void GraphicsView::hideHomeScreen(){
 	cout << " hide the home scree " << endl;
 	mainScene->removeItem(homeScreen);
+}
+
+void GraphicsView::advanceLevel(){
+	if( current_level < levels->length() ){
+		loadLevel(levels->getLevel(current_level++));
+	}
 }

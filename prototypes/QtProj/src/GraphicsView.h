@@ -16,6 +16,7 @@
 
 #include "MainScene.h"
 #include "HomeScreen.h"
+#include "Levels.h"
 
 class GraphicsView : public QGraphicsView{
 	
@@ -28,6 +29,8 @@ public:
 
 public slots:
 	void hideHomeScreen();
+	void loadLevel(const Level& level);
+	void advanceLevel();
 	
 protected:
 	void resizeEvent(QResizeEvent *event);
@@ -35,6 +38,8 @@ protected:
 	virtual void keyReleaseEvent(QKeyEvent *event);
 	
 	HomeScreen* homeScreen;
+	int current_level;
+	Levels* levels;
 
 };
 

@@ -32,6 +32,8 @@ class Levels {
 public:
 	Levels( QString filename);
 	void print();
+	Level getLevel(int i) const { return levels[i]; }
+	int length() { return levels.size(); }
 	
 private:
 	vector<Level> levels;
