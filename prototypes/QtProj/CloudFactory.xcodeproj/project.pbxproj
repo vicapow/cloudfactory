@@ -13,7 +13,10 @@
 		0A4F48DDDF8B700E82A2F4A5 /* MtlLoader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9A2B637AC4A30359DBEF3EBA /* MtlLoader.cpp */; settings = {ATTRIBUTES = (); }; };
 		0C6D4628EE0B0D1479A20551 /* AGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = C6766F86E49E9C8701C8E637 /* AGL.framework */; };
 		17F38B403AD159035AB1506C /* moc_MainScene.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 04962C6F55FB55557C9FD560 /* moc_MainScene.cpp */; settings = {ATTRIBUTES = (); }; };
+<<<<<<< HEAD
 		29864F6F334F64A0D1FB8694 /* moc_mygldrawer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 6F432939B3AD03FC43F120EC /* moc_mygldrawer.cpp */; settings = {ATTRIBUTES = (); }; };
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		36FDDA035446492246313663 /* GraphicsView.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 2ED7751F608F126B92193F3B /* GraphicsView.cpp */; settings = {ATTRIBUTES = (); }; };
 		3A247C79376D7E1FEA8D72B7 /* MetaballCanvas.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */; settings = {ATTRIBUTES = (); }; };
 		41569C8A8920C770CF409E9A /* GLUT.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = 998A1319FFA084ADB552E479 /* GLUT.framework */; };
@@ -24,8 +27,11 @@
 		66D1CFEDD38D8DCEB8EA7383 /* MtlLoaderCodes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = DCBE774DF67D9DAD2FE51695 /* MtlLoaderCodes.cpp */; settings = {ATTRIBUTES = (); }; };
 		6FD12C05D1173378819EFF02 /* moc_GraphicsView.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3BCBED768A8E8163ADCC2AD0 /* moc_GraphicsView.cpp */; settings = {ATTRIBUTES = (); }; };
 		796683C49CF16E00D8F18E70 /* qrc_resources.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = AC543B7337C154605E763DA6 /* qrc_resources.cpp */; settings = {ATTRIBUTES = (); }; };
+<<<<<<< HEAD
 		86F8069F135A5B850021EF5B /* CloudFactory.app in Project Copy */ = {isa = PBXBuildFile; fileRef = 86F8069C135A5B850021EF5B /* CloudFactory.app */; };
 		99DB3B5790F51F1B6DD6E80C /* mygldrawer.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 1162C541CAF1C90EC8DE8DF2 /* mygldrawer.cpp */; settings = {ATTRIBUTES = (); }; };
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		ACA375B8C4377D750B68081A /* Images.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 55990297F417C76E811B610F /* Images.cpp */; settings = {ATTRIBUTES = (); }; };
 		B0181F3C1825D15ECD240886 /* MainScene.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = EAF9AA957835F5256127630B /* MainScene.cpp */; settings = {ATTRIBUTES = (); }; };
 		BCEF71E1EDFB18DA77DC750B /* OpenGL.framework in Frameworks & Libraries */ = {isa = PBXBuildFile; fileRef = DA18A6831232F53228631AD1 /* OpenGL.framework */; };
@@ -35,6 +41,10 @@
 		DBF592F4CB0D12BA9B70B929 /* HomeScreen.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 9534CC433110D39C6EB142A3 /* HomeScreen.cpp */; settings = {ATTRIBUTES = (); }; };
 		DCF233696ED36C5052AC9160 /* HUDWidget.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = F5A09D0402AA6843A246DE8E /* HUDWidget.cpp */; settings = {ATTRIBUTES = (); }; };
 		DF9ED058BB8FBA211DDC4D62 /* ObjLoader.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 971948060541802D6B3497C6 /* ObjLoader.cpp */; settings = {ATTRIBUTES = (); }; };
+<<<<<<< HEAD
+=======
+		F0F6F557135A658600CD9C99 /* CloudFactory.app in Project Copy */ = {isa = PBXBuildFile; fileRef = F0F6F554135A658600CD9C99 /* CloudFactory.app */; };
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		FA899CEA0BC3739C9BF0DC55 /* marchingcubes.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 3E128FBEE267263828B2D63B /* marchingcubes.cpp */; settings = {ATTRIBUTES = (); }; };
 		FD1638E377D97C82BDB438FB /* main.cpp in Build Sources */ = {isa = PBXBuildFile; fileRef = 7EC3C68A81EFFF79B6CA22AC /* main.cpp */; settings = {ATTRIBUTES = (); }; };
 /* End PBXBuildFile section */
@@ -43,10 +53,17 @@
 		F6069D5A5DA8AA28EDB8B3C6 /* Project Copy */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
+<<<<<<< HEAD
 			dstPath = /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/build;
 			dstSubfolderSpec = 0;
 			files = (
 				86F8069F135A5B850021EF5B /* CloudFactory.app in Project Copy */,
+=======
+			dstPath = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build;
+			dstSubfolderSpec = 0;
+			files = (
+				F0F6F557135A658600CD9C99 /* CloudFactory.app in Project Copy */,
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 			);
 			name = "Project Copy";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,8 +73,11 @@
 /* Begin PBXFileReference section */
 		04962C6F55FB55557C9FD560 /* moc_MainScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_MainScene.cpp; path = tmp/moc/moc_MainScene.cpp; sourceTree = "<group>"; };
 		058F84791D3B3C38C3AEDBEC /* CloudFactory.pro */ = {isa = PBXFileReference; lastKnownFileType = text; path = CloudFactory.pro; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		0AC30B5107EC47D83280529A /* mygldrawer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = mygldrawer.h; path = src/mygldrawer.h; sourceTree = "<group>"; };
 		1162C541CAF1C90EC8DE8DF2 /* mygldrawer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = mygldrawer.cpp; path = src/mygldrawer.cpp; sourceTree = "<group>"; };
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		15E0846EF40BBFDC41D42F1C /* marchingcubes.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = marchingcubes.hpp; path = src/marchingcubes.hpp; sourceTree = "<group>"; };
 		185C85927A51019C499913FC /* Images.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Images.hpp; path = src/Images.hpp; sourceTree = "<group>"; };
 		28040D5C89B120DEC9E64354 /* MainScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainScene.h; path = src/MainScene.h; sourceTree = "<group>"; };
@@ -72,13 +92,19 @@
 		4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MetaballCanvas.cpp; path = src/MetaballCanvas.cpp; sourceTree = "<group>"; };
 		55990297F417C76E811B610F /* Images.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Images.cpp; path = src/Images.cpp; sourceTree = "<group>"; };
 		6AC214E2288B17EBE969F4B9 /* ObjLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjLoader.h; path = src/ObjLoader.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		6F432939B3AD03FC43F120EC /* moc_mygldrawer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_mygldrawer.cpp; path = tmp/moc/moc_mygldrawer.cpp; sourceTree = "<group>"; };
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		7085F5C012B2DE8E6565E930 /* BluePrintDetect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = BluePrintDetect.h; path = src/BluePrintDetect.h; sourceTree = "<group>"; };
 		79A9EC8DF3D2B906ACDEE802 /* BluePrintDetect.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BluePrintDetect.cpp; path = src/BluePrintDetect.cpp; sourceTree = "<group>"; };
 		7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /Library/Frameworks/QtCore.framework; sourceTree = "<absolute>"; };
 		7EC3C68A81EFFF79B6CA22AC /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = "<group>"; };
 		82A0FE745A49FA5AE75EBD33 /* HUDWidget.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HUDWidget.h; path = src/HUDWidget.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		86F8069C135A5B850021EF5B /* CloudFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		8EE92F8FA333C9E415C5B34E /* QtXml.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtXml.framework; path = /Library/Frameworks/QtXml.framework; sourceTree = "<absolute>"; };
 		9534CC433110D39C6EB142A3 /* HomeScreen.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HomeScreen.cpp; path = src/HomeScreen.cpp; sourceTree = "<group>"; };
 		971948060541802D6B3497C6 /* ObjLoader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ObjLoader.cpp; path = src/ObjLoader.cpp; sourceTree = "<group>"; };
@@ -98,6 +124,10 @@
 		DA18A6831232F53228631AD1 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
 		DCBE774DF67D9DAD2FE51695 /* MtlLoaderCodes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MtlLoaderCodes.cpp; path = src/MtlLoaderCodes.cpp; sourceTree = "<group>"; };
 		EAF9AA957835F5256127630B /* MainScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainScene.cpp; path = src/MainScene.cpp; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		F0F6F554135A658600CD9C99 /* CloudFactory.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudFactory.app; sourceTree = BUILT_PRODUCTS_DIR; };
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		F5065AD5E7EAA32E8D5BBEE1 /* BluePrintHUD.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = BluePrintHUD.cpp; path = src/BluePrintHUD.cpp; sourceTree = "<group>"; };
 		F5A09D0402AA6843A246DE8E /* HUDWidget.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HUDWidget.cpp; path = src/HUDWidget.cpp; sourceTree = "<group>"; };
 		FEC53AC03C18172B46EECE16 /* ObjLoaderCodes.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = ObjLoaderCodes.cpp; path = src/ObjLoaderCodes.cpp; sourceTree = "<group>"; };
@@ -132,7 +162,11 @@
 				7CABE3C80E79AD2B307756D2 /* Sources [qmake] */,
 				52C235EBF1C9B07808119459 /* Sources [RCC] */,
 				ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */,
+<<<<<<< HEAD
 				86F8069D135A5B850021EF5B /* Products */,
+=======
+				F0F6F555135A658600CD9C99 /* Products */,
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 			);
 			name = CloudFactory;
 			sourceTree = "<group>";
@@ -153,7 +187,10 @@
 				4F8685DD7334E33DFE84B494 /* MetaballCanvas.cpp */,
 				9A2B637AC4A30359DBEF3EBA /* MtlLoader.cpp */,
 				DCBE774DF67D9DAD2FE51695 /* MtlLoaderCodes.cpp */,
+<<<<<<< HEAD
 				1162C541CAF1C90EC8DE8DF2 /* mygldrawer.cpp */,
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				971948060541802D6B3497C6 /* ObjLoader.cpp */,
 				FEC53AC03C18172B46EECE16 /* ObjLoaderCodes.cpp */,
 			);
@@ -166,7 +203,10 @@
 				3BCBED768A8E8163ADCC2AD0 /* moc_GraphicsView.cpp */,
 				CB91DC9AFA0E21C3A399190F /* moc_HomeScreen.cpp */,
 				04962C6F55FB55557C9FD560 /* moc_MainScene.cpp */,
+<<<<<<< HEAD
 				6F432939B3AD03FC43F120EC /* moc_mygldrawer.cpp */,
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 			);
 			name = moc;
 			sourceTree = "<group>";
@@ -204,6 +244,7 @@
 			name = tmp;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		86F8069D135A5B850021EF5B /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +282,45 @@
 				C6766F86E49E9C8701C8E637 /* AGL.framework */,
 			);
 			name = "External Frameworks and Libraries";
+=======
+		883D7615C4D2DE3FA1218F12 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				F4AF6147B42623F6B3284738 /* src */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		E5650ECD64029BAB781A29A6 /* rcc */ = {
+			isa = PBXGroup;
+			children = (
+				AC543B7337C154605E763DA6 /* qrc_resources.cpp */,
+			);
+			name = rcc;
+			sourceTree = "<group>";
+		};
+		ED1E82605DD74B483AF3C982 /* External Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				2D7FF9EBB69BCF2C19DC629B /* QtSvg.framework */,
+				998A1319FFA084ADB552E479 /* GLUT.framework */,
+				8EE92F8FA333C9E415C5B34E /* QtXml.framework */,
+				C374004D45E01156F931B37D /* QtOpenGL.framework */,
+				9B36DA7E32F0304E780E7972 /* QtGui.framework */,
+				7BC2E65A5E699A5E5D834CA2 /* QtCore.framework */,
+				DA18A6831232F53228631AD1 /* OpenGL.framework */,
+				C6766F86E49E9C8701C8E637 /* AGL.framework */,
+			);
+			name = "External Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		F0F6F555135A658600CD9C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0F6F554135A658600CD9C99 /* CloudFactory.app */,
+			);
+			name = Products;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 			sourceTree = "<group>";
 		};
 		F4AF6147B42623F6B3284738 /* src */ = {
@@ -259,7 +339,10 @@
 				44E8C9686A2063C579303FC8 /* Levels.h */,
 				28040D5C89B120DEC9E64354 /* MainScene.h */,
 				3A1F1FF141BCB4F3F8D9A821 /* MtlLoader.h */,
+<<<<<<< HEAD
 				0AC30B5107EC47D83280529A /* mygldrawer.h */,
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				6AC214E2288B17EBE969F4B9 /* ObjLoader.h */,
 			);
 			name = src;
@@ -276,9 +359,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+<<<<<<< HEAD
 		5C2BDEFD0ECC2A4781CE05E4 /* CloudFactory */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 86F806B6135A5B8F0021EF5B /* Build configuration list for PBXNativeTarget "CloudFactory" */;
+=======
+		2A165002224AA4EE4F32A692 /* CloudFactory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0F6F563135A658A00CD9C99 /* Build configuration list for PBXNativeTarget "CloudFactory" */;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 			buildPhases = (
 				D7BA7D76DAB5DD13389D6332 /* Qt Qmake */,
 				A0A52A2ADF7A1E2A99738674 /* Qt Preprocessors */,
@@ -294,7 +383,11 @@
 			name = CloudFactory;
 			productInstallPath = build/;
 			productName = CloudFactory;
+<<<<<<< HEAD
 			productReference = 86F8069C135A5B850021EF5B /* CloudFactory.app */;
+=======
+			productReference = F0F6F554135A658600CD9C99 /* CloudFactory.app */;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -304,6 +397,7 @@
 			isa = PBXProject;
 			buildConfigurationList = 2A951308CDB28F104D0A4BD2 /* Build configuration list for PBXProject "CloudFactory" */;
 			compatibilityVersion = "Xcode 2.4";
+<<<<<<< HEAD
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
 			knownRegions = (
@@ -318,6 +412,15 @@
 			projectRoot = "";
 			targets = (
 				5C2BDEFD0ECC2A4781CE05E4 /* CloudFactory */,
+=======
+			hasScannedForEncodings = 1;
+			mainGroup = 05596AB53D8D521C69802C27 /* CloudFactory */;
+			productRefGroup = F0F6F555135A658600CD9C99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2A165002224AA4EE4F32A692 /* CloudFactory */,
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 			);
 		};
 /* End PBXProject section */
@@ -342,7 +445,11 @@
 			name = "Qt Preprocessors";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "make -C /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj -f 'CloudFactory.xcodeproj/qt_preprocess.mak'";
+=======
+			shellScript = "make -C /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj -f 'CloudFactory.xcodeproj/qt_preprocess.mak'";
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		};
 		D7BA7D76DAB5DD13389D6332 /* Qt Qmake */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -352,7 +459,11 @@
 			name = "Qt Qmake";
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
+<<<<<<< HEAD
 			shellScript = "make -C /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj -f 'CloudFactory.xcodeproj/qt_makeqmake.mak'";
+=======
+			shellScript = "make -C /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj -f 'CloudFactory.xcodeproj/qt_makeqmake.mak'";
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -374,13 +485,19 @@
 				3A247C79376D7E1FEA8D72B7 /* MetaballCanvas.cpp in Build Sources */,
 				0A4F48DDDF8B700E82A2F4A5 /* MtlLoader.cpp in Build Sources */,
 				66D1CFEDD38D8DCEB8EA7383 /* MtlLoaderCodes.cpp in Build Sources */,
+<<<<<<< HEAD
 				99DB3B5790F51F1B6DD6E80C /* mygldrawer.cpp in Build Sources */,
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				DF9ED058BB8FBA211DDC4D62 /* ObjLoader.cpp in Build Sources */,
 				5E776814E7756D95B00E500F /* ObjLoaderCodes.cpp in Build Sources */,
 				6FD12C05D1173378819EFF02 /* moc_GraphicsView.cpp in Build Sources */,
 				01D8EB3FA1277338705EF002 /* moc_HomeScreen.cpp in Build Sources */,
 				17F38B403AD159035AB1506C /* moc_MainScene.cpp in Build Sources */,
+<<<<<<< HEAD
 				29864F6F334F64A0D1FB8694 /* moc_mygldrawer.cpp in Build Sources */,
+=======
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				796683C49CF16E00D8F18E70 /* qrc_resources.cpp in Build Sources */,
 			);
 			name = "Build Sources";
@@ -389,10 +506,34 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 		86F806A3135A5B860021EF5B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_ROOT = /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj;
+=======
+		8DB1DD96F65B1BF1FFC506E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+			};
+			name = Debug;
+		};
+		95E1EB2E5DDD587BE5B3E548 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+			};
+			name = Release;
+		};
+		F0F6F55B135A658700CD9C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				COPY_PHASE_STRIP = NO;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0.0;
@@ -418,7 +559,11 @@
 					"/usr/local/Qt4.7/mkspecs/macx-xcode",
 				);
 				INFOPLIST_FILE = Info.plist;
+<<<<<<< HEAD
 				INSTALL_DIR = /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/build/;
+=======
+				INSTALL_DIR = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				LEXFLAGS = "";
 				LIBRARY_SEARCH_PATHS = (
 					/Library/Frameworks,
@@ -470,15 +615,26 @@
 				PRODUCT_NAME = CloudFactory;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "";
+<<<<<<< HEAD
 				WM5_PATH = /Users/brittneyrichter/GeometricTools/WildMagic5;
+=======
+				WM5_PATH = /Users/timothyluciani/Applications/GeometricTools/WildMagic5;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				YACCFLAGS = "-d";
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 		86F806A4135A5B860021EF5B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_ROOT = /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj;
+=======
+		F0F6F55C135A658700CD9C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				COPY_PHASE_STRIP = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1.0;
 				DYLIB_CURRENT_VERSION = 1.0.0;
@@ -503,7 +659,11 @@
 					"/usr/local/Qt4.7/mkspecs/macx-xcode",
 				);
 				INFOPLIST_FILE = Info.plist;
+<<<<<<< HEAD
 				INSTALL_DIR = /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/build/;
+=======
+				INSTALL_DIR = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 				LEXFLAGS = "";
 				LIBRARY_SEARCH_PATHS = (
 					/Library/Frameworks,
@@ -555,6 +715,7 @@
 				PRODUCT_NAME = CloudFactory;
 				SECTORDER_FLAGS = "";
 				WARNING_CFLAGS = "";
+<<<<<<< HEAD
 				WM5_PATH = /Users/brittneyrichter/GeometricTools/WildMagic5;
 				YACCFLAGS = "-d";
 			};
@@ -659,6 +820,95 @@
 				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
 			};
 			name = Release;
+=======
+				WM5_PATH = /Users/timothyluciani/Applications/GeometricTools/WildMagic5;
+				YACCFLAGS = "-d";
+			};
+			name = Release;
+		};
+		F0F6F55D135A658700CD9C99 /* Default */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_ROOT = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				HEADER_SEARCH_PATHS = (
+					/Library/Frameworks/QtCore.framework/Versions/4/Headers,
+					/usr/include/QtCore,
+					/Library/Frameworks/QtGui.framework/Versions/4/Headers,
+					/usr/include/QtGui,
+					/Library/Frameworks/QtOpenGL.framework/Versions/4/Headers,
+					/usr/include/QtOpenGL,
+					/Library/Frameworks/QtXml.framework/Versions/4/Headers,
+					/usr/include/QtXml,
+					/usr/include,
+					"$(WM5_PATH)/SDK/Include",
+					.,
+					/System/Library/Frameworks/OpenGL.framework/Versions/A/Headers,
+					/System/Library/Frameworks/AGL.framework/Headers,
+					tmp/moc,
+					/usr/local/include,
+					/System/Library/Frameworks/CarbonCore.framework/Headers,
+					"/usr/local/Qt4.7/mkspecs/macx-xcode",
+				);
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_DIR = /Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/build/;
+				LEXFLAGS = "";
+				LIBRARY_SEARCH_PATHS = (
+					/Library/Frameworks,
+					"/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				OBJROOT = tmp/obj/;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_XML_LIB",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-arch",
+					i386,
+					"-g",
+					"-Wall",
+					"-W",
+					"-DQT_XML_LIB",
+					"-DQT_OPENGL_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_CORE_LIB",
+					"-DQT_SHARED",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-arch",
+					i386,
+					"-L/Library/Frameworks",
+					"-F/Library/Frameworks",
+					"-L/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					"-F/tmp/qt-stuff-6474/source/qt-everywhere-opensource-src-4.7.0/lib",
+					"$(WM5_PATH)/SDK/Library/Release/libWm5AglApplication.a",
+					"$(WM5_PATH)/SDK/Library/Release/libWm5AglGraphics.a",
+					"$(WM5_PATH)/SDK/Library/Release/libWm5Core.a",
+					"$(WM5_PATH)/SDK/Library/Release/libWm5Mathematics.a",
+					"$(WM5_PATH)/SDK/Library/Release/libWm5Physics.a",
+				);
+				OTHER_REZFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = CloudFactory;
+				SECTORDER_FLAGS = "";
+				WARNING_CFLAGS = "";
+				WM5_PATH = /Users/timothyluciani/Applications/GeometricTools/WildMagic5;
+				YACCFLAGS = "-d";
+			};
+			name = Default;
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 		};
 /* End XCBuildConfiguration section */
 
@@ -672,12 +922,21 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
 		86F806B6135A5B8F0021EF5B /* Build configuration list for PBXNativeTarget "CloudFactory" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				86F806A3135A5B860021EF5B /* Debug */,
 				86F806A4135A5B860021EF5B /* Release */,
 				86F806A5135A5B860021EF5B /* Default */,
+=======
+		F0F6F563135A658A00CD9C99 /* Build configuration list for PBXNativeTarget "CloudFactory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0F6F55B135A658700CD9C99 /* Debug */,
+				F0F6F55C135A658700CD9C99 /* Release */,
+				F0F6F55D135A658700CD9C99 /* Default */,
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Default;

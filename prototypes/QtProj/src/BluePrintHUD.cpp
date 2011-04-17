@@ -21,15 +21,11 @@ void BluePrintHUD::initializeGL(){
 	
 	glClearColor(1.0, 1.0, 1.0, 1.0);
 	
-	glEnable(GL_LIGHTING);
-	glEnable(GL_COLOR_MATERIAL);
-	
-	//cout << "initalize GL" << endl;
 	
 	makeCurrent();
 	
 	glShadeModel(GL_SMOOTH);
-    glEnable(GL_DEPTH_TEST);
+	glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
 	
@@ -77,8 +73,11 @@ void BluePrintHUD::paintGL(){
 		canvas->draw_gl();
 	}
 	
+	glDisable(GL_NORMALIZE);
+	glDisable(GL_COLOR_MATERIAL);
+	
 	glFlush();
-	swapBuffers();
+	//swapBuffers();
 }
 
 void BluePrintHUD::setBluePrint( vector<CloudModel*>& blueprint){

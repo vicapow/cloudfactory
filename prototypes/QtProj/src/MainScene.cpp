@@ -95,7 +95,7 @@ void MainScene::onEnterFrame(){
 	correctness = BluePrintDetect::CalculateError( blueprint , user_guess );
 	if(correctness>0.9){
 		emit levelPassed();
-		cout << " level passed! " << endl;
+		//cout << " level passed! " << endl;
 	}
 	
 	draw_GL();
@@ -105,7 +105,9 @@ void MainScene::create_scene(){
 	
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 	
-	load_bmp("bg2.bmp", tex_byte, 512, &texture) ; 
+	load_bmp("../../resources/bg2.bmp", tex_byte, 256, &texture) ; 
+	
+	cout << "TEXTURE: " << texture << endl;
 
 //	set camera positions
 	
@@ -184,7 +186,7 @@ void MainScene::draw_GL(){
 	GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
 	GLfloat light_diffuse[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
 	GLfloat light_specular[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
-	GLfloat light_position[] = { -500.0, 500.0, -500.0, 0.0 };
+	GLfloat light_position[] = { -500.0, 500.0, 500.0, 0.0 };
 	
 	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
 	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
@@ -203,7 +205,7 @@ void MainScene::draw_GL(){
 	glCallLists(3, GL_UNSIGNED_BYTE, lists);
 	
 	// draw background here
-	display_image(512, 512);
+	display_image(256, 256);
 	
 	// Set material properties which will be assigned by glColor
     glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
@@ -257,9 +259,8 @@ void MainScene::display_image(int width, int height)
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE );
 	
 	glBegin(GL_QUADS);
-	
 		glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);
-		glTexCoord2f(1.0f,0.0f); glVertex3f(width, 0,0);
+		glTexCoord2f(1.0f,0.0f); glVertex3f(width,0,0);
 		glTexCoord2f(1.0f,1.0f); glVertex3f(width,height,0);
 		glTexCoord2f(0.0f,1.0f); glVertex3f(0,height,0);
 	

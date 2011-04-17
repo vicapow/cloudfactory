@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/BluePrintDetect.o
 /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/BluePrintHUD.o
 /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/GraphicsView.o
@@ -19,3 +20,24 @@
 /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_MainScene.o
 /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_mygldrawer.o
 /Users/brittneyrichter/Desktop/Timwork/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/qrc_resources.o
+=======
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/BluePrintDetect.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/BluePrintHUD.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/GraphicsView.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/HomeScreen.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/HUDWidget.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/Images.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/Levels.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/main.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/MainScene.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/marchingcubes.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/MetaballCanvas.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/MtlLoader.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/MtlLoaderCodes.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/ObjLoader.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/ObjLoaderCodes.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_GraphicsView.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_HomeScreen.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/moc_MainScene.o
+/Users/timothyluciani/Dropbox/GIT/cloudfactory/prototypes/QtProj/tmp/obj/CloudFactory.build/Debug/CloudFactory.build/Objects-normal/i386/qrc_resources.o
+>>>>>>> 3fe857af2e87ae9da2d8fa2347bdf9202a6fc869
