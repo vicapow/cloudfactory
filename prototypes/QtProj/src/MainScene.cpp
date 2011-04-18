@@ -34,9 +34,7 @@ MainScene::MainScene(){
 	elapsedTimer.start();
 	
 	glutInitDisplayMode (GLUT_DOUBLE);
-	
-	create_scene();
-	
+		
 	hud = new HUDWidget();
 	
 	blueprint_hud = new BluePrintHUD();
@@ -48,6 +46,9 @@ MainScene::MainScene(){
 	layout->setContentsMargins(1,1,1,1);
 	hud->setLayout(layout);
 	layout->addWidget(blueprint_hud);
+	
+	create_scene();
+
 }
 
 void MainScene::setBlueprint( const vector<CloudModel*>& blueprint ){
@@ -105,9 +106,9 @@ void MainScene::onEnterFrame(){
 
 void MainScene::create_scene(){
 	
-	glClearColor(0.0, 0.0, 0.0, 1.0);
+	glClearColor(0.0, 0.0, 0.0, 0.0);
 	
-	load_bmp("../../resources/bg2.bmp", tex_byte, 256, &texture); 
+	load_bmp("../../resources/minataur.bmp", tex_byte, 256, &texture); 
 	
 	cout << "TEXTURE: " << texture << endl;
 
@@ -207,7 +208,7 @@ void MainScene::draw_GL(){
 	glCallLists(3, GL_UNSIGNED_BYTE, lists);
 	
 	// draw background here
-	display_image(256, 256);
+//	display_image(256, 256);
 	
 	// Set material properties which will be assigned by glColor
     glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
@@ -231,6 +232,15 @@ void MainScene::draw_GL(){
 void MainScene::drawBackground(QPainter *painter, const QRectF &)
 {	
 	onEnterFrame();
+	
+    glMatrixMode(GL_MODELVIEW);
+    glPushMatrix();
+    glLoadIdentity();
+	
+	display_image(256, 256);
+	
+	glPopMatrix();
+
 }
 
 void MainScene::remove_metaball(CloudModel* model ){
@@ -256,9 +266,11 @@ void MainScene::display_image(int width, int height)
 
 	glClearColor(0,0,0,0); // else black
 	
-	glBindTexture(GL_TEXTURE_2D, texture);
 	glEnable(GL_TEXTURE_2D);
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE );
+	glBindTexture(GL_TEXTURE_2D, texture);
+	
+//	glColor4f(1.0, 1.0, 1.0, 1.0); // reset gl color
 	
 	glBegin(GL_QUADS);
 		glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);

@@ -14,6 +14,9 @@ void bmp2rgb(GLubyte img[], int size) {
 }
 
 void load_bmp(char *fname, GLubyte img[], int size, GLuint *ptname) {
+	
+	glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
+	
 	FILE *fp;
 	
 	fp = fopen(fname,"rb") ;
