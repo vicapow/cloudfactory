@@ -186,8 +186,9 @@ void MainScene::draw_GL(){
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluPerspective(30, (GLfloat) width()/(GLfloat) height(), 1.0, 1000.0);
+//	gluLookAt(0, 0, 10 , 0, 0, 0, 0, 1, 0);
 	gluLookAt(canvas->SX/2, canvas->SY/2, canvas->SZ*10 , canvas->SX/2, canvas->SY/2, 0, 0, 1, 0);
-	
+
 	glClearColor(0.21, 0.385, 1.0, 1.0);
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
@@ -285,13 +286,13 @@ void MainScene::display_image(int width, int height)
 	glBindTexture(GL_TEXTURE_2D, textures[0]);
 	
 	glMatrixMode(GL_TEXTURE);
-	glLoadIdentity();
 	glPushMatrix();
+	glLoadIdentity();
 		glBegin(GL_QUADS);
-			glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);
-			glTexCoord2f(1.0f,0.0f); glVertex3f(width,0,0);
-			glTexCoord2f(1.0f,1.0f); glVertex3f(width,height,0);
-			glTexCoord2f(0.0f,1.0f); glVertex3f(0,height,0);
+			glTexCoord2f(0.0f,0.0f); glVertex3f(-100,-40, 0);
+			glTexCoord2f(1.0f,0.0f); glVertex3f(width/3,-40,0);
+			glTexCoord2f(1.0f,1.0f); glVertex3f(width/3,height/2.5,0);
+			glTexCoord2f(0.0f,1.0f); glVertex3f(-100,height/2.5,0);
 		glEnd();
 	glPopMatrix();
 		
@@ -360,6 +361,11 @@ void MainScene::onKeyPress(QKeyEvent* event){
 		case 'r': // reset
 		case 'R':
 			clearClouds();
+			break;
+			
+		case 'q': // exit
+		case 'Q':
+			exit(0);
 			break;
 			
 		default:
