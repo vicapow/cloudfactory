@@ -21,7 +21,7 @@ using namespace std;
 //----------------------------------------------------------------------------
 void CreateCannon(APoint trans, APoint scale){
 	
-	ObjLoader *loader = new0 ObjLoader("", "Smokestack.obj");
+	ObjLoader *loader = new0 ObjLoader("", "../../resources/Smokestack.obj");
 	
 	int numVertices = 0;
 	

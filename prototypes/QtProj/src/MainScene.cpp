@@ -128,50 +128,43 @@ void MainScene::create_scene(){
 	
 //	set camera positions
 	
-//	
-//	can_ind = glGenLists(3);
-//	
-//	/* cannon 1 */
-//	glNewList(can_ind, GL_COMPILE);
-//	
-//	APoint trans = APoint(2.0, -4.0, 0.0);
-//	APoint scale = APoint(1.0, 1.0, 1.0);
-//	
-//	CreateCannon(trans, scale);
-//	
-//	glEndList();
-//	
-//	/* cannon 2 */
-//	
-//	glNewList(can_ind+1, GL_COMPILE);
-//	
-//	trans = APoint(0.0, -4.0, 0.0);
-//	scale = APoint(1.0, 1.0, 1.0);
-//	
-//	CreateCannon(trans, scale);
-//	
-//	glEndList();
-//	
-//	
-//	/* cannon 2 */
-//	
-//	glNewList(can_ind +2, GL_COMPILE);
-//	
-//	trans = APoint(-2.0, -4.0, 0.0);
-//	scale = APoint(1.0, 1.0, 1.0);
-//	
-//    glMatrixMode(GL_MODELVIEW);
-//	glPushMatrix();
-//    glLoadIdentity();
-//	glScalef( 100,100,100 );
-//	glTranslatef(100,0,0);
-//	CreateCannon(trans, scale);
-//	glPopMatrix();
-//	
-//	glEndList();
-//	
-//	glEnable(GL_LIGHTING);
-//	glEnable(GL_COLOR_MATERIAL);
+	can_ind = glGenLists(3);
+	
+	/* cannon 1 */
+	glNewList(can_ind, GL_COMPILE);
+	
+	APoint trans = APoint(1.5, -2.2, 0.5);
+	APoint scale = APoint(30.0, 30.0, 30.0);
+	
+	CreateCannon(trans, scale);
+	
+	glEndList();
+	
+	/* cannon 2 */
+	
+	glNewList(can_ind+1, GL_COMPILE);
+	
+	trans = APoint(3.3, -2.2, 0.5);
+	scale = APoint(30.0, 30.0, 30.0);
+	
+	CreateCannon(trans, scale);
+	
+	glEndList();
+	
+	
+	/* cannon 2 */
+	
+	glNewList(can_ind +2, GL_COMPILE);
+	
+	trans = APoint(5.1, -2.2, 0.5);
+	scale = APoint(30.0, 30.0, 30.0);
+	
+	CreateCannon(trans, scale);
+	
+	glEndList();
+	
+	glEnable(GL_LIGHTING);
+	glEnable(GL_COLOR_MATERIAL);
 //	
 	
 	canvas = new MetaballCanvas();
@@ -186,7 +179,6 @@ void MainScene::draw_GL(){
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
 	gluPerspective(30, (GLfloat) width()/(GLfloat) height(), 1.0, 1000.0);
-//	gluLookAt(0, 0, 10 , 0, 0, 0, 0, 1, 0);
 	gluLookAt(canvas->SX/2, canvas->SY/2, canvas->SZ*10 , canvas->SX/2, canvas->SY/2, 0, 0, 1, 0);
 
 	glClearColor(0.21, 0.385, 1.0, 1.0);
@@ -234,7 +226,11 @@ void MainScene::draw_GL(){
 		display_image(970, 650);
 		glMatrixMode(GL_MODELVIEW);
 		
-		
+		GLubyte lists[3];
+		lists[0]=0; lists[1]=1; lists[2]=2; 
+		glListBase(can_ind); 
+		glCallLists(3, GL_UNSIGNED_BYTE, lists);
+	
 		//glColor3f(1,0,0);
 		
 		//cout << "correctness: " << correctness << endl;
