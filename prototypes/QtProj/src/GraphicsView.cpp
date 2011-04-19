@@ -13,10 +13,14 @@ GraphicsView::GraphicsView()
 {
 	setWindowTitle(tr("Cloud Factory"));
 	
-	this->setViewport(new QGLWidget());
+	QGLFormat fmt;
+	QGLContext* context = new QGLContext(fmt);
+	QGLWidget* glWidget = new QGLWidget(context);
+	glWidget->makeCurrent();
+	this->setViewport(glWidget);
 	this->setViewportUpdateMode(QGraphicsView::FullViewportUpdate);
 
-	mainScene = new MainScene();
+	mainScene = new MainScene(context);
 	this->setScene(mainScene);
 	connect( mainScene , SIGNAL(onLevelPassed()) , this , SLOT(advanceLevel()));
 	

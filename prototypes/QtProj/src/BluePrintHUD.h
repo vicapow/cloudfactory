@@ -12,12 +12,13 @@
 #define BLUE_PRINT_HUD
 
 #include <QtOpenGL>
-
 #include <vector>
 
 using namespace std;
 
 #include "CloudModel.hpp"
+#include "MetaballCanvas.hpp"
+
 
 class BluePrintHUD : public QGLWidget {
 	

@@ -10,6 +10,7 @@
 
 using namespace std;
 
+
 class BluePrintDetect {
 private:
 	typedef struct{

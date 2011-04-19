@@ -11,6 +11,10 @@
 #include "Images.hpp"
 #include "Cannons.hpp"
 
+GLenum __errCode;
+const GLubyte* __errString;
+#define ASSERT_GL_ERR { if((__errCode = glGetError()) != GL_NO_ERROR) { __errString = gluErrorString(__errCode); fprintf(stderr,"OpenGL Error: %s at %s \n\ton line: %d\n",__errString,__PRETTY_FUNCTION__,__LINE__); exit(EXIT_FAILURE); }  }
+
 /* globals used to determine state of game */
 
 static bool STATE_GROW_A, STATE_GROW_B, STATE_GROW_C;
@@ -22,8 +26,17 @@ static Wm5::Float3 incrementer_c, incrementer_b, incrementer_a;
 
 GLfloat posX, posY, posZ;
 
+void MainScene::print_gl_err(){
+	GLenum errCode;
+	const GLubyte *errString;
+	if ((errCode = glGetError()) != GL_NO_ERROR) {
+		errString = gluErrorString(errCode);
+		fprintf (stderr, "OpenGL Error: %s\n", errString);
+		exit(EXIT_FAILURE);
+	}
+}
 
-MainScene::MainScene(){
+MainScene::MainScene( QGLContext* _gl_context ) : gl_context( _gl_context ) {
 	
 	//setup the time for updating the GL scene
 	timer = new QTimer();
@@ -56,7 +69,7 @@ void MainScene::setBlueprint( const vector<CloudModel*>& blueprint ){
 }
 
 void MainScene::onEnterFrame(){
-	
+
 	int frame_time = elapsedTimer.restart();
 	list<m_cloud*>::iterator it;
 	for( it = clouds.begin(); it != clouds.end(); it++){
@@ -99,18 +112,19 @@ void MainScene::onEnterFrame(){
 		clearClouds();
 		emit onLevelPassed();
 	}
-	
+	ASSERT_GL_ERR;
 	draw_GL();
+	ASSERT_GL_ERR;
 }
 
 void MainScene::create_scene(){
 	
 	glClearColor(0.0, 0.0, 0.0, 1.0);
 	
-	load_bmp("../../resources/bg2.bmp", tex_byte, 256, &texture); 
+	//load_bmp("../../resources/bg2.bmp", tex_byte, 256, textures );
 	
-	cout << "TEXTURE: " << texture << endl;
-
+	textures[0] = gl_context->bindTexture(QImage("../../resources/bg2.jpg"));
+	
 //	set camera positions
 	
 //	
@@ -165,25 +179,29 @@ void MainScene::create_scene(){
 
 void MainScene::draw_GL(){
 		
+	ASSERT_GL_ERR;
+
 	glViewport(0, 0, (GLsizei) width(), (GLsizei) height() );
 	glMatrixMode(GL_PROJECTION);
 	glLoadIdentity();
-	gluPerspective(30, (GLfloat) width()/(GLfloat) height(), 1.0, 1000.0);	
+	gluPerspective(30, (GLfloat) width()/(GLfloat) height(), 1.0, 1000.0);
 	gluLookAt(canvas->SX/2, canvas->SY/2, canvas->SZ*10 , canvas->SX/2, canvas->SY/2, 0, 0, 1, 0);
 	
 	glClearColor(0.21, 0.385, 1.0, 1.0);
-
 	glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     glEnable(GL_NORMALIZE);
     glEnable(GL_COLOR_MATERIAL);
+	glEnable(GL_DEPTH_TEST);
 	
-	glEnable(GL_LIGHTING);	
+	glEnable(GL_LIGHTING);
 	
 	glShadeModel(GL_SMOOTH);
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
+	
+	ASSERT_GL_ERR;
 	
 	GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
 	GLfloat light_diffuse[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
@@ -195,42 +213,57 @@ void MainScene::draw_GL(){
 	glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
 	glLightfv(GL_LIGHT0, GL_POSITION, light_position);
 	
+	
     glMatrixMode(GL_MODELVIEW);
-	glPushMatrix();
 	glLoadIdentity();
-	// specify the lists to be drawn
-	GLubyte lists[3]; 
-	lists[0] = 0; lists[1] = 1; lists[2] = 2;
 	
-	// draw lists
-	glListBase(can_ind);
-	glCallLists(3, GL_UNSIGNED_BYTE, lists);
+	ASSERT_GL_ERR;
 	
-	// draw background here
-	display_image(256, 256);
+	glPushMatrix();
+		glLoadIdentity();
+		// specify the lists to be drawn
+		GLubyte lists[3]; 
+		lists[0] = 0; lists[1] = 1; lists[2] = 2;
+		
+		// draw lists
+		glListBase(can_ind);
+		glCallLists(3, GL_UNSIGNED_BYTE, lists);
 	
-	// Set material properties which will be assigned by glColor
-    glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
-    float specReflection[] = { 0.8, 0.8, 0.8, 1.0f };
-    glMaterialfv(GL_FRONT, GL_SPECULAR, specReflection);
+		// draw background here
+		display_image(970, 650);
+		glMatrixMode(GL_MODELVIEW);
+		
+		// Set material properties which will be assigned by glColor
+		glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
+		float specReflection[] = { 0.8, 0.8, 0.8, 1.0f };
+		glMaterialfv(GL_FRONT, GL_SPECULAR, specReflection);
+		
+		glColor3f(1-correctness+0.5,1,1-correctness+0.5 );
+		//glColor3f(1,0,0);
+		
+		//cout << "correctness: " << correctness << endl;
+		
+	ASSERT_GL_ERR;
 	
-	glColor3f(1-correctness+0.5,1,1-correctness+0.5 );
-	//glColor3f(1,0,0);
+		// Draw the triangles
+		canvas->draw();
 	
-	//cout << "correctness: " << correctness << endl;
-	
-	// Draw the triangles
-    canvas->draw();
-	
-	glPopMatrix();
+	ASSERT_GL_ERR;
+	glPopMatrix();//extra pop?
+	ASSERT_GL_ERR;
 	
 	glFlush();
 	glutSwapBuffers();
+	
+	ASSERT_GL_ERR;
+	
 }
 
 void MainScene::drawBackground(QPainter *painter, const QRectF &)
 {	
+	ASSERT_GL_ERR;
 	onEnterFrame();
+	ASSERT_GL_ERR;
 }
 
 void MainScene::remove_metaball(CloudModel* model ){
@@ -248,26 +281,26 @@ void MainScene::remove_metaball(CloudModel* model ){
 }
 
 void MainScene::display_image(int width, int height)
-{
-	// bind and draw the foreground texture
-		
+{	
 	glDisable(GL_LIGHTING);
 	glDisable(GL_COLOR_MATERIAL);
-
-	glClearColor(0,0,0,0); // else black
-	
-	glBindTexture(GL_TEXTURE_2D, texture);
+  	
 	glEnable(GL_TEXTURE_2D);
-	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE );
+
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
+	glBindTexture(GL_TEXTURE_2D, textures[0]);
 	
-	glBegin(GL_QUADS);
-		glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);
-		glTexCoord2f(1.0f,0.0f); glVertex3f(width,0,0);
-		glTexCoord2f(1.0f,1.0f); glVertex3f(width,height,0);
-		glTexCoord2f(0.0f,1.0f); glVertex3f(0,height,0);
-	
-	glEnd();
-	
+	glMatrixMode(GL_TEXTURE);
+	glLoadIdentity();
+	glPushMatrix();
+		glBegin(GL_QUADS);
+			glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);
+			glTexCoord2f(1.0f,0.0f); glVertex3f(width,0,0);
+			glTexCoord2f(1.0f,1.0f); glVertex3f(width,height,0);
+			glTexCoord2f(0.0f,1.0f); glVertex3f(0,height,0);
+		glEnd();
+	glPopMatrix();
+		
 	glDisable(GL_TEXTURE_2D);
 	glEnable(GL_LIGHTING);
 	glEnable(GL_COLOR_MATERIAL);

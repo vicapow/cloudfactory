@@ -16,6 +16,7 @@
 #include <QTimer>
 #include <QElapsedTimer>
 #include <QKeyEvent>
+#include <QGLWidget>
 
 #include <GLUT/GLUT.h>
 #include <iostream>
@@ -37,7 +38,7 @@ class MainScene : public QGraphicsScene {
 	Q_OBJECT
 public:
 	
-	MainScene();
+	MainScene(QGLContext* _gl_context);
 	
 	void drawBackground(QPainter*, const QRectF& );
 	void onEnterFrame();
@@ -62,8 +63,8 @@ public:
 	m_cloud* cur_cloud_b;
 	m_cloud* cur_cloud_c;
 	
-	GLuint texture;
-	GLubyte tex_byte[512 * 512 *3] ;
+	GLuint textures[1];
+	GLubyte tex_byte[512 * 512 *3];
 	
 	GLuint can_ind;
 	QTimer* timer;//the timer that fires draw events
@@ -71,7 +72,8 @@ public:
 	float correctness;
 	BluePrintHUD* blueprint_hud;
 	HUDWidget* hud;
-	
+	void print_gl_err();
+
 signals:
 	void onLevelPassed();
 	
@@ -80,6 +82,9 @@ protected:
 	void remove_metaball(CloudModel* cloud);
 	void create_scene();
 	void display_image(int width, int height);
+	
+	
+	QGLContext* gl_context;
 	
 };
 
@@ -111,7 +116,6 @@ public:
 		//cout << "m clouds destroied" << endl;
 		delete model;
 	}
-	
 };
 
 

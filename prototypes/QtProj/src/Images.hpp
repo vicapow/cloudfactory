@@ -3,6 +3,10 @@
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
+#include <assert.h>
+#include <iostream>
+
+using namespace std;
 
 /* checkerboard texture */
 #define stripeImageWidth 32
