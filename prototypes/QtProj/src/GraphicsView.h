@@ -31,6 +31,8 @@ public:
 public slots:
 	void hideHomeScreen();
 	void hideStoryScreen();
+	void hidePlay();
+
 	void loadLevel(const Level& level);
 	void advanceLevel();
 	
@@ -41,6 +43,7 @@ protected:
 	
 	HomeScreen* homeScreen;
 	HomeScreen *storyScreen;
+	HomeScreen *howToplay;
 	int current_level;
 	Levels* levels;
 
