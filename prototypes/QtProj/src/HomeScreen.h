@@ -23,8 +23,9 @@ class HomeScreen : public QObject, public QGraphicsPixmapItem {
 public:
 	
 	HomeScreen();
+	HomeScreen(const char* image);
 	virtual void mouseReleaseEvent ( QGraphicsSceneMouseEvent * event );
-	virtual void 	mousePressEvent ( QGraphicsSceneMouseEvent * event );
+	virtual void mousePressEvent ( QGraphicsSceneMouseEvent * event );
 	
 signals:
 	void onPlay();

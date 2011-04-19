@@ -11,6 +11,7 @@
 #include "ObjLoader.h"
 #include "Wm5WindowApplication3.h"
 #include <GLUT/glut.h>
+#include "Images.hpp"
 
 #ifndef CANNONS_HPP
 #define CANNONS_HPP
@@ -21,7 +22,7 @@ using namespace std;
 //----------------------------------------------------------------------------
 void CreateCannon(APoint trans, APoint scale){
 	
-	ObjLoader *loader = new0 ObjLoader("", "Smokestack.obj");
+	ObjLoader *loader = new0 ObjLoader("", "../../resources/Smokestack.obj");
 	
 	int numVertices = 0;
 	
@@ -90,14 +91,17 @@ void CreateCannon(APoint trans, APoint scale){
 		}
 	}
 	
+
 	glBegin(GL_TRIANGLES);
 	
 	for(unsigned int i = 0; i < positions.size(); i++)
 	{
+		glTexCoord2f(texcoords[i].x + trans[0], texcoords[i].y + trans[1]);
 		glVertex3f(scale[0] * (positions[i].x + trans[0]),scale[1] * (positions[i].y + trans[1]), scale[2] * (positions[i].z + trans[2]) );
 	}
 	
 	glEnd();
+	
 }
 
 #endif

@@ -1,7 +1,9 @@
 <RCC>
     <qresource prefix="/">
         <file>resources/cloudfactory-homescreen.jpg</file>
-	<file>resources/levels.xml</file>
-	<file>resources/bricks.bmp</file>
+        <file>resources/levels.xml</file>
+        <file>resources/brick.jpg</file>
+        <file>resources/happy.jpg</file>
+        <file>resources/story.jpg</file>
     </qresource>
 </RCC>

@@ -63,8 +63,9 @@ public:
 	m_cloud* cur_cloud_b;
 	m_cloud* cur_cloud_c;
 	
-	GLuint textures[1];
+	GLuint textures[2];
 	GLubyte tex_byte[512 * 512 *3];
+	GLubyte can_byte[1024 * 1024 *3];
 	
 	GLuint can_ind;
 	QTimer* timer;//the timer that fires draw events

@@ -19,7 +19,6 @@ using namespace std;
 #include "CloudModel.hpp"
 #include "MetaballCanvas.hpp"
 
-
 class BluePrintHUD : public QGLWidget {
 	
 public:

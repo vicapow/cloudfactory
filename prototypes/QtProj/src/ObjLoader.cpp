@@ -18,9 +18,6 @@
 #include <cassert>
 #include <fstream>
 
-// Disable Microsoft warning about unsafe functions (security).
-#pragma warning(disable:4996)
-
 //----------------------------------------------------------------------------
 ObjLoader::ObjLoader (const string& path, const string& filename)
     :
