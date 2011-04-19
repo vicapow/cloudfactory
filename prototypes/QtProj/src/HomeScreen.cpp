@@ -9,14 +9,13 @@
 
 #include "HomeScreen.h"
 
-
-
-
-
 HomeScreen::HomeScreen() : QGraphicsPixmapItem(QPixmap(":/resources/cloudfactory-homescreen.jpg")) {
 	cout << "HomeScreen Constructor " << endl;
 }
 
+HomeScreen::HomeScreen(const char* image) : QGraphicsPixmapItem( QPixmap(image) ) {
+	cout << "Victory Screen " << endl;
+}
 
 void HomeScreen::mouseReleaseEvent ( QGraphicsSceneMouseEvent * event ){
 	//QGraphicsItem::mouseReleaseEvent(event);
@@ -25,5 +24,6 @@ void HomeScreen::mouseReleaseEvent ( QGraphicsSceneMouseEvent * event ){
 }
 
 void HomeScreen::mousePressEvent ( QGraphicsSceneMouseEvent * event ){
+	
 	cout << " Home screen pressed event " << endl;
 }

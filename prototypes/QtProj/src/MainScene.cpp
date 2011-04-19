@@ -51,14 +51,6 @@ MainScene::MainScene( QGLContext* _gl_context ) : gl_context( _gl_context ) {
 	hud = new HUDWidget();
 	
 	blueprint_hud = new BluePrintHUD();
-
-	this->addWidget(hud);
-	hud->setContentsMargins(0, 0, 0, 0);
-	hud->setToolTip("Use this blueprint to create clouds");
-	QVBoxLayout* layout = new QVBoxLayout();
-	layout->setContentsMargins(1,1,1,1);
-	hud->setLayout(layout);
-	layout->addWidget(blueprint_hud);
 	
 	create_scene();
 
@@ -125,7 +117,7 @@ void MainScene::create_scene(){
 	//load_bmp("../../resources/bg2.bmp", tex_byte, 256, textures );
 	
 	textures[0] = gl_context->bindTexture(QImage("../../resources/bg2.jpg"));
-	textures[1] = gl_context->bindTexture(QImage("../../resources/bricks.jpg"));
+	textures[1] = gl_context->bindTexture(QImage("../../resources/brick.jpg"));
 //	set camera positions
 	
 	can_ind = glGenLists(3);
@@ -133,7 +125,7 @@ void MainScene::create_scene(){
 	/* cannon 1 */
 	glNewList(can_ind, GL_COMPILE);
 	
-	APoint trans = APoint(1.5, -2.2, 0.5);
+	APoint trans = APoint(1.5, -2.2, 1.0);
 	APoint scale = APoint(30.0, 30.0, 30.0);
 	
 	CreateCannon(trans, scale);
@@ -144,7 +136,7 @@ void MainScene::create_scene(){
 	
 	glNewList(can_ind+1, GL_COMPILE);
 	
-	trans = APoint(3.3, -2.2, 0.5);
+	trans = APoint(3.3, -2.2, 1.0);
 	scale = APoint(30.0, 30.0, 30.0);
 	
 	CreateCannon(trans, scale);
@@ -156,7 +148,7 @@ void MainScene::create_scene(){
 	
 	glNewList(can_ind +2, GL_COMPILE);
 	
-	trans = APoint(5.1, -2.2, 0.5);
+	trans = APoint(5.1, -2.2, 1.0);
 	scale = APoint(30.0, 30.0, 30.0);
 	
 	CreateCannon(trans, scale);

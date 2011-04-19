@@ -26,9 +26,11 @@ public:
 	GraphicsView();
     
 	MainScene* mainScene;
-
+	QVBoxLayout* layout;
+	
 public slots:
 	void hideHomeScreen();
+	void hideStoryScreen();
 	void loadLevel(const Level& level);
 	void advanceLevel();
 	
@@ -38,6 +40,7 @@ protected:
 	virtual void keyReleaseEvent(QKeyEvent *event);
 	
 	HomeScreen* homeScreen;
+	HomeScreen *storyScreen;
 	int current_level;
 	Levels* levels;
 

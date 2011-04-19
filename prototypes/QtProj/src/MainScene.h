@@ -65,7 +65,7 @@ public:
 	
 	GLuint textures[2];
 	GLubyte tex_byte[512 * 512 *3];
-	GLubyte can_byte[256 * 256 *3];
+	GLubyte can_byte[1024 * 1024 *3];
 	
 	GLuint can_ind;
 	QTimer* timer;//the timer that fires draw events
