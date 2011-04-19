@@ -7,7 +7,6 @@ BluePrintDetect::BluePrintDetect(){
 	//constructor
 }
 
-
 float BluePrintDetect::CalculateError( vector<CloudModel*> blueprints, vector<CloudModel*> clouds ){
 	
 	if(blueprints.size() > clouds.size()) return 0;//you can never have a matching pattern with too few clouds
@@ -17,6 +16,10 @@ float BluePrintDetect::CalculateError( vector<CloudModel*> blueprints, vector<Cl
 	
 	Point comClouds;
 	BluePrintDetect::ComputeCenterOfMass(clouds,comClouds);
+	
+	if (comClouds.y < 75) {
+		return 0.0f;
+	}
 	
 	Point diff;
 	PointSubtract(comBlueprints,comClouds,diff);

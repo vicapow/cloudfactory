@@ -16,7 +16,6 @@ BluePrintHUD::BluePrintHUD( QWidget* parent): QGLWidget(parent) {
 	dirty = true;
 }
 
-
 void BluePrintHUD::initializeGL(){
 	
 	glClearColor(1.0, 1.0, 1.0, 1.0);

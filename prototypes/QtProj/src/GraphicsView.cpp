@@ -33,7 +33,7 @@ GraphicsView::GraphicsView()
 
 	levels = new Levels(":/resources/levels.xml");
 	
-	current_level = 1;
+	current_level = 0;
 	advanceLevel();
 }
 
@@ -81,7 +81,7 @@ void GraphicsView::hideHomeScreen(){
 }
 
 void GraphicsView::advanceLevel(){
-	if( current_level < levels->length() - 4){
+	if( current_level < levels->length() ){
 		loadLevel(levels->getLevel(current_level++));
 	}
 	else {
