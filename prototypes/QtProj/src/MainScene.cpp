@@ -47,9 +47,7 @@ MainScene::MainScene( QGLContext* _gl_context ) : gl_context( _gl_context ) {
 	elapsedTimer.start();
 	
 	glutInitDisplayMode (GLUT_DOUBLE);
-	
-	create_scene();
-	
+		
 	hud = new HUDWidget();
 	
 	blueprint_hud = new BluePrintHUD();
@@ -61,6 +59,9 @@ MainScene::MainScene( QGLContext* _gl_context ) : gl_context( _gl_context ) {
 	layout->setContentsMargins(1,1,1,1);
 	hud->setLayout(layout);
 	layout->addWidget(blueprint_hud);
+	
+	create_scene();
+
 }
 
 void MainScene::setBlueprint( const vector<CloudModel*>& blueprint ){
@@ -119,11 +120,15 @@ void MainScene::onEnterFrame(){
 
 void MainScene::create_scene(){
 	
-	glClearColor(0.0, 0.0, 0.0, 1.0);
+	glClearColor(0.0, 0.0, 0.0, 0.0);
 	
+<<<<<<< HEAD
 	//load_bmp("../../resources/bg2.bmp", tex_byte, 256, textures );
 	
 	textures[0] = gl_context->bindTexture(QImage("../../resources/bg2.jpg"));
+=======
+	load_bmp("../../resources/minataur.bmp", tex_byte, 256, &texture); 
+>>>>>>> 4b39799cf3ea875420a1d226d914af7355186203
 	
 //	set camera positions
 	
@@ -219,6 +224,7 @@ void MainScene::draw_GL(){
 	
 	ASSERT_GL_ERR;
 	
+<<<<<<< HEAD
 	glPushMatrix();
 		glLoadIdentity();
 		// specify the lists to be drawn
@@ -228,6 +234,18 @@ void MainScene::draw_GL(){
 		// draw lists
 		glListBase(can_ind);
 		glCallLists(3, GL_UNSIGNED_BYTE, lists);
+=======
+	// draw background here
+//	display_image(256, 256);
+	
+	// Set material properties which will be assigned by glColor
+    glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
+    float specReflection[] = { 0.8, 0.8, 0.8, 1.0f };
+    glMaterialfv(GL_FRONT, GL_SPECULAR, specReflection);
+	
+	glColor3f(1-correctness+0.5,1,1-correctness+0.5 );
+	//glColor3f(1,0,0);
+>>>>>>> 4b39799cf3ea875420a1d226d914af7355186203
 	
 		// draw background here
 		display_image(970, 650);
@@ -263,7 +281,19 @@ void MainScene::drawBackground(QPainter *painter, const QRectF &)
 {	
 	ASSERT_GL_ERR;
 	onEnterFrame();
+<<<<<<< HEAD
 	ASSERT_GL_ERR;
+=======
+	
+    glMatrixMode(GL_MODELVIEW);
+    glPushMatrix();
+    glLoadIdentity();
+	
+	display_image(256, 256);
+	
+	glPopMatrix();
+
+>>>>>>> 4b39799cf3ea875420a1d226d914af7355186203
 }
 
 void MainScene::remove_metaball(CloudModel* model ){
@@ -284,11 +314,30 @@ void MainScene::display_image(int width, int height)
 {	
 	glDisable(GL_LIGHTING);
 	glDisable(GL_COLOR_MATERIAL);
+<<<<<<< HEAD
   	
 	glEnable(GL_TEXTURE_2D);
 
 	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
 	glBindTexture(GL_TEXTURE_2D, textures[0]);
+=======
+
+	glClearColor(0,0,0,0); // else black
+	
+	glEnable(GL_TEXTURE_2D);
+	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE );
+	glBindTexture(GL_TEXTURE_2D, texture);
+	
+//	glColor4f(1.0, 1.0, 1.0, 1.0); // reset gl color
+	
+	glBegin(GL_QUADS);
+		glTexCoord2f(0.0f,0.0f); glVertex3f(0, 0,0);
+		glTexCoord2f(1.0f,0.0f); glVertex3f(width,0,0);
+		glTexCoord2f(1.0f,1.0f); glVertex3f(width,height,0);
+		glTexCoord2f(0.0f,1.0f); glVertex3f(0,height,0);
+	
+	glEnd();
+>>>>>>> 4b39799cf3ea875420a1d226d914af7355186203
 	
 	glMatrixMode(GL_TEXTURE);
 	glLoadIdentity();
