@@ -125,7 +125,7 @@ void MainScene::create_scene(){
 	//load_bmp("../../resources/bg2.bmp", tex_byte, 256, textures );
 	
 	textures[0] = gl_context->bindTexture(QImage("../../resources/bg2.jpg"));
-	
+	textures[1] = gl_context->bindTexture(QImage("../../resources/bricks.jpg"));
 //	set camera positions
 	
 	can_ind = glGenLists(3);
@@ -226,10 +226,21 @@ void MainScene::draw_GL(){
 		display_image(970, 650);
 		glMatrixMode(GL_MODELVIEW);
 		
+		glDisable(GL_LIGHTING);
+		glDisable(GL_COLOR_MATERIAL);  	
+		glEnable(GL_TEXTURE_2D);
+		
+		glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_REPLACE);
+		glBindTexture(GL_TEXTURE_2D, textures[1]);
+	
 		GLubyte lists[3];
 		lists[0]=0; lists[1]=1; lists[2]=2; 
 		glListBase(can_ind); 
 		glCallLists(3, GL_UNSIGNED_BYTE, lists);
+	
+		glDisable(GL_TEXTURE_2D);
+		glEnable(GL_LIGHTING);
+		glEnable(GL_COLOR_MATERIAL);
 	
 		//glColor3f(1,0,0);
 		
