@@ -14,7 +14,7 @@ MetaballCanvas::MetaballCanvas(){
 	
 	//init
 	SX = 200;
-	SY = 200;
+	SY = 250;
 	SZ = 50;
 
 	ball1 = 0;

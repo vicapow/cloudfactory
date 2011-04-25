@@ -12,25 +12,25 @@
 		<model x="100" y="100" z="0" r="10"></model>
 		<model x="100" y="150" z="0" r="10"></model>
 	</level>
-    <level id="4" cannons="2"> <!-- small/big -->
-		<model x="100" y="140" z="0" r="5"></model>
-		<model x="100" y="75" z="0" r="25"></model>
+	<level id="7" cannons="3"> <!-- "n" -->
+		<model x="50" y="75" z="0" r="10"></model>
+		<model x="100" y="125" z="0" r="10"></model>
+		<model x="150" y="75" z="0" r="10"></model>
 	</level>
     <level id="5" cannons="3"><!-- diagonal -->
         <model x="50" y="125" r="8" />  
         <model x="150" y="75" r="8" /> 
         <model x="100" y="100" r="8" />    
     </level>
+   <level id="4" cannons="2"> <!-- small/big -->
+		<model x="100" y="140" z="0" r="5"></model>
+		<model x="100" y="75" z="0" r="25"></model>
+	</level>
     <level id="6" cannons="3"><!-- mickey -->
         <model x="50" y="123" r="8" />  <!-- right right ear -->
         <model x="150" y="123" r="8" />  <!-- left right ear -->
         <model x="100" y="85" r="10" />    <!-- face -->
     </level>
-	<level id="7" cannons="3"> <!-- "n" -->
-		<model x="50" y="75" z="0" r="10"></model>
-		<model x="100" y="125" z="0" r="10"></model>
-		<model x="150" y="75" z="0" r="10"></model>
-	</level>
     <level id="8" cannons="1"> <!-- pants -->
 		<model x="50" y="150" z="0" r="7" />
 		<model x="100" y="150" z="0" r="6" />

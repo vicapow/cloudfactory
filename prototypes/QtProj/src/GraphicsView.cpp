@@ -31,7 +31,7 @@ GraphicsView::GraphicsView()
 	storyScreen = new HomeScreen(":/resources/story.jpg");
 	connect( storyScreen , SIGNAL(onPlay()) , this , SLOT(hideStoryScreen()) );
 	
-	hotToplay = new HomeScreen(":/resources/how-to-play.jpg");
+	howToplay = new HomeScreen(":/resources/how-to-play.jpg");
 	connect( howToplay , SIGNAL(onPlay()) , this , SLOT(hidePlay()) );
 
 	levels = new Levels(":/resources/levels.xml");
@@ -65,15 +65,14 @@ void GraphicsView::hideStoryScreen(){
 	cout << " hide the home scree " << endl;
 	mainScene->removeItem(storyScreen);
 	
-	msCodeString->addItem(howToplay);
-	
+	mainScene->addItem(howToplay);
 	
 }
 
 void GraphicsView::hidePlay(){
 	
 	cout << " hide the home scree " << endl;
-	mainScene->removeItem(storyScreen);
+	mainScene->removeItem(howToplay);
 	
 	mainScene->addWidget(mainScene->hud);
 	mainScene->hud->setContentsMargins(0, 0, 0, 0);
@@ -87,7 +86,7 @@ void GraphicsView::hidePlay(){
 
 
 void GraphicsView::hideHomeScreen(){
-	cout << " hide the home scree " << endl;
+	cout << " hide the home screen " << endl;
 	mainScene->removeItem(homeScreen);
 	
 	mainScene->addItem(storyScreen);

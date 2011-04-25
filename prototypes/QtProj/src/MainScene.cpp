@@ -125,7 +125,7 @@ void MainScene::create_scene(){
 	/* cannon 1 */
 	glNewList(can_ind, GL_COMPILE);
 	
-	APoint trans = APoint(1.5, -2.2, 1.0);
+	APoint trans = APoint(1.5, -1.7, 1.0);
 	APoint scale = APoint(30.0, 30.0, 30.0);
 	
 	CreateCannon(trans, scale);
@@ -136,7 +136,7 @@ void MainScene::create_scene(){
 	
 	glNewList(can_ind+1, GL_COMPILE);
 	
-	trans = APoint(3.3, -2.2, 1.0);
+	trans = APoint(3.3, -1.7, 1.0);
 	scale = APoint(30.0, 30.0, 30.0);
 	
 	CreateCannon(trans, scale);
@@ -148,7 +148,7 @@ void MainScene::create_scene(){
 	
 	glNewList(can_ind +2, GL_COMPILE);
 	
-	trans = APoint(5.1, -2.2, 1.0);
+	trans = APoint(5.1, -1.7, 1.0);
 	scale = APoint(30.0, 30.0, 30.0);
 	
 	CreateCannon(trans, scale);
