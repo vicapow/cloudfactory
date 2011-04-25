@@ -8,7 +8,6 @@
  */
 
 #include "MainScene.h"
-#include "Images.hpp"
 #include "Cannons.hpp"
 
 GLenum __errCode;

@@ -9,9 +9,6 @@
 
 #include "Levels.h"
 
-
-
-
 Levels::Levels(QString filename){
 	
 	QDomDocument doc;

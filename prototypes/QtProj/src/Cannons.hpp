@@ -11,7 +11,6 @@
 #include "ObjLoader.h"
 #include "Wm5WindowApplication3.h"
 #include <GLUT/glut.h>
-#include "Images.hpp"
 
 #ifndef CANNONS_HPP
 #define CANNONS_HPP
