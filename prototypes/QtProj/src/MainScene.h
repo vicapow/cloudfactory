@@ -31,6 +31,7 @@
 #include "BluePrintHUD.h"
 #include "HUDWidget.h"
 
+
 using namespace std;
 using namespace Wm5;
 
@@ -51,7 +52,6 @@ public:
 	
 	int frame_time;
 	float step_size;
-	
 	
 	/* data structures */
 	MetaballCanvas* canvas;
@@ -74,6 +74,8 @@ public:
 	BluePrintHUD* blueprint_hud;
 	HUDWidget* hud;
 	void print_gl_err();
+	int MaxRadius;
+	int tries;
 
 signals:
 	void onLevelPassed();

@@ -34,10 +34,15 @@ GraphicsView::GraphicsView()
 	howToplay = new HomeScreen(":/resources/how-to-play.jpg");
 	connect( howToplay , SIGNAL(onPlay()) , this , SLOT(hidePlay()) );
 
-	levels = new Levels(":/resources/levels.xml");
+	//levels = new Levels(":/resources/levels.xml");
+	levels = new Levels("../../resources/levels.xml");
+	
 	
 	current_level = 0;
 	advanceLevel();
+	
+	QSound::play("../../resources/count-down.mp3");
+	
 }
 
 void GraphicsView::loadLevel(const Level& level){

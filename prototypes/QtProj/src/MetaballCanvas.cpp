@@ -21,11 +21,14 @@ MetaballCanvas::MetaballCanvas(){
 	ball2 = 0;
 	t = 0;
 	voxels = newFloatMatrix(SX,SY,SZ);
+	
+	setResolution(9,9,9);//default resolution
 }
 
 void MetaballCanvas::init(){
 	draw();
 }
+
 
 void MetaballCanvas::addMetaball(CloudModel* model){
 	metaballs.push_back(model);
@@ -38,7 +41,6 @@ void MetaballCanvas::removeMetaball(CloudModel* model){
 			return;
 		}
 	}
-//	std::cout << "WARNING: no metaball found to be removed. " << endl;
 }
 
 void MetaballCanvas::removeAllMetaballs(){
@@ -70,7 +72,7 @@ void MetaballCanvas::draw(){
 //	drawMetaball(voxels,SX,SY,SZ,SX/4-10,ball1,SZ-5,10);
 	
 	clearVertexList();
-	vertices = runMarchingCubes(voxels,SX,SY,SZ,9,9,9,0.012);
+	vertices = runMarchingCubes(voxels,SX,SY,SZ,res_x,res_y,res_z,0.012);
 	
 	//cout << "update" << endl;
 	draw_gl();

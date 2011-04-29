@@ -13,6 +13,7 @@ BluePrintHUD::BluePrintHUD( QWidget* parent): QGLWidget(parent) {
 	blueprint.push_back( new CloudModel( 100, 100, 100, 10 ) );
 	canvas = new MetaballCanvas();
 	canvas->init();
+	canvas->setResolution(5,5,5);
 	dirty = true;
 }
 

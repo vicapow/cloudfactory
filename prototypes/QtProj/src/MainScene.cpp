@@ -44,6 +44,7 @@ MainScene::MainScene( QGLContext* _gl_context ) : gl_context( _gl_context ) {
 	angle = 0;
 	correctness = 0;
 	elapsedTimer.start();
+	tries = 0;
 	
 	glutInitDisplayMode (GLUT_DOUBLE);
 		
@@ -52,6 +53,8 @@ MainScene::MainScene( QGLContext* _gl_context ) : gl_context( _gl_context ) {
 	blueprint_hud = new BluePrintHUD();
 	
 	create_scene();
+	
+	MaxRadius = 30;
 
 }
 
@@ -85,23 +88,27 @@ void MainScene::onEnterFrame(){
 	
 	if(STATE_GROW_A && cur_cloud_a ){
 		cur_cloud_a->model->posY = 0;
-		cur_cloud_a->model->incRadius(1);
+		if(cur_cloud_a->model->getRadius() < MaxRadius)
+			cur_cloud_a->model->incRadius(1);
 	}
 	
 	if(STATE_GROW_B && cur_cloud_b ){
 		cur_cloud_b->model->posY = 0;
-		cur_cloud_b->model->incRadius(1);
+		if(cur_cloud_b->model->getRadius() < MaxRadius)
+			cur_cloud_b->model->incRadius(1);
 	}
 	
 	if(STATE_GROW_C && cur_cloud_c ){
 		cur_cloud_c->model->posY = 0;
-		cur_cloud_c->model->incRadius(1);
+		if(cur_cloud_c->model->getRadius() < MaxRadius)
+			cur_cloud_c->model->incRadius(1);
 	}
 	
 	//detect pattern
 	correctness = BluePrintDetect::CalculateError( blueprint , user_guess );
 	if(correctness>0.9){
 		clearClouds();
+		tries = 0;
 		emit onLevelPassed();
 	}
 	ASSERT_GL_ERR;
@@ -188,15 +195,28 @@ void MainScene::draw_GL(){
 	
 	ASSERT_GL_ERR;
 	
-	GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
-	GLfloat light_diffuse[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
-	GLfloat light_specular[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
-	GLfloat light_position[] = { -500.0, 500.0, 500.0, 0.0 };
-	
-	glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
-	glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
-	glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
-	glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+	float cloud_color[3] = { 253.0f/255 , 197.0f/255 , 81.0f/255 };
+//	if(correctness>0.5){
+//		GLfloat light_ambient[] = { 0.0, 0.0, 0.0, 1.0 };
+//		GLfloat light_diffuse[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
+//		GLfloat light_specular[] = { 0.0, correctness - 0.5, 0.0, 1.0 };
+//		GLfloat light_position[] = { -500.0, 500.0, 500.0, 0.0 };
+//		
+//		glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
+//		glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
+//		glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
+//		glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+//	}else{
+		GLfloat light_ambient[] = { cloud_color[0], cloud_color[1], cloud_color[2], 1.0 };
+		GLfloat light_diffuse[] = { cloud_color[0] , cloud_color[1], cloud_color[2], 1.0 };
+		GLfloat light_specular[] = { cloud_color[0] , cloud_color[1], cloud_color[2], 1.0 };
+		GLfloat light_position[] = { -1000.0, 500.0, 500.0, 0.0 };		
+		
+		glLightfv(GL_LIGHT0, GL_AMBIENT, light_ambient);
+		glLightfv(GL_LIGHT0, GL_DIFFUSE, light_diffuse);
+		glLightfv(GL_LIGHT0, GL_SPECULAR, light_specular);
+		glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+//	}
 	
 	
     glMatrixMode(GL_MODELVIEW);
@@ -209,9 +229,13 @@ void MainScene::draw_GL(){
 	
 		// Set material properties which will be assigned by glColor
 		glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);
-		float specReflection[] = { 0.8, 0.8, 0.8, 1.0f };
+		float specReflection[] = { 1, 1, 1, 1.0f };
 		glMaterialfv(GL_FRONT, GL_SPECULAR, specReflection);
-		glColor3f(1-correctness+0.5,1,1-correctness+0.5 );
+		
+		//glColor3f(1-correctness+0.5,1,1-correctness+0.5 );
+		glColor3f( (140.0f/255)  + correctness*( (255-140.f)/255 ) ,
+					(91.0f/255)  + correctness*( (255-91.f)/255 ),
+					(50.0/255) + correctness*( (255-50.f)/255) );
 	
 		// draw background here
 		display_image(970, 650);
@@ -380,6 +404,7 @@ void MainScene::clearClouds(){
 		canvas->removeMetaball( (*it)->model );
 		delete (*it);
 	}
+	cur_cloud_a = cur_cloud_b = cur_cloud_c = NULL;
 	
 	clouds.clear(); // clear clouds list
 }

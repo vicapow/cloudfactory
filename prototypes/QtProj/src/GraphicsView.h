@@ -13,6 +13,7 @@
 #include <QtGui/QGraphicsView>
 #include <QtGui/QResizeEvent>
 #include <QtOpenGL>
+#include <QSound>
 
 #include "MainScene.h"
 #include "HomeScreen.h"

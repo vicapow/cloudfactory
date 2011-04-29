@@ -41,12 +41,20 @@ public:
 	void removeMetaball(CloudModel* model);
 	void removeAllMetaballs();
 	void draw_gl();
+	void setResolution( int res_x, int res_y, int res_z ){
+		this->res_x = res_x;
+		this->res_y = res_y;
+		this->res_z = res_z;
+	}
 	
 	float *** voxels;
 	list<vertex> vertices;
 	int SX;
 	int SY;
 	int SZ;
+	int res_x;
+	int res_y;
+	int res_z;
 	int MAX_INDICES;
 	int num_indices;
 	float ball1;
