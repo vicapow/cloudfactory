@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>resources/cloudfactory-homescreen.jpg</file>
+        <file>resources/levels.xml</file>
+        <file>resources/brick.jpg</file>
+        <file>resources/happy.jpg</file>
+        <file>resources/story.jpg</file>
+        <file>resources/how-to-play.jpg</file>
+    </qresource>
+</RCC>
